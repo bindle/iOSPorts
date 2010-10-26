@@ -1,0 +1,7 @@
+*.mode1v3
+*.pbxuser
+*.xcuserdatad
+*.xcworkspace
+.DS_Store
+/build/
+/include/
