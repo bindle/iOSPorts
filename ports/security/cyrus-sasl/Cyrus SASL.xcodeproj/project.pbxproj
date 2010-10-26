@@ -1,0 +1,2114 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A09611DF126F96BA00671A97 /* db_none.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A7C126E55630057FEE9 /* db_none.c */; };
+		A09611E0126F96C600671A97 /* allockey.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A78126E55630057FEE9 /* allockey.c */; };
+		A09611FB126F9D2900671A97 /* anonymous.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FA126E55630057FEE9 /* anonymous.c */; };
+		A09611FC126F9D2900671A97 /* anonymous_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FB126E55630057FEE9 /* anonymous_init.c */; };
+		A09611FD126F9D3100671A97 /* cram.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FC126E55630057FEE9 /* cram.c */; };
+		A09611FE126F9D3100671A97 /* crammd5_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FD126E55630057FEE9 /* crammd5_init.c */; };
+		A0961202126F9D4900671A97 /* plain.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A10126E55630057FEE9 /* plain.c */; };
+		A0961203126F9D4900671A97 /* plain_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A11126E55630057FEE9 /* plain_init.c */; };
+		A0FB5A9B126E55B70057FEE9 /* auxprop.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B0126E55630057FEE9 /* auxprop.c */; };
+		A0FB5A9C126E55B70057FEE9 /* canonusr.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B1126E55630057FEE9 /* canonusr.c */; };
+		A0FB5A9D126E55B70057FEE9 /* checkpw.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B2126E55630057FEE9 /* checkpw.c */; };
+		A0FB5A9E126E55B70057FEE9 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B3126E55630057FEE9 /* client.c */; };
+		A0FB5A9F126E55B70057FEE9 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B4126E55630057FEE9 /* common.c */; };
+		A0FB5AA0126E55B70057FEE9 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B5126E55630057FEE9 /* config.c */; };
+		A0FB5AA1126E55B70057FEE9 /* dlopen.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B6126E55630057FEE9 /* dlopen.c */; };
+		A0FB5AA2126E55B70057FEE9 /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58B7126E55630057FEE9 /* external.c */; };
+		A0FB5AA3126E55B70057FEE9 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58BB126E55630057FEE9 /* md5.c */; };
+		A0FB5AA4126E55B70057FEE9 /* saslutil.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58BD126E55630057FEE9 /* saslutil.c */; };
+		A0FB5AA5126E55B70057FEE9 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58BE126E55630057FEE9 /* server.c */; };
+		A0FB5AA6126E55B70057FEE9 /* seterror.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58BF126E55630057FEE9 /* seterror.c */; };
+		A0FB5AA7126E56410057FEE9 /* plugin_common.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A12126E55630057FEE9 /* plugin_common.c */; };
+		AA747D9F0F9514B9006C5449 /* sasl2_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0FB53DA126E52C60057FEE9;
+			remoteInfo = Makefile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A01018BD126E61570077780C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A0FB53E6126E53C30057FEE9 /* cyrus-sasl-2.1.23.tar.gz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cyrus-sasl-2.1.23.tar.gz.md5"; sourceTree = "<group>"; };
+		A0FB57E5126E55630057FEE9 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		A0FB57E6126E55630057FEE9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		A0FB57E7126E55630057FEE9 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		A0FB57E8126E55630057FEE9 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		A0FB57E9126E55630057FEE9 /* INSTALL.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL.TXT; sourceTree = "<group>"; };
+		A0FB57EA126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB57EB126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB57EC126E55630057FEE9 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		A0FB57ED126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB57EE126E55630057FEE9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0FB57EF126E55630057FEE9 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		A0FB57F1126E55630057FEE9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		A0FB57F2126E55630057FEE9 /* README.andrew */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.andrew; sourceTree = "<group>"; };
+		A0FB57F3126E55630057FEE9 /* afs.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = afs.m4; sourceTree = "<group>"; };
+		A0FB57F4126E55630057FEE9 /* agentx.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = agentx.m4; sourceTree = "<group>"; };
+		A0FB57F5126E55630057FEE9 /* arx.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arx.m4; sourceTree = "<group>"; };
+		A0FB57F6126E55630057FEE9 /* ax_path_bdb.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ax_path_bdb.m4; sourceTree = "<group>"; };
+		A0FB57F7126E55630057FEE9 /* berkdb.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = berkdb.m4; sourceTree = "<group>"; };
+		A0FB57F8126E55630057FEE9 /* bsd_sockets.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bsd_sockets.m4; sourceTree = "<group>"; };
+		A0FB57F9126E55630057FEE9 /* c-attribute.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "c-attribute.m4"; sourceTree = "<group>"; };
+		A0FB57FA126E55630057FEE9 /* c-fpic.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "c-fpic.m4"; sourceTree = "<group>"; };
+		A0FB57FB126E55630057FEE9 /* clamav.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clamav.m4; sourceTree = "<group>"; };
+		A0FB57FC126E55630057FEE9 /* com_err.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = com_err.m4; sourceTree = "<group>"; };
+		A0FB57FD126E55630057FEE9 /* com_err_link.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = com_err_link.m4; sourceTree = "<group>"; };
+		A0FB57FE126E55630057FEE9 /* common.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.m4; sourceTree = "<group>"; };
+		A0FB57FF126E55630057FEE9 /* cyrus.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cyrus.m4; sourceTree = "<group>"; };
+		A0FB5800126E55630057FEE9 /* db.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = db.m4; sourceTree = "<group>"; };
+		A0FB5801126E55630057FEE9 /* find-func-no-libs.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "find-func-no-libs.m4"; sourceTree = "<group>"; };
+		A0FB5802126E55630057FEE9 /* find-func-no-libs2.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "find-func-no-libs2.m4"; sourceTree = "<group>"; };
+		A0FB5803126E55630057FEE9 /* find-func.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "find-func.m4"; sourceTree = "<group>"; };
+		A0FB5804126E55630057FEE9 /* heimdal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = heimdal.m4; sourceTree = "<group>"; };
+		A0FB5805126E55630057FEE9 /* init_automake.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = init_automake.m4; sourceTree = "<group>"; };
+		A0FB5806126E55630057FEE9 /* ipv6.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ipv6.m4; sourceTree = "<group>"; };
+		A0FB5807126E55630057FEE9 /* kafs.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kafs.m4; sourceTree = "<group>"; };
+		A0FB5808126E55630057FEE9 /* kerberos_v4.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kerberos_v4.m4; sourceTree = "<group>"; };
+		A0FB5809126E55630057FEE9 /* kerberos_v5.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kerberos_v5.m4; sourceTree = "<group>"; };
+		A0FB580A126E55630057FEE9 /* libXau.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libXau.m4; sourceTree = "<group>"; };
+		A0FB580B126E55630057FEE9 /* libcyrus.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libcyrus.m4; sourceTree = "<group>"; };
+		A0FB580C126E55630057FEE9 /* libloguse.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libloguse.m4; sourceTree = "<group>"; };
+		A0FB580D126E55630057FEE9 /* libnet.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libnet.m4; sourceTree = "<group>"; };
+		A0FB580E126E55630057FEE9 /* libpcap.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcap.m4; sourceTree = "<group>"; };
+		A0FB580F126E55630057FEE9 /* librestrict.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = librestrict.m4; sourceTree = "<group>"; };
+		A0FB5810126E55630057FEE9 /* libssl.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libssl.m4; sourceTree = "<group>"; };
+		A0FB5811126E55630057FEE9 /* libtoolhack.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libtoolhack.m4; sourceTree = "<group>"; };
+		A0FB5812126E55630057FEE9 /* libwrap.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libwrap.m4; sourceTree = "<group>"; };
+		A0FB5813126E55630057FEE9 /* mips-abi.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mips-abi.m4"; sourceTree = "<group>"; };
+		A0FB5814126E55630057FEE9 /* nadine.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nadine.m4; sourceTree = "<group>"; };
+		A0FB5815126E55630057FEE9 /* nana.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nana.m4; sourceTree = "<group>"; };
+		A0FB5816126E55630057FEE9 /* openldap.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openldap.m4; sourceTree = "<group>"; };
+		A0FB5817126E55630057FEE9 /* openssl.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = openssl.m4; sourceTree = "<group>"; };
+		A0FB5818126E55630057FEE9 /* pthreads.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pthreads.m4; sourceTree = "<group>"; };
+		A0FB5819126E55630057FEE9 /* sasl.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl.m4; sourceTree = "<group>"; };
+		A0FB581A126E55630057FEE9 /* sasl2.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl2.m4; sourceTree = "<group>"; };
+		A0FB581B126E55630057FEE9 /* tcl.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tcl.m4; sourceTree = "<group>"; };
+		A0FB581C126E55630057FEE9 /* telnet.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = telnet.m4; sourceTree = "<group>"; };
+		A0FB581D126E55630057FEE9 /* ucdsnmp.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ucdsnmp.m4; sourceTree = "<group>"; };
+		A0FB581E126E55630057FEE9 /* util.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = util.m4; sourceTree = "<group>"; };
+		A0FB581F126E55630057FEE9 /* zephyr.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zephyr.m4; sourceTree = "<group>"; };
+		A0FB5821126E55630057FEE9 /* .cvsignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cvsignore; sourceTree = "<group>"; };
+		A0FB5822126E55630057FEE9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0FB5823126E55630057FEE9 /* config.guess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		A0FB5824126E55630057FEE9 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		A0FB5825126E55630057FEE9 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		A0FB5826126E55630057FEE9 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		A0FB5827126E55630057FEE9 /* kerberos_v4.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kerberos_v4.m4; sourceTree = "<group>"; };
+		A0FB5828126E55630057FEE9 /* libtool.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libtool.m4; sourceTree = "<group>"; };
+		A0FB5829126E55630057FEE9 /* ltconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltconfig; sourceTree = "<group>"; };
+		A0FB582A126E55630057FEE9 /* ltmain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		A0FB582B126E55630057FEE9 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		A0FB582C126E55630057FEE9 /* mkinstalldirs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mkinstalldirs; sourceTree = "<group>"; };
+		A0FB582D126E55630057FEE9 /* plain.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plain.m4; sourceTree = "<group>"; };
+		A0FB582E126E55630057FEE9 /* sasl.spec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl.spec; sourceTree = "<group>"; };
+		A0FB582F126E55630057FEE9 /* sasldb.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasldb.m4; sourceTree = "<group>"; };
+		A0FB5830126E55630057FEE9 /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		A0FB5831126E55630057FEE9 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		A0FB5832126E55630057FEE9 /* configure.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
+		A0FB5834126E55630057FEE9 /* APPLE_LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APPLE_LICENSE; sourceTree = "<group>"; };
+		A0FB5835126E55630057FEE9 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		A0FB5836126E55630057FEE9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A0FB5837126E55630057FEE9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0FB5838126E55630057FEE9 /* dlfcn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dlfcn.h; sourceTree = "<group>"; };
+		A0FB5839126E55630057FEE9 /* dlopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlopen.c; sourceTree = "<group>"; };
+		A0FB583B126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB583C126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB583D126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB583E126E55630057FEE9 /* ONEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ONEWS; sourceTree = "<group>"; };
+		A0FB583F126E55630057FEE9 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		A0FB5840126E55630057FEE9 /* advanced.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = advanced.html; sourceTree = "<group>"; };
+		A0FB5841126E55630057FEE9 /* appconvert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = appconvert.html; sourceTree = "<group>"; };
+		A0FB5842126E55630057FEE9 /* components.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = components.html; sourceTree = "<group>"; };
+		A0FB5843126E55630057FEE9 /* draft-burdis-cat-srp-sasl-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-burdis-cat-srp-sasl-xx.txt"; sourceTree = "<group>"; };
+		A0FB5844126E55630057FEE9 /* draft-ietf-sasl-anon-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-anon-xx.txt"; sourceTree = "<group>"; };
+		A0FB5845126E55630057FEE9 /* draft-ietf-sasl-crammd5-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-crammd5-xx.txt"; sourceTree = "<group>"; };
+		A0FB5846126E55630057FEE9 /* draft-ietf-sasl-gssapi-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-gssapi-xx.txt"; sourceTree = "<group>"; };
+		A0FB5847126E55630057FEE9 /* draft-ietf-sasl-plain-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-plain-xx.txt"; sourceTree = "<group>"; };
+		A0FB5848126E55630057FEE9 /* draft-ietf-sasl-rfc2222bis-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-rfc2222bis-xx.txt"; sourceTree = "<group>"; };
+		A0FB5849126E55630057FEE9 /* draft-ietf-sasl-rfc2831bis-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-rfc2831bis-xx.txt"; sourceTree = "<group>"; };
+		A0FB584A126E55630057FEE9 /* draft-ietf-sasl-saslprep-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-ietf-sasl-saslprep-xx.txt"; sourceTree = "<group>"; };
+		A0FB584B126E55630057FEE9 /* draft-murchison-sasl-login-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-murchison-sasl-login-xx.txt"; sourceTree = "<group>"; };
+		A0FB584C126E55630057FEE9 /* draft-newman-sasl-c-api-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-newman-sasl-c-api-xx.txt"; sourceTree = "<group>"; };
+		A0FB584D126E55630057FEE9 /* draft-newman-sasl-passdss-xx.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-newman-sasl-passdss-xx.txt"; sourceTree = "<group>"; };
+		A0FB584E126E55630057FEE9 /* gssapi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gssapi.html; sourceTree = "<group>"; };
+		A0FB584F126E55630057FEE9 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		A0FB5850126E55630057FEE9 /* install.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = install.html; sourceTree = "<group>"; };
+		A0FB5851126E55630057FEE9 /* macosx.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = macosx.html; sourceTree = "<group>"; };
+		A0FB5852126E55630057FEE9 /* mechanisms.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = mechanisms.html; sourceTree = "<group>"; };
+		A0FB5853126E55630057FEE9 /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
+		A0FB5854126E55630057FEE9 /* plugprog.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = plugprog.html; sourceTree = "<group>"; };
+		A0FB5855126E55630057FEE9 /* programming.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = programming.html; sourceTree = "<group>"; };
+		A0FB5856126E55630057FEE9 /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readme.html; sourceTree = "<group>"; };
+		A0FB5857126E55630057FEE9 /* rfc1321.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc1321.txt; sourceTree = "<group>"; };
+		A0FB5858126E55630057FEE9 /* rfc1939.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc1939.txt; sourceTree = "<group>"; };
+		A0FB5859126E55630057FEE9 /* rfc2104.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2104.txt; sourceTree = "<group>"; };
+		A0FB585A126E55630057FEE9 /* rfc2195.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2195.txt; sourceTree = "<group>"; };
+		A0FB585B126E55630057FEE9 /* rfc2222.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2222.txt; sourceTree = "<group>"; };
+		A0FB585C126E55630057FEE9 /* rfc2243.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2243.txt; sourceTree = "<group>"; };
+		A0FB585D126E55630057FEE9 /* rfc2245.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2245.txt; sourceTree = "<group>"; };
+		A0FB585E126E55630057FEE9 /* rfc2289.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2289.txt; sourceTree = "<group>"; };
+		A0FB585F126E55630057FEE9 /* rfc2444.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2444.txt; sourceTree = "<group>"; };
+		A0FB5860126E55630057FEE9 /* rfc2595.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2595.txt; sourceTree = "<group>"; };
+		A0FB5861126E55630057FEE9 /* rfc2831.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2831.txt; sourceTree = "<group>"; };
+		A0FB5862126E55630057FEE9 /* rfc2945.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc2945.txt; sourceTree = "<group>"; };
+		A0FB5863126E55630057FEE9 /* rfc3174.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rfc3174.txt; sourceTree = "<group>"; };
+		A0FB5864126E55630057FEE9 /* server-plugin-flow.fig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "server-plugin-flow.fig"; sourceTree = "<group>"; };
+		A0FB5865126E55630057FEE9 /* sysadmin.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sysadmin.html; sourceTree = "<group>"; };
+		A0FB5866126E55630057FEE9 /* testing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testing.txt; sourceTree = "<group>"; };
+		A0FB5867126E55630057FEE9 /* upgrading.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = upgrading.html; sourceTree = "<group>"; };
+		A0FB5868126E55630057FEE9 /* windows.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = windows.html; sourceTree = "<group>"; };
+		A0FB586A126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB586B126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB586C126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB586D126E55630057FEE9 /* exits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exits.h; sourceTree = "<group>"; };
+		A0FB586E126E55630057FEE9 /* gai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gai.h; sourceTree = "<group>"; };
+		A0FB586F126E55630057FEE9 /* hmac-md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "hmac-md5.h"; sourceTree = "<group>"; };
+		A0FB5870126E55630057FEE9 /* makemd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = makemd5.c; sourceTree = "<group>"; };
+		A0FB5871126E55630057FEE9 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		A0FB5872126E55630057FEE9 /* md5global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5global.h; sourceTree = "<group>"; };
+		A0FB5873126E55630057FEE9 /* prop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prop.h; sourceTree = "<group>"; };
+		A0FB5874126E55630057FEE9 /* sasl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl.h; sourceTree = "<group>"; };
+		A0FB5875126E55630057FEE9 /* saslplug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saslplug.h; sourceTree = "<group>"; };
+		A0FB5876126E55630057FEE9 /* saslutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saslutil.h; sourceTree = "<group>"; };
+		A0FB5879126E55630057FEE9 /* ClientFactory.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ClientFactory.java; sourceTree = "<group>"; };
+		A0FB587A126E55630057FEE9 /* GenericClient.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = GenericClient.java; sourceTree = "<group>"; };
+		A0FB587B126E55630057FEE9 /* GenericCommon.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = GenericCommon.java; sourceTree = "<group>"; };
+		A0FB587C126E55630057FEE9 /* GenericServer.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = GenericServer.java; sourceTree = "<group>"; };
+		A0FB587D126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB587E126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB587F126E55630057FEE9 /* Sasl.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Sasl.java; sourceTree = "<group>"; };
+		A0FB5880126E55630057FEE9 /* SaslClient.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslClient.java; sourceTree = "<group>"; };
+		A0FB5881126E55630057FEE9 /* SaslClientFactory.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslClientFactory.java; sourceTree = "<group>"; };
+		A0FB5882126E55630057FEE9 /* SaslException.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslException.java; sourceTree = "<group>"; };
+		A0FB5883126E55630057FEE9 /* SaslInputStream.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslInputStream.java; sourceTree = "<group>"; };
+		A0FB5884126E55630057FEE9 /* SaslOutputStream.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslOutputStream.java; sourceTree = "<group>"; };
+		A0FB5885126E55630057FEE9 /* SaslServer.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslServer.java; sourceTree = "<group>"; };
+		A0FB5886126E55630057FEE9 /* SaslServerFactory.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslServerFactory.java; sourceTree = "<group>"; };
+		A0FB5887126E55630057FEE9 /* SaslUtils.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = SaslUtils.java; sourceTree = "<group>"; };
+		A0FB5888126E55630057FEE9 /* ServerFactory.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ServerFactory.java; sourceTree = "<group>"; };
+		A0FB5889126E55630057FEE9 /* javasasl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = javasasl.c; sourceTree = "<group>"; };
+		A0FB588A126E55630057FEE9 /* javasasl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = javasasl.h; sourceTree = "<group>"; };
+		A0FB588B126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB588C126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB588D126E55630057FEE9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0FB588F126E55630057FEE9 /* Handler.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Handler.java; sourceTree = "<group>"; };
+		A0FB5890126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB5891126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB5892126E55630057FEE9 /* ServerHandler.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = ServerHandler.java; sourceTree = "<group>"; };
+		A0FB5893126E55630057FEE9 /* jimtest-compile.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "jimtest-compile.sh"; sourceTree = "<group>"; };
+		A0FB5894126E55630057FEE9 /* jimtest.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = jimtest.java; sourceTree = "<group>"; };
+		A0FB5895126E55630057FEE9 /* jimtest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = jimtest.sh; sourceTree = "<group>"; };
+		A0FB5896126E55630057FEE9 /* testserver.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = testserver.java; sourceTree = "<group>"; };
+		A0FB5898126E55630057FEE9 /* .cvsignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cvsignore; sourceTree = "<group>"; };
+		A0FB5899126E55630057FEE9 /* draft-weltman-java-sasl-02.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "draft-weltman-java-sasl-02.txt"; sourceTree = "<group>"; };
+		A0FB589B126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB589C126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB589E126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB589F126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB58A1126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB58A2126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB58A4126E55630057FEE9 /* Callback.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = Callback.java; sourceTree = "<group>"; };
+		A0FB58A5126E55630057FEE9 /* CallbackHandler.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = CallbackHandler.java; sourceTree = "<group>"; };
+		A0FB58A6126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB58A7126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB58A8126E55630057FEE9 /* NameCallback.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = NameCallback.java; sourceTree = "<group>"; };
+		A0FB58A9126E55630057FEE9 /* PasswordCallback.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = PasswordCallback.java; sourceTree = "<group>"; };
+		A0FB58AA126E55630057FEE9 /* RealmCallback.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = RealmCallback.java; sourceTree = "<group>"; };
+		A0FB58AB126E55630057FEE9 /* UnsupportedCallbackException.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = UnsupportedCallbackException.java; sourceTree = "<group>"; };
+		A0FB58AD126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB58AE126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB58AF126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB58B0126E55630057FEE9 /* auxprop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auxprop.c; sourceTree = "<group>"; };
+		A0FB58B1126E55630057FEE9 /* canonusr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = canonusr.c; sourceTree = "<group>"; };
+		A0FB58B2126E55630057FEE9 /* checkpw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = checkpw.c; sourceTree = "<group>"; };
+		A0FB58B3126E55630057FEE9 /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		A0FB58B4126E55630057FEE9 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		A0FB58B5126E55630057FEE9 /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		A0FB58B6126E55630057FEE9 /* dlopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dlopen.c; sourceTree = "<group>"; };
+		A0FB58B7126E55630057FEE9 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = external.c; sourceTree = "<group>"; };
+		A0FB58B8126E55630057FEE9 /* getaddrinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getaddrinfo.c; sourceTree = "<group>"; };
+		A0FB58B9126E55630057FEE9 /* getnameinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getnameinfo.c; sourceTree = "<group>"; };
+		A0FB58BA126E55630057FEE9 /* getsubopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getsubopt.c; sourceTree = "<group>"; };
+		A0FB58BB126E55630057FEE9 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		A0FB58BC126E55630057FEE9 /* saslint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saslint.h; sourceTree = "<group>"; };
+		A0FB58BD126E55630057FEE9 /* saslutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = saslutil.c; sourceTree = "<group>"; };
+		A0FB58BE126E55630057FEE9 /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		A0FB58BF126E55630057FEE9 /* seterror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = seterror.c; sourceTree = "<group>"; };
+		A0FB58C0126E55630057FEE9 /* snprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snprintf.c; sourceTree = "<group>"; };
+		A0FB58C1126E55630057FEE9 /* staticopen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = staticopen.h; sourceTree = "<group>"; };
+		A0FB58C2126E55630057FEE9 /* windlopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = windlopen.c; sourceTree = "<group>"; };
+		A0FB58C5126E55630057FEE9 /* KClientPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KClientPublic.h; sourceTree = "<group>"; };
+		A0FB58C7126E55630057FEE9 /* KClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KClient.c; sourceTree = "<group>"; };
+		A0FB58C8126E55630057FEE9 /* KClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KClient.h; sourceTree = "<group>"; };
+		A0FB58C9126E55630057FEE9 /* KrbDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KrbDriver.h; sourceTree = "<group>"; };
+		A0FB58CA126E55630057FEE9 /* kcglue_des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kcglue_des.c; sourceTree = "<group>"; };
+		A0FB58CB126E55630057FEE9 /* kcglue_des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kcglue_des.h; sourceTree = "<group>"; };
+		A0FB58CC126E55630057FEE9 /* kcglue_krb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kcglue_krb.c; sourceTree = "<group>"; };
+		A0FB58CD126E55630057FEE9 /* kcglue_krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kcglue_krb.h; sourceTree = "<group>"; };
+		A0FB58CE126E55630057FEE9 /* macKClientPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macKClientPublic.h; sourceTree = "<group>"; };
+		A0FB58CF126E55630057FEE9 /* mac_krb_lib1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mac_krb_lib1.c; sourceTree = "<group>"; };
+		A0FB58D3126E55630057FEE9 /* CredentialsCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialsCache.h; sourceTree = "<group>"; };
+		A0FB58D4126E55630057FEE9 /* CredentialsCache2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialsCache2.h; sourceTree = "<group>"; };
+		A0FB58D6126E55630057FEE9 /* GSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSS.h; sourceTree = "<group>"; };
+		A0FB58D7126E55630057FEE9 /* gssapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gssapi.h; sourceTree = "<group>"; };
+		A0FB58D8126E55630057FEE9 /* gssapi_krb5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gssapi_krb5.h; sourceTree = "<group>"; };
+		A0FB58DA126E55630057FEE9 /* KClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KClient.h; sourceTree = "<group>"; };
+		A0FB58DB126E55630057FEE9 /* KClientTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KClientTypes.h; sourceTree = "<group>"; };
+		A0FB58DD126E55630057FEE9 /* KClientCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KClientCompat.h; sourceTree = "<group>"; };
+		A0FB58DF126E55630057FEE9 /* KClientDeprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KClientDeprecated.h; sourceTree = "<group>"; };
+		A0FB58E1126E55630057FEE9 /* Kerberos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kerberos.h; sourceTree = "<group>"; };
+		A0FB58E3126E55630057FEE9 /* Kerberos4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kerberos4.h; sourceTree = "<group>"; };
+		A0FB58E4126E55630057FEE9 /* krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb.h; sourceTree = "<group>"; };
+		A0FB58E6126E55630057FEE9 /* Kerberos5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kerberos5.h; sourceTree = "<group>"; };
+		A0FB58E7126E55630057FEE9 /* krb5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5.h; sourceTree = "<group>"; };
+		A0FB58E8126E55630057FEE9 /* win-mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "win-mac.h"; sourceTree = "<group>"; };
+		A0FB58EA126E55630057FEE9 /* KerberosComErr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosComErr.h; sourceTree = "<group>"; };
+		A0FB58EB126E55630057FEE9 /* com_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = com_err.h; sourceTree = "<group>"; };
+		A0FB58ED126E55630057FEE9 /* KerberosDES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosDES.h; sourceTree = "<group>"; };
+		A0FB58EE126E55630057FEE9 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		A0FB58F0126E55630057FEE9 /* KLLoginLogoutNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLLoginLogoutNotification.h; sourceTree = "<group>"; };
+		A0FB58F1126E55630057FEE9 /* KLPrincipalTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLPrincipalTranslation.h; sourceTree = "<group>"; };
+		A0FB58F2126E55630057FEE9 /* KerberosLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosLogin.h; sourceTree = "<group>"; };
+		A0FB58F4126E55630057FEE9 /* KerberosManagerLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosManagerLib.h; sourceTree = "<group>"; };
+		A0FB58F6126E55630057FEE9 /* KerberosPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosPreferences.h; sourceTree = "<group>"; };
+		A0FB58F8126E55630057FEE9 /* KerberosProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosProfile.h; sourceTree = "<group>"; };
+		A0FB58F9126E55630057FEE9 /* profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profile.h; sourceTree = "<group>"; };
+		A0FB58FB126E55630057FEE9 /* ErrorLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorLib.h; sourceTree = "<group>"; };
+		A0FB58FC126E55630057FEE9 /* ErrorList.r */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.rez; path = ErrorList.r; sourceTree = "<group>"; };
+		A0FB58FD126E55630057FEE9 /* Idle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Idle.h; sourceTree = "<group>"; };
+		A0FB58FE126E55630057FEE9 /* KerberosConditionalMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosConditionalMacros.h; sourceTree = "<group>"; };
+		A0FB58FF126E55630057FEE9 /* KerberosSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KerberosSupport.h; sourceTree = "<group>"; };
+		A0FB5900126E55630057FEE9 /* ShlibDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShlibDriver.h; sourceTree = "<group>"; };
+		A0FB5901126E55630057FEE9 /* SocketErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketErrors.h; sourceTree = "<group>"; };
+		A0FB5902126E55630057FEE9 /* Sockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sockets.h; sourceTree = "<group>"; };
+		A0FB5903126E55630057FEE9 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		A0FB5904126E55630057FEE9 /* hesiod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hesiod.h; sourceTree = "<group>"; };
+		A0FB5905126E55630057FEE9 /* netdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netdb.h; sourceTree = "<group>"; };
+		A0FB5906126E55630057FEE9 /* pwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd.h; sourceTree = "<group>"; };
+		A0FB5908126E55630057FEE9 /* TicketKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketKeeper.h; sourceTree = "<group>"; };
+		A0FB5909126E55630057FEE9 /* TicketKeeperMenuStateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketKeeperMenuStateProtocol.h; sourceTree = "<group>"; };
+		A0FB590A126E55630057FEE9 /* kcglue_des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kcglue_des.c; sourceTree = "<group>"; };
+		A0FB590B126E55630057FEE9 /* kcglue_des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kcglue_des.h; sourceTree = "<group>"; };
+		A0FB590C126E55630057FEE9 /* kcglue_krb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kcglue_krb.c; sourceTree = "<group>"; };
+		A0FB590D126E55630057FEE9 /* kcglue_krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kcglue_krb.h; sourceTree = "<group>"; };
+		A0FB590E126E55630057FEE9 /* mac_krb_lib1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mac_krb_lib1.c; sourceTree = "<group>"; };
+		A0FB590F126E55630057FEE9 /* saslk4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saslk4.h; sourceTree = "<group>"; };
+		A0FB5910126E55630057FEE9 /* README.filetypes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.filetypes; sourceTree = "<group>"; };
+		A0FB5912126E55630057FEE9 /* build_plugins */ = {isa = PBXFileReference; lastKnownFileType = text; path = build_plugins; sourceTree = "<group>"; };
+		A0FB5913126E55630057FEE9 /* build_plugins.Carbon */ = {isa = PBXFileReference; lastKnownFileType = file; path = build_plugins.Carbon; sourceTree = "<group>"; };
+		A0FB5915126E55630057FEE9 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A0FB5916126E55630057FEE9 /* extra_krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extra_krb.h; sourceTree = "<group>"; };
+		A0FB5917126E55630057FEE9 /* md5global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5global.h; sourceTree = "<group>"; };
+		A0FB5919126E55630057FEE9 /* in.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = in.h; sourceTree = "<group>"; };
+		A0FB591A126E55630057FEE9 /* parse_cmd_line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parse_cmd_line.h; sourceTree = "<group>"; };
+		A0FB591B126E55630057FEE9 /* sasl_anonymous_plugin_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_anonymous_plugin_decl.h; sourceTree = "<group>"; };
+		A0FB591C126E55630057FEE9 /* sasl_crammd5_plugin_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_crammd5_plugin_decl.h; sourceTree = "<group>"; };
+		A0FB591D126E55630057FEE9 /* sasl_digestmd5_plugin_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_digestmd5_plugin_decl.h; sourceTree = "<group>"; };
+		A0FB591E126E55630057FEE9 /* sasl_kerberos4_plugin_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_kerberos4_plugin_decl.h; sourceTree = "<group>"; };
+		A0FB591F126E55630057FEE9 /* sasl_mac_krb_locl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_mac_krb_locl.h; sourceTree = "<group>"; };
+		A0FB5920126E55630057FEE9 /* sasl_plain_plugin_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_plain_plugin_decl.h; sourceTree = "<group>"; };
+		A0FB5921126E55630057FEE9 /* sasl_plugin_decl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl_plugin_decl.h; sourceTree = "<group>"; };
+		A0FB5923126E55630057FEE9 /* conf-svsparc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "conf-svsparc.h"; sourceTree = "<group>"; };
+		A0FB5924126E55630057FEE9 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		A0FB5925126E55630057FEE9 /* error_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error_table.h; sourceTree = "<group>"; };
+		A0FB5927126E55630057FEE9 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		A0FB5928126E55630057FEE9 /* des.h.unix */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des.h.unix; sourceTree = "<group>"; };
+		A0FB5929126E55630057FEE9 /* mit-copyright.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mit-copyright.h"; sourceTree = "<group>"; };
+		A0FB592A126E55630057FEE9 /* klog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = klog.h; sourceTree = "<group>"; };
+		A0FB592B126E55630057FEE9 /* kparse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kparse.h; sourceTree = "<group>"; };
+		A0FB592C126E55630057FEE9 /* krb-protos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "krb-protos.h"; sourceTree = "<group>"; };
+		A0FB592D126E55630057FEE9 /* krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb.h; sourceTree = "<group>"; };
+		A0FB592E126E55630057FEE9 /* krb_conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb_conf.h; sourceTree = "<group>"; };
+		A0FB592F126E55630057FEE9 /* ktypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ktypes.h; sourceTree = "<group>"; };
+		A0FB5930126E55630057FEE9 /* lsb_addr_comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lsb_addr_comp.h; sourceTree = "<group>"; };
+		A0FB5931126E55630057FEE9 /* mit-sipb-copyright.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mit-sipb-copyright.h"; sourceTree = "<group>"; };
+		A0FB5932126E55630057FEE9 /* old_krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = old_krb.h; sourceTree = "<group>"; };
+		A0FB5933126E55630057FEE9 /* osconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osconf.h; sourceTree = "<group>"; };
+		A0FB5934126E55630057FEE9 /* prot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prot.h; sourceTree = "<group>"; };
+		A0FB5936126E55630057FEE9 /* krb-archaeology.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "krb-archaeology.h"; sourceTree = "<group>"; };
+		A0FB5937126E55630057FEE9 /* krb-protos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "krb-protos.h"; sourceTree = "<group>"; };
+		A0FB5938126E55630057FEE9 /* krb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb.h; sourceTree = "<group>"; };
+		A0FB5939126E55630057FEE9 /* lsb_addr_comp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lsb_addr_comp.c; sourceTree = "<group>"; };
+		A0FB593A126E55630057FEE9 /* mk_auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mk_auth.c; sourceTree = "<group>"; };
+		A0FB593B126E55630057FEE9 /* mk_priv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mk_priv.c; sourceTree = "<group>"; };
+		A0FB593C126E55630057FEE9 /* mk_req.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mk_req.c; sourceTree = "<group>"; };
+		A0FB593D126E55630057FEE9 /* mk_safe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mk_safe.c; sourceTree = "<group>"; };
+		A0FB593E126E55630057FEE9 /* rd_priv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rd_priv.c; sourceTree = "<group>"; };
+		A0FB593F126E55630057FEE9 /* rd_safe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rd_safe.c; sourceTree = "<group>"; };
+		A0FB5940126E55630057FEE9 /* rw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rw.c; sourceTree = "<group>"; };
+		A0FB5943126E55630057FEE9 /* libdes_68K */ = {isa = PBXFileReference; lastKnownFileType = text; path = libdes_68K; sourceTree = "<group>"; };
+		A0FB5944126E55630057FEE9 /* libdes_68K.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = libdes_68K.exp; sourceTree = "<group>"; };
+		A0FB5946126E55630057FEE9 /* libdes_fat */ = {isa = PBXFileReference; lastKnownFileType = text; path = libdes_fat; sourceTree = "<group>"; };
+		A0FB5948126E55630057FEE9 /* libdes_ppc */ = {isa = PBXFileReference; lastKnownFileType = text; path = libdes_ppc; sourceTree = "<group>"; };
+		A0FB5949126E55630057FEE9 /* libdes_ppc.Carbon */ = {isa = PBXFileReference; lastKnownFileType = file; path = libdes_ppc.Carbon; sourceTree = "<group>"; };
+		A0FB594A126E55630057FEE9 /* libdes_ppc.Carbon.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = libdes_ppc.Carbon.exp; sourceTree = "<group>"; };
+		A0FB594B126E55630057FEE9 /* libdes_ppc.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = libdes_ppc.exp; sourceTree = "<group>"; };
+		A0FB594D126E55630057FEE9 /* cfm68k_import_off.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfm68k_import_off.h; sourceTree = "<group>"; };
+		A0FB594E126E55630057FEE9 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		A0FB594F126E55630057FEE9 /* destest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = destest.c; sourceTree = "<group>"; };
+		A0FB5951126E55630057FEE9 /* COPYRIGHT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		A0FB5952126E55630057FEE9 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		A0FB5953126E55630057FEE9 /* DES.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = DES.pm; sourceTree = "<group>"; };
+		A0FB5954126E55630057FEE9 /* DES.pod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DES.pod; sourceTree = "<group>"; };
+		A0FB5955126E55630057FEE9 /* DES.xs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DES.xs; sourceTree = "<group>"; };
+		A0FB5956126E55630057FEE9 /* FILES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FILES; sourceTree = "<group>"; };
+		A0FB5957126E55630057FEE9 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		A0FB5958126E55630057FEE9 /* Imakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Imakefile; sourceTree = "<group>"; };
+		A0FB5959126E55630057FEE9 /* KERBEROS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KERBEROS; sourceTree = "<group>"; };
+		A0FB595A126E55630057FEE9 /* MODES.DES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MODES.DES; sourceTree = "<group>"; };
+		A0FB595B126E55630057FEE9 /* Makefile.PL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = Makefile.PL; sourceTree = "<group>"; };
+		A0FB595C126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB595D126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB595E126E55630057FEE9 /* Makefile.ssl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.ssl; sourceTree = "<group>"; };
+		A0FB595F126E55630057FEE9 /* Makefile.uni */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.uni; sourceTree = "<group>"; };
+		A0FB5960126E55630057FEE9 /* PC1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = PC1; sourceTree = "<group>"; };
+		A0FB5961126E55630057FEE9 /* PC2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = PC2; sourceTree = "<group>"; };
+		A0FB5962126E55630057FEE9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0FB5963126E55630057FEE9 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		A0FB5964126E55630057FEE9 /* cbc3_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbc3_enc.c; sourceTree = "<group>"; };
+		A0FB5965126E55630057FEE9 /* cbc_cksm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbc_cksm.c; sourceTree = "<group>"; };
+		A0FB5966126E55630057FEE9 /* cbc_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cbc_enc.c; sourceTree = "<group>"; };
+		A0FB5967126E55630057FEE9 /* cfb64ede.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfb64ede.c; sourceTree = "<group>"; };
+		A0FB5968126E55630057FEE9 /* cfb64enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfb64enc.c; sourceTree = "<group>"; };
+		A0FB5969126E55630057FEE9 /* cfb_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfb_enc.c; sourceTree = "<group>"; };
+		A0FB596A126E55630057FEE9 /* des.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des.c; sourceTree = "<group>"; };
+		A0FB596B126E55630057FEE9 /* des.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des.def; sourceTree = "<group>"; };
+		A0FB596C126E55630057FEE9 /* des.doc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des.doc; sourceTree = "<group>"; };
+		A0FB596D126E55630057FEE9 /* des.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des.dsp; sourceTree = "<group>"; };
+		A0FB596E126E55630057FEE9 /* des.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = des.mak; sourceTree = "<group>"; };
+		A0FB596F126E55630057FEE9 /* des.man */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des.man; sourceTree = "<group>"; };
+		A0FB5970126E55630057FEE9 /* des.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des.org; sourceTree = "<group>"; };
+		A0FB5971126E55630057FEE9 /* des.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = des.pl; sourceTree = "<group>"; };
+		A0FB5972126E55630057FEE9 /* des_crypt.man */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des_crypt.man; sourceTree = "<group>"; };
+		A0FB5973126E55630057FEE9 /* des_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des_enc.c; sourceTree = "<group>"; };
+		A0FB5974126E55630057FEE9 /* des_locl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_locl.h; sourceTree = "<group>"; };
+		A0FB5975126E55630057FEE9 /* des_locl.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = des_locl.org; sourceTree = "<group>"; };
+		A0FB5976126E55630057FEE9 /* des_opts.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = des_opts.c; sourceTree = "<group>"; };
+		A0FB5977126E55630057FEE9 /* des_ver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_ver.h; sourceTree = "<group>"; };
+		A0FB5978126E55630057FEE9 /* dllmain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dllmain.c; sourceTree = "<group>"; };
+		A0FB5979126E55630057FEE9 /* doIP */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = doIP; sourceTree = "<group>"; };
+		A0FB597A126E55630057FEE9 /* doPC1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = doPC1; sourceTree = "<group>"; };
+		A0FB597B126E55630057FEE9 /* doPC2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = doPC2; sourceTree = "<group>"; };
+		A0FB597C126E55630057FEE9 /* ecb3_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecb3_enc.c; sourceTree = "<group>"; };
+		A0FB597D126E55630057FEE9 /* ecb_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ecb_enc.c; sourceTree = "<group>"; };
+		A0FB597E126E55630057FEE9 /* ede_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ede_enc.c; sourceTree = "<group>"; };
+		A0FB597F126E55630057FEE9 /* enc_read.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_read.c; sourceTree = "<group>"; };
+		A0FB5980126E55630057FEE9 /* enc_writ.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = enc_writ.c; sourceTree = "<group>"; };
+		A0FB5981126E55630057FEE9 /* fcrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fcrypt.c; sourceTree = "<group>"; };
+		A0FB5982126E55630057FEE9 /* key_par.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key_par.c; sourceTree = "<group>"; };
+		A0FB5983126E55630057FEE9 /* makefile.bc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.bc; sourceTree = "<group>"; };
+		A0FB5984126E55630057FEE9 /* md4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md4.c; sourceTree = "<group>"; };
+		A0FB5985126E55630057FEE9 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		A0FB5986126E55630057FEE9 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		A0FB5987126E55630057FEE9 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		A0FB5988126E55630057FEE9 /* mdtest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mdtest.c; sourceTree = "<group>"; };
+		A0FB5989126E55630057FEE9 /* ncbc_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ncbc_enc.c; sourceTree = "<group>"; };
+		A0FB598A126E55630057FEE9 /* ofb64ede.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ofb64ede.c; sourceTree = "<group>"; };
+		A0FB598B126E55630057FEE9 /* ofb64enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ofb64enc.c; sourceTree = "<group>"; };
+		A0FB598C126E55630057FEE9 /* ofb_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ofb_enc.c; sourceTree = "<group>"; };
+		A0FB598D126E55630057FEE9 /* passwd_dialog.aps */ = {isa = PBXFileReference; lastKnownFileType = file; path = passwd_dialog.aps; sourceTree = "<group>"; };
+		A0FB598E126E55630057FEE9 /* passwd_dialog.clw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = passwd_dialog.clw; sourceTree = "<group>"; };
+		A0FB598F126E55630057FEE9 /* passwd_dialog.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = passwd_dialog.rc; sourceTree = "<group>"; };
+		A0FB5990126E55630057FEE9 /* passwd_dialog.res */ = {isa = PBXFileReference; lastKnownFileType = file; path = passwd_dialog.res; sourceTree = "<group>"; };
+		A0FB5991126E55630057FEE9 /* passwd_dlg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = passwd_dlg.c; sourceTree = "<group>"; };
+		A0FB5992126E55630057FEE9 /* passwd_dlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = passwd_dlg.h; sourceTree = "<group>"; };
+		A0FB5993126E55630057FEE9 /* pcbc_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcbc_enc.c; sourceTree = "<group>"; };
+		A0FB5994126E55630057FEE9 /* podd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = podd.h; sourceTree = "<group>"; };
+		A0FB5995126E55630057FEE9 /* qud_cksm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qud_cksm.c; sourceTree = "<group>"; };
+		A0FB5996126E55630057FEE9 /* rand_key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rand_key.c; sourceTree = "<group>"; };
+		A0FB5997126E55630057FEE9 /* read_pwd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_pwd.c; sourceTree = "<group>"; };
+		A0FB5998126E55630057FEE9 /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; };
+		A0FB5999126E55630057FEE9 /* rnd_keys.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rnd_keys.c; sourceTree = "<group>"; };
+		A0FB599A126E55630057FEE9 /* rpc_des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rpc_des.h; sourceTree = "<group>"; };
+		A0FB599B126E55630057FEE9 /* rpc_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rpc_enc.c; sourceTree = "<group>"; };
+		A0FB599C126E55630057FEE9 /* rpw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rpw.c; sourceTree = "<group>"; };
+		A0FB599D126E55630057FEE9 /* set_key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = set_key.c; sourceTree = "<group>"; };
+		A0FB599E126E55630057FEE9 /* sha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha.c; sourceTree = "<group>"; };
+		A0FB599F126E55630057FEE9 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		A0FB59A0126E55630057FEE9 /* shifts.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = shifts.pl; sourceTree = "<group>"; };
+		A0FB59A1126E55630057FEE9 /* sk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sk.h; sourceTree = "<group>"; };
+		A0FB59A2126E55630057FEE9 /* speed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = speed.c; sourceTree = "<group>"; };
+		A0FB59A3126E55630057FEE9 /* spr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spr.h; sourceTree = "<group>"; };
+		A0FB59A4126E55630057FEE9 /* str2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = str2key.c; sourceTree = "<group>"; };
+		A0FB59A5126E55630057FEE9 /* supp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = supp.c; sourceTree = "<group>"; };
+		A0FB59A6126E55630057FEE9 /* testdes.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = testdes.pl; sourceTree = "<group>"; };
+		A0FB59A7126E55630057FEE9 /* times */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = times; sourceTree = "<group>"; };
+		A0FB59A8126E55630057FEE9 /* typemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typemap; sourceTree = "<group>"; };
+		A0FB59A9126E55630057FEE9 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A0FB59AA126E55630057FEE9 /* vms.com */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vms.com; sourceTree = "<group>"; };
+		A0FB59AB126E55630057FEE9 /* xcbc_enc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xcbc_enc.c; sourceTree = "<group>"; };
+		A0FB59AD126E55630057FEE9 /* libsasl */ = {isa = PBXFileReference; lastKnownFileType = text; path = libsasl; sourceTree = "<group>"; };
+		A0FB59AE126E55630057FEE9 /* libsasl.Carbon */ = {isa = PBXFileReference; lastKnownFileType = file; path = libsasl.Carbon; sourceTree = "<group>"; };
+		A0FB59AF126E55630057FEE9 /* libsasl.Carbon.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = libsasl.Carbon.exp; sourceTree = "<group>"; };
+		A0FB59B0126E55630057FEE9 /* libsasl.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = libsasl.exp; sourceTree = "<group>"; };
+		A0FB59B1126E55630057FEE9 /* libsasl_prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsasl_prefix.h; sourceTree = "<group>"; };
+		A0FB59B2126E55630057FEE9 /* libsasl_prefix_carbon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsasl_prefix_carbon.h; sourceTree = "<group>"; };
+		A0FB59B4126E55630057FEE9 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		A0FB59B5126E55630057FEE9 /* mac_dyn_dlopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mac_dyn_dlopen.c; sourceTree = "<group>"; };
+		A0FB59B6126E55630057FEE9 /* mac_monolithic_dlopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mac_monolithic_dlopen.c; sourceTree = "<group>"; };
+		A0FB59B7126E55630057FEE9 /* parse_cmd_line.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parse_cmd_line.c; sourceTree = "<group>"; };
+		A0FB59B8126E55630057FEE9 /* xxx_client_mac_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxx_client_mac_lib.c; sourceTree = "<group>"; };
+		A0FB59B9126E55630057FEE9 /* xxx_mac_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxx_mac_lib.c; sourceTree = "<group>"; };
+		A0FB59BA126E55630057FEE9 /* yyy_mac_lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = yyy_mac_lib.c; sourceTree = "<group>"; };
+		A0FB59BC126E55630057FEE9 /* cfmglue.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfmglue.c; sourceTree = "<group>"; };
+		A0FB59BD126E55630057FEE9 /* cfmglue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfmglue.h; sourceTree = "<group>"; };
+		A0FB59BE126E55630057FEE9 /* cfmglue.proj */ = {isa = PBXFileReference; lastKnownFileType = file; path = cfmglue.proj; sourceTree = "<group>"; };
+		A0FB59BF126E55630057FEE9 /* cfmglue.proj.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = cfmglue.proj.exp; sourceTree = "<group>"; };
+		A0FB59C1126E55630057FEE9 /* mac_testing_notes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mac_testing_notes.c; sourceTree = "<group>"; };
+		A0FB59C3126E55630057FEE9 /* sc_shlb */ = {isa = PBXFileReference; lastKnownFileType = text; path = sc_shlb; sourceTree = "<group>"; };
+		A0FB59C4126E55630057FEE9 /* sc_shlb.Carbon */ = {isa = PBXFileReference; lastKnownFileType = file; path = sc_shlb.Carbon; sourceTree = "<group>"; };
+		A0FB59C5126E55630057FEE9 /* sc_shlb.mono */ = {isa = PBXFileReference; lastKnownFileType = file; path = sc_shlb.mono; sourceTree = "<group>"; };
+		A0FB59C6126E55630057FEE9 /* sc_shlb.rsrc.sit.hqx */ = {isa = PBXFileReference; lastKnownFileType = archive.binhex; path = sc_shlb.rsrc.sit.hqx; sourceTree = "<group>"; };
+		A0FB59C7126E55630057FEE9 /* sc_shlb_carbon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sc_shlb_carbon.h; sourceTree = "<group>"; };
+		A0FB59C9126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB59CA126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB59CB126E55630057FEE9 /* sasl.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl.3; sourceTree = "<group>"; };
+		A0FB59CC126E55630057FEE9 /* sasl_authorize_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_authorize_t.3; sourceTree = "<group>"; };
+		A0FB59CD126E55630057FEE9 /* sasl_auxprop.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_auxprop.3; sourceTree = "<group>"; };
+		A0FB59CE126E55630057FEE9 /* sasl_auxprop_getctx.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_auxprop_getctx.3; sourceTree = "<group>"; };
+		A0FB59CF126E55630057FEE9 /* sasl_auxprop_request.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_auxprop_request.3; sourceTree = "<group>"; };
+		A0FB59D0126E55630057FEE9 /* sasl_callbacks.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_callbacks.3; sourceTree = "<group>"; };
+		A0FB59D1126E55630057FEE9 /* sasl_canon_user_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_canon_user_t.3; sourceTree = "<group>"; };
+		A0FB59D2126E55630057FEE9 /* sasl_chalprompt_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_chalprompt_t.3; sourceTree = "<group>"; };
+		A0FB59D3126E55630057FEE9 /* sasl_checkapop.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_checkapop.3; sourceTree = "<group>"; };
+		A0FB59D4126E55630057FEE9 /* sasl_checkpass.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_checkpass.3; sourceTree = "<group>"; };
+		A0FB59D5126E55630057FEE9 /* sasl_client_init.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_client_init.3; sourceTree = "<group>"; };
+		A0FB59D6126E55630057FEE9 /* sasl_client_new.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_client_new.3; sourceTree = "<group>"; };
+		A0FB59D7126E55630057FEE9 /* sasl_client_start.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_client_start.3; sourceTree = "<group>"; };
+		A0FB59D8126E55630057FEE9 /* sasl_client_step.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_client_step.3; sourceTree = "<group>"; };
+		A0FB59D9126E55630057FEE9 /* sasl_decode.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_decode.3; sourceTree = "<group>"; };
+		A0FB59DA126E55630057FEE9 /* sasl_dispose.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_dispose.3; sourceTree = "<group>"; };
+		A0FB59DB126E55630057FEE9 /* sasl_done.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_done.3; sourceTree = "<group>"; };
+		A0FB59DC126E55630057FEE9 /* sasl_encode.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_encode.3; sourceTree = "<group>"; };
+		A0FB59DD126E55630057FEE9 /* sasl_encodev.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_encodev.3; sourceTree = "<group>"; };
+		A0FB59DE126E55630057FEE9 /* sasl_errdetail.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_errdetail.3; sourceTree = "<group>"; };
+		A0FB59DF126E55630057FEE9 /* sasl_errors.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_errors.3; sourceTree = "<group>"; };
+		A0FB59E0126E55630057FEE9 /* sasl_errstring.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_errstring.3; sourceTree = "<group>"; };
+		A0FB59E1126E55630057FEE9 /* sasl_getconfpath_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getconfpath_t.3; sourceTree = "<group>"; };
+		A0FB59E2126E55630057FEE9 /* sasl_getopt_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getopt_t.3; sourceTree = "<group>"; };
+		A0FB59E3126E55630057FEE9 /* sasl_getpath_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getpath_t.3; sourceTree = "<group>"; };
+		A0FB59E4126E55630057FEE9 /* sasl_getprop.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getprop.3; sourceTree = "<group>"; };
+		A0FB59E5126E55630057FEE9 /* sasl_getrealm_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getrealm_t.3; sourceTree = "<group>"; };
+		A0FB59E6126E55630057FEE9 /* sasl_getsecret_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getsecret_t.3; sourceTree = "<group>"; };
+		A0FB59E7126E55630057FEE9 /* sasl_getsimple_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_getsimple_t.3; sourceTree = "<group>"; };
+		A0FB59E8126E55630057FEE9 /* sasl_global_listmech.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_global_listmech.3; sourceTree = "<group>"; };
+		A0FB59E9126E55630057FEE9 /* sasl_idle.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_idle.3; sourceTree = "<group>"; };
+		A0FB59EA126E55630057FEE9 /* sasl_listmech.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_listmech.3; sourceTree = "<group>"; };
+		A0FB59EB126E55630057FEE9 /* sasl_log_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_log_t.3; sourceTree = "<group>"; };
+		A0FB59EC126E55630057FEE9 /* sasl_server_init.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_server_init.3; sourceTree = "<group>"; };
+		A0FB59ED126E55630057FEE9 /* sasl_server_new.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_server_new.3; sourceTree = "<group>"; };
+		A0FB59EE126E55630057FEE9 /* sasl_server_start.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_server_start.3; sourceTree = "<group>"; };
+		A0FB59EF126E55630057FEE9 /* sasl_server_step.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_server_step.3; sourceTree = "<group>"; };
+		A0FB59F0126E55630057FEE9 /* sasl_server_userdb_checkpass_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_server_userdb_checkpass_t.3; sourceTree = "<group>"; };
+		A0FB59F1126E55630057FEE9 /* sasl_server_userdb_setpass_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_server_userdb_setpass_t.3; sourceTree = "<group>"; };
+		A0FB59F2126E55630057FEE9 /* sasl_setpass.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_setpass.3; sourceTree = "<group>"; };
+		A0FB59F3126E55630057FEE9 /* sasl_setprop.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_setprop.3; sourceTree = "<group>"; };
+		A0FB59F4126E55630057FEE9 /* sasl_user_exists.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_user_exists.3; sourceTree = "<group>"; };
+		A0FB59F5126E55630057FEE9 /* sasl_verifyfile_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_verifyfile_t.3; sourceTree = "<group>"; };
+		A0FB59F7126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB59F8126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB59F9126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB59FA126E55630057FEE9 /* anonymous.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anonymous.c; sourceTree = "<group>"; };
+		A0FB59FB126E55630057FEE9 /* anonymous_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anonymous_init.c; sourceTree = "<group>"; };
+		A0FB59FC126E55630057FEE9 /* cram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cram.c; sourceTree = "<group>"; };
+		A0FB59FD126E55630057FEE9 /* crammd5_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crammd5_init.c; sourceTree = "<group>"; };
+		A0FB59FE126E55630057FEE9 /* digestmd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = digestmd5.c; sourceTree = "<group>"; };
+		A0FB59FF126E55630057FEE9 /* digestmd5_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = digestmd5_init.c; sourceTree = "<group>"; };
+		A0FB5A00126E55630057FEE9 /* gssapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gssapi.c; sourceTree = "<group>"; };
+		A0FB5A01126E55630057FEE9 /* gssapiv2_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gssapiv2_init.c; sourceTree = "<group>"; };
+		A0FB5A02126E55630057FEE9 /* kerberos4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kerberos4.c; sourceTree = "<group>"; };
+		A0FB5A03126E55630057FEE9 /* kerberos4_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kerberos4_init.c; sourceTree = "<group>"; };
+		A0FB5A04126E55630057FEE9 /* ldapdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldapdb.c; sourceTree = "<group>"; };
+		A0FB5A05126E55630057FEE9 /* ldapdb_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldapdb_init.c; sourceTree = "<group>"; };
+		A0FB5A06126E55630057FEE9 /* login.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = login.c; sourceTree = "<group>"; };
+		A0FB5A07126E55630057FEE9 /* login_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = login_init.c; sourceTree = "<group>"; };
+		A0FB5A08126E55630057FEE9 /* makeinit.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = makeinit.sh; sourceTree = "<group>"; };
+		A0FB5A09126E55630057FEE9 /* ntlm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ntlm.c; sourceTree = "<group>"; };
+		A0FB5A0A126E55630057FEE9 /* ntlm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ntlm_init.c; sourceTree = "<group>"; };
+		A0FB5A0B126E55630057FEE9 /* otp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = otp.c; sourceTree = "<group>"; };
+		A0FB5A0C126E55630057FEE9 /* otp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = otp.h; sourceTree = "<group>"; };
+		A0FB5A0D126E55630057FEE9 /* otp_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = otp_init.c; sourceTree = "<group>"; };
+		A0FB5A0E126E55630057FEE9 /* passdss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = passdss.c; sourceTree = "<group>"; };
+		A0FB5A0F126E55630057FEE9 /* passdss_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = passdss_init.c; sourceTree = "<group>"; };
+		A0FB5A10126E55630057FEE9 /* plain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plain.c; sourceTree = "<group>"; };
+		A0FB5A11126E55630057FEE9 /* plain_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plain_init.c; sourceTree = "<group>"; };
+		A0FB5A12126E55630057FEE9 /* plugin_common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = plugin_common.c; sourceTree = "<group>"; };
+		A0FB5A13126E55630057FEE9 /* plugin_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = plugin_common.h; sourceTree = "<group>"; };
+		A0FB5A14126E55630057FEE9 /* sasldb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sasldb.c; sourceTree = "<group>"; };
+		A0FB5A15126E55630057FEE9 /* sasldb_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sasldb_init.c; sourceTree = "<group>"; };
+		A0FB5A16126E55630057FEE9 /* sql.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sql.c; sourceTree = "<group>"; };
+		A0FB5A17126E55630057FEE9 /* sql_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sql_init.c; sourceTree = "<group>"; };
+		A0FB5A18126E55630057FEE9 /* srp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = srp.c; sourceTree = "<group>"; };
+		A0FB5A19126E55630057FEE9 /* srp_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = srp_init.c; sourceTree = "<group>"; };
+		A0FB5A1B126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB5A1C126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB5A1D126E55630057FEE9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0FB5A1E126E55630057FEE9 /* pwcheck.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwcheck.c; sourceTree = "<group>"; };
+		A0FB5A1F126E55630057FEE9 /* pwcheck_getpwnam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwcheck_getpwnam.c; sourceTree = "<group>"; };
+		A0FB5A20126E55630057FEE9 /* pwcheck_getspnam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwcheck_getspnam.c; sourceTree = "<group>"; };
+		A0FB5A22126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB5A23126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB5A24126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB5A25126E55630057FEE9 /* client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = client.c; sourceTree = "<group>"; };
+		A0FB5A26126E55630057FEE9 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		A0FB5A27126E55630057FEE9 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		A0FB5A28126E55630057FEE9 /* sample-client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sample-client.c"; sourceTree = "<group>"; };
+		A0FB5A29126E55630057FEE9 /* sample-server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sample-server.c"; sourceTree = "<group>"; };
+		A0FB5A2A126E55630057FEE9 /* server.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = server.c; sourceTree = "<group>"; };
+		A0FB5A2C126E55630057FEE9 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		A0FB5A2D126E55630057FEE9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		A0FB5A2E126E55630057FEE9 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		A0FB5A2F126E55630057FEE9 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		A0FB5A30126E55630057FEE9 /* LDAP_SASLAUTHD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LDAP_SASLAUTHD; sourceTree = "<group>"; };
+		A0FB5A31126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB5A32126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB5A33126E55630057FEE9 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
+		A0FB5A34126E55630057FEE9 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0FB5A35126E55630057FEE9 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		A0FB5A36126E55630057FEE9 /* auth_dce.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_dce.c; sourceTree = "<group>"; };
+		A0FB5A37126E55630057FEE9 /* auth_dce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_dce.h; sourceTree = "<group>"; };
+		A0FB5A38126E55630057FEE9 /* auth_getpwent.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_getpwent.c; sourceTree = "<group>"; };
+		A0FB5A39126E55630057FEE9 /* auth_getpwent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_getpwent.h; sourceTree = "<group>"; };
+		A0FB5A3A126E55630057FEE9 /* auth_httpform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_httpform.c; sourceTree = "<group>"; };
+		A0FB5A3B126E55630057FEE9 /* auth_httpform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_httpform.h; sourceTree = "<group>"; };
+		A0FB5A3C126E55630057FEE9 /* auth_krb4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_krb4.c; sourceTree = "<group>"; };
+		A0FB5A3D126E55630057FEE9 /* auth_krb4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_krb4.h; sourceTree = "<group>"; };
+		A0FB5A3E126E55630057FEE9 /* auth_krb5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_krb5.c; sourceTree = "<group>"; };
+		A0FB5A3F126E55630057FEE9 /* auth_krb5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_krb5.h; sourceTree = "<group>"; };
+		A0FB5A40126E55630057FEE9 /* auth_ldap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_ldap.c; sourceTree = "<group>"; };
+		A0FB5A41126E55630057FEE9 /* auth_ldap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_ldap.h; sourceTree = "<group>"; };
+		A0FB5A42126E55630057FEE9 /* auth_pam.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_pam.c; sourceTree = "<group>"; };
+		A0FB5A43126E55630057FEE9 /* auth_pam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_pam.h; sourceTree = "<group>"; };
+		A0FB5A44126E55630057FEE9 /* auth_rimap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_rimap.c; sourceTree = "<group>"; };
+		A0FB5A45126E55630057FEE9 /* auth_rimap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_rimap.h; sourceTree = "<group>"; };
+		A0FB5A46126E55630057FEE9 /* auth_sasldb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_sasldb.c; sourceTree = "<group>"; };
+		A0FB5A47126E55630057FEE9 /* auth_sasldb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_sasldb.h; sourceTree = "<group>"; };
+		A0FB5A48126E55630057FEE9 /* auth_shadow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_shadow.c; sourceTree = "<group>"; };
+		A0FB5A49126E55630057FEE9 /* auth_shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_shadow.h; sourceTree = "<group>"; };
+		A0FB5A4A126E55630057FEE9 /* auth_sia.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_sia.c; sourceTree = "<group>"; };
+		A0FB5A4B126E55630057FEE9 /* auth_sia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_sia.h; sourceTree = "<group>"; };
+		A0FB5A4C126E55630057FEE9 /* cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cache.c; sourceTree = "<group>"; };
+		A0FB5A4D126E55630057FEE9 /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		A0FB5A4E126E55630057FEE9 /* cfile.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cfile.c; sourceTree = "<group>"; };
+		A0FB5A4F126E55630057FEE9 /* cfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfile.h; sourceTree = "<group>"; };
+		A0FB5A51126E55630057FEE9 /* config.guess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		A0FB5A52126E55630057FEE9 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		A0FB5A53126E55630057FEE9 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		A0FB5A54126E55630057FEE9 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		A0FB5A55126E55630057FEE9 /* ltconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltconfig; sourceTree = "<group>"; };
+		A0FB5A56126E55630057FEE9 /* ltmain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		A0FB5A57126E55630057FEE9 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		A0FB5A58126E55630057FEE9 /* mkinstalldirs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mkinstalldirs; sourceTree = "<group>"; };
+		A0FB5A59126E55630057FEE9 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		A0FB5A5A126E55630057FEE9 /* configure.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
+		A0FB5A5B126E55630057FEE9 /* getaddrinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getaddrinfo.c; sourceTree = "<group>"; };
+		A0FB5A5C126E55630057FEE9 /* getnameinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getnameinfo.c; sourceTree = "<group>"; };
+		A0FB5A5D126E55630057FEE9 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		A0FB5A5F126E55630057FEE9 /* gai.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gai.h; sourceTree = "<group>"; };
+		A0FB5A60126E55630057FEE9 /* ipc_doors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ipc_doors.c; sourceTree = "<group>"; };
+		A0FB5A61126E55630057FEE9 /* ipc_unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ipc_unix.c; sourceTree = "<group>"; };
+		A0FB5A62126E55630057FEE9 /* krbtf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = krbtf.c; sourceTree = "<group>"; };
+		A0FB5A63126E55630057FEE9 /* krbtf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krbtf.h; sourceTree = "<group>"; };
+		A0FB5A64126E55630057FEE9 /* lak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lak.c; sourceTree = "<group>"; };
+		A0FB5A65126E55630057FEE9 /* lak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lak.h; sourceTree = "<group>"; };
+		A0FB5A66126E55630057FEE9 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		A0FB5A67126E55630057FEE9 /* md5global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5global.h; sourceTree = "<group>"; };
+		A0FB5A68126E55630057FEE9 /* mechanisms.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mechanisms.c; sourceTree = "<group>"; };
+		A0FB5A69126E55630057FEE9 /* mechanisms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mechanisms.h; sourceTree = "<group>"; };
+		A0FB5A6A126E55630057FEE9 /* saslauthd-main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "saslauthd-main.c"; sourceTree = "<group>"; };
+		A0FB5A6B126E55630057FEE9 /* saslauthd-main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "saslauthd-main.h"; sourceTree = "<group>"; };
+		A0FB5A6C126E55630057FEE9 /* saslauthd.8 */ = {isa = PBXFileReference; lastKnownFileType = file; path = saslauthd.8; sourceTree = "<group>"; };
+		A0FB5A6D126E55630057FEE9 /* saslauthd.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saslauthd.h.in; sourceTree = "<group>"; };
+		A0FB5A6E126E55630057FEE9 /* saslauthd.mdoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saslauthd.mdoc; sourceTree = "<group>"; };
+		A0FB5A6F126E55630057FEE9 /* saslauthd_md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = saslauthd_md5.h; sourceTree = "<group>"; };
+		A0FB5A70126E55630057FEE9 /* saslcache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = saslcache.c; sourceTree = "<group>"; };
+		A0FB5A71126E55630057FEE9 /* testsaslauthd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testsaslauthd.c; sourceTree = "<group>"; };
+		A0FB5A72126E55630057FEE9 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		A0FB5A73126E55630057FEE9 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		A0FB5A75126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB5A76126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB5A77126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB5A78126E55630057FEE9 /* allockey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = allockey.c; sourceTree = "<group>"; };
+		A0FB5A79126E55630057FEE9 /* db_berkeley.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = db_berkeley.c; sourceTree = "<group>"; };
+		A0FB5A7A126E55630057FEE9 /* db_gdbm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = db_gdbm.c; sourceTree = "<group>"; };
+		A0FB5A7B126E55630057FEE9 /* db_ndbm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = db_ndbm.c; sourceTree = "<group>"; };
+		A0FB5A7C126E55630057FEE9 /* db_none.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = db_none.c; sourceTree = "<group>"; };
+		A0FB5A7D126E55630057FEE9 /* sasldb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasldb.h; sourceTree = "<group>"; };
+		A0FB5A7F126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB5A80126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		A0FB5A81126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB5A82126E55630057FEE9 /* dbconverter-2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dbconverter-2.c"; sourceTree = "<group>"; };
+		A0FB5A83126E55630057FEE9 /* pluginviewer.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pluginviewer.8; sourceTree = "<group>"; };
+		A0FB5A84126E55630057FEE9 /* pluginviewer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pluginviewer.c; sourceTree = "<group>"; };
+		A0FB5A85126E55630057FEE9 /* sasldblistusers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sasldblistusers.c; sourceTree = "<group>"; };
+		A0FB5A86126E55630057FEE9 /* sasldblistusers2.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasldblistusers2.8; sourceTree = "<group>"; };
+		A0FB5A87126E55630057FEE9 /* saslpasswd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = saslpasswd.c; sourceTree = "<group>"; };
+		A0FB5A88126E55630057FEE9 /* saslpasswd2.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = saslpasswd2.8; sourceTree = "<group>"; };
+		A0FB5A89126E55630057FEE9 /* sfsasl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sfsasl.c; sourceTree = "<group>"; };
+		A0FB5A8A126E55630057FEE9 /* sfsasl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sfsasl.h; sourceTree = "<group>"; };
+		A0FB5A8B126E55630057FEE9 /* smtptest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smtptest.c; sourceTree = "<group>"; };
+		A0FB5A8C126E55630057FEE9 /* testsuite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = testsuite.c; sourceTree = "<group>"; };
+		A0FB5A8E126E55630057FEE9 /* .cvsignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cvsignore; sourceTree = "<group>"; };
+		A0FB5A8F126E55630057FEE9 /* .cvswrappers */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cvswrappers; sourceTree = "<group>"; };
+		A0FB5A90126E55630057FEE9 /* common.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = common.mak; sourceTree = "<group>"; };
+		A0FB5A92126E55630057FEE9 /* .cvsignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .cvsignore; sourceTree = "<group>"; };
+		A0FB5A93126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
+		A0FB5A94126E55630057FEE9 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A0FB5A95126E55630057FEE9 /* md5global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5global.h; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sasl2_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libsasl2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsasl2.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libsasl2.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* sasl2 */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB53E4126E53AB0057FEE9 /* Makefile */,
+				A0FB53E5126E53C30057FEE9 /* build-aux */,
+				A0FB57E4126E55630057FEE9 /* cyrus-sasl */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = sasl2;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		A0FB53E5126E53C30057FEE9 /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				A01018BD126E61570077780C /* config.h */,
+				A0FB53E6126E53C30057FEE9 /* cyrus-sasl-2.1.23.tar.gz.md5 */,
+			);
+			path = "build-aux";
+			sourceTree = "<group>";
+		};
+		A0FB57E4126E55630057FEE9 /* cyrus-sasl */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB57E5126E55630057FEE9 /* AUTHORS */,
+				A0FB57E6126E55630057FEE9 /* COPYING */,
+				A0FB57E7126E55630057FEE9 /* ChangeLog */,
+				A0FB57E8126E55630057FEE9 /* INSTALL */,
+				A0FB57E9126E55630057FEE9 /* INSTALL.TXT */,
+				A0FB57EA126E55630057FEE9 /* Makefile.am */,
+				A0FB57EB126E55630057FEE9 /* Makefile.in */,
+				A0FB57EC126E55630057FEE9 /* NEWS */,
+				A0FB57ED126E55630057FEE9 /* NTMakefile */,
+				A0FB57EE126E55630057FEE9 /* README */,
+				A0FB57EF126E55630057FEE9 /* aclocal.m4 */,
+				A0FB57F0126E55630057FEE9 /* cmulocal */,
+				A0FB5820126E55630057FEE9 /* config */,
+				A0FB5830126E55630057FEE9 /* config.h.in */,
+				A0FB5831126E55630057FEE9 /* configure */,
+				A0FB5832126E55630057FEE9 /* configure.in */,
+				A0FB5833126E55630057FEE9 /* dlcompat-20010505 */,
+				A0FB583A126E55630057FEE9 /* doc */,
+				A0FB5869126E55630057FEE9 /* include */,
+				A0FB5877126E55630057FEE9 /* java */,
+				A0FB58AC126E55630057FEE9 /* lib */,
+				A0FB58C3126E55630057FEE9 /* mac */,
+				A0FB59C8126E55630057FEE9 /* man */,
+				A0FB59F6126E55630057FEE9 /* plugins */,
+				A0FB5A1A126E55630057FEE9 /* pwcheck */,
+				A0FB5A21126E55630057FEE9 /* sample */,
+				A0FB5A2B126E55630057FEE9 /* saslauthd */,
+				A0FB5A74126E55630057FEE9 /* sasldb */,
+				A0FB5A7E126E55630057FEE9 /* utils */,
+				A0FB5A8D126E55630057FEE9 /* win32 */,
+			);
+			path = "cyrus-sasl";
+			sourceTree = "<group>";
+		};
+		A0FB57F0126E55630057FEE9 /* cmulocal */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB57F1126E55630057FEE9 /* COPYING */,
+				A0FB57F2126E55630057FEE9 /* README.andrew */,
+				A0FB57F3126E55630057FEE9 /* afs.m4 */,
+				A0FB57F4126E55630057FEE9 /* agentx.m4 */,
+				A0FB57F5126E55630057FEE9 /* arx.m4 */,
+				A0FB57F6126E55630057FEE9 /* ax_path_bdb.m4 */,
+				A0FB57F7126E55630057FEE9 /* berkdb.m4 */,
+				A0FB57F8126E55630057FEE9 /* bsd_sockets.m4 */,
+				A0FB57F9126E55630057FEE9 /* c-attribute.m4 */,
+				A0FB57FA126E55630057FEE9 /* c-fpic.m4 */,
+				A0FB57FB126E55630057FEE9 /* clamav.m4 */,
+				A0FB57FC126E55630057FEE9 /* com_err.m4 */,
+				A0FB57FD126E55630057FEE9 /* com_err_link.m4 */,
+				A0FB57FE126E55630057FEE9 /* common.m4 */,
+				A0FB57FF126E55630057FEE9 /* cyrus.m4 */,
+				A0FB5800126E55630057FEE9 /* db.m4 */,
+				A0FB5801126E55630057FEE9 /* find-func-no-libs.m4 */,
+				A0FB5802126E55630057FEE9 /* find-func-no-libs2.m4 */,
+				A0FB5803126E55630057FEE9 /* find-func.m4 */,
+				A0FB5804126E55630057FEE9 /* heimdal.m4 */,
+				A0FB5805126E55630057FEE9 /* init_automake.m4 */,
+				A0FB5806126E55630057FEE9 /* ipv6.m4 */,
+				A0FB5807126E55630057FEE9 /* kafs.m4 */,
+				A0FB5808126E55630057FEE9 /* kerberos_v4.m4 */,
+				A0FB5809126E55630057FEE9 /* kerberos_v5.m4 */,
+				A0FB580A126E55630057FEE9 /* libXau.m4 */,
+				A0FB580B126E55630057FEE9 /* libcyrus.m4 */,
+				A0FB580C126E55630057FEE9 /* libloguse.m4 */,
+				A0FB580D126E55630057FEE9 /* libnet.m4 */,
+				A0FB580E126E55630057FEE9 /* libpcap.m4 */,
+				A0FB580F126E55630057FEE9 /* librestrict.m4 */,
+				A0FB5810126E55630057FEE9 /* libssl.m4 */,
+				A0FB5811126E55630057FEE9 /* libtoolhack.m4 */,
+				A0FB5812126E55630057FEE9 /* libwrap.m4 */,
+				A0FB5813126E55630057FEE9 /* mips-abi.m4 */,
+				A0FB5814126E55630057FEE9 /* nadine.m4 */,
+				A0FB5815126E55630057FEE9 /* nana.m4 */,
+				A0FB5816126E55630057FEE9 /* openldap.m4 */,
+				A0FB5817126E55630057FEE9 /* openssl.m4 */,
+				A0FB5818126E55630057FEE9 /* pthreads.m4 */,
+				A0FB5819126E55630057FEE9 /* sasl.m4 */,
+				A0FB581A126E55630057FEE9 /* sasl2.m4 */,
+				A0FB581B126E55630057FEE9 /* tcl.m4 */,
+				A0FB581C126E55630057FEE9 /* telnet.m4 */,
+				A0FB581D126E55630057FEE9 /* ucdsnmp.m4 */,
+				A0FB581E126E55630057FEE9 /* util.m4 */,
+				A0FB581F126E55630057FEE9 /* zephyr.m4 */,
+			);
+			path = cmulocal;
+			sourceTree = "<group>";
+		};
+		A0FB5820126E55630057FEE9 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5821126E55630057FEE9 /* .cvsignore */,
+				A0FB5822126E55630057FEE9 /* Info.plist */,
+				A0FB5823126E55630057FEE9 /* config.guess */,
+				A0FB5824126E55630057FEE9 /* config.sub */,
+				A0FB5825126E55630057FEE9 /* depcomp */,
+				A0FB5826126E55630057FEE9 /* install-sh */,
+				A0FB5827126E55630057FEE9 /* kerberos_v4.m4 */,
+				A0FB5828126E55630057FEE9 /* libtool.m4 */,
+				A0FB5829126E55630057FEE9 /* ltconfig */,
+				A0FB582A126E55630057FEE9 /* ltmain.sh */,
+				A0FB582B126E55630057FEE9 /* missing */,
+				A0FB582C126E55630057FEE9 /* mkinstalldirs */,
+				A0FB582D126E55630057FEE9 /* plain.m4 */,
+				A0FB582E126E55630057FEE9 /* sasl.spec */,
+				A0FB582F126E55630057FEE9 /* sasldb.m4 */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		A0FB5833126E55630057FEE9 /* dlcompat-20010505 */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5834126E55630057FEE9 /* APPLE_LICENSE */,
+				A0FB5835126E55630057FEE9 /* ChangeLog */,
+				A0FB5836126E55630057FEE9 /* Makefile */,
+				A0FB5837126E55630057FEE9 /* README */,
+				A0FB5838126E55630057FEE9 /* dlfcn.h */,
+				A0FB5839126E55630057FEE9 /* dlopen.c */,
+			);
+			path = "dlcompat-20010505";
+			sourceTree = "<group>";
+		};
+		A0FB583A126E55630057FEE9 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB583B126E55630057FEE9 /* Makefile.am */,
+				A0FB583C126E55630057FEE9 /* Makefile.in */,
+				A0FB583D126E55630057FEE9 /* NTMakefile */,
+				A0FB583E126E55630057FEE9 /* ONEWS */,
+				A0FB583F126E55630057FEE9 /* TODO */,
+				A0FB5840126E55630057FEE9 /* advanced.html */,
+				A0FB5841126E55630057FEE9 /* appconvert.html */,
+				A0FB5842126E55630057FEE9 /* components.html */,
+				A0FB5843126E55630057FEE9 /* draft-burdis-cat-srp-sasl-xx.txt */,
+				A0FB5844126E55630057FEE9 /* draft-ietf-sasl-anon-xx.txt */,
+				A0FB5845126E55630057FEE9 /* draft-ietf-sasl-crammd5-xx.txt */,
+				A0FB5846126E55630057FEE9 /* draft-ietf-sasl-gssapi-xx.txt */,
+				A0FB5847126E55630057FEE9 /* draft-ietf-sasl-plain-xx.txt */,
+				A0FB5848126E55630057FEE9 /* draft-ietf-sasl-rfc2222bis-xx.txt */,
+				A0FB5849126E55630057FEE9 /* draft-ietf-sasl-rfc2831bis-xx.txt */,
+				A0FB584A126E55630057FEE9 /* draft-ietf-sasl-saslprep-xx.txt */,
+				A0FB584B126E55630057FEE9 /* draft-murchison-sasl-login-xx.txt */,
+				A0FB584C126E55630057FEE9 /* draft-newman-sasl-c-api-xx.txt */,
+				A0FB584D126E55630057FEE9 /* draft-newman-sasl-passdss-xx.txt */,
+				A0FB584E126E55630057FEE9 /* gssapi.html */,
+				A0FB584F126E55630057FEE9 /* index.html */,
+				A0FB5850126E55630057FEE9 /* install.html */,
+				A0FB5851126E55630057FEE9 /* macosx.html */,
+				A0FB5852126E55630057FEE9 /* mechanisms.html */,
+				A0FB5853126E55630057FEE9 /* options.html */,
+				A0FB5854126E55630057FEE9 /* plugprog.html */,
+				A0FB5855126E55630057FEE9 /* programming.html */,
+				A0FB5856126E55630057FEE9 /* readme.html */,
+				A0FB5857126E55630057FEE9 /* rfc1321.txt */,
+				A0FB5858126E55630057FEE9 /* rfc1939.txt */,
+				A0FB5859126E55630057FEE9 /* rfc2104.txt */,
+				A0FB585A126E55630057FEE9 /* rfc2195.txt */,
+				A0FB585B126E55630057FEE9 /* rfc2222.txt */,
+				A0FB585C126E55630057FEE9 /* rfc2243.txt */,
+				A0FB585D126E55630057FEE9 /* rfc2245.txt */,
+				A0FB585E126E55630057FEE9 /* rfc2289.txt */,
+				A0FB585F126E55630057FEE9 /* rfc2444.txt */,
+				A0FB5860126E55630057FEE9 /* rfc2595.txt */,
+				A0FB5861126E55630057FEE9 /* rfc2831.txt */,
+				A0FB5862126E55630057FEE9 /* rfc2945.txt */,
+				A0FB5863126E55630057FEE9 /* rfc3174.txt */,
+				A0FB5864126E55630057FEE9 /* server-plugin-flow.fig */,
+				A0FB5865126E55630057FEE9 /* sysadmin.html */,
+				A0FB5866126E55630057FEE9 /* testing.txt */,
+				A0FB5867126E55630057FEE9 /* upgrading.html */,
+				A0FB5868126E55630057FEE9 /* windows.html */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		A0FB5869126E55630057FEE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB586A126E55630057FEE9 /* Makefile.am */,
+				A0FB586B126E55630057FEE9 /* Makefile.in */,
+				A0FB586C126E55630057FEE9 /* NTMakefile */,
+				A0FB586D126E55630057FEE9 /* exits.h */,
+				A0FB586E126E55630057FEE9 /* gai.h */,
+				A0FB586F126E55630057FEE9 /* hmac-md5.h */,
+				A0FB5870126E55630057FEE9 /* makemd5.c */,
+				A0FB5871126E55630057FEE9 /* md5.h */,
+				A0FB5872126E55630057FEE9 /* md5global.h */,
+				A0FB5873126E55630057FEE9 /* prop.h */,
+				A0FB5874126E55630057FEE9 /* sasl.h */,
+				A0FB5875126E55630057FEE9 /* saslplug.h */,
+				A0FB5876126E55630057FEE9 /* saslutil.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A0FB5877126E55630057FEE9 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5878126E55630057FEE9 /* CyrusSasl */,
+				A0FB588B126E55630057FEE9 /* Makefile.am */,
+				A0FB588C126E55630057FEE9 /* Makefile.in */,
+				A0FB588D126E55630057FEE9 /* README */,
+				A0FB588E126E55630057FEE9 /* Test */,
+				A0FB5897126E55630057FEE9 /* doc */,
+				A0FB589A126E55630057FEE9 /* javax */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		A0FB5878126E55630057FEE9 /* CyrusSasl */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5879126E55630057FEE9 /* ClientFactory.java */,
+				A0FB587A126E55630057FEE9 /* GenericClient.java */,
+				A0FB587B126E55630057FEE9 /* GenericCommon.java */,
+				A0FB587C126E55630057FEE9 /* GenericServer.java */,
+				A0FB587D126E55630057FEE9 /* Makefile.am */,
+				A0FB587E126E55630057FEE9 /* Makefile.in */,
+				A0FB587F126E55630057FEE9 /* Sasl.java */,
+				A0FB5880126E55630057FEE9 /* SaslClient.java */,
+				A0FB5881126E55630057FEE9 /* SaslClientFactory.java */,
+				A0FB5882126E55630057FEE9 /* SaslException.java */,
+				A0FB5883126E55630057FEE9 /* SaslInputStream.java */,
+				A0FB5884126E55630057FEE9 /* SaslOutputStream.java */,
+				A0FB5885126E55630057FEE9 /* SaslServer.java */,
+				A0FB5886126E55630057FEE9 /* SaslServerFactory.java */,
+				A0FB5887126E55630057FEE9 /* SaslUtils.java */,
+				A0FB5888126E55630057FEE9 /* ServerFactory.java */,
+				A0FB5889126E55630057FEE9 /* javasasl.c */,
+				A0FB588A126E55630057FEE9 /* javasasl.h */,
+			);
+			path = CyrusSasl;
+			sourceTree = "<group>";
+		};
+		A0FB588E126E55630057FEE9 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB588F126E55630057FEE9 /* Handler.java */,
+				A0FB5890126E55630057FEE9 /* Makefile.am */,
+				A0FB5891126E55630057FEE9 /* Makefile.in */,
+				A0FB5892126E55630057FEE9 /* ServerHandler.java */,
+				A0FB5893126E55630057FEE9 /* jimtest-compile.sh */,
+				A0FB5894126E55630057FEE9 /* jimtest.java */,
+				A0FB5895126E55630057FEE9 /* jimtest.sh */,
+				A0FB5896126E55630057FEE9 /* testserver.java */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		A0FB5897126E55630057FEE9 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5898126E55630057FEE9 /* .cvsignore */,
+				A0FB5899126E55630057FEE9 /* draft-weltman-java-sasl-02.txt */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		A0FB589A126E55630057FEE9 /* javax */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB589B126E55630057FEE9 /* Makefile.am */,
+				A0FB589C126E55630057FEE9 /* Makefile.in */,
+				A0FB589D126E55630057FEE9 /* security */,
+			);
+			path = javax;
+			sourceTree = "<group>";
+		};
+		A0FB589D126E55630057FEE9 /* security */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB589E126E55630057FEE9 /* Makefile.am */,
+				A0FB589F126E55630057FEE9 /* Makefile.in */,
+				A0FB58A0126E55630057FEE9 /* auth */,
+			);
+			path = security;
+			sourceTree = "<group>";
+		};
+		A0FB58A0126E55630057FEE9 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58A1126E55630057FEE9 /* Makefile.am */,
+				A0FB58A2126E55630057FEE9 /* Makefile.in */,
+				A0FB58A3126E55630057FEE9 /* callback */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		A0FB58A3126E55630057FEE9 /* callback */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58A4126E55630057FEE9 /* Callback.java */,
+				A0FB58A5126E55630057FEE9 /* CallbackHandler.java */,
+				A0FB58A6126E55630057FEE9 /* Makefile.am */,
+				A0FB58A7126E55630057FEE9 /* Makefile.in */,
+				A0FB58A8126E55630057FEE9 /* NameCallback.java */,
+				A0FB58A9126E55630057FEE9 /* PasswordCallback.java */,
+				A0FB58AA126E55630057FEE9 /* RealmCallback.java */,
+				A0FB58AB126E55630057FEE9 /* UnsupportedCallbackException.java */,
+			);
+			path = callback;
+			sourceTree = "<group>";
+		};
+		A0FB58AC126E55630057FEE9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58AD126E55630057FEE9 /* Makefile.am */,
+				A0FB58AE126E55630057FEE9 /* Makefile.in */,
+				A0FB58AF126E55630057FEE9 /* NTMakefile */,
+				A0FB58B0126E55630057FEE9 /* auxprop.c */,
+				A0FB58B1126E55630057FEE9 /* canonusr.c */,
+				A0FB58B2126E55630057FEE9 /* checkpw.c */,
+				A0FB58B3126E55630057FEE9 /* client.c */,
+				A0FB58B4126E55630057FEE9 /* common.c */,
+				A0FB58B5126E55630057FEE9 /* config.c */,
+				A0FB58B6126E55630057FEE9 /* dlopen.c */,
+				A0FB58B7126E55630057FEE9 /* external.c */,
+				A0FB58B8126E55630057FEE9 /* getaddrinfo.c */,
+				A0FB58B9126E55630057FEE9 /* getnameinfo.c */,
+				A0FB58BA126E55630057FEE9 /* getsubopt.c */,
+				A0FB58BB126E55630057FEE9 /* md5.c */,
+				A0FB58BC126E55630057FEE9 /* saslint.h */,
+				A0FB58BD126E55630057FEE9 /* saslutil.c */,
+				A0FB58BE126E55630057FEE9 /* server.c */,
+				A0FB58BF126E55630057FEE9 /* seterror.c */,
+				A0FB58C0126E55630057FEE9 /* snprintf.c */,
+				A0FB58C1126E55630057FEE9 /* staticopen.h */,
+				A0FB58C2126E55630057FEE9 /* windlopen.c */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		A0FB58C3126E55630057FEE9 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58C4126E55630057FEE9 /* CommonKClient */,
+				A0FB5910126E55630057FEE9 /* README.filetypes */,
+				A0FB5911126E55630057FEE9 /* build_plugins */,
+				A0FB5914126E55630057FEE9 /* include */,
+				A0FB5922126E55630057FEE9 /* kerberos_includes */,
+				A0FB5935126E55630057FEE9 /* krb4_sources */,
+				A0FB5941126E55630057FEE9 /* libdes */,
+				A0FB59AC126E55630057FEE9 /* libsasl */,
+				A0FB59B3126E55630057FEE9 /* mac_lib */,
+				A0FB59BB126E55630057FEE9 /* osx_cfm_glue */,
+				A0FB59C0126E55630057FEE9 /* readme */,
+				A0FB59C2126E55630057FEE9 /* sc_shlb */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		A0FB58C4126E55630057FEE9 /* CommonKClient */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58C5126E55630057FEE9 /* KClientPublic.h */,
+				A0FB58C6126E55630057FEE9 /* mac_kclient */,
+				A0FB58D0126E55630057FEE9 /* mac_kclient3 */,
+			);
+			path = CommonKClient;
+			sourceTree = "<group>";
+		};
+		A0FB58C6126E55630057FEE9 /* mac_kclient */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58C7126E55630057FEE9 /* KClient.c */,
+				A0FB58C8126E55630057FEE9 /* KClient.h */,
+				A0FB58C9126E55630057FEE9 /* KrbDriver.h */,
+				A0FB58CA126E55630057FEE9 /* kcglue_des.c */,
+				A0FB58CB126E55630057FEE9 /* kcglue_des.h */,
+				A0FB58CC126E55630057FEE9 /* kcglue_krb.c */,
+				A0FB58CD126E55630057FEE9 /* kcglue_krb.h */,
+				A0FB58CE126E55630057FEE9 /* macKClientPublic.h */,
+				A0FB58CF126E55630057FEE9 /* mac_krb_lib1.c */,
+			);
+			path = mac_kclient;
+			sourceTree = "<group>";
+		};
+		A0FB58D0126E55630057FEE9 /* mac_kclient3 */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58D1126E55630057FEE9 /* Headers */,
+				A0FB590A126E55630057FEE9 /* kcglue_des.c */,
+				A0FB590B126E55630057FEE9 /* kcglue_des.h */,
+				A0FB590C126E55630057FEE9 /* kcglue_krb.c */,
+				A0FB590D126E55630057FEE9 /* kcglue_krb.h */,
+				A0FB590E126E55630057FEE9 /* mac_krb_lib1.c */,
+				A0FB590F126E55630057FEE9 /* saslk4.h */,
+			);
+			path = mac_kclient3;
+			sourceTree = "<group>";
+		};
+		A0FB58D1126E55630057FEE9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58D2126E55630057FEE9 /* CredentialsCache */,
+				A0FB58D5126E55630057FEE9 /* GSS */,
+				A0FB58D9126E55630057FEE9 /* KClient */,
+				A0FB58DC126E55630057FEE9 /* KClientCompat */,
+				A0FB58DE126E55630057FEE9 /* KClientDeprecated */,
+				A0FB58E0126E55630057FEE9 /* Kerberos */,
+				A0FB58E2126E55630057FEE9 /* Kerberos4 */,
+				A0FB58E5126E55630057FEE9 /* Kerberos5 */,
+				A0FB58E9126E55630057FEE9 /* KerberosComErr */,
+				A0FB58EC126E55630057FEE9 /* KerberosDES */,
+				A0FB58EF126E55630057FEE9 /* KerberosLogin */,
+				A0FB58F3126E55630057FEE9 /* KerberosManager */,
+				A0FB58F5126E55630057FEE9 /* KerberosPreferences */,
+				A0FB58F7126E55630057FEE9 /* KerberosProfile */,
+				A0FB58FA126E55630057FEE9 /* KerberosSupport */,
+				A0FB5907126E55630057FEE9 /* TicketKeeper */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		A0FB58D2126E55630057FEE9 /* CredentialsCache */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58D3126E55630057FEE9 /* CredentialsCache.h */,
+				A0FB58D4126E55630057FEE9 /* CredentialsCache2.h */,
+			);
+			path = CredentialsCache;
+			sourceTree = "<group>";
+		};
+		A0FB58D5126E55630057FEE9 /* GSS */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58D6126E55630057FEE9 /* GSS.h */,
+				A0FB58D7126E55630057FEE9 /* gssapi.h */,
+				A0FB58D8126E55630057FEE9 /* gssapi_krb5.h */,
+			);
+			path = GSS;
+			sourceTree = "<group>";
+		};
+		A0FB58D9126E55630057FEE9 /* KClient */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58DA126E55630057FEE9 /* KClient.h */,
+				A0FB58DB126E55630057FEE9 /* KClientTypes.h */,
+			);
+			path = KClient;
+			sourceTree = "<group>";
+		};
+		A0FB58DC126E55630057FEE9 /* KClientCompat */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58DD126E55630057FEE9 /* KClientCompat.h */,
+			);
+			path = KClientCompat;
+			sourceTree = "<group>";
+		};
+		A0FB58DE126E55630057FEE9 /* KClientDeprecated */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58DF126E55630057FEE9 /* KClientDeprecated.h */,
+			);
+			path = KClientDeprecated;
+			sourceTree = "<group>";
+		};
+		A0FB58E0126E55630057FEE9 /* Kerberos */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58E1126E55630057FEE9 /* Kerberos.h */,
+			);
+			path = Kerberos;
+			sourceTree = "<group>";
+		};
+		A0FB58E2126E55630057FEE9 /* Kerberos4 */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58E3126E55630057FEE9 /* Kerberos4.h */,
+				A0FB58E4126E55630057FEE9 /* krb.h */,
+			);
+			path = Kerberos4;
+			sourceTree = "<group>";
+		};
+		A0FB58E5126E55630057FEE9 /* Kerberos5 */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58E6126E55630057FEE9 /* Kerberos5.h */,
+				A0FB58E7126E55630057FEE9 /* krb5.h */,
+				A0FB58E8126E55630057FEE9 /* win-mac.h */,
+			);
+			path = Kerberos5;
+			sourceTree = "<group>";
+		};
+		A0FB58E9126E55630057FEE9 /* KerberosComErr */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58EA126E55630057FEE9 /* KerberosComErr.h */,
+				A0FB58EB126E55630057FEE9 /* com_err.h */,
+			);
+			path = KerberosComErr;
+			sourceTree = "<group>";
+		};
+		A0FB58EC126E55630057FEE9 /* KerberosDES */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58ED126E55630057FEE9 /* KerberosDES.h */,
+				A0FB58EE126E55630057FEE9 /* des.h */,
+			);
+			path = KerberosDES;
+			sourceTree = "<group>";
+		};
+		A0FB58EF126E55630057FEE9 /* KerberosLogin */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58F0126E55630057FEE9 /* KLLoginLogoutNotification.h */,
+				A0FB58F1126E55630057FEE9 /* KLPrincipalTranslation.h */,
+				A0FB58F2126E55630057FEE9 /* KerberosLogin.h */,
+			);
+			path = KerberosLogin;
+			sourceTree = "<group>";
+		};
+		A0FB58F3126E55630057FEE9 /* KerberosManager */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58F4126E55630057FEE9 /* KerberosManagerLib.h */,
+			);
+			path = KerberosManager;
+			sourceTree = "<group>";
+		};
+		A0FB58F5126E55630057FEE9 /* KerberosPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58F6126E55630057FEE9 /* KerberosPreferences.h */,
+			);
+			path = KerberosPreferences;
+			sourceTree = "<group>";
+		};
+		A0FB58F7126E55630057FEE9 /* KerberosProfile */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58F8126E55630057FEE9 /* KerberosProfile.h */,
+				A0FB58F9126E55630057FEE9 /* profile.h */,
+			);
+			path = KerberosProfile;
+			sourceTree = "<group>";
+		};
+		A0FB58FA126E55630057FEE9 /* KerberosSupport */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB58FB126E55630057FEE9 /* ErrorLib.h */,
+				A0FB58FC126E55630057FEE9 /* ErrorList.r */,
+				A0FB58FD126E55630057FEE9 /* Idle.h */,
+				A0FB58FE126E55630057FEE9 /* KerberosConditionalMacros.h */,
+				A0FB58FF126E55630057FEE9 /* KerberosSupport.h */,
+				A0FB5900126E55630057FEE9 /* ShlibDriver.h */,
+				A0FB5901126E55630057FEE9 /* SocketErrors.h */,
+				A0FB5902126E55630057FEE9 /* Sockets.h */,
+				A0FB5903126E55630057FEE9 /* Utilities.h */,
+				A0FB5904126E55630057FEE9 /* hesiod.h */,
+				A0FB5905126E55630057FEE9 /* netdb.h */,
+				A0FB5906126E55630057FEE9 /* pwd.h */,
+			);
+			path = KerberosSupport;
+			sourceTree = "<group>";
+		};
+		A0FB5907126E55630057FEE9 /* TicketKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5908126E55630057FEE9 /* TicketKeeper.h */,
+				A0FB5909126E55630057FEE9 /* TicketKeeperMenuStateProtocol.h */,
+			);
+			path = TicketKeeper;
+			sourceTree = "<group>";
+		};
+		A0FB5911126E55630057FEE9 /* build_plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5912126E55630057FEE9 /* build_plugins */,
+				A0FB5913126E55630057FEE9 /* build_plugins.Carbon */,
+			);
+			path = build_plugins;
+			sourceTree = "<group>";
+		};
+		A0FB5914126E55630057FEE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5915126E55630057FEE9 /* config.h */,
+				A0FB5916126E55630057FEE9 /* extra_krb.h */,
+				A0FB5917126E55630057FEE9 /* md5global.h */,
+				A0FB5918126E55630057FEE9 /* netinet */,
+				A0FB591A126E55630057FEE9 /* parse_cmd_line.h */,
+				A0FB591B126E55630057FEE9 /* sasl_anonymous_plugin_decl.h */,
+				A0FB591C126E55630057FEE9 /* sasl_crammd5_plugin_decl.h */,
+				A0FB591D126E55630057FEE9 /* sasl_digestmd5_plugin_decl.h */,
+				A0FB591E126E55630057FEE9 /* sasl_kerberos4_plugin_decl.h */,
+				A0FB591F126E55630057FEE9 /* sasl_mac_krb_locl.h */,
+				A0FB5920126E55630057FEE9 /* sasl_plain_plugin_decl.h */,
+				A0FB5921126E55630057FEE9 /* sasl_plugin_decl.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A0FB5918126E55630057FEE9 /* netinet */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5919126E55630057FEE9 /* in.h */,
+			);
+			path = netinet;
+			sourceTree = "<group>";
+		};
+		A0FB5922126E55630057FEE9 /* kerberos_includes */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5923126E55630057FEE9 /* conf-svsparc.h */,
+				A0FB5924126E55630057FEE9 /* conf.h */,
+				A0FB5925126E55630057FEE9 /* error_table.h */,
+				A0FB5926126E55630057FEE9 /* kerberos */,
+				A0FB592A126E55630057FEE9 /* klog.h */,
+				A0FB592B126E55630057FEE9 /* kparse.h */,
+				A0FB592C126E55630057FEE9 /* krb-protos.h */,
+				A0FB592D126E55630057FEE9 /* krb.h */,
+				A0FB592E126E55630057FEE9 /* krb_conf.h */,
+				A0FB592F126E55630057FEE9 /* ktypes.h */,
+				A0FB5930126E55630057FEE9 /* lsb_addr_comp.h */,
+				A0FB5931126E55630057FEE9 /* mit-sipb-copyright.h */,
+				A0FB5932126E55630057FEE9 /* old_krb.h */,
+				A0FB5933126E55630057FEE9 /* osconf.h */,
+				A0FB5934126E55630057FEE9 /* prot.h */,
+			);
+			path = kerberos_includes;
+			sourceTree = "<group>";
+		};
+		A0FB5926126E55630057FEE9 /* kerberos */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5927126E55630057FEE9 /* des.h */,
+				A0FB5928126E55630057FEE9 /* des.h.unix */,
+				A0FB5929126E55630057FEE9 /* mit-copyright.h */,
+			);
+			path = kerberos;
+			sourceTree = "<group>";
+		};
+		A0FB5935126E55630057FEE9 /* krb4_sources */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5936126E55630057FEE9 /* krb-archaeology.h */,
+				A0FB5937126E55630057FEE9 /* krb-protos.h */,
+				A0FB5938126E55630057FEE9 /* krb.h */,
+				A0FB5939126E55630057FEE9 /* lsb_addr_comp.c */,
+				A0FB593A126E55630057FEE9 /* mk_auth.c */,
+				A0FB593B126E55630057FEE9 /* mk_priv.c */,
+				A0FB593C126E55630057FEE9 /* mk_req.c */,
+				A0FB593D126E55630057FEE9 /* mk_safe.c */,
+				A0FB593E126E55630057FEE9 /* rd_priv.c */,
+				A0FB593F126E55630057FEE9 /* rd_safe.c */,
+				A0FB5940126E55630057FEE9 /* rw.c */,
+			);
+			path = krb4_sources;
+			sourceTree = "<group>";
+		};
+		A0FB5941126E55630057FEE9 /* libdes */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5942126E55630057FEE9 /* libdes_68K */,
+				A0FB5945126E55630057FEE9 /* libdes_fat */,
+				A0FB5947126E55630057FEE9 /* libdes_ppc */,
+				A0FB594C126E55630057FEE9 /* public */,
+				A0FB5950126E55630057FEE9 /* src */,
+			);
+			path = libdes;
+			sourceTree = "<group>";
+		};
+		A0FB5942126E55630057FEE9 /* libdes_68K */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5943126E55630057FEE9 /* libdes_68K */,
+				A0FB5944126E55630057FEE9 /* libdes_68K.exp */,
+			);
+			path = libdes_68K;
+			sourceTree = "<group>";
+		};
+		A0FB5945126E55630057FEE9 /* libdes_fat */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5946126E55630057FEE9 /* libdes_fat */,
+			);
+			path = libdes_fat;
+			sourceTree = "<group>";
+		};
+		A0FB5947126E55630057FEE9 /* libdes_ppc */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5948126E55630057FEE9 /* libdes_ppc */,
+				A0FB5949126E55630057FEE9 /* libdes_ppc.Carbon */,
+				A0FB594A126E55630057FEE9 /* libdes_ppc.Carbon.exp */,
+				A0FB594B126E55630057FEE9 /* libdes_ppc.exp */,
+			);
+			path = libdes_ppc;
+			sourceTree = "<group>";
+		};
+		A0FB594C126E55630057FEE9 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB594D126E55630057FEE9 /* cfm68k_import_off.h */,
+				A0FB594E126E55630057FEE9 /* des.h */,
+				A0FB594F126E55630057FEE9 /* destest.c */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		A0FB5950126E55630057FEE9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5951126E55630057FEE9 /* COPYRIGHT */,
+				A0FB5952126E55630057FEE9 /* ChangeLog */,
+				A0FB5953126E55630057FEE9 /* DES.pm */,
+				A0FB5954126E55630057FEE9 /* DES.pod */,
+				A0FB5955126E55630057FEE9 /* DES.xs */,
+				A0FB5956126E55630057FEE9 /* FILES */,
+				A0FB5957126E55630057FEE9 /* INSTALL */,
+				A0FB5958126E55630057FEE9 /* Imakefile */,
+				A0FB5959126E55630057FEE9 /* KERBEROS */,
+				A0FB595A126E55630057FEE9 /* MODES.DES */,
+				A0FB595B126E55630057FEE9 /* Makefile.PL */,
+				A0FB595C126E55630057FEE9 /* Makefile.am */,
+				A0FB595D126E55630057FEE9 /* Makefile.in */,
+				A0FB595E126E55630057FEE9 /* Makefile.ssl */,
+				A0FB595F126E55630057FEE9 /* Makefile.uni */,
+				A0FB5960126E55630057FEE9 /* PC1 */,
+				A0FB5961126E55630057FEE9 /* PC2 */,
+				A0FB5962126E55630057FEE9 /* README */,
+				A0FB5963126E55630057FEE9 /* VERSION */,
+				A0FB5964126E55630057FEE9 /* cbc3_enc.c */,
+				A0FB5965126E55630057FEE9 /* cbc_cksm.c */,
+				A0FB5966126E55630057FEE9 /* cbc_enc.c */,
+				A0FB5967126E55630057FEE9 /* cfb64ede.c */,
+				A0FB5968126E55630057FEE9 /* cfb64enc.c */,
+				A0FB5969126E55630057FEE9 /* cfb_enc.c */,
+				A0FB596A126E55630057FEE9 /* des.c */,
+				A0FB596B126E55630057FEE9 /* des.def */,
+				A0FB596C126E55630057FEE9 /* des.doc */,
+				A0FB596D126E55630057FEE9 /* des.dsp */,
+				A0FB596E126E55630057FEE9 /* des.mak */,
+				A0FB596F126E55630057FEE9 /* des.man */,
+				A0FB5970126E55630057FEE9 /* des.org */,
+				A0FB5971126E55630057FEE9 /* des.pl */,
+				A0FB5972126E55630057FEE9 /* des_crypt.man */,
+				A0FB5973126E55630057FEE9 /* des_enc.c */,
+				A0FB5974126E55630057FEE9 /* des_locl.h */,
+				A0FB5975126E55630057FEE9 /* des_locl.org */,
+				A0FB5976126E55630057FEE9 /* des_opts.c */,
+				A0FB5977126E55630057FEE9 /* des_ver.h */,
+				A0FB5978126E55630057FEE9 /* dllmain.c */,
+				A0FB5979126E55630057FEE9 /* doIP */,
+				A0FB597A126E55630057FEE9 /* doPC1 */,
+				A0FB597B126E55630057FEE9 /* doPC2 */,
+				A0FB597C126E55630057FEE9 /* ecb3_enc.c */,
+				A0FB597D126E55630057FEE9 /* ecb_enc.c */,
+				A0FB597E126E55630057FEE9 /* ede_enc.c */,
+				A0FB597F126E55630057FEE9 /* enc_read.c */,
+				A0FB5980126E55630057FEE9 /* enc_writ.c */,
+				A0FB5981126E55630057FEE9 /* fcrypt.c */,
+				A0FB5982126E55630057FEE9 /* key_par.c */,
+				A0FB5983126E55630057FEE9 /* makefile.bc */,
+				A0FB5984126E55630057FEE9 /* md4.c */,
+				A0FB5985126E55630057FEE9 /* md4.h */,
+				A0FB5986126E55630057FEE9 /* md5.c */,
+				A0FB5987126E55630057FEE9 /* md5.h */,
+				A0FB5988126E55630057FEE9 /* mdtest.c */,
+				A0FB5989126E55630057FEE9 /* ncbc_enc.c */,
+				A0FB598A126E55630057FEE9 /* ofb64ede.c */,
+				A0FB598B126E55630057FEE9 /* ofb64enc.c */,
+				A0FB598C126E55630057FEE9 /* ofb_enc.c */,
+				A0FB598D126E55630057FEE9 /* passwd_dialog.aps */,
+				A0FB598E126E55630057FEE9 /* passwd_dialog.clw */,
+				A0FB598F126E55630057FEE9 /* passwd_dialog.rc */,
+				A0FB5990126E55630057FEE9 /* passwd_dialog.res */,
+				A0FB5991126E55630057FEE9 /* passwd_dlg.c */,
+				A0FB5992126E55630057FEE9 /* passwd_dlg.h */,
+				A0FB5993126E55630057FEE9 /* pcbc_enc.c */,
+				A0FB5994126E55630057FEE9 /* podd.h */,
+				A0FB5995126E55630057FEE9 /* qud_cksm.c */,
+				A0FB5996126E55630057FEE9 /* rand_key.c */,
+				A0FB5997126E55630057FEE9 /* read_pwd.c */,
+				A0FB5998126E55630057FEE9 /* resource.h */,
+				A0FB5999126E55630057FEE9 /* rnd_keys.c */,
+				A0FB599A126E55630057FEE9 /* rpc_des.h */,
+				A0FB599B126E55630057FEE9 /* rpc_enc.c */,
+				A0FB599C126E55630057FEE9 /* rpw.c */,
+				A0FB599D126E55630057FEE9 /* set_key.c */,
+				A0FB599E126E55630057FEE9 /* sha.c */,
+				A0FB599F126E55630057FEE9 /* sha.h */,
+				A0FB59A0126E55630057FEE9 /* shifts.pl */,
+				A0FB59A1126E55630057FEE9 /* sk.h */,
+				A0FB59A2126E55630057FEE9 /* speed.c */,
+				A0FB59A3126E55630057FEE9 /* spr.h */,
+				A0FB59A4126E55630057FEE9 /* str2key.c */,
+				A0FB59A5126E55630057FEE9 /* supp.c */,
+				A0FB59A6126E55630057FEE9 /* testdes.pl */,
+				A0FB59A7126E55630057FEE9 /* times */,
+				A0FB59A8126E55630057FEE9 /* typemap */,
+				A0FB59A9126E55630057FEE9 /* version.h */,
+				A0FB59AA126E55630057FEE9 /* vms.com */,
+				A0FB59AB126E55630057FEE9 /* xcbc_enc.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A0FB59AC126E55630057FEE9 /* libsasl */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59AD126E55630057FEE9 /* libsasl */,
+				A0FB59AE126E55630057FEE9 /* libsasl.Carbon */,
+				A0FB59AF126E55630057FEE9 /* libsasl.Carbon.exp */,
+				A0FB59B0126E55630057FEE9 /* libsasl.exp */,
+				A0FB59B1126E55630057FEE9 /* libsasl_prefix.h */,
+				A0FB59B2126E55630057FEE9 /* libsasl_prefix_carbon.h */,
+			);
+			path = libsasl;
+			sourceTree = "<group>";
+		};
+		A0FB59B3126E55630057FEE9 /* mac_lib */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59B4126E55630057FEE9 /* getopt.c */,
+				A0FB59B5126E55630057FEE9 /* mac_dyn_dlopen.c */,
+				A0FB59B6126E55630057FEE9 /* mac_monolithic_dlopen.c */,
+				A0FB59B7126E55630057FEE9 /* parse_cmd_line.c */,
+				A0FB59B8126E55630057FEE9 /* xxx_client_mac_lib.c */,
+				A0FB59B9126E55630057FEE9 /* xxx_mac_lib.c */,
+				A0FB59BA126E55630057FEE9 /* yyy_mac_lib.c */,
+			);
+			path = mac_lib;
+			sourceTree = "<group>";
+		};
+		A0FB59BB126E55630057FEE9 /* osx_cfm_glue */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59BC126E55630057FEE9 /* cfmglue.c */,
+				A0FB59BD126E55630057FEE9 /* cfmglue.h */,
+				A0FB59BE126E55630057FEE9 /* cfmglue.proj */,
+				A0FB59BF126E55630057FEE9 /* cfmglue.proj.exp */,
+			);
+			path = osx_cfm_glue;
+			sourceTree = "<group>";
+		};
+		A0FB59C0126E55630057FEE9 /* readme */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59C1126E55630057FEE9 /* mac_testing_notes.c */,
+			);
+			path = readme;
+			sourceTree = "<group>";
+		};
+		A0FB59C2126E55630057FEE9 /* sc_shlb */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59C3126E55630057FEE9 /* sc_shlb */,
+				A0FB59C4126E55630057FEE9 /* sc_shlb.Carbon */,
+				A0FB59C5126E55630057FEE9 /* sc_shlb.mono */,
+				A0FB59C6126E55630057FEE9 /* sc_shlb.rsrc.sit.hqx */,
+				A0FB59C7126E55630057FEE9 /* sc_shlb_carbon.h */,
+			);
+			path = sc_shlb;
+			sourceTree = "<group>";
+		};
+		A0FB59C8126E55630057FEE9 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59C9126E55630057FEE9 /* Makefile.am */,
+				A0FB59CA126E55630057FEE9 /* Makefile.in */,
+				A0FB59CB126E55630057FEE9 /* sasl.3 */,
+				A0FB59CC126E55630057FEE9 /* sasl_authorize_t.3 */,
+				A0FB59CD126E55630057FEE9 /* sasl_auxprop.3 */,
+				A0FB59CE126E55630057FEE9 /* sasl_auxprop_getctx.3 */,
+				A0FB59CF126E55630057FEE9 /* sasl_auxprop_request.3 */,
+				A0FB59D0126E55630057FEE9 /* sasl_callbacks.3 */,
+				A0FB59D1126E55630057FEE9 /* sasl_canon_user_t.3 */,
+				A0FB59D2126E55630057FEE9 /* sasl_chalprompt_t.3 */,
+				A0FB59D3126E55630057FEE9 /* sasl_checkapop.3 */,
+				A0FB59D4126E55630057FEE9 /* sasl_checkpass.3 */,
+				A0FB59D5126E55630057FEE9 /* sasl_client_init.3 */,
+				A0FB59D6126E55630057FEE9 /* sasl_client_new.3 */,
+				A0FB59D7126E55630057FEE9 /* sasl_client_start.3 */,
+				A0FB59D8126E55630057FEE9 /* sasl_client_step.3 */,
+				A0FB59D9126E55630057FEE9 /* sasl_decode.3 */,
+				A0FB59DA126E55630057FEE9 /* sasl_dispose.3 */,
+				A0FB59DB126E55630057FEE9 /* sasl_done.3 */,
+				A0FB59DC126E55630057FEE9 /* sasl_encode.3 */,
+				A0FB59DD126E55630057FEE9 /* sasl_encodev.3 */,
+				A0FB59DE126E55630057FEE9 /* sasl_errdetail.3 */,
+				A0FB59DF126E55630057FEE9 /* sasl_errors.3 */,
+				A0FB59E0126E55630057FEE9 /* sasl_errstring.3 */,
+				A0FB59E1126E55630057FEE9 /* sasl_getconfpath_t.3 */,
+				A0FB59E2126E55630057FEE9 /* sasl_getopt_t.3 */,
+				A0FB59E3126E55630057FEE9 /* sasl_getpath_t.3 */,
+				A0FB59E4126E55630057FEE9 /* sasl_getprop.3 */,
+				A0FB59E5126E55630057FEE9 /* sasl_getrealm_t.3 */,
+				A0FB59E6126E55630057FEE9 /* sasl_getsecret_t.3 */,
+				A0FB59E7126E55630057FEE9 /* sasl_getsimple_t.3 */,
+				A0FB59E8126E55630057FEE9 /* sasl_global_listmech.3 */,
+				A0FB59E9126E55630057FEE9 /* sasl_idle.3 */,
+				A0FB59EA126E55630057FEE9 /* sasl_listmech.3 */,
+				A0FB59EB126E55630057FEE9 /* sasl_log_t.3 */,
+				A0FB59EC126E55630057FEE9 /* sasl_server_init.3 */,
+				A0FB59ED126E55630057FEE9 /* sasl_server_new.3 */,
+				A0FB59EE126E55630057FEE9 /* sasl_server_start.3 */,
+				A0FB59EF126E55630057FEE9 /* sasl_server_step.3 */,
+				A0FB59F0126E55630057FEE9 /* sasl_server_userdb_checkpass_t.3 */,
+				A0FB59F1126E55630057FEE9 /* sasl_server_userdb_setpass_t.3 */,
+				A0FB59F2126E55630057FEE9 /* sasl_setpass.3 */,
+				A0FB59F3126E55630057FEE9 /* sasl_setprop.3 */,
+				A0FB59F4126E55630057FEE9 /* sasl_user_exists.3 */,
+				A0FB59F5126E55630057FEE9 /* sasl_verifyfile_t.3 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		A0FB59F6126E55630057FEE9 /* plugins */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB59F7126E55630057FEE9 /* Makefile.am */,
+				A0FB59F8126E55630057FEE9 /* Makefile.in */,
+				A0FB59F9126E55630057FEE9 /* NTMakefile */,
+				A0FB59FA126E55630057FEE9 /* anonymous.c */,
+				A0FB59FB126E55630057FEE9 /* anonymous_init.c */,
+				A0FB59FC126E55630057FEE9 /* cram.c */,
+				A0FB59FD126E55630057FEE9 /* crammd5_init.c */,
+				A0FB59FE126E55630057FEE9 /* digestmd5.c */,
+				A0FB59FF126E55630057FEE9 /* digestmd5_init.c */,
+				A0FB5A00126E55630057FEE9 /* gssapi.c */,
+				A0FB5A01126E55630057FEE9 /* gssapiv2_init.c */,
+				A0FB5A02126E55630057FEE9 /* kerberos4.c */,
+				A0FB5A03126E55630057FEE9 /* kerberos4_init.c */,
+				A0FB5A04126E55630057FEE9 /* ldapdb.c */,
+				A0FB5A05126E55630057FEE9 /* ldapdb_init.c */,
+				A0FB5A06126E55630057FEE9 /* login.c */,
+				A0FB5A07126E55630057FEE9 /* login_init.c */,
+				A0FB5A08126E55630057FEE9 /* makeinit.sh */,
+				A0FB5A09126E55630057FEE9 /* ntlm.c */,
+				A0FB5A0A126E55630057FEE9 /* ntlm_init.c */,
+				A0FB5A0B126E55630057FEE9 /* otp.c */,
+				A0FB5A0C126E55630057FEE9 /* otp.h */,
+				A0FB5A0D126E55630057FEE9 /* otp_init.c */,
+				A0FB5A0E126E55630057FEE9 /* passdss.c */,
+				A0FB5A0F126E55630057FEE9 /* passdss_init.c */,
+				A0FB5A10126E55630057FEE9 /* plain.c */,
+				A0FB5A11126E55630057FEE9 /* plain_init.c */,
+				A0FB5A12126E55630057FEE9 /* plugin_common.c */,
+				A0FB5A13126E55630057FEE9 /* plugin_common.h */,
+				A0FB5A14126E55630057FEE9 /* sasldb.c */,
+				A0FB5A15126E55630057FEE9 /* sasldb_init.c */,
+				A0FB5A16126E55630057FEE9 /* sql.c */,
+				A0FB5A17126E55630057FEE9 /* sql_init.c */,
+				A0FB5A18126E55630057FEE9 /* srp.c */,
+				A0FB5A19126E55630057FEE9 /* srp_init.c */,
+			);
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		A0FB5A1A126E55630057FEE9 /* pwcheck */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A1B126E55630057FEE9 /* Makefile.am */,
+				A0FB5A1C126E55630057FEE9 /* Makefile.in */,
+				A0FB5A1D126E55630057FEE9 /* README */,
+				A0FB5A1E126E55630057FEE9 /* pwcheck.c */,
+				A0FB5A1F126E55630057FEE9 /* pwcheck_getpwnam.c */,
+				A0FB5A20126E55630057FEE9 /* pwcheck_getspnam.c */,
+			);
+			path = pwcheck;
+			sourceTree = "<group>";
+		};
+		A0FB5A21126E55630057FEE9 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A22126E55630057FEE9 /* Makefile.am */,
+				A0FB5A23126E55630057FEE9 /* Makefile.in */,
+				A0FB5A24126E55630057FEE9 /* NTMakefile */,
+				A0FB5A25126E55630057FEE9 /* client.c */,
+				A0FB5A26126E55630057FEE9 /* common.c */,
+				A0FB5A27126E55630057FEE9 /* common.h */,
+				A0FB5A28126E55630057FEE9 /* sample-client.c */,
+				A0FB5A29126E55630057FEE9 /* sample-server.c */,
+				A0FB5A2A126E55630057FEE9 /* server.c */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		A0FB5A2B126E55630057FEE9 /* saslauthd */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A2C126E55630057FEE9 /* AUTHORS */,
+				A0FB5A2D126E55630057FEE9 /* COPYING */,
+				A0FB5A2E126E55630057FEE9 /* ChangeLog */,
+				A0FB5A2F126E55630057FEE9 /* INSTALL */,
+				A0FB5A30126E55630057FEE9 /* LDAP_SASLAUTHD */,
+				A0FB5A31126E55630057FEE9 /* Makefile.am */,
+				A0FB5A32126E55630057FEE9 /* Makefile.in */,
+				A0FB5A33126E55630057FEE9 /* NEWS */,
+				A0FB5A34126E55630057FEE9 /* README */,
+				A0FB5A35126E55630057FEE9 /* aclocal.m4 */,
+				A0FB5A36126E55630057FEE9 /* auth_dce.c */,
+				A0FB5A37126E55630057FEE9 /* auth_dce.h */,
+				A0FB5A38126E55630057FEE9 /* auth_getpwent.c */,
+				A0FB5A39126E55630057FEE9 /* auth_getpwent.h */,
+				A0FB5A3A126E55630057FEE9 /* auth_httpform.c */,
+				A0FB5A3B126E55630057FEE9 /* auth_httpform.h */,
+				A0FB5A3C126E55630057FEE9 /* auth_krb4.c */,
+				A0FB5A3D126E55630057FEE9 /* auth_krb4.h */,
+				A0FB5A3E126E55630057FEE9 /* auth_krb5.c */,
+				A0FB5A3F126E55630057FEE9 /* auth_krb5.h */,
+				A0FB5A40126E55630057FEE9 /* auth_ldap.c */,
+				A0FB5A41126E55630057FEE9 /* auth_ldap.h */,
+				A0FB5A42126E55630057FEE9 /* auth_pam.c */,
+				A0FB5A43126E55630057FEE9 /* auth_pam.h */,
+				A0FB5A44126E55630057FEE9 /* auth_rimap.c */,
+				A0FB5A45126E55630057FEE9 /* auth_rimap.h */,
+				A0FB5A46126E55630057FEE9 /* auth_sasldb.c */,
+				A0FB5A47126E55630057FEE9 /* auth_sasldb.h */,
+				A0FB5A48126E55630057FEE9 /* auth_shadow.c */,
+				A0FB5A49126E55630057FEE9 /* auth_shadow.h */,
+				A0FB5A4A126E55630057FEE9 /* auth_sia.c */,
+				A0FB5A4B126E55630057FEE9 /* auth_sia.h */,
+				A0FB5A4C126E55630057FEE9 /* cache.c */,
+				A0FB5A4D126E55630057FEE9 /* cache.h */,
+				A0FB5A4E126E55630057FEE9 /* cfile.c */,
+				A0FB5A4F126E55630057FEE9 /* cfile.h */,
+				A0FB5A50126E55630057FEE9 /* config */,
+				A0FB5A59126E55630057FEE9 /* configure */,
+				A0FB5A5A126E55630057FEE9 /* configure.in */,
+				A0FB5A5B126E55630057FEE9 /* getaddrinfo.c */,
+				A0FB5A5C126E55630057FEE9 /* getnameinfo.c */,
+				A0FB5A5D126E55630057FEE9 /* globals.h */,
+				A0FB5A5E126E55630057FEE9 /* include */,
+				A0FB5A60126E55630057FEE9 /* ipc_doors.c */,
+				A0FB5A61126E55630057FEE9 /* ipc_unix.c */,
+				A0FB5A62126E55630057FEE9 /* krbtf.c */,
+				A0FB5A63126E55630057FEE9 /* krbtf.h */,
+				A0FB5A64126E55630057FEE9 /* lak.c */,
+				A0FB5A65126E55630057FEE9 /* lak.h */,
+				A0FB5A66126E55630057FEE9 /* md5.c */,
+				A0FB5A67126E55630057FEE9 /* md5global.h */,
+				A0FB5A68126E55630057FEE9 /* mechanisms.c */,
+				A0FB5A69126E55630057FEE9 /* mechanisms.h */,
+				A0FB5A6A126E55630057FEE9 /* saslauthd-main.c */,
+				A0FB5A6B126E55630057FEE9 /* saslauthd-main.h */,
+				A0FB5A6C126E55630057FEE9 /* saslauthd.8 */,
+				A0FB5A6D126E55630057FEE9 /* saslauthd.h.in */,
+				A0FB5A6E126E55630057FEE9 /* saslauthd.mdoc */,
+				A0FB5A6F126E55630057FEE9 /* saslauthd_md5.h */,
+				A0FB5A70126E55630057FEE9 /* saslcache.c */,
+				A0FB5A71126E55630057FEE9 /* testsaslauthd.c */,
+				A0FB5A72126E55630057FEE9 /* utils.c */,
+				A0FB5A73126E55630057FEE9 /* utils.h */,
+			);
+			path = saslauthd;
+			sourceTree = "<group>";
+		};
+		A0FB5A50126E55630057FEE9 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A51126E55630057FEE9 /* config.guess */,
+				A0FB5A52126E55630057FEE9 /* config.sub */,
+				A0FB5A53126E55630057FEE9 /* depcomp */,
+				A0FB5A54126E55630057FEE9 /* install-sh */,
+				A0FB5A55126E55630057FEE9 /* ltconfig */,
+				A0FB5A56126E55630057FEE9 /* ltmain.sh */,
+				A0FB5A57126E55630057FEE9 /* missing */,
+				A0FB5A58126E55630057FEE9 /* mkinstalldirs */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		A0FB5A5E126E55630057FEE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A5F126E55630057FEE9 /* gai.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A0FB5A74126E55630057FEE9 /* sasldb */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A75126E55630057FEE9 /* Makefile.am */,
+				A0FB5A76126E55630057FEE9 /* Makefile.in */,
+				A0FB5A77126E55630057FEE9 /* NTMakefile */,
+				A0FB5A78126E55630057FEE9 /* allockey.c */,
+				A0FB5A79126E55630057FEE9 /* db_berkeley.c */,
+				A0FB5A7A126E55630057FEE9 /* db_gdbm.c */,
+				A0FB5A7B126E55630057FEE9 /* db_ndbm.c */,
+				A0FB5A7C126E55630057FEE9 /* db_none.c */,
+				A0FB5A7D126E55630057FEE9 /* sasldb.h */,
+			);
+			path = sasldb;
+			sourceTree = "<group>";
+		};
+		A0FB5A7E126E55630057FEE9 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A7F126E55630057FEE9 /* Makefile.am */,
+				A0FB5A80126E55630057FEE9 /* Makefile.in */,
+				A0FB5A81126E55630057FEE9 /* NTMakefile */,
+				A0FB5A82126E55630057FEE9 /* dbconverter-2.c */,
+				A0FB5A83126E55630057FEE9 /* pluginviewer.8 */,
+				A0FB5A84126E55630057FEE9 /* pluginviewer.c */,
+				A0FB5A85126E55630057FEE9 /* sasldblistusers.c */,
+				A0FB5A86126E55630057FEE9 /* sasldblistusers2.8 */,
+				A0FB5A87126E55630057FEE9 /* saslpasswd.c */,
+				A0FB5A88126E55630057FEE9 /* saslpasswd2.8 */,
+				A0FB5A89126E55630057FEE9 /* sfsasl.c */,
+				A0FB5A8A126E55630057FEE9 /* sfsasl.h */,
+				A0FB5A8B126E55630057FEE9 /* smtptest.c */,
+				A0FB5A8C126E55630057FEE9 /* testsuite.c */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		A0FB5A8D126E55630057FEE9 /* win32 */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A8E126E55630057FEE9 /* .cvsignore */,
+				A0FB5A8F126E55630057FEE9 /* .cvswrappers */,
+				A0FB5A90126E55630057FEE9 /* common.mak */,
+				A0FB5A91126E55630057FEE9 /* include */,
+			);
+			path = win32;
+			sourceTree = "<group>";
+		};
+		A0FB5A91126E55630057FEE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A0FB5A92126E55630057FEE9 /* .cvsignore */,
+				A0FB5A93126E55630057FEE9 /* NTMakefile */,
+				A0FB5A94126E55630057FEE9 /* config.h */,
+				A0FB5A95126E55630057FEE9 /* md5global.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* sasl2_Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		A0FB53DA126E52C60057FEE9 /* Makefile */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = Makefile;
+			passBuildSettingsInEnvironment = 1;
+			productName = Makefile;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* sasl2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "sasl2" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */,
+			);
+			name = sasl2;
+			productName = sasl2;
+			productReference = D2AAC07E0554694100DB518D /* libsasl2.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cyrus SASL" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* sasl2 */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0FB53DA126E52C60057FEE9 /* Makefile */,
+				D2AAC07D0554694100DB518D /* sasl2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0FB5A9B126E55B70057FEE9 /* auxprop.c in Sources */,
+				A0FB5A9C126E55B70057FEE9 /* canonusr.c in Sources */,
+				A0FB5A9D126E55B70057FEE9 /* checkpw.c in Sources */,
+				A0FB5A9E126E55B70057FEE9 /* client.c in Sources */,
+				A0FB5A9F126E55B70057FEE9 /* common.c in Sources */,
+				A0FB5AA0126E55B70057FEE9 /* config.c in Sources */,
+				A0FB5AA1126E55B70057FEE9 /* dlopen.c in Sources */,
+				A0FB5AA2126E55B70057FEE9 /* external.c in Sources */,
+				A0FB5AA3126E55B70057FEE9 /* md5.c in Sources */,
+				A0FB5AA4126E55B70057FEE9 /* saslutil.c in Sources */,
+				A0FB5AA5126E55B70057FEE9 /* server.c in Sources */,
+				A0FB5AA6126E55B70057FEE9 /* seterror.c in Sources */,
+				A0FB5AA7126E56410057FEE9 /* plugin_common.c in Sources */,
+				A09611DF126F96BA00671A97 /* db_none.c in Sources */,
+				A09611E0126F96C600671A97 /* allockey.c in Sources */,
+				A09611FB126F9D2900671A97 /* anonymous.c in Sources */,
+				A09611FC126F9D2900671A97 /* anonymous_init.c in Sources */,
+				A09611FD126F9D3100671A97 /* cram.c in Sources */,
+				A09611FE126F9D3100671A97 /* crammd5_init.c in Sources */,
+				A0961202126F9D4900671A97 /* plain.c in Sources */,
+				A0961203126F9D4900671A97 /* plain_init.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0FB53DA126E52C60057FEE9 /* Makefile */;
+			targetProxy = A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/sasl2.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"cyrus-sasl",
+					"cyrus-sasl/include",
+					"cyrus-sasl/plugins",
+					"cyrus-sasl/sasldb",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = sasl2;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/sasl2.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"cyrus-sasl",
+					"cyrus-sasl/include",
+					"cyrus-sasl/plugins",
+					"cyrus-sasl/sasldb",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = sasl2;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+		A0FB53DB126E52C60057FEE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Makefile;
+			};
+			name = Debug;
+		};
+		A0FB53DC126E52C60057FEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Makefile;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "sasl2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cyrus SASL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0FB53DB126E52C60057FEE9 /* Debug */,
+				A0FB53DC126E52C60057FEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
