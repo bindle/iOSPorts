@@ -43,7 +43,12 @@ PACKAGE_URL				= http://www.openssl.org/source/$(PACKAGE_FILE)
 
 include ../../../build-aux/Makefile-package
 
-extra-prep:
+PKGHEADERS = openssl/crypto/opensslconf.h
+
+$(PKGHEADERS): $(PACKAGE_NAME)
+	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
+
+extra-prep: $(PKGHEADERS)
 
 clean-local:
 	/bin/rm -Rf include

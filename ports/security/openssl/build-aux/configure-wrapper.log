@@ -1,0 +1,210 @@
+Operating system: i686-apple-darwinDarwin Kernel Version 10.4.0: Fri Apr 23 18:28:53 PDT 2010; root:xnu-1504.7.4~1/RELEASE_I386
+WARNING! If you wish to build 64-bit library, then you have to
+         invoke './Configure darwin64-x86_64-cc' *manually*.
+         You have about 5 seconds to press Ctrl-C to abort.
+Configuring for darwin-i386-cc
+Configuring for darwin-i386-cc
+    no-asm          [option]   OPENSSL_NO_ASM
+    no-dso          [option]  
+    no-gmp          [default]  OPENSSL_NO_GMP (skip dir)
+    no-jpake        [experimental] OPENSSL_NO_JPAKE (skip dir)
+    no-krb5         [krb5-flavor not specified] OPENSSL_NO_KRB5
+    no-md2          [default]  OPENSSL_NO_MD2 (skip dir)
+    no-rc5          [default]  OPENSSL_NO_RC5 (skip dir)
+    no-rfc3779      [default]  OPENSSL_NO_RFC3779 (skip dir)
+    no-shared       [option]  
+    no-store        [experimental] OPENSSL_NO_STORE (skip dir)
+    no-threads      [option]  
+    no-zlib         [option]  
+    no-zlib-dynamic [default] 
+IsMK1MF=0
+CC            =cc
+CFLAG         =-arch i386 -O3 -fomit-frame-pointer -DL_ENDIAN
+EX_LIBS       =
+CPUID_OBJ     =mem_clr.o
+BN_ASM        =bn_asm.o
+DES_ENC       =des_enc.o fcrypt_b.o
+AES_ENC       =aes_core.o aes_cbc.o
+BF_ENC        =bf_enc.o
+CAST_ENC      =c_enc.o
+RC4_ENC       =rc4_enc.o rc4_skey.o
+RC5_ENC       =rc5_enc.o
+MD5_OBJ_ASM   =
+SHA1_OBJ_ASM  =
+RMD160_OBJ_ASM=
+CMLL_ENC=     =camellia.o cmll_misc.o cmll_cbc.o
+PROCESSOR     =
+RANLIB        =/usr/bin/ranlib
+ARFLAGS       =
+PERL          =/opt/local/bin/perl5
+THIRTY_TWO_BIT mode
+DES_UNROLL used
+BN_LLONG mode
+RC4_CHUNK is unsigned long
+BF_PTR used
+e_os2.h => include/openssl/e_os2.h
+making links in crypto...
+crypto.h => ../include/openssl/crypto.h
+opensslv.h => ../include/openssl/opensslv.h
+opensslconf.h => ../include/openssl/opensslconf.h
+ebcdic.h => ../include/openssl/ebcdic.h
+symhacks.h => ../include/openssl/symhacks.h
+ossl_typ.h => ../include/openssl/ossl_typ.h
+making links in crypto/objects...
+objects.h => ../../include/openssl/objects.h
+obj_mac.h => ../../include/openssl/obj_mac.h
+making links in crypto/md4...
+md4.h => ../../include/openssl/md4.h
+md4test.c => ../../test/md4test.c
+md4.c => ../../apps/md4.c
+making links in crypto/md5...
+md5.h => ../../include/openssl/md5.h
+md5test.c => ../../test/md5test.c
+making links in crypto/sha...
+sha.h => ../../include/openssl/sha.h
+shatest.c => ../../test/shatest.c
+sha1test.c => ../../test/sha1test.c
+sha256t.c => ../../test/sha256t.c
+sha512t.c => ../../test/sha512t.c
+making links in crypto/mdc2...
+mdc2.h => ../../include/openssl/mdc2.h
+mdc2test.c => ../../test/mdc2test.c
+making links in crypto/hmac...
+hmac.h => ../../include/openssl/hmac.h
+hmactest.c => ../../test/hmactest.c
+making links in crypto/ripemd...
+ripemd.h => ../../include/openssl/ripemd.h
+rmdtest.c => ../../test/rmdtest.c
+making links in crypto/whrlpool...
+whrlpool.h => ../../include/openssl/whrlpool.h
+wp_test.c => ../../test/wp_test.c
+making links in crypto/des...
+des.h => ../../include/openssl/des.h
+des_old.h => ../../include/openssl/des_old.h
+destest.c => ../../test/destest.c
+making links in crypto/aes...
+aes.h => ../../include/openssl/aes.h
+making links in crypto/rc2...
+rc2.h => ../../include/openssl/rc2.h
+rc2test.c => ../../test/rc2test.c
+making links in crypto/rc4...
+rc4.h => ../../include/openssl/rc4.h
+rc4test.c => ../../test/rc4test.c
+making links in crypto/idea...
+idea.h => ../../include/openssl/idea.h
+ideatest.c => ../../test/ideatest.c
+making links in crypto/bf...
+blowfish.h => ../../include/openssl/blowfish.h
+bftest.c => ../../test/bftest.c
+making links in crypto/cast...
+cast.h => ../../include/openssl/cast.h
+casttest.c => ../../test/casttest.c
+making links in crypto/camellia...
+camellia.h => ../../include/openssl/camellia.h
+making links in crypto/seed...
+seed.h => ../../include/openssl/seed.h
+making links in crypto/modes...
+modes.h => ../../include/openssl/modes.h
+making links in crypto/bn...
+bn.h => ../../include/openssl/bn.h
+bntest.c => ../../test/bntest.c
+exptest.c => ../../test/exptest.c
+making links in crypto/ec...
+ec.h => ../../include/openssl/ec.h
+ectest.c => ../../test/ectest.c
+making links in crypto/rsa...
+rsa.h => ../../include/openssl/rsa.h
+rsa_test.c => ../../test/rsa_test.c
+making links in crypto/dsa...
+dsa.h => ../../include/openssl/dsa.h
+dsatest.c => ../../test/dsatest.c
+making links in crypto/ecdsa...
+ecdsa.h => ../../include/openssl/ecdsa.h
+ecdsatest.c => ../../test/ecdsatest.c
+making links in crypto/dh...
+dh.h => ../../include/openssl/dh.h
+dhtest.c => ../../test/dhtest.c
+making links in crypto/ecdh...
+ecdh.h => ../../include/openssl/ecdh.h
+ecdhtest.c => ../../test/ecdhtest.c
+making links in crypto/dso...
+dso.h => ../../include/openssl/dso.h
+making links in crypto/engine...
+engine.h => ../../include/openssl/engine.h
+enginetest.c => ../../test/enginetest.c
+making links in crypto/buffer...
+buffer.h => ../../include/openssl/buffer.h
+making links in crypto/bio...
+bio.h => ../../include/openssl/bio.h
+making links in crypto/stack...
+stack.h => ../../include/openssl/stack.h
+safestack.h => ../../include/openssl/safestack.h
+making links in crypto/lhash...
+lhash.h => ../../include/openssl/lhash.h
+making links in crypto/rand...
+rand.h => ../../include/openssl/rand.h
+randtest.c => ../../test/randtest.c
+making links in crypto/err...
+err.h => ../../include/openssl/err.h
+making links in crypto/evp...
+evp.h => ../../include/openssl/evp.h
+evp_test.c => ../../test/evp_test.c
+cp evptests.txt ../../test
+making links in crypto/asn1...
+asn1.h => ../../include/openssl/asn1.h
+asn1_mac.h => ../../include/openssl/asn1_mac.h
+asn1t.h => ../../include/openssl/asn1t.h
+making links in crypto/pem...
+pem.h => ../../include/openssl/pem.h
+pem2.h => ../../include/openssl/pem2.h
+making links in crypto/x509...
+x509.h => ../../include/openssl/x509.h
+x509_vfy.h => ../../include/openssl/x509_vfy.h
+making links in crypto/x509v3...
+x509v3.h => ../../include/openssl/x509v3.h
+making links in crypto/conf...
+conf.h => ../../include/openssl/conf.h
+conf_api.h => ../../include/openssl/conf_api.h
+making links in crypto/txt_db...
+txt_db.h => ../../include/openssl/txt_db.h
+making links in crypto/pkcs7...
+pkcs7.h => ../../include/openssl/pkcs7.h
+making links in crypto/pkcs12...
+pkcs12.h => ../../include/openssl/pkcs12.h
+making links in crypto/comp...
+comp.h => ../../include/openssl/comp.h
+making links in crypto/ocsp...
+ocsp.h => ../../include/openssl/ocsp.h
+making links in crypto/ui...
+ui.h => ../../include/openssl/ui.h
+ui_compat.h => ../../include/openssl/ui_compat.h
+making links in crypto/krb5...
+krb5_asn.h => ../../include/openssl/krb5_asn.h
+making links in crypto/cms...
+cms.h => ../../include/openssl/cms.h
+making links in crypto/pqueue...
+pqueue.h => ../../include/openssl/pqueue.h
+making links in crypto/ts...
+ts.h => ../../include/openssl/ts.h
+making links in ssl...
+ssl.h => ../include/openssl/ssl.h
+ssl2.h => ../include/openssl/ssl2.h
+ssl3.h => ../include/openssl/ssl3.h
+ssl23.h => ../include/openssl/ssl23.h
+tls1.h => ../include/openssl/tls1.h
+dtls1.h => ../include/openssl/dtls1.h
+kssl.h => ../include/openssl/kssl.h
+ssltest.c => ../test/ssltest.c
+making links in engines...
+making links in engines/ccgost...
+make[2]: Nothing to be done for `links'.
+making links in apps...
+make[1]: Nothing to be done for `links'.
+making links in test...
+make[1]: Nothing to be done for `links'.
+making links in tools...
+make[1]: Nothing to be done for `links'.
+generating dummy tests (if needed)...
+make[1]: Nothing to be done for `generate'.
+
+Configured for darwin-i386-cc.
