@@ -12,6 +12,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A051131F127769BB00DE46C4 /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
+		A0511320127769BB00DE46C4 /* openssl-1.0.0a.tar.gz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "openssl-1.0.0a.tar.gz.md5"; sourceTree = "<group>"; };
+		A0511321127769BB00DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		AA747D9E0F9514B9006C5449 /* openssl_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openssl_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libopenssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libopenssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +43,8 @@
 		0867D691FE84028FC02AAC07 /* openssl */ = {
 			isa = PBXGroup;
 			children = (
+				A0511321127769BB00DE46C4 /* Makefile */,
+				A051131E127769BB00DE46C4 /* build-aux */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
@@ -62,6 +67,15 @@
 			);
 			name = "Other Sources";
 			path = other;
+			sourceTree = "<group>";
+		};
+		A051131E127769BB00DE46C4 /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				A051131F127769BB00DE46C4 /* configure-wrapper.sh */,
+				A0511320127769BB00DE46C4 /* openssl-1.0.0a.tar.gz.md5 */,
+			);
+			path = "build-aux";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

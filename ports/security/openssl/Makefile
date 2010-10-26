@@ -45,4 +45,10 @@ include ../../../build-aux/Makefile-package
 
 extra-prep:
 
+clean-local:
+	/bin/rm -Rf include
+
+distclean-local:
+	/bin/rm -Rf build
+
 # end of Makefile
