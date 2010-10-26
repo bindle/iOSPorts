@@ -2,6 +2,7 @@
 *.pbxuser
 .DS_Store
 /build/
+/include/
 /openldap
 /openldap-2.4.22
 /openldap-2.4.22.tgz

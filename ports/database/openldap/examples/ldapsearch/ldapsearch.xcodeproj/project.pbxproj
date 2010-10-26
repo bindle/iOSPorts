@@ -38,14 +38,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F /* ldap */;
+			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F;
 			remoteInfo = ldap;
 		};
 		A0C0848611D16E5000A1AE4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = A03ADE2911D1520A00F5A51F /* lber */;
+			remoteGlobalIDString = A03ADE2911D1520A00F5A51F;
 			remoteInfo = lber;
 		};
 /* End PBXContainerItemProxy section */
@@ -198,7 +198,14 @@
 			isa = PBXProject;
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ldapsearch" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (

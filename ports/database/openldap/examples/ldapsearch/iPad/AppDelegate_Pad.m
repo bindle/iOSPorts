@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate_Pad.h"
+#define LDAP_DEPRECATED 1
 #import <ldap.h>
 #include <stdlib.h>
 #include <string.h>
@@ -41,11 +42,13 @@
    dn              = "cn=Directory Manager";
 
    NSLog(@"initialzing LDAP...");
-   ldap_initialize(&ld, "ldap://192.168.100.3/");
+   ldap_initialize(&ld, "ldap://10.0.1.3/");
 
    NSLog(@"binding to LDAP server...");
+   err = ldap_simple_bind_s(ld, NULL, NULL);
+   
    err = ldap_sasl_bind_s(ld, dn, LDAP_SASL_SIMPLE, &cred, NULL, NULL, &servercredp);
-   if (err == LDAP_SUCCESS)
+   if (err != LDAP_SUCCESS)
    {
       NSLog(@"ldap_sasl_bind_s(): %s", ldap_err2string(err));
       ldap_unbind_ext_s(ld, NULL, NULL);
@@ -59,6 +62,15 @@
       ldap_unbind_ext_s(ld, NULL, NULL);
       return(YES);
    };
+
+NSLog(@"binding to LDAP server...");
+err = ldap_sasl_bind_s(ld, dn, LDAP_SASL_SIMPLE, &cred, NULL, NULL, &servercredp);
+if (err == LDAP_SUCCESS)
+{
+   NSLog(@"ldap_sasl_bind_s(): %s", ldap_err2string(err));
+   ldap_unbind_ext_s(ld, NULL, NULL);
+   return(YES);
+};
 
    NSLog(@"checking for results...");
    if (!(ldap_count_entries(ld, res)))

@@ -83,7 +83,6 @@
 		A03ADE1011D1511E00F5A51F /* ldap_cdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0811D14DED00F5A51F /* ldap_cdefs.h */; };
 		A03ADE1111D1512500F5A51F /* ldap_schema.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1311D14DED00F5A51F /* ldap_schema.h */; };
 		A03ADE1211D1512500F5A51F /* ldap_utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1411D14DED00F5A51F /* ldap_utf8.h */; };
-		A03ADE1411D1514800F5A51F /* ldap_features.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADDB611D14EB000F5A51F /* ldap_features.h */; };
 		A03ADE2D11D1521C00F5A51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		A03ADE3011D1526400F5A51F /* assert.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2511D14DED00F5A51F /* assert.c */; };
 		A03ADE3111D1526400F5A51F /* bprint.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2611D14DED00F5A51F /* bprint.c */; };
@@ -96,7 +95,6 @@
 		A03ADE3811D1526400F5A51F /* sockbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3211D14DED00F5A51F /* sockbuf.c */; };
 		A03ADE3911D1526400F5A51F /* stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3311D14DED00F5A51F /* stdio.c */; };
 		A03ADE3A11D1529700F5A51F /* lber.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0411D14DED00F5A51F /* lber.h */; };
-		A03ADE3B11D152A200F5A51F /* lber_types.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADDB411D14EB000F5A51F /* lber_types.h */; };
 		A0A53AD311D15941007EE6C4 /* tls2.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6D11D14DED00F5A51F /* tls2.c */; };
 		A0A53AD411D15941007EE6C4 /* tls_g.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6E11D14DED00F5A51F /* tls_g.c */; };
 		A0A53AD511D15941007EE6C4 /* tls_m.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6F11D14DED00F5A51F /* tls_m.c */; };
@@ -1663,12 +1661,19 @@
 		A03ADDA911D14DEE00F5A51F /* test056-monitor */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "test056-monitor"; sourceTree = "<group>"; };
 		A03ADDAA11D14DEE00F5A51F /* test057-memberof-refint */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "test057-memberof-refint"; sourceTree = "<group>"; };
 		A03ADDAB11D14DEE00F5A51F /* test058-syncrepl-asymmetric */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "test058-syncrepl-asymmetric"; sourceTree = "<group>"; };
-		A03ADDB411D14EB000F5A51F /* lber_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber_types.h; sourceTree = "<group>"; };
-		A03ADDB511D14EB000F5A51F /* ldap_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_config.h; sourceTree = "<group>"; };
-		A03ADDB611D14EB000F5A51F /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
-		A03ADDB711D14EB000F5A51F /* portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable.h; sourceTree = "<group>"; };
 		A03ADDBE11D14F1200F5A51F /* libldap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libldap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03ADE2A11D1520A00F5A51F /* liblber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblber.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09611A7126E6C3500671A97 /* lber_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber_types.h; sourceTree = "<group>"; };
+		A09611A8126E6C3500671A97 /* ldap_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_config.h; sourceTree = "<group>"; };
+		A09611A9126E6C3500671A97 /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
+		A09611AA126E6C3500671A97 /* portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable.h; sourceTree = "<group>"; };
+		A09611B8126E6C6C00671A97 /* lber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber.h; sourceTree = "<group>"; };
+		A09611B9126E6C6C00671A97 /* lber_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber_types.h; sourceTree = "<group>"; };
+		A09611BA126E6C6C00671A97 /* ldap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap.h; sourceTree = "<group>"; };
+		A09611BB126E6C6C00671A97 /* ldap_cdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_cdefs.h; sourceTree = "<group>"; };
+		A09611BC126E6C6C00671A97 /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
+		A09611BD126E6C6C00671A97 /* ldap_schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_schema.h; sourceTree = "<group>"; };
+		A09611BE126E6C6C00671A97 /* ldap_utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_utf8.h; sourceTree = "<group>"; };
 		A0A53AFF11D15A60007EE6C4 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -1710,7 +1715,7 @@
 				A03AD73511D14A0400F5A51F /* README */,
 				A0A53AFF11D15A60007EE6C4 /* TODO */,
 				A03AD73911D14CDE00F5A51F /* build-aux */,
-				A03ADDB311D14EB000F5A51F /* include */,
+				A09611B7126E6C6C00671A97 /* include */,
 				A03AD75311D14DEC00F5A51F /* openldap */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
@@ -1729,6 +1734,10 @@
 		A03AD73911D14CDE00F5A51F /* build-aux */ = {
 			isa = PBXGroup;
 			children = (
+				A09611A7126E6C3500671A97 /* lber_types.h */,
+				A09611A8126E6C3500671A97 /* ldap_config.h */,
+				A09611A9126E6C3500671A97 /* ldap_features.h */,
+				A09611AA126E6C3500671A97 /* portable.h */,
 				A03AD73A11D14CDE00F5A51F /* openldap-2.4.22.tgz.md5 */,
 			);
 			path = "build-aux";
@@ -4065,13 +4074,16 @@
 			path = scripts;
 			sourceTree = "<group>";
 		};
-		A03ADDB311D14EB000F5A51F /* include */ = {
+		A09611B7126E6C6C00671A97 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				A03ADDB411D14EB000F5A51F /* lber_types.h */,
-				A03ADDB511D14EB000F5A51F /* ldap_config.h */,
-				A03ADDB611D14EB000F5A51F /* ldap_features.h */,
-				A03ADDB711D14EB000F5A51F /* portable.h */,
+				A09611B8126E6C6C00671A97 /* lber.h */,
+				A09611B9126E6C6C00671A97 /* lber_types.h */,
+				A09611BA126E6C6C00671A97 /* ldap.h */,
+				A09611BB126E6C6C00671A97 /* ldap_cdefs.h */,
+				A09611BC126E6C6C00671A97 /* ldap_features.h */,
+				A09611BD126E6C6C00671A97 /* ldap_schema.h */,
+				A09611BE126E6C6C00671A97 /* ldap_utf8.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -4085,7 +4097,6 @@
 			files = (
 				A03ADE0F11D1511A00F5A51F /* ldap.h in Headers */,
 				A03ADE1011D1511E00F5A51F /* ldap_cdefs.h in Headers */,
-				A03ADE1411D1514800F5A51F /* ldap_features.h in Headers */,
 				A03ADE1111D1512500F5A51F /* ldap_schema.h in Headers */,
 				A03ADE1211D1512500F5A51F /* ldap_utf8.h in Headers */,
 			);
@@ -4095,7 +4106,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03ADE3B11D152A200F5A51F /* lber_types.h in Headers */,
 				A03ADE3A11D1529700F5A51F /* lber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4162,7 +4172,14 @@
 			isa = PBXProject;
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "openldap" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* openldap */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
