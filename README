@@ -1,0 +1,47 @@
+
+iOS Ports
+=================
+
+   iOS Ports is a Collection of F/OSS libraries which have been ported to
+   the iOS platform.
+
+
+Software Requirements
+=====================
+
+   Git 1.7.2.3
+   Mac OS X 10.6.3
+   Xcode 3.2.4
+   iOS SDK 4.1
+
+
+Maintainers
+===========
+
+   David M. Syzdek
+   Bindle Binaries
+   syzdek@bindlebinaries.com
+
+
+Source Code
+===========
+
+The source code for this project is maintained using git (http://git-scm.com).
+The following contains information to checkout the source code from the git
+repository.
+
+   Git URLs:
+      git://git.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+      http://http.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+      ssh://ssh.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+
+   Downloading Source:
+
+      $ git clone ssh://ssh.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+
+   Git Branches:
+      master - Current release of packages.
+      next   - changes staged for next release
+      pu     - proposed updates for next release
+      xx/yy+ - branch for testing new changes before merging to 'pu' branch
+
