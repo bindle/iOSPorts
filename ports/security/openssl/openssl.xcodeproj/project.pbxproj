@@ -22,7 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A0511C56127770FD00DE46C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		A0511C691277717700DE46C4 /* s2_clnt.c in Sources */ = {isa = PBXBuildFile; fileRef = A0511B3412776F1700DE46C4 /* s2_clnt.c */; };
 		A0511C6A1277717700DE46C4 /* s2_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = A0511B3512776F1700DE46C4 /* s2_enc.c */; };
 		A0511C6B1277717700DE46C4 /* s2_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = A0511B3612776F1700DE46C4 /* s2_lib.c */; };
@@ -631,7 +630,6 @@
 		A05122F512789C5500DE46C4 /* ts_verify_ctx.c in Sources */ = {isa = PBXBuildFile; fileRef = A05117DE12776F1600DE46C4 /* ts_verify_ctx.c */; };
 		A05122F912789C6E00DE46C4 /* txt_db.c in Sources */ = {isa = PBXBuildFile; fileRef = A05117E112776F1600DE46C4 /* txt_db.c */; };
 		A051232612789D9300DE46C4 /* test_des.m in Sources */ = {isa = PBXBuildFile; fileRef = A051232512789D9300DE46C4 /* test_des.m */; };
-		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -2908,6 +2906,9 @@
 		A0511FBB1277937800DE46C4 /* test_md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_md5.m; sourceTree = "<group>"; };
 		A051232512789D9300DE46C4 /* test_des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_des.m; sourceTree = "<group>"; };
 		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A05123B11278D08C00DE46C4 /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
+		A05123B31278D0B800DE46C4 /* libresolv.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.9.dylib; path = usr/lib/libresolv.9.dylib; sourceTree = SDKROOT; };
+		A05123B51278D0B800DE46C4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -2917,7 +2918,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0511C56127770FD00DE46C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2937,7 +2937,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2964,6 +2963,9 @@
 				A0511F551277906C00DE46C4 /* Examples */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
+				A05123B11278D08C00DE46C4 /* libpthread.dylib */,
+				A05123B31278D0B800DE46C4 /* libresolv.9.dylib */,
+				A05123B51278D0B800DE46C4 /* libz.dylib */,
 			);
 			name = openssl;
 			sourceTree = "<group>";
