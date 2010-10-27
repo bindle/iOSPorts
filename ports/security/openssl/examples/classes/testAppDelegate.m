@@ -17,6 +17,7 @@ int test_md5(void);
 @synthesize viewController;
 
 int test_md5(void);
+int test_des(void);
 
 
 #pragma mark -
@@ -33,8 +34,14 @@ int test_md5(void);
 
    viewController.label.text = @"Running tests...";
 
-   err = test_md5();
-   viewController.label.text = [NSString stringWithFormat:@"%i errors found", err];
+   err = 0;
+   if ((test_md5()))
+      err++;
+   if ((test_des()))
+      err++;
+   viewController.label.text = [NSString stringWithFormat:@"%i of 2 tests failed", err];
+
+
 
     return YES;
 }

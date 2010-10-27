@@ -1,49 +1,49 @@
-*  objects \
-*  md4
-*  md5
-*  sha
-*  mdc2
-*  hmac
-*  ripemd
-   whrlpool \
-   des
-   aes
+*  aes
+*  bf
+*  bio
+*  bn
+*  buffer
+*  camellia
+*  cast
+*  cms
+*  comp
+*  des
+*  dsa
+*  dso
+*  ec
+*  ecdh
+*  ecdsa
+*  engine
+*  idea
+*  krb5 \
+*  lhash
+*  modes \
+   ocsp
+   pkcs12
+   pqueue
+   rand
    rc2
    rc4
-   idea
-   bf
-   cast
-   camellia
-   seed
-   modes \
-   bn
-   ec
    rsa
-   dsa
-   ecdsa
-*  dh
-   ecdh
-   dso
-   engine
-   buffer
-   bio
+   seed
    stack
-   lhash
-   rand
+   ts
+   txt_db
+   ui
+   whrlpool \
+*  asn1
+*  conf
+*  dh
 *  err \
 *  evp
-*  asn1
+*  hmac
+*  md4
+*  md5
+*  mdc2
+*  objects \
 *  pem
+*  pkcs7
+*  ripemd
+*  sha
 *  x509
 *  x509v3
-*  conf
-   txt_db
-*  pkcs7
-   pkcs12
-   comp
-   ocsp
-   ui
-   krb5 \
-   cms
-   pqueue
-   ts
