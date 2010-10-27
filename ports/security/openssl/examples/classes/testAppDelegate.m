@@ -35,9 +35,9 @@ int test_des(void);
    viewController.label.text = @"Running tests...";
 
    err = 0;
-   if ((test_md5()))
-      err++;
    if ((test_des()))
+      err++;
+   if ((test_md5()))
       err++;
    viewController.label.text = [NSString stringWithFormat:@"%i of 2 tests failed", err];
 
