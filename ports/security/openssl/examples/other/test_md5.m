@@ -66,7 +66,7 @@
 #include <openssl/evp.h>
 #include <openssl/md5.h>
 
-static char *test[]={
+static char *md5_test[]={
 	"",
 	"a",
 	"abc",
@@ -77,7 +77,7 @@ static char *test[]={
 	NULL,
 	};
 
-static char *ret[]={
+static char *md5_ret[]={
 	"d41d8cd98f00b204e9800998ecf8427e",
 	"0cc175b9c0f1b6a831c399e269772661",
 	"900150983cd24fb0d6963f7d28e17f72",
@@ -96,8 +96,10 @@ int test_md5(void)
 	char *p;
 	unsigned char md[MD5_DIGEST_LENGTH];
 
-	P=test;
-	R=ret;
+   NSLog(@"Running md5 tests...");
+
+	P=md5_test;
+	R=md5_ret;
 	i=1;
 	while (*P != NULL)
 		{
@@ -105,18 +107,18 @@ int test_md5(void)
 		p=pt(md);
 		if (strcmp(p,(char *)*R) != 0)
 			{
-			NSLog(@"   error calculating MD5 on '%s'\n",*P);
-			NSLog(@"   got %s instead of %s\n",p,*R);
+			NSLog(@"   error calculating MD5 on '%s'",*P);
+			NSLog(@"   got %s instead of %s",p,*R);
 			err++;
 			}
 		else
-			NSLog(@"   md5 test %d ok\n",i);
+			NSLog(@"   md5 test %d ok",i);
 		i++;
 		R++;
 		P++;
 		}
 
-	return(0);
+	return(err);
 	}
 
 static char *pt(unsigned char *md)

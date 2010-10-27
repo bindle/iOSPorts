@@ -16,12 +16,15 @@ int test_md5(void);
 @synthesize window;
 @synthesize viewController;
 
+int test_md5(void);
+
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-    
+
+   int err;
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
@@ -29,6 +32,9 @@ int test_md5(void);
     [window makeKeyAndVisible];
 
    viewController.label.text = @"Running tests...";
+
+   err = test_md5();
+   viewController.label.text = [NSString stringWithFormat:@"%i errors found", err];
 
     return YES;
 }
