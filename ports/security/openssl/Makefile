@@ -52,10 +52,15 @@ openssl/patched-for-xcode: $(PKGHEADERS)
 	patch -p0 -i build-aux/openssl-1.0.0a.patch
 	touch openssl/patched-for-xcode
 
-extra-prep: $(PKGHEADERS) openssl/patched-for-xcode
+../../../include/openssl/opensslconf.h: $(PKGHEADERS)
+	@mkdir -p ../../../include/openssl
+	cp openssl/include/openssl/* ../../../include/openssl/
+
+extra-prep: $(PKGHEADERS) ../../../include/openssl/opensslconf.h openssl/patched-for-xcode
 
 clean-local:
 	/bin/rm -Rf include
+	/bin/rm -Rf ../../../include/openssl
 
 distclean-local:
 	/bin/rm -Rf build
