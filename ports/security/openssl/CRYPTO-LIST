@@ -21,7 +21,7 @@
    rsa
    dsa
    ecdsa
-   dh
+*  dh
    ecdh
    dso
    engine
@@ -30,15 +30,15 @@
    stack
    lhash
    rand
-   err \
-   evp
-   asn1
-   pem
-   x509
-   x509v3
-   conf
+*  err \
+*  evp
+*  asn1
+*  pem
+*  x509
+*  x509v3
+*  conf
    txt_db
-   pkcs7
+*  pkcs7
    pkcs12
    comp
    ocsp
