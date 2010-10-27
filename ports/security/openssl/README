@@ -1,0 +1,8 @@
+Used notes from:
+   http://www.alexcurylo.com/blog/2009/09/23/iphone-openssl/
+   http://www.therareair.com/2009/01/01/tutorial-how-to-compile-openssl-for-the-iphone/
+   http://www.x2on.de/2010/07/13/tutorial-iphone-app-with-compiled-openssl-1-0-0a-library/
+
+The libssl.a and libcrypto.a have not been thoroughly tested. Use at your
+own risk and liability.
+

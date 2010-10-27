@@ -2908,6 +2908,7 @@
 		A0511FBB1277937800DE46C4 /* test_md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_md5.m; sourceTree = "<group>"; };
 		A05122A1127898FB00DE46C4 /* CRYPTO-LIST */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "CRYPTO-LIST"; sourceTree = "<group>"; };
 		A051232512789D9300DE46C4 /* test_des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_des.m; sourceTree = "<group>"; };
+		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -2958,6 +2959,7 @@
 			isa = PBXGroup;
 			children = (
 				A05122A1127898FB00DE46C4 /* CRYPTO-LIST */,
+				A05123771278ACDE00DE46C4 /* README */,
 				A0511321127769BB00DE46C4 /* Makefile */,
 				A051131E127769BB00DE46C4 /* build-aux */,
 				A051132512776F1400DE46C4 /* openssl */,
