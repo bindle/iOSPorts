@@ -43,7 +43,7 @@ PACKAGE_URL				= http://superb-sea2.dl.sourceforge.net/project/pcre/pcre/$(PACKA
 
 include ../../../build-aux/Makefile-package
 
-PKGHEADERS = 
+PKGHEADERS = pcre/config.h
 
 $(PKGHEADERS): $(PACKAGE_NAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
