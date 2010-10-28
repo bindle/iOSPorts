@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05D801C127A1817008D47CD /* pcre_compile.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FBE127A1235008D47CD /* pcre_compile.c */; };
+		A05D801D127A1817008D47CD /* pcre_config.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FBF127A1235008D47CD /* pcre_config.c */; };
+		A05D801E127A1817008D47CD /* pcre_dfa_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC0127A1235008D47CD /* pcre_dfa_exec.c */; };
+		A05D801F127A1817008D47CD /* pcre_exec.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC1127A1235008D47CD /* pcre_exec.c */; };
+		A05D8020127A1817008D47CD /* pcre_fullinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC2127A1235008D47CD /* pcre_fullinfo.c */; };
+		A05D8021127A1817008D47CD /* pcre_get.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC3127A1235008D47CD /* pcre_get.c */; };
+		A05D8022127A1817008D47CD /* pcre_globals.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC4127A1235008D47CD /* pcre_globals.c */; };
+		A05D8023127A1817008D47CD /* pcre_info.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC5127A1235008D47CD /* pcre_info.c */; };
+		A05D8024127A1817008D47CD /* pcre_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A05D7FC6127A1235008D47CD /* pcre_internal.h */; };
+		A05D8025127A1817008D47CD /* pcre_maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC7127A1235008D47CD /* pcre_maketables.c */; };
+		A05D8026127A1817008D47CD /* pcre_newline.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC8127A1235008D47CD /* pcre_newline.c */; };
+		A05D8027127A1817008D47CD /* pcre_ord2utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC9127A1235008D47CD /* pcre_ord2utf8.c */; };
+		A05D8028127A1817008D47CD /* pcre_refcount.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FCB127A1235008D47CD /* pcre_refcount.c */; };
+		A05D8029127A1817008D47CD /* pcre_study.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD3127A1235008D47CD /* pcre_study.c */; };
+		A05D802A127A1817008D47CD /* pcre_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD4127A1235008D47CD /* pcre_tables.c */; };
+		A05D802B127A1817008D47CD /* pcre_try_flipped.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD5127A1235008D47CD /* pcre_try_flipped.c */; };
+		A05D802C127A1817008D47CD /* pcre_ucd.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD6127A1235008D47CD /* pcre_ucd.c */; };
+		A05D802D127A1817008D47CD /* pcre_valid_utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD7127A1235008D47CD /* pcre_valid_utf8.c */; };
+		A05D802E127A1817008D47CD /* pcre_version.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD8127A1235008D47CD /* pcre_version.c */; };
+		A05D802F127A1817008D47CD /* pcre_xclass.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD9127A1235008D47CD /* pcre_xclass.c */; };
+		A05D8030127A1817008D47CD /* ucp.h in Headers */ = {isa = PBXBuildFile; fileRef = A05D800B127A1235008D47CD /* ucp.h */; };
 		AA747D9F0F9514B9006C5449 /* pcre_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* pcre_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -553,6 +574,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* pcre_Prefix.pch in Headers */,
+				A05D8024127A1817008D47CD /* pcre_internal.h in Headers */,
+				A05D8030127A1817008D47CD /* ucp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +647,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A05D801C127A1817008D47CD /* pcre_compile.c in Sources */,
+				A05D801D127A1817008D47CD /* pcre_config.c in Sources */,
+				A05D801E127A1817008D47CD /* pcre_dfa_exec.c in Sources */,
+				A05D801F127A1817008D47CD /* pcre_exec.c in Sources */,
+				A05D8020127A1817008D47CD /* pcre_fullinfo.c in Sources */,
+				A05D8021127A1817008D47CD /* pcre_get.c in Sources */,
+				A05D8022127A1817008D47CD /* pcre_globals.c in Sources */,
+				A05D8023127A1817008D47CD /* pcre_info.c in Sources */,
+				A05D8025127A1817008D47CD /* pcre_maketables.c in Sources */,
+				A05D8026127A1817008D47CD /* pcre_newline.c in Sources */,
+				A05D8027127A1817008D47CD /* pcre_ord2utf8.c in Sources */,
+				A05D8028127A1817008D47CD /* pcre_refcount.c in Sources */,
+				A05D8029127A1817008D47CD /* pcre_study.c in Sources */,
+				A05D802A127A1817008D47CD /* pcre_tables.c in Sources */,
+				A05D802B127A1817008D47CD /* pcre_try_flipped.c in Sources */,
+				A05D802C127A1817008D47CD /* pcre_ucd.c in Sources */,
+				A05D802D127A1817008D47CD /* pcre_valid_utf8.c in Sources */,
+				A05D802E127A1817008D47CD /* pcre_version.c in Sources */,
+				A05D802F127A1817008D47CD /* pcre_xclass.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -676,8 +718,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "-DHAVE_CONFIG_H";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = pcre;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;
@@ -689,8 +733,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = "-DHAVE_CONFIG_H";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = pcre;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;
