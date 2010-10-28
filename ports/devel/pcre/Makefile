@@ -45,10 +45,18 @@ include ../../../build-aux/Makefile-package
 
 PKGHEADERS = pcre/config.h
 
+OTHERFILES = pcre/pcre_chartables.c pcre/pcre.h
+
 $(PKGHEADERS): $(PACKAGE_NAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
-extra-prep: $(PKGHEADERS)
+pcre/pcre.h: $(PACKAGE_NAME) pcre/pcre.h.generic
+	cp pcre/pcre.h.generic pcre/pcre.h
+
+pcre/pcre_chartables.c: $(PACKAGE_NAME) pcre/pcre_chartables.c.dist
+	cp pcre/pcre_chartables.c.dist pcre/pcre_chartables.c
+
+extra-prep: $(PKGHEADERS) $(OTHERFILES)
 
 clean-local:
 	/bin/rm -Rf include
