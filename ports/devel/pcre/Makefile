@@ -47,19 +47,26 @@ PKGHEADERS = pcre/config.h
 
 OTHERFILES = pcre/pcre_chartables.c pcre/pcre.h
 
+INSTALLFILES = ../../../include/pcre.h
+
 $(PKGHEADERS): $(PACKAGE_NAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
 pcre/pcre.h: $(PACKAGE_NAME) pcre/pcre.h.generic
 	cp pcre/pcre.h.generic pcre/pcre.h
 
+../../../include/pcre.h: pcre/pcre.h
+	mkdir -p ../../../include
+	cp pcre/pcre.h ../../../include/pcre.h
+
 pcre/pcre_chartables.c: $(PACKAGE_NAME) pcre/pcre_chartables.c.dist
 	cp pcre/pcre_chartables.c.dist pcre/pcre_chartables.c
 
-extra-prep: $(PKGHEADERS) $(OTHERFILES)
+extra-prep: $(PKGHEADERS) $(OTHERFILES) $(INSTALLFILES)
 
 clean-local:
 	/bin/rm -Rf include
+	/bin/rm -Rf $(INSTALLFILES)
 
 distclean-local:
 	/bin/rm -Rf build
