@@ -53,13 +53,13 @@
 /* #undef BOTH_STRINGS_H */
 
 /* define if cross compiling */
-/* #undef CROSS_COMPILING */
+#define CROSS_COMPILING 1
 
 /* set to the number of arguments ctime_r() expects */
 #define CTIME_R_NARGS 2
 
 /* define if toupper() requires islower() */
-/* #undef C_UPPER_LOWER */
+#define C_UPPER_LOWER 1
 
 /* define if sys_errlist is not declared in stdio.h or errno.h */
 /* #undef DECL_SYS_ERRLIST */
@@ -128,7 +128,7 @@
 #define HAVE_CTIME_R 1
 
 /* define if you have Cyrus SASL */
-/* #undef HAVE_CYRUS_SASL */
+#define HAVE_CYRUS_SASL 1
 
 /* Define to 1 if you have the <db.h> header file. */
 /* #undef HAVE_DB_H */
@@ -387,19 +387,19 @@
 /* #undef HAVE_NT_THREADS */
 
 /* define if you have OpenSSL */
-/* #undef HAVE_OPENSSL */
+#define HAVE_OPENSSL 1
 
 /* Define to 1 if you have the <openssl/bn.h> header file. */
 /* #undef HAVE_OPENSSL_BN_H */
 
 /* define if you have OpenSSL with CRL checking capability */
-/* #undef HAVE_OPENSSL_CRL */
+#define HAVE_OPENSSL_CRL 1
 
 /* Define to 1 if you have the <openssl/crypto.h> header file. */
 /* #undef HAVE_OPENSSL_CRYPTO_H */
 
 /* Define to 1 if you have the <openssl/ssl.h> header file. */
-/* #undef HAVE_OPENSSL_SSL_H */
+#define HAVE_OPENSSL_SSL_H 1
 
 /* Define to 1 if you have the `pipe' function. */
 #define HAVE_PIPE 1
@@ -477,7 +477,7 @@
 /* #undef HAVE_SASL_H */
 
 /* Define to 1 if you have the <sasl/sasl.h> header file. */
-/* #undef HAVE_SASL_SASL_H */
+#define HAVE_SASL_SASL_H 1
 
 /* define if your SASL library has sasl_version() */
 /* #undef HAVE_SASL_VERSION */
@@ -752,10 +752,10 @@
 /* #undef HAVE_THR_YIELD */
 
 /* define if you have TLS */
-/* #undef HAVE_TLS */
+#define HAVE_TLS 1
 
 /* Define to 1 if you have the <unicode/utypes.h> header file. */
-/* #undef HAVE_UNICODE_UTYPES_H */
+#define HAVE_UNICODE_UTYPES_H 1
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #define HAVE_UNISTD_H 1
@@ -857,7 +857,7 @@
 #define LDAP_VENDOR_VERSION_PATCH 22
 
 /* define if memcmp is not 8-bit clean or is otherwise broken */
-/* #undef NEED_MEMCMP_REPLACEMENT */
+#define NEED_MEMCMP_REPLACEMENT 1
 
 /* define if you have (or want) no threads */
 /* #undef NO_THREADS */
@@ -905,7 +905,7 @@
 #define SIZEOF_INT 4
 
 /* The size of `long', as computed by sizeof. */
-#define SIZEOF_LONG 8
+#define SIZEOF_LONG 4
 
 /* The size of `long long', as computed by sizeof. */
 #define SIZEOF_LONG_LONG 8
@@ -1058,7 +1058,7 @@
 /* #undef TM_IN_SYS_TIME */
 
 /* set to urandom device */
-#define URANDOM_DEVICE "/dev/urandom"
+/* #undef URANDOM_DEVICE */
 
 /* define to use OpenSSL BIGNUM for MP */
 /* #undef USE_MP_BIGNUM */
