@@ -28,6 +28,7 @@
 		A05D802E127A1817008D47CD /* pcre_version.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD8127A1235008D47CD /* pcre_version.c */; };
 		A05D802F127A1817008D47CD /* pcre_xclass.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD9127A1235008D47CD /* pcre_xclass.c */; };
 		A05D8030127A1817008D47CD /* ucp.h in Headers */ = {isa = PBXBuildFile; fileRef = A05D800B127A1235008D47CD /* ucp.h */; };
+		A05D8276127A2DC4008D47CD /* pcre_chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D8227127A2D84008D47CD /* pcre_chartables.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -261,6 +262,7 @@
 		A05D80E9127A23E9008D47CD /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A05D80EA127A23E9008D47CD /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
 		A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pcre-8.10.tar.bz2.md5"; sourceTree = "<group>"; };
+		A05D8227127A2D84008D47CD /* pcre_chartables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_chartables.c; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libpcre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpcre.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -359,6 +361,7 @@
 				A05D7FBA127A1235008D47CD /* pcre.h */,
 				A05D7FBB127A1235008D47CD /* pcre.h.generic */,
 				A05D7FBC127A1235008D47CD /* pcre.h.in */,
+				A05D8227127A2D84008D47CD /* pcre_chartables.c */,
 				A05D7FBD127A1235008D47CD /* pcre_chartables.c.dist */,
 				A05D7FBE127A1235008D47CD /* pcre_compile.c */,
 				A05D7FBF127A1235008D47CD /* pcre_config.c */,
@@ -674,6 +677,7 @@
 				A05D802D127A1817008D47CD /* pcre_valid_utf8.c in Sources */,
 				A05D802E127A1817008D47CD /* pcre_version.c in Sources */,
 				A05D802F127A1817008D47CD /* pcre_xclass.c in Sources */,
+				A05D8276127A2DC4008D47CD /* pcre_chartables.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
