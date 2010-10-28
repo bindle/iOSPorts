@@ -259,6 +259,10 @@
 		A05D8009127A1235008D47CD /* wintestinput3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wintestinput3; sourceTree = "<group>"; };
 		A05D800A127A1235008D47CD /* wintestoutput3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wintestoutput3; sourceTree = "<group>"; };
 		A05D800B127A1235008D47CD /* ucp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucp.h; sourceTree = "<group>"; };
+		A05D80E7127A23DC008D47CD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A05D80E9127A23E9008D47CD /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		A05D80EA127A23E9008D47CD /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
+		A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pcre-8.10.tar.bz2.md5"; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* pcre_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libpcre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpcre.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +291,8 @@
 		0867D691FE84028FC02AAC07 /* pcre */ = {
 			isa = PBXGroup;
 			children = (
+				A05D80E7127A23DC008D47CD /* Makefile */,
+				A05D80E8127A23E9008D47CD /* build-aux */,
 				A05D7F10127A1235008D47CD /* pcre */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -566,6 +572,16 @@
 			path = testdata;
 			sourceTree = "<group>";
 		};
+		A05D80E8127A23E9008D47CD /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				A05D80E9127A23E9008D47CD /* config.h */,
+				A05D80EA127A23E9008D47CD /* configure-wrapper.sh */,
+				A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */,
+			);
+			path = "build-aux";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -691,8 +707,6 @@
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = pcre_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H=1";
 				PRODUCT_NAME = pcre;
@@ -706,8 +720,6 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/pcre.dst;
 				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = pcre_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H=1";
 				PRODUCT_NAME = pcre;
