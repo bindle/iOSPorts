@@ -45,7 +45,7 @@
    ldap_initialize(&ld, "ldap://10.0.1.3/");
 
    NSLog(@"binding to LDAP server...");
-   err = ldap_simple_bind_s(ld, NULL, NULL);
+   //err = ldap_simple_bind_s(ld, NULL, NULL);
    
    err = ldap_sasl_bind_s(ld, dn, LDAP_SASL_SIMPLE, &cred, NULL, NULL, &servercredp);
    if (err != LDAP_SUCCESS)
