@@ -48,15 +48,15 @@ PKGHEADERS = openssl/crypto/opensslconf.h
 $(PKGHEADERS): $(PACKAGE_NAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
-openssl/patched-for-xcode: $(PKGHEADERS)
+openssl/patched_for_xcode: $(PKGHEADERS)
 	patch -p0 -i build-aux/openssl-1.0.0a.patch
-	touch openssl/patched-for-xcode
+	touch openssl/patched_for_xcode
 
 ../../../include/openssl/opensslconf.h: $(PKGHEADERS)
 	@mkdir -p ../../../include/openssl
 	cp openssl/include/openssl/* ../../../include/openssl/
 
-extra-prep: $(PKGHEADERS) ../../../include/openssl/opensslconf.h openssl/patched-for-xcode
+extra-prep: $(PKGHEADERS) ../../../include/openssl/opensslconf.h openssl/patched_for_xcode
 
 clean-local:
 	/bin/rm -Rf include
