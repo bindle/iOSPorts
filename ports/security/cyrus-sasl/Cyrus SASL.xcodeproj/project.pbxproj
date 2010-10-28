@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A05123D31278D80400DE46C4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05123CE1278D7F500DE46C4 /* libssl.a */; };
+		A05123D41278D80400DE46C4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05123D01278D7F500DE46C4 /* libcrypto.a */; };
+		A05124421278DABD00DE46C4 /* digestmd5.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FE126E55630057FEE9 /* digestmd5.c */; };
+		A05124431278DABD00DE46C4 /* digestmd5_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FF126E55630057FEE9 /* digestmd5_init.c */; };
+		A05124441278DACD00DE46C4 /* login.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A06126E55630057FEE9 /* login.c */; };
+		A05124451278DACD00DE46C4 /* login_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A07126E55630057FEE9 /* login_init.c */; };
+		A05124461278DAE500DE46C4 /* otp.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A0B126E55630057FEE9 /* otp.c */; };
+		A05124471278DAE500DE46C4 /* otp_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A0D126E55630057FEE9 /* otp_init.c */; };
+		A05124481278DAE500DE46C4 /* srp.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A18126E55630057FEE9 /* srp.c */; };
+		A05124491278DAE500DE46C4 /* srp_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A19126E55630057FEE9 /* srp_init.c */; };
+		A051244A1278DAFF00DE46C4 /* ntlm.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A09126E55630057FEE9 /* ntlm.c */; };
+		A051244B1278DAFF00DE46C4 /* ntlm_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A0A126E55630057FEE9 /* ntlm_init.c */; };
+		A051244C1278DB0A00DE46C4 /* passdss.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A0E126E55630057FEE9 /* passdss.c */; };
+		A051244D1278DB0A00DE46C4 /* passdss_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A0F126E55630057FEE9 /* passdss_init.c */; };
+		A05125061278E7FE00DE46C4 /* sasldb.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A14126E55630057FEE9 /* sasldb.c */; };
+		A05125071278E7FE00DE46C4 /* sasldb_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A15126E55630057FEE9 /* sasldb_init.c */; };
 		A09611DF126F96BA00671A97 /* db_none.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A7C126E55630057FEE9 /* db_none.c */; };
 		A09611E0126F96C600671A97 /* allockey.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A78126E55630057FEE9 /* allockey.c */; };
 		A09611FB126F9D2900671A97 /* anonymous.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FA126E55630057FEE9 /* anonymous.c */; };
@@ -29,10 +45,44 @@
 		A0FB5AA6126E55B70057FEE9 /* seterror.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB58BF126E55630057FEE9 /* seterror.c */; };
 		A0FB5AA7126E56410057FEE9 /* plugin_common.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A12126E55630057FEE9 /* plugin_common.c */; };
 		AA747D9F0F9514B9006C5449 /* sasl2_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */; };
-		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A05123CD1278D7F500DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libssl.a */;
+			remoteInfo = ssl;
+		};
+		A05123CF1278D7F500DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511C5A127770FD00DE46C4 /* libcrypto.a */;
+			remoteInfo = crypto;
+		};
+		A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511DFF1277895300DE46C4 /* test.app */;
+			remoteInfo = test;
+		};
+		A05124281278D81800DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D /* ssl */;
+			remoteInfo = ssl;
+		};
+		A051242A1278D81800DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4 /* crypto */;
+			remoteInfo = crypto;
+		};
 		A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -44,14 +94,17 @@
 
 /* Begin PBXFileReference section */
 		A01018BD126E61570077780C /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
-		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A05123C51278D7F500DE46C4 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A05124301278D8E500DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "../cyrus-sasl-2.1.23/Makefile"; sourceTree = "<group>"; };
+		A051243A1278D9C400DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "cyrus-sasl-2.1.23/plugins/Makefile"; sourceTree = SOURCE_ROOT; };
+		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A0FB53E6126E53C30057FEE9 /* cyrus-sasl-2.1.23.tar.gz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cyrus-sasl-2.1.23.tar.gz.md5"; sourceTree = "<group>"; };
 		A0FB57E5126E55630057FEE9 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
 		A0FB57E6126E55630057FEE9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		A0FB57E7126E55630057FEE9 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
 		A0FB57E8126E55630057FEE9 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
 		A0FB57E9126E55630057FEE9 /* INSTALL.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL.TXT; sourceTree = "<group>"; };
-		A0FB57EA126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB57EA126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
 		A0FB57EB126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		A0FB57EC126E55630057FEE9 /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
 		A0FB57ED126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
@@ -174,7 +227,7 @@
 		A0FB5866126E55630057FEE9 /* testing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testing.txt; sourceTree = "<group>"; };
 		A0FB5867126E55630057FEE9 /* upgrading.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = upgrading.html; sourceTree = "<group>"; };
 		A0FB5868126E55630057FEE9 /* windows.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = windows.html; sourceTree = "<group>"; };
-		A0FB586A126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB586A126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
 		A0FB586B126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		A0FB586C126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
 		A0FB586D126E55630057FEE9 /* exits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exits.h; sourceTree = "<group>"; };
@@ -522,7 +575,7 @@
 		A0FB59F3126E55630057FEE9 /* sasl_setprop.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_setprop.3; sourceTree = "<group>"; };
 		A0FB59F4126E55630057FEE9 /* sasl_user_exists.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_user_exists.3; sourceTree = "<group>"; };
 		A0FB59F5126E55630057FEE9 /* sasl_verifyfile_t.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sasl_verifyfile_t.3; sourceTree = "<group>"; };
-		A0FB59F7126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		A0FB59F7126E55630057FEE9 /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
 		A0FB59F8126E55630057FEE9 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		A0FB59F9126E55630057FEE9 /* NTMakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NTMakefile; sourceTree = "<group>"; };
 		A0FB59FA126E55630057FEE9 /* anonymous.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = anonymous.c; sourceTree = "<group>"; };
@@ -682,7 +735,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				A05123D31278D80400DE46C4 /* libssl.a in Frameworks */,
+				A05123D41278D80400DE46C4 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +767,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A05123C51278D7F500DE46C4 /* openssl.xcodeproj */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -724,6 +779,16 @@
 				AA747D9E0F9514B9006C5449 /* sasl2_Prefix.pch */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		A05123C61278D7F500DE46C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A05123CE1278D7F500DE46C4 /* libssl.a */,
+				A05123D01278D7F500DE46C4 /* libcrypto.a */,
+				A05123D21278D7F500DE46C4 /* test.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A0FB53E5126E53C30057FEE9 /* build-aux */ = {
@@ -745,6 +810,7 @@
 				A0FB57E9126E55630057FEE9 /* INSTALL.TXT */,
 				A0FB57EA126E55630057FEE9 /* Makefile.am */,
 				A0FB57EB126E55630057FEE9 /* Makefile.in */,
+				A05124301278D8E500DE46C4 /* Makefile */,
 				A0FB57EC126E55630057FEE9 /* NEWS */,
 				A0FB57ED126E55630057FEE9 /* NTMakefile */,
 				A0FB57EE126E55630057FEE9 /* README */,
@@ -1654,6 +1720,7 @@
 			children = (
 				A0FB59F7126E55630057FEE9 /* Makefile.am */,
 				A0FB59F8126E55630057FEE9 /* Makefile.in */,
+				A051243A1278D9C400DE46C4 /* Makefile */,
 				A0FB59F9126E55630057FEE9 /* NTMakefile */,
 				A0FB59FA126E55630057FEE9 /* anonymous.c */,
 				A0FB59FB126E55630057FEE9 /* anonymous_init.c */,
@@ -1914,6 +1981,8 @@
 			);
 			dependencies = (
 				A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */,
+				A05124291278D81800DE46C4 /* PBXTargetDependency */,
+				A051242B1278D81800DE46C4 /* PBXTargetDependency */,
 			);
 			name = sasl2;
 			productName = sasl2;
@@ -1925,6 +1994,9 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Bindle Binaries";
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cyrus SASL" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -1938,6 +2010,12 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* sasl2 */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A05123C61278D7F500DE46C4 /* Products */;
+					ProjectRef = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A0FB53DA126E52C60057FEE9 /* Makefile */,
@@ -1945,6 +2023,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A05123CE1278D7F500DE46C4 /* libssl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libssl.a;
+			remoteRef = A05123CD1278D7F500DE46C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A05123D01278D7F500DE46C4 /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = A05123CF1278D7F500DE46C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A05123D21278D7F500DE46C4 /* test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = test.app;
+			remoteRef = A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AAC07B0554694100DB518D /* Sources */ = {
@@ -1972,12 +2074,36 @@
 				A09611FE126F9D3100671A97 /* crammd5_init.c in Sources */,
 				A0961202126F9D4900671A97 /* plain.c in Sources */,
 				A0961203126F9D4900671A97 /* plain_init.c in Sources */,
+				A05124421278DABD00DE46C4 /* digestmd5.c in Sources */,
+				A05124431278DABD00DE46C4 /* digestmd5_init.c in Sources */,
+				A05124441278DACD00DE46C4 /* login.c in Sources */,
+				A05124451278DACD00DE46C4 /* login_init.c in Sources */,
+				A05124461278DAE500DE46C4 /* otp.c in Sources */,
+				A05124471278DAE500DE46C4 /* otp_init.c in Sources */,
+				A05124481278DAE500DE46C4 /* srp.c in Sources */,
+				A05124491278DAE500DE46C4 /* srp_init.c in Sources */,
+				A051244A1278DAFF00DE46C4 /* ntlm.c in Sources */,
+				A051244B1278DAFF00DE46C4 /* ntlm_init.c in Sources */,
+				A051244C1278DB0A00DE46C4 /* passdss.c in Sources */,
+				A051244D1278DB0A00DE46C4 /* passdss_init.c in Sources */,
+				A05125061278E7FE00DE46C4 /* sasldb.c in Sources */,
+				A05125071278E7FE00DE46C4 /* sasldb_init.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A05124291278D81800DE46C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ssl;
+			targetProxy = A05124281278D81800DE46C4 /* PBXContainerItemProxy */;
+		};
+		A051242B1278D81800DE46C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = A051242A1278D81800DE46C4 /* PBXContainerItemProxy */;
+		};
 		A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0FB53DA126E52C60057FEE9 /* Makefile */;
@@ -1999,12 +2125,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
-				HEADER_SEARCH_PATHS = (
-					"cyrus-sasl",
-					"cyrus-sasl/include",
-					"cyrus-sasl/plugins",
-					"cyrus-sasl/sasldb",
-				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = sasl2;
 			};
@@ -2019,12 +2139,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
-				HEADER_SEARCH_PATHS = (
-					"cyrus-sasl",
-					"cyrus-sasl/include",
-					"cyrus-sasl/plugins",
-					"cyrus-sasl/sasldb",
-				);
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = sasl2;
 			};
@@ -2038,6 +2152,14 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"cyrus-sasl/sasldb",
+					"cyrus-sasl/plugins",
+					"cyrus-sasl/include",
+					"cyrus-sasl",
+					../../../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;
@@ -2051,6 +2173,14 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"cyrus-sasl/sasldb",
+					"cyrus-sasl/plugins",
+					"cyrus-sasl/include",
+					"cyrus-sasl",
+					../../../include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos4.1;

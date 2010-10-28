@@ -43,19 +43,26 @@ PACKAGE_URL				= http://ftp.andrew.cmu.edu/pub/cyrus-mail/$(PACKAGE_FILE)
 
 include ../../../build-aux/Makefile-package
 
-extra-prep:
+INSTALLHEADERS	= ../../../include/sasl/hmac-md5.h \
+		  ../../../include/sasl/md5.h \
+		  ../../../include/sasl/md5global.h \
+		  ../../../include/sasl/sasl.h \
+		  ../../../include/sasl/saslplug.h \
+		  ../../../include/sasl/saslutil.h \
+		  ../../../include/sasl/prop.h
+
+$(INSTALLHEADERS): $(PACKAGE_NAME)
+	mkdir -p ../../../include/sasl
+	FILE="cyrus-sasl/include/`basename ${@}`"; cp $${FILE} ${@};
+
+cyrus-sasl/config.h: $(PACKAGE_NAME)
 	cp build-aux/config.h cyrus-sasl/
-	mkdir -p include
-	cp cyrus-sasl/include/hmac-md5.h  include/
-	cp cyrus-sasl/include/md5.h       include/
-	cp cyrus-sasl/include/md5global.h include/
-	cp cyrus-sasl/include/sasl.h      include/
-	cp cyrus-sasl/include/saslplug.h  include/
-	cp cyrus-sasl/include/saslutil.h  include/
-	cp cyrus-sasl/include/prop.h      include/
+
+extra-prep: cyrus-sasl/config.h $(INSTALLHEADERS)
 
 clean-local:
 	/bin/rm -Rf include
+	/bin/rm -Rf ../../../include/sasl
 
 distclean-local:
 	/bin/rm -Rf build

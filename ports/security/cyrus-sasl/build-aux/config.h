@@ -115,7 +115,7 @@
 #define HAVE_GETTIMEOFDAY 1
 
 /* Define if you have the gssapi.h header file */
-#define HAVE_GSSAPI_H 
+/* #undef HAVE_GSSAPI_H */
 
 /* Define to 1 if you have the `gsskrb5_register_acceptor_identity' function.
    */
