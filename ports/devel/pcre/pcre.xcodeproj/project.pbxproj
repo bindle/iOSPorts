@@ -28,7 +28,6 @@
 		A05D802E127A1817008D47CD /* pcre_version.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD8127A1235008D47CD /* pcre_version.c */; };
 		A05D802F127A1817008D47CD /* pcre_xclass.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD9127A1235008D47CD /* pcre_xclass.c */; };
 		A05D8030127A1817008D47CD /* ucp.h in Headers */ = {isa = PBXBuildFile; fileRef = A05D800B127A1235008D47CD /* ucp.h */; };
-		AA747D9F0F9514B9006C5449 /* pcre_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* pcre_Prefix.pch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -262,7 +261,6 @@
 		A05D80E9127A23E9008D47CD /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A05D80EA127A23E9008D47CD /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
 		A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pcre-8.10.tar.bz2.md5"; sourceTree = "<group>"; };
-		AA747D9E0F9514B9006C5449 /* pcre_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		D2AAC07E0554694100DB518D /* libpcre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpcre.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -291,7 +289,7 @@
 				A05D80E7127A23DC008D47CD /* Makefile */,
 				A05D80E8127A23E9008D47CD /* build-aux */,
 				A05D7F10127A1235008D47CD /* pcre */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
+				A05D815B127A272A008D47CD /* tests */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -303,14 +301,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		32C88DFF0371C24200C91783 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				AA747D9E0F9514B9006C5449 /* pcre_Prefix.pch */,
-			);
-			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 		A05D7F10127A1235008D47CD /* pcre */ = {
@@ -578,6 +568,13 @@
 			path = "build-aux";
 			sourceTree = "<group>";
 		};
+		A05D815B127A272A008D47CD /* tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -585,7 +582,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA747D9F0F9514B9006C5449 /* pcre_Prefix.pch in Headers */,
 				A05D8024127A1817008D47CD /* pcre_internal.h in Headers */,
 				A05D8030127A1817008D47CD /* ucp.h in Headers */,
 			);
