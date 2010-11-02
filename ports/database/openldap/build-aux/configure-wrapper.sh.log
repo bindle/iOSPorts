@@ -1,0 +1,458 @@
+configure: WARNING: If you wanted to set the --build type, don't use --host.
+    If a cross compiler is detected then cross compile mode will be used.
+Configuring OpenLDAP 2.4.22-Release ...
+checking build system type... i686-apple-darwin10.4.0
+checking host system type... arm-apple-darwin10
+checking target system type... arm-apple-darwin10
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for arm-apple-darwin10-strip... no
+checking for strip... strip
+checking configure arguments... configure: WARNING: slapd disabled, ignoring --enable-bdb argument
+configure: WARNING: slapd disabled, ignoring --enable-hdb argument
+configure: WARNING: slapd disabled, ignoring --enable-monitor argument
+configure: WARNING: slapd disabled, ignoring --enable-relay argument
+configure: WARNING: slapd disabled, ignoring --enable-syncprov argument
+done
+checking for ar... ar
+checking for style of include used by make... GNU
+checking for arm-apple-darwin10-gcc... /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... yes
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 accepts -g... yes
+checking for /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 option to accept ISO C89... none needed
+checking dependency style of /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2... none
+checking for a sed that does not truncate output... /opt/local/bin/gsed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ld used by /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2... /Developer/Platforms/iPhoneOS.platform/Developer/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin10/4.2.1/ld
+checking if the linker (/Developer/Platforms/iPhoneOS.platform/Developer/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin10/4.2.1/ld) is GNU ld... no
+checking for /Developer/Platforms/iPhoneOS.platform/Developer/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin10/4.2.1/ld option to reload object files... -r
+checking for BSD-compatible nm... nm
+checking whether ln -s works... yes
+checking how to recognise dependent libraries... pass_all
+checking how to run the C preprocessor... /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking the maximum length of command line arguments... 196608
+checking command to parse nm output from /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 object... ok
+checking for objdir... .libs
+checking for arm-apple-darwin10-ar... (cached) ar
+checking for arm-apple-darwin10-ranlib... no
+checking for ranlib... ranlib
+configure: WARNING: In the future, Autoconf will not detect cross-tools
+whose name does not start with the host triplet.  If you think this
+configuration is useful to you, please write to autoconf@gnu.org.
+checking for arm-apple-darwin10-strip... strip
+checking if /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 static flag  works... yes
+checking if /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 supports -fno-rtti -fno-exceptions... no
+checking for /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 option to produce PIC... -fno-common
+checking if /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 PIC flag -fno-common works... yes
+checking if /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 supports -c -o file.o... yes
+checking whether the /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 linker (/Developer/Platforms/iPhoneOS.platform/Developer/usr/llvm-gcc-4.2/libexec/gcc/i686-apple-darwin10/4.2.1/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin10 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking for dlopen in -ldl... yes
+checking whether a program can dlopen itself... cross
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+configure: creating libtool
+checking how to run the C preprocessor... /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 -E
+checking whether we are using MS Visual C++... no
+checking for be_app in -lbe... no
+checking for arm-apple-darwin10-gcc... (cached) /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 accepts -g... (cached) yes
+checking for /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 option to accept ISO C89... (cached) none needed
+checking dependency style of /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2... (cached) none
+checking for /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/llvm-gcc-4.2 depend flag... -M
+checking for afopen in -ls... no
+checking for EBCDIC... no
+checking for ANSI C header files... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking whether termios.h defines TIOCGWINSZ... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking arpa/nameser.h usability... yes
+checking arpa/nameser.h presence... yes
+checking for arpa/nameser.h... yes
+checking assert.h usability... yes
+checking assert.h presence... yes
+checking for assert.h... yes
+checking bits/types.h usability... no
+checking bits/types.h presence... no
+checking for bits/types.h... no
+checking conio.h usability... no
+checking conio.h presence... no
+checking for conio.h... no
+checking crypt.h usability... no
+checking crypt.h presence... no
+checking for crypt.h... no
+checking direct.h usability... no
+checking direct.h presence... no
+checking for direct.h... no
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking filio.h usability... no
+checking filio.h presence... no
+checking for filio.h... no
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking libutil.h usability... no
+checking libutil.h presence... no
+checking for libutil.h... no
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking malloc.h usability... no
+checking malloc.h presence... no
+checking for malloc.h... no
+checking for memory.h... (cached) yes
+checking psap.h usability... no
+checking psap.h presence... no
+checking for psap.h... no
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking process.h usability... no
+checking process.h presence... no
+checking for process.h... no
+checking sgtty.h usability... no
+checking sgtty.h presence... yes
+configure: WARNING: sgtty.h: present but cannot be compiled
+configure: WARNING: sgtty.h:     check for missing prerequisite headers?
+configure: WARNING: sgtty.h: see the Autoconf documentation
+configure: WARNING: sgtty.h:     section "Present But Cannot Be Compiled"
+configure: WARNING: sgtty.h: proceeding with the preprocessor's result
+configure: WARNING: sgtty.h: in the future, the compiler will take precedence
+configure: WARNING:     ## --------------------------------------------- ##
+configure: WARNING:     ## Report this to <http://www.openldap.org/its/> ##
+configure: WARNING:     ## --------------------------------------------- ##
+checking for sgtty.h... yes
+checking shadow.h usability... no
+checking shadow.h presence... no
+checking for shadow.h... no
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sysexits.h usability... yes
+checking sysexits.h presence... yes
+checking for sysexits.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking sys/filio.h usability... yes
+checking sys/filio.h presence... yes
+checking for sys/filio.h... yes
+checking sys/fstyp.h usability... no
+checking sys/fstyp.h presence... no
+checking for sys/fstyp.h... no
+checking sys/errno.h usability... yes
+checking sys/errno.h presence... yes
+checking for sys/errno.h... yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking sys/privgrp.h usability... no
+checking sys/privgrp.h presence... no
+checking for sys/privgrp.h... no
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/syslog.h usability... yes
+checking sys/syslog.h presence... yes
+checking for sys/syslog.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/uio.h usability... yes
+checking sys/uio.h presence... yes
+checking for sys/uio.h... yes
+checking sys/vmount.h usability... no
+checking sys/vmount.h presence... no
+checking for sys/vmount.h... no
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking termios.h usability... yes
+checking termios.h presence... yes
+checking for termios.h... yes
+checking for unistd.h... (cached) yes
+checking utime.h usability... yes
+checking utime.h presence... yes
+checking for utime.h... yes
+checking for resolv.h... yes
+checking for netinet/tcp.h... yes
+checking for sys/ucred.h... yes
+checking for sigaction... yes
+checking for sigset... yes
+checking for socket... yes
+checking for select... yes
+checking for sys/select.h... (cached) yes
+checking for sys/socket.h... (cached) yes
+checking types of arguments for select... int,fd_set *,struct timeval *
+checking for poll... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/epoll.h usability... no
+checking sys/epoll.h presence... no
+checking for sys/epoll.h... no
+checking sys/devpoll.h usability... no
+checking sys/devpoll.h presence... no
+checking for sys/devpoll.h... no
+checking declaration of sys_errlist... yes
+checking for strerror... yes
+checking for strerror_r... yes
+checking non-posix strerror_r... no
+checking for regex.h... yes
+checking for library containing regfree... none required
+checking for compatible POSIX regex... cross
+checking sys/uuid.h usability... no
+checking sys/uuid.h presence... no
+checking for sys/uuid.h... no
+checking uuid/uuid.h usability... yes
+checking uuid/uuid.h presence... yes
+checking for uuid/uuid.h... yes
+checking for library containing uuid_generate... none required
+checking for library containing uuid_unparse_lower... none required
+checking for resolver link (default)... no
+checking for resolver link (-lresolv)... yes
+checking for hstrerror... yes
+checking for getaddrinfo... yes
+checking for getnameinfo... yes
+checking for gai_strerror... yes
+checking for inet_ntop... yes
+checking INET6_ADDRSTRLEN... yes
+checking struct sockaddr_storage... yes
+checking openssl/ssl.h usability... yes
+checking openssl/ssl.h presence... yes
+checking for openssl/ssl.h... yes
+checking for SSL_library_init in -lssl... yes
+checking OpenSSL library version (CRL checking capability)... yes
+checking for ctime_r... yes
+checking for gmtime_r... yes
+checking for localtime_r... yes
+checking for gethostbyname_r... no
+checking for gethostbyaddr_r... no
+checking number of arguments of ctime_r... 2
+checking unicode/utypes.h usability... yes
+checking unicode/utypes.h presence... no
+configure: WARNING: unicode/utypes.h: accepted by the compiler, rejected by the preprocessor!
+configure: WARNING: unicode/utypes.h: proceeding with the compiler's result
+checking for unicode/utypes.h... yes
+checking for ICU libraries... no
+configure: WARNING: ICU not available
+checking sasl/sasl.h usability... yes
+checking sasl/sasl.h presence... yes
+checking for sasl/sasl.h... yes
+checking sasl.h usability... no
+checking sasl.h presence... no
+checking for sasl.h... no
+checking for sasl_client_init in -lsasl2... yes
+checking Cyrus SASL library version... yes
+checking for sasl_version... yes
+checking fetch(3) library... no
+checking for mode_t... yes
+checking for off_t... yes
+checking for pid_t... yes
+checking for ssize_t... yes
+checking for caddr_t... yes
+checking for size_t... yes
+checking for long long... yes
+checking for ptrdiff_t... yes
+checking for socklen_t... yes
+checking the type of arg 3 to accept()... socklen_t *
+checking return type of signal handlers... void
+checking for sig_atomic_t... yes
+checking for uid_t in sys/types.h... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct stat.st_blksize... yes
+checking for struct passwd.pw_gecos... yes
+checking for struct passwd.pw_passwd... yes
+checking if toupper() requires islower()... safe
+checking for an ANSI C-conforming const... yes
+checking if compiler understands volatile... yes
+configure: WARNING: Crossing compiling... all bets are off!
+checking for short... yes
+checking size of short... 2
+checking for int... yes
+checking size of int... 4
+checking for long... yes
+checking size of long... 4
+checking for long long... (cached) yes
+checking size of long long... 8
+checking for wchar_t... yes
+checking size of wchar_t... 4
+checking for working memcmp... no
+checking for strftime... yes
+checking for inet_aton()... yes
+checking for _spawnlp... no
+checking for _snprintf... no
+checking for vsnprintf... yes
+checking for _vsnprintf... no
+checking for vprintf... yes
+checking for _doprnt... no
+checking for snprintf... yes
+checking for vsnprintf... (cached) yes
+checking for bcopy... yes
+checking for closesocket... no
+checking for chroot... yes
+checking for endgrent... yes
+checking for endpwent... yes
+checking for fcntl... yes
+checking for flock... yes
+checking for fstat... yes
+checking for getdtablesize... yes
+checking for geteuid... yes
+checking for getgrgid... yes
+checking for gethostname... yes
+checking for getpassphrase... no
+checking for getpwuid... yes
+checking for getpwnam... yes
+checking for getspnam... no
+checking for gettimeofday... yes
+checking for initgroups... yes
+checking for inet_ntoa_b... no
+checking for ioctl... yes
+checking for lockf... yes
+checking for memcpy... yes
+checking for memmove... yes
+checking for memrchr... no
+checking for mkstemp... yes
+checking for mktemp... yes
+checking for pipe... yes
+checking for read... yes
+checking for recv... yes
+checking for recvfrom... yes
+checking for setpwfile... no
+checking for setgid... yes
+checking for setegid... yes
+checking for setsid... yes
+checking for setuid... yes
+checking for seteuid... yes
+checking for signal... yes
+checking for strdup... yes
+checking for strpbrk... yes
+checking for strrchr... yes
+checking for strsep... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for strtoul... yes
+checking for strtoq... yes
+checking for strtouq... yes
+checking for strtoll... yes
+checking for strspn... yes
+checking for sysconf... yes
+checking for waitpid... yes
+checking for wait4... yes
+checking for write... yes
+checking for send... yes
+checking for sendmsg... yes
+checking for sendto... yes
+checking for getopt... yes
+checking for getpeereid... yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating doc/man/Makefile
+config.status: creating doc/man/man1/Makefile
+config.status: creating doc/man/man3/Makefile
+config.status: creating doc/man/man5/Makefile
+config.status: creating doc/man/man8/Makefile
+config.status: creating clients/Makefile
+config.status: creating clients/tools/Makefile
+config.status: creating include/Makefile
+config.status: creating libraries/Makefile
+config.status: creating libraries/liblber/Makefile
+config.status: creating libraries/libldap/Makefile
+config.status: creating libraries/libldap_r/Makefile
+config.status: creating libraries/liblunicode/Makefile
+config.status: creating libraries/liblutil/Makefile
+config.status: creating libraries/librewrite/Makefile
+config.status: creating servers/Makefile
+config.status: creating servers/slapd/Makefile
+config.status: creating servers/slapd/back-bdb/Makefile
+config.status: creating servers/slapd/back-dnssrv/Makefile
+config.status: creating servers/slapd/back-hdb/Makefile
+config.status: creating servers/slapd/back-ldap/Makefile
+config.status: creating servers/slapd/back-ldif/Makefile
+config.status: creating servers/slapd/back-meta/Makefile
+config.status: creating servers/slapd/back-monitor/Makefile
+config.status: creating servers/slapd/back-ndb/Makefile
+config.status: creating servers/slapd/back-null/Makefile
+config.status: creating servers/slapd/back-passwd/Makefile
+config.status: creating servers/slapd/back-perl/Makefile
+config.status: creating servers/slapd/back-relay/Makefile
+config.status: creating servers/slapd/back-shell/Makefile
+config.status: creating servers/slapd/back-sock/Makefile
+config.status: creating servers/slapd/back-sql/Makefile
+config.status: creating servers/slapd/shell-backends/Makefile
+config.status: creating servers/slapd/slapi/Makefile
+config.status: creating servers/slapd/overlays/Makefile
+config.status: creating tests/Makefile
+config.status: creating tests/run
+config.status: creating tests/progs/Makefile
+config.status: creating include/portable.h
+config.status: creating include/ldap_features.h
+config.status: creating include/lber_types.h
+config.status: executing depfiles commands
+config.status: executing default commands
+Making servers/slapd/backends.c
+    Add config ...
+    Add ldif ...
+Making servers/slapd/overlays/statover.c
+Please run "make depend" to build dependencies

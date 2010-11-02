@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate_Phone.h"
+#import "ldapTest.h"
 
 @implementation AppDelegate_Phone
 
@@ -16,10 +17,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	
     // Override point for customization after application launch
-	
-    [window makeKeyAndVisible];
+
+   [window makeKeyAndVisible];
+
+   test_ldap(LDAP_VERSION3, "ldap://10.0.1.3", "cn=Directory Manager",
+   "drowssap", "o=test", "(objectclass=*)", LDAP_SCOPE_SUB);
 	
 	return YES;
+
 }
 
 

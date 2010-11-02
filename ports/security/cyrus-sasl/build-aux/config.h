@@ -115,7 +115,7 @@
 #define HAVE_GETTIMEOFDAY 1
 
 /* Define if you have the gssapi.h header file */
-#define HAVE_GSSAPI_H 
+/* #undef HAVE_GSSAPI_H */
 
 /* Define to 1 if you have the `gsskrb5_register_acceptor_identity' function.
    */
@@ -173,7 +173,7 @@
 /* #undef HAVE_NDIR_H */
 
 /* Do we have OpenSSL? */
-/* #undef HAVE_OPENSSL */
+#define HAVE_OPENSSL 
 
 /* Use OPIE for server-side OTP? */
 /* #undef HAVE_OPIE */
@@ -370,7 +370,7 @@
 #define STATIC_CRAMMD5 
 
 /* Link DIGEST-MD5 Staticly */
-/* #undef STATIC_DIGESTMD5 */
+#define STATIC_DIGESTMD5 
 
 /* Link GSSAPI Staticly */
 /* #undef STATIC_GSSAPIV2 */
@@ -388,7 +388,7 @@
 /* #undef STATIC_NTLM */
 
 /* Link OTP Staticly */
-/* #undef STATIC_OTP */
+#define STATIC_OTP 
 
 /* Link PASSDSS Staticly */
 /* #undef STATIC_PASSDSS */
@@ -430,7 +430,7 @@
 #define WITH_RC4 
 
 /* Use OpenSSL DES Implementation */
-/* #undef WITH_SSL_DES */
+#define WITH_SSL_DES 
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */

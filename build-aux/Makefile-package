@@ -42,6 +42,7 @@ clean: clean-local
 
 distclean: distclean-local clean
 	/bin/rm -f $(PACKAGE_FILE)
+	/bin/rm -f build/
 
 download: $(PACKAGE_FILE)
 

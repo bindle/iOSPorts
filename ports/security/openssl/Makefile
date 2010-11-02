@@ -43,6 +43,26 @@ PACKAGE_URL				= http://www.openssl.org/source/$(PACKAGE_FILE)
 
 include ../../../build-aux/Makefile-package
 
-extra-prep:
+PKGHEADERS = openssl/crypto/opensslconf.h
+
+$(PKGHEADERS): $(PACKAGE_NAME)
+	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
+
+openssl/patched_for_xcode: $(PKGHEADERS)
+	patch -p0 -i build-aux/openssl-1.0.0a.patch
+	touch openssl/patched_for_xcode
+
+../../../include/openssl/opensslconf.h: $(PKGHEADERS)
+	@mkdir -p ../../../include/openssl
+	cp openssl/include/openssl/* ../../../include/openssl/
+
+extra-prep: $(PKGHEADERS) ../../../include/openssl/opensslconf.h openssl/patched_for_xcode
+
+clean-local:
+	/bin/rm -Rf include
+	/bin/rm -Rf ../../../include/openssl
+
+distclean-local:
+	/bin/rm -Rf build
 
 # end of Makefile

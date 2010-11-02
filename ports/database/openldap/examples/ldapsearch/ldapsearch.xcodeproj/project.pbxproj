@@ -15,11 +15,44 @@
 		2860E32E111B888700E27156 /* AppDelegate_Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_Pad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_Pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_Pad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		A021D0C9127B725700A30E69 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0C4127B724A00A30E69 /* libssl.a */; };
+		A021D0CA127B725700A30E69 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0C6127B724A00A30E69 /* libcrypto.a */; };
+		A021D0CB127B725E00A30E69 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0BA127B722900A30E69 /* libsasl2.a */; };
+		A021D0FA127B782600A30E69 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0F9127B782600A30E69 /* libresolv.dylib */; };
 		A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABB11D15804007EE6C4 /* libldap.a */; };
 		A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABD11D15804007EE6C4 /* liblber.a */; };
+		A0F8EE5B1280B096004D1EA1 /* ldapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F8EE5A1280B096004D1EA1 /* ldapTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A021D0B9127B722900A30E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = sasl2;
+		};
+		A021D0C3127B724A00A30E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ssl;
+		};
+		A021D0C5127B724A00A30E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
+			remoteInfo = crypto;
+		};
+		A021D0C7127B724A00A30E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511DFF1277895300DE46C4;
+			remoteInfo = test;
+		};
 		A0A53ABA11D15804007EE6C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
@@ -64,7 +97,12 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ldapsearch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapsearch_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ldapsearch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ldapsearch-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "../../../../security/cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		A021D0BB127B724A00A30E69 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../../../../security/openssl/openssl.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A021D0F9127B782600A30E69 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ../../openldap.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A0F8EE591280B096004D1EA1 /* ldapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapTest.h; sourceTree = "<group>"; };
+		A0F8EE5A1280B096004D1EA1 /* ldapTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +110,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A021D0CB127B725E00A30E69 /* libsasl2.a in Frameworks */,
+				A021D0C9127B725700A30E69 /* libssl.a in Frameworks */,
+				A021D0CA127B725700A30E69 /* libcrypto.a in Frameworks */,
 				A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */,
 				A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				A021D0FA127B782600A30E69 /* libresolv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* ldapsearch-Info.plist */,
+				A0F8EE591280B096004D1EA1 /* ldapTest.h */,
+				A0F8EE5A1280B096004D1EA1 /* ldapTest.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -126,7 +170,6 @@
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
-				A0A53AB211D157F1007EE6C4 /* Projects */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -145,19 +188,33 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0BB127B724A00A30E69 /* openssl.xcodeproj */,
+				A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */,
+				A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				A021D0F9127B782600A30E69 /* libresolv.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A0A53AB211D157F1007EE6C4 /* Projects */ = {
+		A021D0B5127B722900A30E69 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */,
+				A021D0BA127B722900A30E69 /* libsasl2.a */,
 			);
-			name = Projects;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A021D0BC127B724A00A30E69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A021D0C4127B724A00A30E69 /* libssl.a */,
+				A021D0C6127B724A00A30E69 /* libcrypto.a */,
+				A021D0C8127B724A00A30E69 /* test.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A0A53AB411D15804007EE6C4 /* Products */ = {
@@ -210,8 +267,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = A021D0B5127B722900A30E69 /* Products */;
+					ProjectRef = A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */;
+				},
+				{
 					ProductGroup = A0A53AB411D15804007EE6C4 /* Products */;
 					ProjectRef = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+				},
+				{
+					ProductGroup = A021D0BC127B724A00A30E69 /* Products */;
+					ProjectRef = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -222,6 +287,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A021D0BA127B722900A30E69 /* libsasl2.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsasl2.a;
+			remoteRef = A021D0B9127B722900A30E69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A021D0C4127B724A00A30E69 /* libssl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libssl.a;
+			remoteRef = A021D0C3127B724A00A30E69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A021D0C6127B724A00A30E69 /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = A021D0C5127B724A00A30E69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A021D0C8127B724A00A30E69 /* test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = test.app;
+			remoteRef = A021D0C7127B724A00A30E69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A0A53ABB11D15804007EE6C4 /* libldap.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -258,6 +351,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				2860E328111B887F00E27156 /* AppDelegate_Phone.m in Sources */,
 				2860E32E111B888700E27156 /* AppDelegate_Pad.m in Sources */,
+				A0F8EE5B1280B096004D1EA1 /* ldapTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +380,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
-				HEADER_SEARCH_PATHS = (
-					../../openldap/include,
-					../../include,
-				);
+				HEADER_SEARCH_PATHS = ../../../../../include;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 			};
@@ -302,10 +393,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
-				HEADER_SEARCH_PATHS = (
-					../../openldap/include,
-					../../include,
-				);
+				HEADER_SEARCH_PATHS = ../../../../../include;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 				VALIDATE_PRODUCT = YES;
@@ -322,7 +410,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -338,7 +426,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.2;
+				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
