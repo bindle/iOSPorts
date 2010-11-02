@@ -23,6 +23,23 @@ Maintainers
    syzdek@bindlebinaries.com
 
 
+Packages
+========
+
+   OpenLDAP (database/openldap) - LDAP client library.
+      Depends Upon: security/cyrus-sasl
+
+   PCRE (devel/pcre) - Perl Compatible Regular Expressions
+      Depends Upon: n/a
+
+   Cyrus SASL (security/cyrus-sasl) - An open source implementations of
+      Simple Authentication and Security Layer methods.
+      Depends Upon: security/openssl
+
+   OpenSSL (security/openssl) - SSL/TLS and Crypto toolkit.
+      Depends Upon: n/a
+
+
 Source Code
 ===========
 
@@ -31,6 +48,7 @@ The following contains information to checkout the source code from the git
 repository.
 
    Git URLs:
+      git://github.com/bindle/iOSPorts.git
       git://git.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
       http://http.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
       ssh://ssh.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
