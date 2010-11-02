@@ -43,30 +43,37 @@ PACKAGE_URL				= ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/$(PACKAGE_
 
 include ../../../build-aux/Makefile-package
 
-INCLUDES = include/ldap.h \
-           include/ldap_cdefs.h \
-           include/ldap_features.h \
-           include/ldap_schema.h \
-           include/ldap_utf8.h \
-           include/lber.h \
-           include/lber_types.h
+INCLUDES = ../../../include/ldap.h \
+           ../../../include/ldap_cdefs.h \
+           ../../../include/ldap_features.h \
+           ../../../include/ldap_schema.h \
+           ../../../include/ldap_utf8.h \
+           ../../../include/lber.h \
+           ../../../include/lber_types.h
 
-CUSTFILES = openldap/include/lber_types.h \
-            openldap/include/ldap_config.h \
-            openldap/include/ldap_features.h \
-            openldap/include/portable.h
+CUSTFILES	= openldap/include/lber_types.h \
+		  openldap/include/ldap_config.h \
+		  openldap/include/ldap_features.h \
+		  openldap/include/portable.h \
+		  openldap/libraries/liblber/version.c \
+		  openldap/libraries/libldap/version.c \
+		  openldap/libraries/libldap_r/version.c \
+		  openldap/libraries/liblunicode/version.c \
+		  openldap/libraries/liblutil/version.c \
+		  openldap/libraries/librewrite/version.c
 
 $(CUSTFILES): $(PACKAGE_NAME)
-	cp build-aux/*.h openldap/include/
+	cp build-aux/${@} ${@}
 
 $(INCLUDES): $(CUSTFILES)
-	@mkdir -p include
-	cp openldap/${@} include/
+	@mkdir -p ../../../include
+	cp openldap/include/`basename ${@}` ../../../include/
 
 extra-prep: $(INCLUDES)
 
 clean-local:
 	/bin/rm -Rf include
+	/bin/rm -Rf $(INCLUDES)
 
 distclean-local:
 

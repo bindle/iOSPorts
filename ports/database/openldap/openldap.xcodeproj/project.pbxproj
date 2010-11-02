@@ -22,68 +22,73 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		A03ADDC111D14F1D00F5A51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		A03ADDC411D1500400F5A51F /* abandon.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3611D14DED00F5A51F /* abandon.c */; };
-		A03ADDC511D1500400F5A51F /* add.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3711D14DED00F5A51F /* add.c */; };
-		A03ADDC611D1500400F5A51F /* addentry.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3811D14DED00F5A51F /* addentry.c */; };
-		A03ADDC711D1500400F5A51F /* assertion.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3A11D14DED00F5A51F /* assertion.c */; };
-		A03ADDC811D1500400F5A51F /* bind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3B11D14DED00F5A51F /* bind.c */; };
-		A03ADDC911D1500400F5A51F /* cancel.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3C11D14DED00F5A51F /* cancel.c */; };
-		A03ADDCA11D1500400F5A51F /* charray.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3D11D14DED00F5A51F /* charray.c */; };
-		A03ADDCB11D1500400F5A51F /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3E11D14DED00F5A51F /* compare.c */; };
-		A03ADDCC11D1500400F5A51F /* controls.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3F11D14DED00F5A51F /* controls.c */; };
-		A03ADDCD11D1500400F5A51F /* cyrus.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4011D14DED00F5A51F /* cyrus.c */; };
-		A03ADDCE11D1500400F5A51F /* dds.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4111D14DED00F5A51F /* dds.c */; };
-		A03ADDCF11D1500400F5A51F /* delete.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4211D14DED00F5A51F /* delete.c */; };
-		A03ADDD011D1500400F5A51F /* deref.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4311D14DED00F5A51F /* deref.c */; };
-		A03ADDD111D1500400F5A51F /* dnssrv.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4411D14DED00F5A51F /* dnssrv.c */; };
-		A03ADDD211D1500400F5A51F /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4611D14DED00F5A51F /* error.c */; };
-		A03ADDD311D1500400F5A51F /* extended.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4711D14DED00F5A51F /* extended.c */; };
-		A03ADDD411D1500400F5A51F /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4811D14DED00F5A51F /* filter.c */; };
-		A03ADDD511D1500400F5A51F /* free.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4911D14DED00F5A51F /* free.c */; };
-		A03ADDD611D1500400F5A51F /* getattr.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4B11D14DED00F5A51F /* getattr.c */; };
-		A03ADDD711D1500400F5A51F /* getdn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4C11D14DED00F5A51F /* getdn.c */; };
-		A03ADDD811D1500400F5A51F /* getentry.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4D11D14DED00F5A51F /* getentry.c */; };
-		A03ADDD911D1500400F5A51F /* getvalues.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4E11D14DED00F5A51F /* getvalues.c */; };
-		A03ADDDA11D1500400F5A51F /* gssapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4F11D14DED00F5A51F /* gssapi.c */; };
-		A03ADDDB11D1500400F5A51F /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5011D14DED00F5A51F /* init.c */; };
-		A03ADDDC11D1500400F5A51F /* ldap_sync.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5411D14DED00F5A51F /* ldap_sync.c */; };
-		A03ADDDD11D1500400F5A51F /* messages.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5511D14DED00F5A51F /* messages.c */; };
-		A03ADDDE11D1500400F5A51F /* modify.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5611D14DED00F5A51F /* modify.c */; };
-		A03ADDDF11D1500400F5A51F /* modrdn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5711D14DED00F5A51F /* modrdn.c */; };
-		A03ADDE011D1500400F5A51F /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5811D14DED00F5A51F /* open.c */; };
-		A03ADDE111D1500400F5A51F /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5911D14DED00F5A51F /* options.c */; };
-		A03ADDE211D1500400F5A51F /* os-ip.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5A11D14DED00F5A51F /* os-ip.c */; };
-		A03ADDE311D1500400F5A51F /* os-local.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5B11D14DED00F5A51F /* os-local.c */; };
-		A03ADDE411D1500400F5A51F /* pagectrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5C11D14DED00F5A51F /* pagectrl.c */; };
-		A03ADDE511D1500400F5A51F /* passwd.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5D11D14DED00F5A51F /* passwd.c */; };
-		A03ADDE611D1500400F5A51F /* ppolicy.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5E11D14DED00F5A51F /* ppolicy.c */; };
-		A03ADDE711D1500400F5A51F /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5F11D14DED00F5A51F /* print.c */; };
-		A03ADDE811D1500400F5A51F /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6011D14DED00F5A51F /* references.c */; };
-		A03ADDE911D1500400F5A51F /* request.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6111D14DED00F5A51F /* request.c */; };
-		A03ADDEA11D1500400F5A51F /* result.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6211D14DED00F5A51F /* result.c */; };
-		A03ADDEB11D1500400F5A51F /* sasl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6311D14DED00F5A51F /* sasl.c */; };
-		A03ADDEC11D1500400F5A51F /* sbind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6411D14DED00F5A51F /* sbind.c */; };
-		A03ADDED11D1500400F5A51F /* schema.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6511D14DED00F5A51F /* schema.c */; };
-		A03ADDEE11D1500400F5A51F /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6611D14DED00F5A51F /* search.c */; };
-		A03ADDEF11D1500400F5A51F /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6711D14DED00F5A51F /* sort.c */; };
-		A03ADDF011D1500400F5A51F /* sortctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6811D14DED00F5A51F /* sortctrl.c */; };
-		A03ADDF111D1500400F5A51F /* stctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6911D14DED00F5A51F /* stctrl.c */; };
-		A03ADDF211D1500400F5A51F /* string.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6A11D14DED00F5A51F /* string.c */; };
-		A03ADDF311D1500400F5A51F /* turn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7111D14DED00F5A51F /* turn.c */; };
-		A03ADDF411D1500400F5A51F /* txn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7211D14DED00F5A51F /* txn.c */; };
-		A03ADDF511D1500400F5A51F /* unbind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7311D14DED00F5A51F /* unbind.c */; };
-		A03ADDF611D1500400F5A51F /* url.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7411D14DED00F5A51F /* url.c */; };
-		A03ADDF711D1500400F5A51F /* utf-8-conv.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7611D14DED00F5A51F /* utf-8-conv.c */; };
-		A03ADDF811D1500400F5A51F /* utf-8.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7711D14DED00F5A51F /* utf-8.c */; };
-		A03ADDF911D1500400F5A51F /* util-int.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7811D14DED00F5A51F /* util-int.c */; };
-		A03ADDFA11D1500400F5A51F /* vlvctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7911D14DED00F5A51F /* vlvctrl.c */; };
-		A03ADDFB11D1500400F5A51F /* whoami.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7A11D14DED00F5A51F /* whoami.c */; };
+		A021D168127B88F100A30E69 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = A021D166127B886400A30E69 /* version.c */; };
+		A021D16C127B897B00A30E69 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = A021D16B127B897B00A30E69 /* version.c */; };
+		A021D182127B8C4200A30E69 /* abandon.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3611D14DED00F5A51F /* abandon.c */; };
+		A021D183127B8C4200A30E69 /* add.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3711D14DED00F5A51F /* add.c */; };
+		A021D184127B8C4200A30E69 /* addentry.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3811D14DED00F5A51F /* addentry.c */; };
+		A021D185127B8C4200A30E69 /* assertion.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3A11D14DED00F5A51F /* assertion.c */; };
+		A021D186127B8C4200A30E69 /* bind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3B11D14DED00F5A51F /* bind.c */; };
+		A021D187127B8C4200A30E69 /* cancel.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3C11D14DED00F5A51F /* cancel.c */; };
+		A021D188127B8C4200A30E69 /* charray.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3D11D14DED00F5A51F /* charray.c */; };
+		A021D189127B8C4200A30E69 /* compare.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3E11D14DED00F5A51F /* compare.c */; };
+		A021D18A127B8C4200A30E69 /* controls.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3F11D14DED00F5A51F /* controls.c */; };
+		A021D18B127B8C4200A30E69 /* cyrus.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4011D14DED00F5A51F /* cyrus.c */; };
+		A021D18C127B8C4200A30E69 /* dds.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4111D14DED00F5A51F /* dds.c */; };
+		A021D18D127B8C4200A30E69 /* delete.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4211D14DED00F5A51F /* delete.c */; };
+		A021D18E127B8C4200A30E69 /* deref.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4311D14DED00F5A51F /* deref.c */; };
+		A021D18F127B8C4200A30E69 /* dnssrv.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4411D14DED00F5A51F /* dnssrv.c */; };
+		A021D190127B8C4200A30E69 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4611D14DED00F5A51F /* error.c */; };
+		A021D191127B8C4200A30E69 /* extended.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4711D14DED00F5A51F /* extended.c */; };
+		A021D192127B8C4200A30E69 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4811D14DED00F5A51F /* filter.c */; };
+		A021D193127B8C4200A30E69 /* free.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4911D14DED00F5A51F /* free.c */; };
+		A021D194127B8C4200A30E69 /* getattr.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4B11D14DED00F5A51F /* getattr.c */; };
+		A021D195127B8C4200A30E69 /* getdn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4C11D14DED00F5A51F /* getdn.c */; };
+		A021D196127B8C4200A30E69 /* getentry.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4D11D14DED00F5A51F /* getentry.c */; };
+		A021D197127B8C4200A30E69 /* getvalues.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4E11D14DED00F5A51F /* getvalues.c */; };
+		A021D198127B8C4200A30E69 /* gssapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA4F11D14DED00F5A51F /* gssapi.c */; };
+		A021D199127B8C4200A30E69 /* init.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5011D14DED00F5A51F /* init.c */; };
+		A021D19A127B8C4200A30E69 /* ldap_sync.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5411D14DED00F5A51F /* ldap_sync.c */; };
+		A021D19B127B8C4200A30E69 /* messages.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5511D14DED00F5A51F /* messages.c */; };
+		A021D19C127B8C4200A30E69 /* modify.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5611D14DED00F5A51F /* modify.c */; };
+		A021D19D127B8C4200A30E69 /* modrdn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5711D14DED00F5A51F /* modrdn.c */; };
+		A021D19E127B8C4200A30E69 /* open.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5811D14DED00F5A51F /* open.c */; };
+		A021D19F127B8C4200A30E69 /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5911D14DED00F5A51F /* options.c */; };
+		A021D1A0127B8C4200A30E69 /* os-ip.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5A11D14DED00F5A51F /* os-ip.c */; };
+		A021D1A1127B8C4200A30E69 /* os-local.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5B11D14DED00F5A51F /* os-local.c */; };
+		A021D1A2127B8C4200A30E69 /* pagectrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5C11D14DED00F5A51F /* pagectrl.c */; };
+		A021D1A3127B8C4200A30E69 /* passwd.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5D11D14DED00F5A51F /* passwd.c */; };
+		A021D1A4127B8C4200A30E69 /* ppolicy.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5E11D14DED00F5A51F /* ppolicy.c */; };
+		A021D1A5127B8C4200A30E69 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA5F11D14DED00F5A51F /* print.c */; };
+		A021D1A9127B8CA300A30E69 /* references.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6011D14DED00F5A51F /* references.c */; };
+		A021D1AA127B8CA300A30E69 /* request.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6111D14DED00F5A51F /* request.c */; };
+		A021D1AB127B8CA300A30E69 /* result.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6211D14DED00F5A51F /* result.c */; };
+		A021D1AC127B8CA300A30E69 /* sasl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6311D14DED00F5A51F /* sasl.c */; };
+		A021D1AD127B8CA300A30E69 /* sbind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6411D14DED00F5A51F /* sbind.c */; };
+		A021D1AE127B8CA300A30E69 /* schema.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6511D14DED00F5A51F /* schema.c */; };
+		A021D1AF127B8CA300A30E69 /* search.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6611D14DED00F5A51F /* search.c */; };
+		A021D1B0127B8CA300A30E69 /* sort.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6711D14DED00F5A51F /* sort.c */; };
+		A021D1B1127B8CA300A30E69 /* sortctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6811D14DED00F5A51F /* sortctrl.c */; };
+		A021D1B2127B8CA300A30E69 /* stctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6911D14DED00F5A51F /* stctrl.c */; };
+		A021D1B3127B8CA300A30E69 /* string.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6A11D14DED00F5A51F /* string.c */; };
+		A021D1B4127B8CA300A30E69 /* tls2.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6D11D14DED00F5A51F /* tls2.c */; };
+		A021D1B5127B8CA300A30E69 /* tls_g.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6E11D14DED00F5A51F /* tls_g.c */; };
+		A021D1B6127B8CA300A30E69 /* tls_m.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6F11D14DED00F5A51F /* tls_m.c */; };
+		A021D1B7127B8CA300A30E69 /* tls_o.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7011D14DED00F5A51F /* tls_o.c */; };
+		A021D1B8127B8CA300A30E69 /* turn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7111D14DED00F5A51F /* turn.c */; };
+		A021D1B9127B8CA300A30E69 /* txn.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7211D14DED00F5A51F /* txn.c */; };
+		A021D1BA127B8CA300A30E69 /* unbind.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7311D14DED00F5A51F /* unbind.c */; };
+		A021D1BB127B8CA300A30E69 /* url.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7411D14DED00F5A51F /* url.c */; };
+		A021D1BC127B8CA300A30E69 /* utf-8-conv.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7611D14DED00F5A51F /* utf-8-conv.c */; };
+		A021D1BD127B8CA300A30E69 /* utf-8.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7711D14DED00F5A51F /* utf-8.c */; };
+		A021D1BE127B8CA300A30E69 /* util-int.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7811D14DED00F5A51F /* util-int.c */; };
+		A021D1BF127B8CA300A30E69 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = A021D16D127B8AED00A30E69 /* version.c */; };
+		A021D1C0127B8CA300A30E69 /* vlvctrl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7911D14DED00F5A51F /* vlvctrl.c */; };
+		A021D1C1127B8CA300A30E69 /* whoami.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7A11D14DED00F5A51F /* whoami.c */; };
 		A03ADE0F11D1511A00F5A51F /* ldap.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0711D14DED00F5A51F /* ldap.h */; };
 		A03ADE1011D1511E00F5A51F /* ldap_cdefs.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0811D14DED00F5A51F /* ldap_cdefs.h */; };
 		A03ADE1111D1512500F5A51F /* ldap_schema.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1311D14DED00F5A51F /* ldap_schema.h */; };
 		A03ADE1211D1512500F5A51F /* ldap_utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA1411D14DED00F5A51F /* ldap_utf8.h */; };
-		A03ADE2D11D1521C00F5A51F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		A03ADE3011D1526400F5A51F /* assert.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2511D14DED00F5A51F /* assert.c */; };
 		A03ADE3111D1526400F5A51F /* bprint.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2611D14DED00F5A51F /* bprint.c */; };
 		A03ADE3211D1526400F5A51F /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA2711D14DED00F5A51F /* debug.c */; };
@@ -95,7 +100,6 @@
 		A03ADE3811D1526400F5A51F /* sockbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3211D14DED00F5A51F /* sockbuf.c */; };
 		A03ADE3911D1526400F5A51F /* stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA3311D14DED00F5A51F /* stdio.c */; };
 		A03ADE3A11D1529700F5A51F /* lber.h in Headers */ = {isa = PBXBuildFile; fileRef = A03ADA0411D14DED00F5A51F /* lber.h */; };
-		A05124DA1278E6AB00DE46C4 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05124AB1278E1AF00DE46C4 /* libsasl2.a */; };
 		A05124E01278E77F00DE46C4 /* avl.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADAAB11D14DED00F5A51F /* avl.c */; };
 		A05124E11278E77F00DE46C4 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADAAC11D14DED00F5A51F /* base64.c */; };
 		A05124E21278E77F00DE46C4 /* detach.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADAAD11D14DED00F5A51F /* detach.c */; };
@@ -118,13 +122,16 @@
 		A05124F31278E77F00DE46C4 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADAC911D14DED00F5A51F /* utils.c */; };
 		A05124F41278E77F00DE46C4 /* uuid.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADACA11D14DED00F5A51F /* uuid.c */; };
 		A05124F51278E79B00DE46C4 /* memcmp.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADAB711D14DED00F5A51F /* memcmp.c */; };
-		A0A53AD311D15941007EE6C4 /* tls2.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6D11D14DED00F5A51F /* tls2.c */; };
-		A0A53AD411D15941007EE6C4 /* tls_g.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6E11D14DED00F5A51F /* tls_g.c */; };
-		A0A53AD511D15941007EE6C4 /* tls_m.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA6F11D14DED00F5A51F /* tls_m.c */; };
-		A0A53AD611D15941007EE6C4 /* tls_o.c in Sources */ = {isa = PBXBuildFile; fileRef = A03ADA7011D14DED00F5A51F /* tls_o.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A021D115127B78EB00A30E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = sasl2;
+		};
 		A03ADE0011D1501B00F5A51F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -157,26 +164,29 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libsasl2.a */;
-			remoteInfo = sasl2;
-		};
-		A05124D81278E69800DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* sasl2 */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = sasl2;
 		};
 		A05125511278EB7600DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54 /* ldapsearch.app */;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
 			remoteInfo = ldapsearch;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A021D0ED127B74A500A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D0EF127B74C400A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/liblber/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D0F0127B74D700A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/libldap/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D0F1127B74E600A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/libldap_r/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D0F2127B74F600A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/liblunicode/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D0F3127B751000A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/liblutil/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D0F4127B752100A30E69 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "openldap-2.4.22/libraries/librewrite/Makefile"; sourceTree = SOURCE_ROOT; };
+		A021D166127B886400A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/liblutil/version.c"; sourceTree = SOURCE_ROOT; };
+		A021D16B127B897B00A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/liblber/version.c"; sourceTree = SOURCE_ROOT; };
+		A021D16D127B8AED00A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/libldap/version.c"; sourceTree = SOURCE_ROOT; };
 		A03AD73411D14A0400F5A51F /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		A03AD73511D14A0400F5A51F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A03AD73711D14A4800F5A51F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -1729,8 +1739,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A05124DA1278E6AB00DE46C4 /* libsasl2.a in Frameworks */,
-				A03ADDC111D14F1D00F5A51F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1738,7 +1746,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03ADE2D11D1521C00F5A51F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2865,6 +2872,7 @@
 		A03ADA2111D14DED00F5A51F /* libraries */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0ED127B74A500A30E69 /* Makefile */,
 				A03ADA2211D14DED00F5A51F /* Makefile.in */,
 				A03ADA2311D14DED00F5A51F /* liblber */,
 				A03ADA3411D14DED00F5A51F /* libldap */,
@@ -2879,6 +2887,7 @@
 		A03ADA2311D14DED00F5A51F /* liblber */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0EF127B74C400A30E69 /* Makefile */,
 				A03ADA2411D14DED00F5A51F /* Makefile.in */,
 				A03ADA2511D14DED00F5A51F /* assert.c */,
 				A03ADA2611D14DED00F5A51F /* bprint.c */,
@@ -2895,6 +2904,7 @@
 				A03ADA3111D14DED00F5A51F /* options.c */,
 				A03ADA3211D14DED00F5A51F /* sockbuf.c */,
 				A03ADA3311D14DED00F5A51F /* stdio.c */,
+				A021D16B127B897B00A30E69 /* version.c */,
 			);
 			path = liblber;
 			sourceTree = "<group>";
@@ -2902,6 +2912,7 @@
 		A03ADA3411D14DED00F5A51F /* libldap */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0F0127B74D700A30E69 /* Makefile */,
 				A03ADA3511D14DED00F5A51F /* Makefile.in */,
 				A03ADA3611D14DED00F5A51F /* abandon.c */,
 				A03ADA3711D14DED00F5A51F /* add.c */,
@@ -2970,6 +2981,7 @@
 				A03ADA7611D14DED00F5A51F /* utf-8-conv.c */,
 				A03ADA7711D14DED00F5A51F /* utf-8.c */,
 				A03ADA7811D14DED00F5A51F /* util-int.c */,
+				A021D16D127B8AED00A30E69 /* version.c */,
 				A03ADA7911D14DED00F5A51F /* vlvctrl.c */,
 				A03ADA7A11D14DED00F5A51F /* whoami.c */,
 			);
@@ -2979,6 +2991,7 @@
 		A03ADA7B11D14DED00F5A51F /* libldap_r */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0F1127B74E600A30E69 /* Makefile */,
 				A03ADA7C11D14DED00F5A51F /* Makefile.in */,
 				A03ADA7D11D14DED00F5A51F /* ldap_thr_debug.h */,
 				A03ADA7E11D14DED00F5A51F /* rdwr.c */,
@@ -3001,6 +3014,7 @@
 		A03ADA8B11D14DED00F5A51F /* liblunicode */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0F2127B74F600A30E69 /* Makefile */,
 				A03ADA8C11D14DED00F5A51F /* CompositionExclusions.txt */,
 				A03ADA8D11D14DED00F5A51F /* Makefile.in */,
 				A03ADA8E11D14DED00F5A51F /* UCD-Terms */,
@@ -3058,6 +3072,7 @@
 		A03ADAA911D14DED00F5A51F /* liblutil */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0F3127B751000A30E69 /* Makefile */,
 				A03ADAAA11D14DED00F5A51F /* Makefile.in */,
 				A03ADAAB11D14DED00F5A51F /* avl.c */,
 				A03ADAAC11D14DED00F5A51F /* base64.c */,
@@ -3091,6 +3106,7 @@
 				A03ADAC811D14DED00F5A51F /* testtavl.c */,
 				A03ADAC911D14DED00F5A51F /* utils.c */,
 				A03ADACA11D14DED00F5A51F /* uuid.c */,
+				A021D166127B886400A30E69 /* version.c */,
 			);
 			path = liblutil;
 			sourceTree = "<group>";
@@ -3098,6 +3114,7 @@
 		A03ADACB11D14DED00F5A51F /* librewrite */ = {
 			isa = PBXGroup;
 			children = (
+				A021D0F4127B752100A30E69 /* Makefile */,
 				A03ADACC11D14DED00F5A51F /* Copyright */,
 				A03ADACD11D14DED00F5A51F /* Makefile.in */,
 				A03ADACE11D14DED00F5A51F /* RATIONALE */,
@@ -4178,16 +4195,16 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
-		A03AD74211D14D0900F5A51F /* Makefile */ = {
+		A03AD74211D14D0900F5A51F /* Makefile-openldap */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = A03AD74911D14D1300F5A51F /* Build configuration list for PBXLegacyTarget "Makefile" */;
+			buildConfigurationList = A03AD74911D14D1300F5A51F /* Build configuration list for PBXLegacyTarget "Makefile-openldap" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
 			);
-			name = Makefile;
+			name = "Makefile-openldap";
 			passBuildSettingsInEnvironment = 1;
 			productName = Makefile;
 		};
@@ -4206,7 +4223,7 @@
 			);
 			dependencies = (
 				A03ADE0111D1501B00F5A51F /* PBXTargetDependency */,
-				A05124D91278E69800DE46C4 /* PBXTargetDependency */,
+				A021D116127B78EB00A30E69 /* PBXTargetDependency */,
 			);
 			name = ldap;
 			productName = ldap;
@@ -4261,7 +4278,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				A03AD74211D14D0900F5A51F /* Makefile */,
+				A03AD74211D14D0900F5A51F /* Makefile-openldap */,
 				A03ADDBD11D14F1200F5A51F /* ldap */,
 				A03ADE2911D1520A00F5A51F /* lber */,
 				A03ADE4A11D1530F00F5A51F /* openldap */,
@@ -4291,66 +4308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03ADDC411D1500400F5A51F /* abandon.c in Sources */,
-				A03ADDC511D1500400F5A51F /* add.c in Sources */,
-				A03ADDC611D1500400F5A51F /* addentry.c in Sources */,
-				A03ADDC711D1500400F5A51F /* assertion.c in Sources */,
-				A03ADDC811D1500400F5A51F /* bind.c in Sources */,
-				A03ADDC911D1500400F5A51F /* cancel.c in Sources */,
-				A03ADDCA11D1500400F5A51F /* charray.c in Sources */,
-				A03ADDCB11D1500400F5A51F /* compare.c in Sources */,
-				A03ADDCC11D1500400F5A51F /* controls.c in Sources */,
-				A03ADDCD11D1500400F5A51F /* cyrus.c in Sources */,
-				A03ADDCE11D1500400F5A51F /* dds.c in Sources */,
-				A03ADDCF11D1500400F5A51F /* delete.c in Sources */,
-				A03ADDD011D1500400F5A51F /* deref.c in Sources */,
-				A03ADDD111D1500400F5A51F /* dnssrv.c in Sources */,
-				A03ADDD211D1500400F5A51F /* error.c in Sources */,
-				A03ADDD311D1500400F5A51F /* extended.c in Sources */,
-				A03ADDD411D1500400F5A51F /* filter.c in Sources */,
-				A03ADDD511D1500400F5A51F /* free.c in Sources */,
-				A03ADDD611D1500400F5A51F /* getattr.c in Sources */,
-				A03ADDD711D1500400F5A51F /* getdn.c in Sources */,
-				A03ADDD811D1500400F5A51F /* getentry.c in Sources */,
-				A03ADDD911D1500400F5A51F /* getvalues.c in Sources */,
-				A03ADDDA11D1500400F5A51F /* gssapi.c in Sources */,
-				A03ADDDB11D1500400F5A51F /* init.c in Sources */,
-				A03ADDDC11D1500400F5A51F /* ldap_sync.c in Sources */,
-				A03ADDDD11D1500400F5A51F /* messages.c in Sources */,
-				A03ADDDE11D1500400F5A51F /* modify.c in Sources */,
-				A03ADDDF11D1500400F5A51F /* modrdn.c in Sources */,
-				A03ADDE011D1500400F5A51F /* open.c in Sources */,
-				A03ADDE111D1500400F5A51F /* options.c in Sources */,
-				A03ADDE211D1500400F5A51F /* os-ip.c in Sources */,
-				A03ADDE311D1500400F5A51F /* os-local.c in Sources */,
-				A03ADDE411D1500400F5A51F /* pagectrl.c in Sources */,
-				A03ADDE511D1500400F5A51F /* passwd.c in Sources */,
-				A03ADDE611D1500400F5A51F /* ppolicy.c in Sources */,
-				A03ADDE711D1500400F5A51F /* print.c in Sources */,
-				A03ADDE811D1500400F5A51F /* references.c in Sources */,
-				A03ADDE911D1500400F5A51F /* request.c in Sources */,
-				A03ADDEA11D1500400F5A51F /* result.c in Sources */,
-				A03ADDEB11D1500400F5A51F /* sasl.c in Sources */,
-				A03ADDEC11D1500400F5A51F /* sbind.c in Sources */,
-				A03ADDED11D1500400F5A51F /* schema.c in Sources */,
-				A03ADDEE11D1500400F5A51F /* search.c in Sources */,
-				A03ADDEF11D1500400F5A51F /* sort.c in Sources */,
-				A03ADDF011D1500400F5A51F /* sortctrl.c in Sources */,
-				A03ADDF111D1500400F5A51F /* stctrl.c in Sources */,
-				A03ADDF211D1500400F5A51F /* string.c in Sources */,
-				A03ADDF311D1500400F5A51F /* turn.c in Sources */,
-				A03ADDF411D1500400F5A51F /* txn.c in Sources */,
-				A03ADDF511D1500400F5A51F /* unbind.c in Sources */,
-				A03ADDF611D1500400F5A51F /* url.c in Sources */,
-				A03ADDF711D1500400F5A51F /* utf-8-conv.c in Sources */,
-				A03ADDF811D1500400F5A51F /* utf-8.c in Sources */,
-				A03ADDF911D1500400F5A51F /* util-int.c in Sources */,
-				A03ADDFA11D1500400F5A51F /* vlvctrl.c in Sources */,
-				A03ADDFB11D1500400F5A51F /* whoami.c in Sources */,
-				A0A53AD311D15941007EE6C4 /* tls2.c in Sources */,
-				A0A53AD411D15941007EE6C4 /* tls_g.c in Sources */,
-				A0A53AD511D15941007EE6C4 /* tls_m.c in Sources */,
-				A0A53AD611D15941007EE6C4 /* tls_o.c in Sources */,
 				A05124E01278E77F00DE46C4 /* avl.c in Sources */,
 				A05124E11278E77F00DE46C4 /* base64.c in Sources */,
 				A05124E21278E77F00DE46C4 /* detach.c in Sources */,
@@ -4373,6 +4330,68 @@
 				A05124F31278E77F00DE46C4 /* utils.c in Sources */,
 				A05124F41278E77F00DE46C4 /* uuid.c in Sources */,
 				A05124F51278E79B00DE46C4 /* memcmp.c in Sources */,
+				A021D168127B88F100A30E69 /* version.c in Sources */,
+				A021D182127B8C4200A30E69 /* abandon.c in Sources */,
+				A021D183127B8C4200A30E69 /* add.c in Sources */,
+				A021D184127B8C4200A30E69 /* addentry.c in Sources */,
+				A021D185127B8C4200A30E69 /* assertion.c in Sources */,
+				A021D186127B8C4200A30E69 /* bind.c in Sources */,
+				A021D187127B8C4200A30E69 /* cancel.c in Sources */,
+				A021D188127B8C4200A30E69 /* charray.c in Sources */,
+				A021D189127B8C4200A30E69 /* compare.c in Sources */,
+				A021D18A127B8C4200A30E69 /* controls.c in Sources */,
+				A021D18B127B8C4200A30E69 /* cyrus.c in Sources */,
+				A021D18C127B8C4200A30E69 /* dds.c in Sources */,
+				A021D18D127B8C4200A30E69 /* delete.c in Sources */,
+				A021D18E127B8C4200A30E69 /* deref.c in Sources */,
+				A021D18F127B8C4200A30E69 /* dnssrv.c in Sources */,
+				A021D190127B8C4200A30E69 /* error.c in Sources */,
+				A021D191127B8C4200A30E69 /* extended.c in Sources */,
+				A021D192127B8C4200A30E69 /* filter.c in Sources */,
+				A021D193127B8C4200A30E69 /* free.c in Sources */,
+				A021D194127B8C4200A30E69 /* getattr.c in Sources */,
+				A021D195127B8C4200A30E69 /* getdn.c in Sources */,
+				A021D196127B8C4200A30E69 /* getentry.c in Sources */,
+				A021D197127B8C4200A30E69 /* getvalues.c in Sources */,
+				A021D198127B8C4200A30E69 /* gssapi.c in Sources */,
+				A021D199127B8C4200A30E69 /* init.c in Sources */,
+				A021D19A127B8C4200A30E69 /* ldap_sync.c in Sources */,
+				A021D19B127B8C4200A30E69 /* messages.c in Sources */,
+				A021D19C127B8C4200A30E69 /* modify.c in Sources */,
+				A021D19D127B8C4200A30E69 /* modrdn.c in Sources */,
+				A021D19E127B8C4200A30E69 /* open.c in Sources */,
+				A021D19F127B8C4200A30E69 /* options.c in Sources */,
+				A021D1A0127B8C4200A30E69 /* os-ip.c in Sources */,
+				A021D1A1127B8C4200A30E69 /* os-local.c in Sources */,
+				A021D1A2127B8C4200A30E69 /* pagectrl.c in Sources */,
+				A021D1A3127B8C4200A30E69 /* passwd.c in Sources */,
+				A021D1A4127B8C4200A30E69 /* ppolicy.c in Sources */,
+				A021D1A5127B8C4200A30E69 /* print.c in Sources */,
+				A021D1A9127B8CA300A30E69 /* references.c in Sources */,
+				A021D1AA127B8CA300A30E69 /* request.c in Sources */,
+				A021D1AB127B8CA300A30E69 /* result.c in Sources */,
+				A021D1AC127B8CA300A30E69 /* sasl.c in Sources */,
+				A021D1AD127B8CA300A30E69 /* sbind.c in Sources */,
+				A021D1AE127B8CA300A30E69 /* schema.c in Sources */,
+				A021D1AF127B8CA300A30E69 /* search.c in Sources */,
+				A021D1B0127B8CA300A30E69 /* sort.c in Sources */,
+				A021D1B1127B8CA300A30E69 /* sortctrl.c in Sources */,
+				A021D1B2127B8CA300A30E69 /* stctrl.c in Sources */,
+				A021D1B3127B8CA300A30E69 /* string.c in Sources */,
+				A021D1B4127B8CA300A30E69 /* tls2.c in Sources */,
+				A021D1B5127B8CA300A30E69 /* tls_g.c in Sources */,
+				A021D1B6127B8CA300A30E69 /* tls_m.c in Sources */,
+				A021D1B7127B8CA300A30E69 /* tls_o.c in Sources */,
+				A021D1B8127B8CA300A30E69 /* turn.c in Sources */,
+				A021D1B9127B8CA300A30E69 /* txn.c in Sources */,
+				A021D1BA127B8CA300A30E69 /* unbind.c in Sources */,
+				A021D1BB127B8CA300A30E69 /* url.c in Sources */,
+				A021D1BC127B8CA300A30E69 /* utf-8-conv.c in Sources */,
+				A021D1BD127B8CA300A30E69 /* utf-8.c in Sources */,
+				A021D1BE127B8CA300A30E69 /* util-int.c in Sources */,
+				A021D1BF127B8CA300A30E69 /* version.c in Sources */,
+				A021D1C0127B8CA300A30E69 /* vlvctrl.c in Sources */,
+				A021D1C1127B8CA300A30E69 /* whoami.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4390,20 +4409,26 @@
 				A03ADE3711D1526400F5A51F /* options.c in Sources */,
 				A03ADE3811D1526400F5A51F /* sockbuf.c in Sources */,
 				A03ADE3911D1526400F5A51F /* stdio.c in Sources */,
+				A021D16C127B897B00A30E69 /* version.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A021D116127B78EB00A30E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sasl2;
+			targetProxy = A021D115127B78EB00A30E69 /* PBXContainerItemProxy */;
+		};
 		A03ADE0111D1501B00F5A51F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A03AD74211D14D0900F5A51F /* Makefile */;
+			target = A03AD74211D14D0900F5A51F /* Makefile-openldap */;
 			targetProxy = A03ADE0011D1501B00F5A51F /* PBXContainerItemProxy */;
 		};
 		A03ADE3D11D152AB00F5A51F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A03AD74211D14D0900F5A51F /* Makefile */;
+			target = A03AD74211D14D0900F5A51F /* Makefile-openldap */;
 			targetProxy = A03ADE3C11D152AB00F5A51F /* PBXContainerItemProxy */;
 		};
 		A03ADE4E11D1531600F5A51F /* PBXTargetDependency */ = {
@@ -4415,11 +4440,6 @@
 			isa = PBXTargetDependency;
 			target = A03ADE2911D1520A00F5A51F /* lber */;
 			targetProxy = A03ADE4F11D1531600F5A51F /* PBXContainerItemProxy */;
-		};
-		A05124D91278E69800DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = sasl2;
-			targetProxy = A05124D81278E69800DE46C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4575,7 +4595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A03AD74911D14D1300F5A51F /* Build configuration list for PBXLegacyTarget "Makefile" */ = {
+		A03AD74911D14D1300F5A51F /* Build configuration list for PBXLegacyTarget "Makefile-openldap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A03AD74311D14D0900F5A51F /* Debug */,

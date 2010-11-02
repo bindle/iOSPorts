@@ -22,28 +22,28 @@
 
 /* define this if needed to get reentrant functions */
 #ifndef REENTRANT
-#define REENTRANT 1
+/* #undef REENTRANT */
 #endif
 #ifndef _REENTRANT
-#define _REENTRANT 1
+/* #undef _REENTRANT */
 #endif
 
 /* define this if needed to get threadsafe functions */
 #ifndef THREADSAFE
-#define THREADSAFE 1
+/* #undef THREADSAFE */
 #endif
 #ifndef _THREADSAFE
-#define _THREADSAFE 1
+/* #undef _THREADSAFE */
 #endif
 #ifndef THREAD_SAFE
-#define THREAD_SAFE 1
+/* #undef THREAD_SAFE */
 #endif
 #ifndef _THREAD_SAFE
-#define _THREAD_SAFE 1
+/* #undef _THREAD_SAFE */
 #endif
 
 #ifndef _SGI_MP_SOURCE
-#define _SGI_MP_SOURCE 1
+/* #undef _SGI_MP_SOURCE */
 #endif
 
 /* end of portable.h.pre */
@@ -417,28 +417,28 @@
 /* #undef HAVE_PSAP_H */
 
 /* define to pthreads API spec revision */
-#define HAVE_PTHREADS 10
+/* #undef HAVE_PTHREADS */
 
 /* define if you have pthread_detach function */
-#define HAVE_PTHREAD_DETACH 1
+/* #undef HAVE_PTHREAD_DETACH */
 
 /* Define to 1 if you have the `pthread_getconcurrency' function. */
-#define HAVE_PTHREAD_GETCONCURRENCY 1
+/* #undef HAVE_PTHREAD_GETCONCURRENCY */
 
 /* Define to 1 if you have the <pthread.h> header file. */
-#define HAVE_PTHREAD_H 1
+/* #undef HAVE_PTHREAD_H */
 
 /* Define to 1 if you have the `pthread_kill' function. */
-#define HAVE_PTHREAD_KILL 1
+/* #undef HAVE_PTHREAD_KILL */
 
 /* Define to 1 if you have the `pthread_kill_other_threads_np' function. */
 /* #undef HAVE_PTHREAD_KILL_OTHER_THREADS_NP */
 
 /* define if you have pthread_rwlock_destroy function */
-#define HAVE_PTHREAD_RWLOCK_DESTROY 1
+/* #undef HAVE_PTHREAD_RWLOCK_DESTROY */
 
 /* Define to 1 if you have the `pthread_setconcurrency' function. */
-#define HAVE_PTHREAD_SETCONCURRENCY 1
+/* #undef HAVE_PTHREAD_SETCONCURRENCY */
 
 /* Define to 1 if you have the `pthread_yield' function. */
 /* #undef HAVE_PTHREAD_YIELD */
@@ -480,13 +480,13 @@
 #define HAVE_SASL_SASL_H 1
 
 /* define if your SASL library has sasl_version() */
-/* #undef HAVE_SASL_VERSION */
+#define HAVE_SASL_VERSION 1
 
 /* Define to 1 if you have the <sched.h> header file. */
-#define HAVE_SCHED_H 1
+/* #undef HAVE_SCHED_H */
 
 /* Define to 1 if you have the `sched_yield' function. */
-#define HAVE_SCHED_YIELD 1
+/* #undef HAVE_SCHED_YIELD */
 
 /* Define to 1 if you have the `send' function. */
 #define HAVE_SEND 1
@@ -716,7 +716,7 @@
 #define HAVE_SYS_UIO_H 1
 
 /* Define to 1 if you have the <sys/un.h> header file. */
-#define HAVE_SYS_UN_H 1
+/* #undef HAVE_SYS_UN_H */
 
 /* Define to 1 if you have the <sys/uuid.h> header file. */
 /* #undef HAVE_SYS_UUID_H */
@@ -818,7 +818,7 @@
 #define LBER_TAG_T long
 
 /* define to 1 if library is thread safe */
-#define LDAP_API_FEATURE_X_OPENLDAP_THREAD_SAFE 1
+/* #undef LDAP_API_FEATURE_X_OPENLDAP_THREAD_SAFE */
 
 /* define to LDAP VENDOR VERSION */
 /* #undef LDAP_API_FEATURE_X_OPENLDAP_V2_REFERRALS */
@@ -833,16 +833,16 @@
 #define LDAP_PF_INET6 1
 
 /* define to support PF_LOCAL */
-#define LDAP_PF_LOCAL 1
+/* #undef LDAP_PF_LOCAL */
 
 /* define this for LDAP process title support */
-#define LDAP_PROCTITLE 1
+/* #undef LDAP_PROCTITLE */
 
 /* define this to add SLAPI code */
 /* #undef LDAP_SLAPI */
 
 /* define this to add syslog code */
-#define LDAP_SYSLOG 1
+/* #undef LDAP_SYSLOG */
 
 /* Version */
 #define LDAP_VENDOR_VERSION 20422
@@ -860,7 +860,7 @@
 #define NEED_MEMCMP_REPLACEMENT 1
 
 /* define if you have (or want) no threads */
-/* #undef NO_THREADS */
+#define NO_THREADS 1
 
 /* define to use the original debug style */
 /* #undef OLD_DEBUG */
