@@ -380,10 +380,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
-				HEADER_SEARCH_PATHS = (
-					../../openldap/include,
-					../../include,
-				);
+				HEADER_SEARCH_PATHS = ../../../../../include;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 			};
@@ -396,10 +393,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
-				HEADER_SEARCH_PATHS = (
-					../../openldap/include,
-					../../include,
-				);
+				HEADER_SEARCH_PATHS = ../../../../../include;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 				VALIDATE_PRODUCT = YES;
