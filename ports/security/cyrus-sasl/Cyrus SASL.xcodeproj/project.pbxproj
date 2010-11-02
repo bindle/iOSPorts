@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A05123D31278D80400DE46C4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05123CE1278D7F500DE46C4 /* libssl.a */; };
-		A05123D41278D80400DE46C4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05123D01278D7F500DE46C4 /* libcrypto.a */; };
 		A05124421278DABD00DE46C4 /* digestmd5.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FE126E55630057FEE9 /* digestmd5.c */; };
 		A05124431278DABD00DE46C4 /* digestmd5_init.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB59FF126E55630057FEE9 /* digestmd5_init.c */; };
 		A05124441278DACD00DE46C4 /* login.c in Sources */ = {isa = PBXBuildFile; fileRef = A0FB5A06126E55630057FEE9 /* login.c */; };
@@ -48,40 +46,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A05123CD1278D7F500DE46C4 /* PBXContainerItemProxy */ = {
+		A021D11D127B790700A30E69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libssl.a */;
-			remoteInfo = ssl;
-		};
-		A05123CF1278D7F500DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511C5A127770FD00DE46C4 /* libcrypto.a */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4 /* crypto */;
 			remoteInfo = crypto;
 		};
-		A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4 /* test.app */;
-			remoteInfo = test;
-		};
-		A05124281278D81800DE46C4 /* PBXContainerItemProxy */ = {
+		A021D11F127B790C00A30E69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D /* ssl */;
 			remoteInfo = ssl;
 		};
-		A051242A1278D81800DE46C4 /* PBXContainerItemProxy */ = {
+		A05123CD1278D7F500DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4 /* crypto */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ssl;
+		};
+		A05123CF1278D7F500DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
 			remoteInfo = crypto;
+		};
+		A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511DFF1277895300DE46C4;
+			remoteInfo = test;
 		};
 		A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -735,8 +733,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A05123D31278D80400DE46C4 /* libssl.a in Frameworks */,
-				A05123D41278D80400DE46C4 /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1953,16 +1949,16 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
-		A0FB53DA126E52C60057FEE9 /* Makefile */ = {
+		A0FB53DA126E52C60057FEE9 /* Makefile-cyrus-sasl */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile" */;
+			buildConfigurationList = A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile-cyrus-sasl" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
 			);
-			name = Makefile;
+			name = "Makefile-cyrus-sasl";
 			passBuildSettingsInEnvironment = 1;
 			productName = Makefile;
 		};
@@ -1981,8 +1977,8 @@
 			);
 			dependencies = (
 				A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */,
-				A05124291278D81800DE46C4 /* PBXTargetDependency */,
-				A051242B1278D81800DE46C4 /* PBXTargetDependency */,
+				A021D11E127B790700A30E69 /* PBXTargetDependency */,
+				A021D120127B790C00A30E69 /* PBXTargetDependency */,
 			);
 			name = sasl2;
 			productName = sasl2;
@@ -2018,7 +2014,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				A0FB53DA126E52C60057FEE9 /* Makefile */,
+				A0FB53DA126E52C60057FEE9 /* Makefile-cyrus-sasl */,
 				D2AAC07D0554694100DB518D /* sasl2 */,
 			);
 		};
@@ -2094,19 +2090,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A05124291278D81800DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ssl;
-			targetProxy = A05124281278D81800DE46C4 /* PBXContainerItemProxy */;
-		};
-		A051242B1278D81800DE46C4 /* PBXTargetDependency */ = {
+		A021D11E127B790700A30E69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = crypto;
-			targetProxy = A051242A1278D81800DE46C4 /* PBXContainerItemProxy */;
+			targetProxy = A021D11D127B790700A30E69 /* PBXContainerItemProxy */;
+		};
+		A021D120127B790C00A30E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ssl;
+			targetProxy = A021D11F127B790C00A30E69 /* PBXContainerItemProxy */;
 		};
 		A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0FB53DA126E52C60057FEE9 /* Makefile */;
+			target = A0FB53DA126E52C60057FEE9 /* Makefile-cyrus-sasl */;
 			targetProxy = A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -2229,7 +2225,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile" */ = {
+		A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile-cyrus-sasl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0FB53DB126E52C60057FEE9 /* Debug */,

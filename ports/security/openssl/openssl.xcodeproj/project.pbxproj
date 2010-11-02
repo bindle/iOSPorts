@@ -6305,16 +6305,16 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
-		A0511DED127788EC00DE46C4 /* Makefile */ = {
+		A0511DED127788EC00DE46C4 /* Makefile-openssl */ = {
 			isa = PBXLegacyTarget;
 			buildArgumentsString = "$(ACTION)";
-			buildConfigurationList = A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile" */;
+			buildConfigurationList = A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-openssl" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
 			);
-			name = Makefile;
+			name = "Makefile-openssl";
 			passBuildSettingsInEnvironment = 1;
 			productName = Makefile;
 		};
@@ -6396,7 +6396,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0511DED127788EC00DE46C4 /* Makefile */,
+				A0511DED127788EC00DE46C4 /* Makefile-openssl */,
 				D2AAC07D0554694100DB518D /* ssl */,
 				A0511C51127770FD00DE46C4 /* crypto */,
 				A0511DCE127788A100DE46C4 /* OpenSSL */,
@@ -7055,12 +7055,12 @@
 		};
 		A0511DF1127788F600DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0511DED127788EC00DE46C4 /* Makefile */;
+			target = A0511DED127788EC00DE46C4 /* Makefile-openssl */;
 			targetProxy = A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */;
 		};
 		A0511DF3127788FD00DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A0511DED127788EC00DE46C4 /* Makefile */;
+			target = A0511DED127788EC00DE46C4 /* Makefile-openssl */;
 			targetProxy = A0511DF2127788FD00DE46C4 /* PBXContainerItemProxy */;
 		};
 		A0511E061277896500DE46C4 /* PBXTargetDependency */ = {
@@ -7327,7 +7327,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile" */ = {
+		A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-openssl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0511DEE127788ED00DE46C4 /* Debug */,
