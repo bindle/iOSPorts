@@ -1,8 +1,8 @@
 #
-#  iPhone OS OpenLDAP Library
+#  iOS Ports Library
 #  Copyright (C) 2010 Bindle Binaries
 #
-#  @BINDLE_BINARIES_LICENSE_START@
+#  @BINDLE_BINARIES_BSD_LICENSE_START@
 #
 #  Redistribution and use in source and binary forms, with or without
 #  modification, are permitted provided that the following conditions are met:
@@ -27,7 +27,7 @@
 #  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 #  SUCH DAMAGE.
 #
-#  @BINDLE_BINARIES_LICENSE_END@
+#  @BINDLE_BINARIES_BSD_LICENSE_END@
 #
 #  Makefile -- automate downloading OpenLDAP
 #
