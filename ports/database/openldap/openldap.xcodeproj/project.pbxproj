@@ -187,8 +187,6 @@
 		A021D166127B886400A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/liblutil/version.c"; sourceTree = SOURCE_ROOT; };
 		A021D16B127B897B00A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/liblber/version.c"; sourceTree = SOURCE_ROOT; };
 		A021D16D127B8AED00A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/libldap/version.c"; sourceTree = SOURCE_ROOT; };
-		A03AD73411D14A0400F5A51F /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
-		A03AD73511D14A0400F5A51F /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A03AD73711D14A4800F5A51F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		A03AD73A11D14CDE00F5A51F /* openldap-2.4.22.tgz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "openldap-2.4.22.tgz.md5"; sourceTree = "<group>"; };
 		A03AD75411D14DEC00F5A51F /* ANNOUNCEMENT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ANNOUNCEMENT; sourceTree = "<group>"; };
@@ -1723,14 +1721,6 @@
 		A09611A8126E6C3500671A97 /* ldap_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_config.h; sourceTree = "<group>"; };
 		A09611A9126E6C3500671A97 /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
 		A09611AA126E6C3500671A97 /* portable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portable.h; sourceTree = "<group>"; };
-		A09611B8126E6C6C00671A97 /* lber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber.h; sourceTree = "<group>"; };
-		A09611B9126E6C6C00671A97 /* lber_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber_types.h; sourceTree = "<group>"; };
-		A09611BA126E6C6C00671A97 /* ldap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap.h; sourceTree = "<group>"; };
-		A09611BB126E6C6C00671A97 /* ldap_cdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_cdefs.h; sourceTree = "<group>"; };
-		A09611BC126E6C6C00671A97 /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
-		A09611BD126E6C6C00671A97 /* ldap_schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_schema.h; sourceTree = "<group>"; };
-		A09611BE126E6C6C00671A97 /* ldap_utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_utf8.h; sourceTree = "<group>"; };
-		A0A53AFF11D15A60007EE6C4 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -1764,14 +1754,9 @@
 		0867D691FE84028FC02AAC07 /* openldap */ = {
 			isa = PBXGroup;
 			children = (
-				A03AD73411D14A0400F5A51F /* COPYING */,
 				A03AD73711D14A4800F5A51F /* Makefile */,
-				A03AD73511D14A0400F5A51F /* README */,
-				A0A53AFF11D15A60007EE6C4 /* TODO */,
 				A03AD73911D14CDE00F5A51F /* build-aux */,
-				A09611B7126E6C6C00671A97 /* include */,
 				A03AD75311D14DEC00F5A51F /* openldap */,
-				A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -1781,6 +1766,7 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */,
 				A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
@@ -4154,20 +4140,6 @@
 				A05125521278EB7600DE46C4 /* ldapsearch.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A09611B7126E6C6C00671A97 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				A09611B8126E6C6C00671A97 /* lber.h */,
-				A09611B9126E6C6C00671A97 /* lber_types.h */,
-				A09611BA126E6C6C00671A97 /* ldap.h */,
-				A09611BB126E6C6C00671A97 /* ldap_cdefs.h */,
-				A09611BC126E6C6C00671A97 /* ldap_features.h */,
-				A09611BD126E6C6C00671A97 /* ldap_schema.h */,
-				A09611BE126E6C6C00671A97 /* ldap_utf8.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
