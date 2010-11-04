@@ -55,7 +55,7 @@ repository.
 
    Downloading Source:
 
-      $ git clone ssh://ssh.scm.bindlebinaries.com/pub/scm/com.bindlebinaries/iOSPorts.git
+      $ git clone git://github.com/bindle/iOSPorts.git
 
    Git Branches:
       master - Current release of packages.
