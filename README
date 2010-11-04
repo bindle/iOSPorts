@@ -38,18 +38,19 @@ Software Requirements
 Packages
 ========
 
-   OpenLDAP (database/openldap) - LDAP client library.
-      Depends Upon: security/cyrus-sasl
-
-   PCRE (devel/pcre) - Perl Compatible Regular Expressions
-      Depends Upon: n/a
-
    Cyrus SASL (security/cyrus-sasl) - An open source implementations of
       Simple Authentication and Security Layer methods.
       Depends Upon: security/openssl
 
+   OpenLDAP (database/openldap) - LDAP client library.
+      Depends Upon: security/cyrus-sasl
+
    OpenSSL (security/openssl) - SSL/TLS and Crypto toolkit.
       Depends Upon: n/a
+
+   PCRE (devel/pcre) - Perl Compatible Regular Expressions
+      Depends Upon: n/a
+
 
 Maintainers
 ===========
