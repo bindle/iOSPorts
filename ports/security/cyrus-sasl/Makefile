@@ -36,13 +36,16 @@
 #
 
 # Package Information
-PACKAGE_NAME				= cyrus-sasl
+PACKAGE_NAME				= Cyrus SASL
+PACKAGE_TARNAME				= cyrus-sasl
 PACKAGE_VERSION				= 2.1.23
-PACKAGE_DIR				= $(PACKAGE_NAME)-$(PACKAGE_VERSION)
+PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
 PACKAGE_FILEEXE				= tar.gz
 PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
 PACKAGE_MD5				= $(PACKAGE_FILE).md5
 PACKAGE_URL				= http://ftp.andrew.cmu.edu/pub/cyrus-mail/$(PACKAGE_FILE)
+PACKAGE_WEBSITE				= http://asg.web.cmu.edu/sasl/
+PACKAGE_LICENSE_FILE			= build-aux/COPYING
 
 include ../../../build-aux/Makefile-package
 
@@ -54,11 +57,11 @@ INSTALLHEADERS	= ../../../include/sasl/hmac-md5.h \
 		  ../../../include/sasl/saslutil.h \
 		  ../../../include/sasl/prop.h
 
-$(INSTALLHEADERS): $(PACKAGE_NAME)
+$(INSTALLHEADERS): $(PACKAGE_TARNAME)
 	mkdir -p ../../../include/sasl
 	FILE="cyrus-sasl/include/`basename ${@}`"; cp $${FILE} ${@};
 
-cyrus-sasl/config.h: $(PACKAGE_NAME)
+cyrus-sasl/config.h: $(PACKAGE_TARNAME)
 	cp build-aux/config.h cyrus-sasl/
 
 extra-prep: cyrus-sasl/config.h $(INSTALLHEADERS)

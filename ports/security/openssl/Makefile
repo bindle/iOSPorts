@@ -36,19 +36,22 @@
 #
 
 # Package Information
-PACKAGE_NAME				= openssl
+PACKAGE_NAME				= OpenSSL SSL/TLS Toolkit
+PACKAGE_TARNAME				= openssl
 PACKAGE_VERSION				= 1.0.0a
-PACKAGE_DIR				= $(PACKAGE_NAME)-$(PACKAGE_VERSION)
+PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
 PACKAGE_FILEEXE				= tar.gz
 PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
 PACKAGE_MD5				= $(PACKAGE_FILE).md5
 PACKAGE_URL				= http://www.openssl.org/source/$(PACKAGE_FILE)
+PACKAGE_WEBSITE				= http://www.openssl.org/
+PACKAGE_LICENSE_FILE			= build-aux/LICENSE
 
 include ../../../build-aux/Makefile-package
 
 PKGHEADERS = openssl/crypto/opensslconf.h
 
-$(PKGHEADERS): $(PACKAGE_NAME)
+$(PKGHEADERS): $(PACKAGE_TARNAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
 openssl/patched_for_xcode: $(PKGHEADERS)

@@ -33,12 +33,12 @@
 #
 
 # common targets
-all: $(PACKAGE_NAME) extra-prep
+all: $(PACKAGE_TARNAME) extra-prep
 
 clean: clean-local
 	/bin/rm -f  $(PACKAGE_MD5)
 	/bin/rm -fR $(PACKAGE_DIR)
-	/bin/rm -fR $(PACKAGE_NAME)
+	/bin/rm -fR $(PACKAGE_TARNAME)
 
 distclean: distclean-local clean
 	/bin/rm -f $(PACKAGE_FILE)
@@ -47,10 +47,10 @@ distclean: distclean-local clean
 download: $(PACKAGE_FILE)
 
 # download targets
-$(PACKAGE_NAME): $(PACKAGE_DIR)
-	@/bin/rm -Rf $(PACKAGE_NAME)
-	/bin/ln -s $(PACKAGE_DIR) $(PACKAGE_NAME)
-	@/usr/bin/touch $(PACKAGE_NAME)
+$(PACKAGE_TARNAME): $(PACKAGE_DIR)
+	@/bin/rm -Rf $(PACKAGE_TARNAME)
+	/bin/ln -s $(PACKAGE_DIR) $(PACKAGE_TARNAME)
+	@/usr/bin/touch $(PACKAGE_TARNAME)
 
 $(PACKAGE_DIR): $(PACKAGE_MD5)
 	@/bin/rm -Rf $(PACKAGE_DIR)

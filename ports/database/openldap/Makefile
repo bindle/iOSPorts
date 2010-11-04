@@ -36,13 +36,16 @@
 #
 
 # Package Information
-PACKAGE_NAME				= openldap
+PACKAGE_NAME				= OpenLDAP
+PACKAGE_TARNAME				= openldap
 PACKAGE_VERSION				= 2.4.22
-PACKAGE_DIR				= $(PACKAGE_NAME)-$(PACKAGE_VERSION)
+PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
 PACKAGE_FILEEXE				= tgz
 PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
 PACKAGE_MD5				= $(PACKAGE_FILE).md5
 PACKAGE_URL				= ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/$(PACKAGE_FILE)
+PACKAGE_WEBSITE				= http://www.openldap.org/
+PACKAGE_LICENSE_FILE			= build-aux/LICENSE
 
 include ../../../build-aux/Makefile-package
 
@@ -65,7 +68,7 @@ CUSTFILES	= openldap/include/lber_types.h \
 		  openldap/libraries/liblutil/version.c \
 		  openldap/libraries/librewrite/version.c
 
-$(CUSTFILES): $(PACKAGE_NAME)
+$(CUSTFILES): $(PACKAGE_TARNAME)
 	cp build-aux/${@} ${@}
 
 $(INCLUDES): $(CUSTFILES)

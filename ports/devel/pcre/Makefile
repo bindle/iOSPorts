@@ -36,13 +36,16 @@
 #
 
 # Package Information
-PACKAGE_NAME				= pcre
+PACKAGE_NAME				= Perl Compatible Regular Expressions
+PACKAGE_TARNAME				= pcre
 PACKAGE_VERSION				= 8.10
-PACKAGE_DIR				= $(PACKAGE_NAME)-$(PACKAGE_VERSION)
+PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
 PACKAGE_FILEEXE				= tar.bz2
 PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
 PACKAGE_MD5				= $(PACKAGE_FILE).md5
 PACKAGE_URL				= http://superb-sea2.dl.sourceforge.net/project/pcre/pcre/$(PACKAGE_VERSION)/$(PACKAGE_FILE)
+PACKAGE_WEBSITE				= http://www.pcre.org/
+PACKAGE_LICENSE_FILE			= build-aux/LICENCE
 
 include ../../../build-aux/Makefile-package
 
@@ -52,17 +55,17 @@ OTHERFILES = pcre/pcre_chartables.c pcre/pcre.h
 
 INSTALLFILES = ../../../include/pcre.h
 
-$(PKGHEADERS): $(PACKAGE_NAME)
+$(PKGHEADERS): $(PACKAGE_TARNAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
-pcre/pcre.h: $(PACKAGE_NAME) pcre/pcre.h.generic
+pcre/pcre.h: $(PACKAGE_TARNAME) pcre/pcre.h.generic
 	cp pcre/pcre.h.generic pcre/pcre.h
 
 ../../../include/pcre.h: pcre/pcre.h
 	mkdir -p ../../../include
 	cp pcre/pcre.h ../../../include/pcre.h
 
-pcre/pcre_chartables.c: $(PACKAGE_NAME) pcre/pcre_chartables.c.dist
+pcre/pcre_chartables.c: $(PACKAGE_TARNAME) pcre/pcre_chartables.c.dist
 	cp pcre/pcre_chartables.c.dist pcre/pcre_chartables.c
 
 extra-prep: $(PKGHEADERS) $(OTHERFILES) $(INSTALLFILES)
