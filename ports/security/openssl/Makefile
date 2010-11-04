@@ -47,7 +47,8 @@ PACKAGE_URL				= http://www.openssl.org/source/$(PACKAGE_FILE)
 PACKAGE_WEBSITE				= http://www.openssl.org/
 PACKAGE_LICENSE_FILE			= build-aux/LICENSE
 
-include ../../../build-aux/Makefile-package
+SRCROOTDIR = ../../..
+include $(SRCROOTDIR)/build-aux/Makefile-package
 
 PKGHEADERS = openssl/crypto/opensslconf.h
 

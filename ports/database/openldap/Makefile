@@ -47,7 +47,8 @@ PACKAGE_URL				= ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/$(PACKAGE_
 PACKAGE_WEBSITE				= http://www.openldap.org/
 PACKAGE_LICENSE_FILE			= build-aux/LICENSE
 
-include ../../../build-aux/Makefile-package
+SRCROOTDIR = ../../..
+include $(SRCROOTDIR)/build-aux/Makefile-package
 
 INCLUDES = ../../../include/ldap.h \
            ../../../include/ldap_cdefs.h \

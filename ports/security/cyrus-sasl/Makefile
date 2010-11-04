@@ -47,7 +47,8 @@ PACKAGE_URL				= http://ftp.andrew.cmu.edu/pub/cyrus-mail/$(PACKAGE_FILE)
 PACKAGE_WEBSITE				= http://asg.web.cmu.edu/sasl/
 PACKAGE_LICENSE_FILE			= build-aux/COPYING
 
-include ../../../build-aux/Makefile-package
+SRCROOTDIR = ../../..
+include $(SRCROOTDIR)/build-aux/Makefile-package
 
 INSTALLHEADERS	= ../../../include/sasl/hmac-md5.h \
 		  ../../../include/sasl/md5.h \

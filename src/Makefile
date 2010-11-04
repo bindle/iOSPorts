@@ -32,50 +32,17 @@
 #
 #  @BINDLE_BINARIES_BSD_LICENSE_END@
 #
-#  Makefile -- automate downloading of package files
+#  Makefile -- automate downloading OpenLDAP
 #
 
 # Package Information
-PACKAGE_NAME				= Perl Compatible Regular Expressions
-PACKAGE_TARNAME				= pcre
-PACKAGE_VERSION				= 8.10
-PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
-PACKAGE_FILEEXE				= tar.bz2
-PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
-PACKAGE_MD5				= $(PACKAGE_FILE).md5
-PACKAGE_URL				= http://superb-sea2.dl.sourceforge.net/project/pcre/pcre/$(PACKAGE_VERSION)/$(PACKAGE_FILE)
-PACKAGE_WEBSITE				= http://www.pcre.org/
-PACKAGE_LICENSE_FILE			= build-aux/LICENCE
+PACKAGE_NAME				= iOS Ports Library
+PACKAGE_TARNAME				= iosports
+PACKAGE_VERSION				= 0.1
+PACKAGE_WEBSITE				= https://github.com/bindle/iOSPorts
+PACKAGE_LICENSE_FILE			= ../LICENSE
 
-SRCROOTDIR = ../../..
+SRCROOTDIR = ..
 include $(SRCROOTDIR)/build-aux/Makefile-package
-
-PKGHEADERS = pcre/config.h
-
-OTHERFILES = pcre/pcre_chartables.c pcre/pcre.h
-
-INSTALLFILES = ../../../include/pcre.h
-
-$(PKGHEADERS): $(PACKAGE_TARNAME)
-	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
-
-pcre/pcre.h: $(PACKAGE_TARNAME) pcre/pcre.h.generic
-	cp pcre/pcre.h.generic pcre/pcre.h
-
-../../../include/pcre.h: pcre/pcre.h
-	mkdir -p ../../../include
-	cp pcre/pcre.h ../../../include/pcre.h
-
-pcre/pcre_chartables.c: $(PACKAGE_TARNAME) pcre/pcre_chartables.c.dist
-	cp pcre/pcre_chartables.c.dist pcre/pcre_chartables.c
-
-extra-prep: $(PKGHEADERS) $(OTHERFILES) $(INSTALLFILES)
-
-clean-local:
-	/bin/rm -Rf include
-	/bin/rm -Rf $(INSTALLFILES)
-
-distclean-local:
-	/bin/rm -Rf build
 
 # end of Makefile

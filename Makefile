@@ -32,50 +32,33 @@
 #
 #  @BINDLE_BINARIES_BSD_LICENSE_END@
 #
-#  Makefile -- automate downloading of package files
-#
 
-# Package Information
-PACKAGE_NAME				= Perl Compatible Regular Expressions
-PACKAGE_TARNAME				= pcre
-PACKAGE_VERSION				= 8.10
-PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
-PACKAGE_FILEEXE				= tar.bz2
-PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
-PACKAGE_MD5				= $(PACKAGE_FILE).md5
-PACKAGE_URL				= http://superb-sea2.dl.sourceforge.net/project/pcre/pcre/$(PACKAGE_VERSION)/$(PACKAGE_FILE)
-PACKAGE_WEBSITE				= http://www.pcre.org/
-PACKAGE_LICENSE_FILE			= build-aux/LICENCE
+SOURCES		= \
+		  ports/database/openldap/pkgdata_openldap.c \
+		  ports/devel/pcre/pkgdata_pcre.c \
+		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.c \
+		  ports/security/openssl/pkgdata_openssl.c \
+		  src/pkgdata_iosports.c
 
-SRCROOTDIR = ../../..
-include $(SRCROOTDIR)/build-aux/Makefile-package
+PROGS		= build-aux/iOSPortsInfo src/test-pkginfo
 
-PKGHEADERS = pcre/config.h
+CFLAGS		= -W -Wall -Werror -Iinclude
 
-OTHERFILES = pcre/pcre_chartables.c pcre/pcre.h
+all: $(SOURCES)
 
-INSTALLFILES = ../../../include/pcre.h
+prog: $(PROGS)
 
-$(PKGHEADERS): $(PACKAGE_TARNAME)
-	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
+$(SOURCES): build-aux/iOSPortsInfo
+	make -C "`dirname ${@}`" license
 
-pcre/pcre.h: $(PACKAGE_TARNAME) pcre/pcre.h.generic
-	cp pcre/pcre.h.generic pcre/pcre.h
+build-aux/iOSPortsInfo: src/iOSPortsInfo.c
+	$(CC) $(CFLAGS) -o ${@} src/iOSPortsInfo.c
 
-../../../include/pcre.h: pcre/pcre.h
-	mkdir -p ../../../include
-	cp pcre/pcre.h ../../../include/pcre.h
+src/test-pkginfo: src/test-pkginfo.c $(SOURCES)
+		$(CC) $(CFLAGS) -o ${@} src/test-pkginfo.c $(SOURCES)
 
-pcre/pcre_chartables.c: $(PACKAGE_TARNAME) pcre/pcre_chartables.c.dist
-	cp pcre/pcre_chartables.c.dist pcre/pcre_chartables.c
+clean:
+	rm -Rf $(PROGS) $(SOURCES)
+	rm -Rf a.out *.o src/*.o
 
-extra-prep: $(PKGHEADERS) $(OTHERFILES) $(INSTALLFILES)
 
-clean-local:
-	/bin/rm -Rf include
-	/bin/rm -Rf $(INSTALLFILES)
-
-distclean-local:
-	/bin/rm -Rf build
-
-# end of Makefile
