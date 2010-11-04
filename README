@@ -15,14 +15,6 @@ Software Requirements
    iOS SDK 4.1
 
 
-Maintainers
-===========
-
-   David M. Syzdek
-   Bindle Binaries
-   syzdek@bindlebinaries.com
-
-
 Packages
 ========
 
@@ -38,6 +30,14 @@ Packages
 
    OpenSSL (security/openssl) - SSL/TLS and Crypto toolkit.
       Depends Upon: n/a
+
+Maintainers
+===========
+
+   David M. Syzdek
+   Bindle Binaries
+   syzdek@bindlebinaries.com
+
 
 
 Source Code
