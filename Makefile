@@ -49,7 +49,7 @@ all: $(SOURCES)
 prog: $(PROGS)
 
 $(SOURCES): build-aux/iOSPortsInfo
-	make -C "`dirname ${@}`" license
+	$(MAKE) -C "`dirname ${@}`" license
 
 build-aux/iOSPortsInfo: src/iOSPortsInfo.c
 	$(CC) $(CFLAGS) -o ${@} src/iOSPortsInfo.c
@@ -61,4 +61,22 @@ clean:
 	rm -Rf $(PROGS) $(SOURCES)
 	rm -Rf a.out *.o src/*.o
 
+distcleanall: clean
+	for PKG in $(SOURCES);do \
+           PKGDIR="`dirname $${PKG}`"; \
+	   echo "cleaning $${PKGDIR}..."; \
+	   $(MAKE) -C $${PKGDIR} distclean; \
+	   rm -Rf $${PKGDIR}/build; \
+	done
+
+distclean: clean
+	for PKG in $(SOURCES);do \
+           PKGDIR="`dirname $${PKG}`"; \
+	   echo "cleaning $${PKGDIR}..."; \
+	   $(MAKE) -C $${PKGDIR} clean; \
+	   rm -Rf $${PKGDIR}/build; \
+	done
+	@echo ' '
+	@echo 'To distclean all ports, run "make distcleanall"'
+	@echo ' '
 
