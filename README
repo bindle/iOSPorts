@@ -3,7 +3,27 @@ iOS Ports
 =================
 
    iOS Ports is a Collection of F/OSS libraries which have been ported to
-   the iOS platform.
+   the iOS platform.  The conditions of the license of each package included
+   in iOS Ports are believed to allow for use of each package on an iOS
+   device, however a developer should review the license of each package
+   before including it within an application and to verify that the
+   application meets the requirements of the conditions.
+
+
+Disclaimer
+==========
+
+   This software is provided by the copyright holders and contributors "as
+   is" and any express or implied warranties, including, but not limited to,
+   the implied warranties of merchantability and fitness for a particular
+   purpose are disclaimed. In no event shall Bindle Binaries be liable for
+   any direct, indirect, incidental, special, exemplary, or consequential
+   damages (including, but not limited to, procurement of substitute goods or
+   services; loss of use, data, or profits; or business interruption) however
+   caused and on any theory of liability, whether in contract, strict
+   liability, or tort (including negligence or otherwise) arising in any way
+   out of the use of this software, even if advised of the possibility of
+   such damage.
 
 
 Software Requirements
