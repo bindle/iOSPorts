@@ -6,5 +6,4 @@
 /build/
 /build-aux/iOSPorts-geninfo
 /build-aux/iOSPorts-pkginfo
-/include/
 pkgdata_*.c
