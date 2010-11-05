@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <dlfcn.h>
-#include <iOSPorts.h>
+#include <iOSPorts/iOSPortsTypes.h>
 
 int main(int argc, char * argv[])
 {

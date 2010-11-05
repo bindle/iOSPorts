@@ -42,23 +42,32 @@ SOURCES		= \
 
 PROGS		= build-aux/iOSPorts-geninfo build-aux/iOSPorts-pkginfo
 
+INCLUDES = \
+			include/iOSPorts.h \
+			include/iOSPorts/iOSPortsPackage.h \
+			include/iOSPorts/iOSPortsTypes.h
+
 CFLAGS		= -W -Wall -Werror -Iinclude
 
 all: $(PROGS)
 
 prog: $(PROGS)
 
-$(SOURCES): build-aux/iOSPorts-geninfo
+$(INCLUDES): Makefile
+	mkdir -p "`dirname ${@}`"
+	cp "ports/iOSPorts/classes/`basename ${@}`" ${@};
+
+$(SOURCES): build-aux/iOSPorts-geninfo $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
 
-build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c
+build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c $(INCLUDES)
 	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.c
 
 build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
 		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
 
 clean:
-	rm -Rf $(PROGS) $(SOURCES)
+	rm -Rf $(PROGS) $(SOURCES) $(INCLUDES)
 	rm -Rf a.out *.o src/*.o
 	rm -Rf build/
 

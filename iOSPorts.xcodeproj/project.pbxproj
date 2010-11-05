@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */; };
+		A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */; };
+		A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0B6212849AD1004AD70C /* iOSPorts.h */; };
+		A0AA0B6512849ADA004AD70C /* iOSPortsTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */; };
 		AA747D9F0F9514B9006C5449 /* iOSPorts_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -74,6 +78,10 @@
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsPackage.h; sourceTree = "<group>"; };
+		A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackage.m; sourceTree = "<group>"; };
+		A0AA0B6212849AD1004AD70C /* iOSPorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts.h; sourceTree = "<group>"; };
+		A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsTypes.h; sourceTree = "<group>"; };
 		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-geninfo.c"; sourceTree = "<group>"; };
 		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
@@ -153,6 +161,10 @@
 		A0AA0AD012848B78004AD70C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A0AA0B6212849AD1004AD70C /* iOSPorts.h */,
+				A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */,
+				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
+				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
 			);
 			name = Classes;
 			path = classes;
@@ -237,6 +249,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA747D9F0F9514B9006C5449 /* iOSPorts_Prefix.pch in Headers */,
+				A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */,
+				A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */,
+				A0AA0B6512849ADA004AD70C /* iOSPortsTypes.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +297,9 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Bindle Binaries";
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "iOSPorts" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
@@ -378,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +423,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = src/iOSPorts_Prefix.pch;
+				GCC_PREFIX_HEADER = ports/iOSPorts/other/iOSPorts_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = iOSPorts;
 			};
@@ -418,7 +437,7 @@
 				DSTROOT = /tmp/iOSPorts.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = src/iOSPorts_Prefix.pch;
+				GCC_PREFIX_HEADER = ports/iOSPorts/other/iOSPorts_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = iOSPorts;
 			};

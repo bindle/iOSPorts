@@ -64,7 +64,7 @@
 #include <fcntl.h>
 #include <string.h>
 #include <unistd.h>
-#include <iOSPorts.h>
+#include <iOSPorts/iOSPortsTypes.h>
 
 
 ///////////////////
@@ -379,7 +379,7 @@ int main(int argc, char * argv[])
       fprintf(stderr, "writing data...\n");
    fprintf(cnf.fs, "/* Package information for %s */\n", cnf.pkg_name);
    fprintf(cnf.fs, "/* license imported from %s */\n", cnf.pkg_license_file ? cnf.pkg_license_file : "dreamland");
-   fprintf(cnf.fs, "#include <iOSPorts.h>\n");
+   fprintf(cnf.fs, "#include <iOSPorts/iOSPortsTypes.h>\n");
    fprintf(cnf.fs, "const iOSPortsPKGData iOSPorts_pkgdata_%s =\n", cnf.pkg_id);
    fprintf(cnf.fs, "{\n   ");
    fprintf(cnf.fs, (cnf.pkg_id      ? "\"%s\"" : "NULL"), cnf.pkg_id);      fprintf(cnf.fs, ", // pkg_id\n   ");
