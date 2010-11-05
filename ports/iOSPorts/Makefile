@@ -40,9 +40,9 @@ PACKAGE_NAME				= iOS Ports Library
 PACKAGE_TARNAME				= iosports
 PACKAGE_VERSION				= 0.1
 PACKAGE_WEBSITE				= https://github.com/bindle/iOSPorts
-PACKAGE_LICENSE_FILE			= ../LICENSE
+PACKAGE_LICENSE_FILE			= COPYING
 
-SRCROOTDIR = ..
+SRCROOTDIR = ../..
 include $(SRCROOTDIR)/build-aux/Makefile-package
 
 # end of Makefile

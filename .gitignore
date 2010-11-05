@@ -4,8 +4,7 @@
 *.xcworkspace
 .DS_Store
 /build/
-/build-aux/iOSPortsInfo
+/build-aux/iOSPorts-geninfo
+/build-aux/iOSPorts-pkginfo
 /include/
-/lib/
-/src/test-pkginfo
 pkgdata_*.c

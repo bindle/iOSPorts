@@ -16,56 +16,56 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A0ED928812836550009FBCDC /* Makefile-iOSPorts */;
+			remoteGlobalIDString = A0ED928812836550009FBCDC;
 			remoteInfo = "Makefile-iOSPorts";
 		};
 		A0ED937612837E91009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED936F12837E91009FBCDC /* openldap.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F /* libldap.a */;
+			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F;
 			remoteInfo = ldap;
 		};
 		A0ED937812837E91009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED936F12837E91009FBCDC /* openldap.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F /* liblber.a */;
+			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F;
 			remoteInfo = lber;
 		};
 		A0ED938212837EA1009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libpcre.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = pcre;
 		};
 		A0ED938912837EB1009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libsasl2.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = sasl2;
 		};
 		A0ED939312837EBE009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libssl.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = ssl;
 		};
 		A0ED939512837EBE009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A0511C5A127770FD00DE46C4 /* libcrypto.a */;
+			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
 			remoteInfo = crypto;
 		};
 		A0ED939712837EBE009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4 /* test.app */;
+			remoteGlobalIDString = A0511DFF1277895300DE46C4;
 			remoteInfo = test;
 		};
 /* End PBXContainerItemProxy section */
@@ -73,10 +73,11 @@
 /* Begin PBXFileReference section */
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		A0ED928012836334009FBCDC /* iOSPortsInfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iOSPortsInfo.c; sourceTree = "<group>"; };
+		A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-geninfo.c"; sourceTree = "<group>"; };
 		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		A0ED928312836334009FBCDC /* test-pkginfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-pkginfo.c"; sourceTree = "<group>"; };
+		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-pkginfo.c"; sourceTree = "<group>"; };
 		A0ED936F12837E91009FBCDC /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = openldap/openldap.xcodeproj; sourceTree = "<group>"; };
 		A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = pcre/pcre.xcodeproj; sourceTree = "<group>"; };
 		A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = "<group>"; };
@@ -112,7 +113,6 @@
 				A0ED927F128362E7009FBCDC /* Makefile */,
 				A03FC2211281F00A0083B2EB /* LICENSE */,
 				A03FC2221281F00A0083B2EB /* README */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
 				A0ED936B12837E33009FBCDC /* ports */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
@@ -132,12 +132,30 @@
 			isa = PBXGroup;
 			children = (
 				AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */,
-				A0ED928012836334009FBCDC /* iOSPortsInfo.c */,
-				A0ED928212836334009FBCDC /* Makefile */,
-				A0ED928312836334009FBCDC /* test-pkginfo.c */,
+				A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */,
+				A0ED928312836334009FBCDC /* iOSPorts-pkginfo.c */,
 			);
 			name = "Other Sources";
-			path = src;
+			path = other;
+			sourceTree = "<group>";
+		};
+		A0AA0AC812848ADA004AD70C /* iOSPorts */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA0AC912848B18004AD70C /* COPYING */,
+				A0ED928212836334009FBCDC /* Makefile */,
+				A0AA0AD012848B78004AD70C /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+			);
+			path = iOSPorts;
+			sourceTree = "<group>";
+		};
+		A0AA0AD012848B78004AD70C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			path = classes;
 			sourceTree = "<group>";
 		};
 		A0ED936B12837E33009FBCDC /* ports */ = {
@@ -145,6 +163,7 @@
 			children = (
 				A0ED936C12837E3F009FBCDC /* database */,
 				A0ED936D12837E48009FBCDC /* devel */,
+				A0AA0AC812848ADA004AD70C /* iOSPorts */,
 				A0ED936E12837E4E009FBCDC /* security */,
 			);
 			path = ports;

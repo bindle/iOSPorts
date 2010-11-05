@@ -46,8 +46,8 @@ distclean: distclean-local clean
 
 download: $(PACKAGE_FILE)
 
-license: $(SRCROOTDIR)/build-aux/iOSPortsInfo
-	$(SRCROOTDIR)/build-aux/iOSPortsInfo -f -o "pkgdata_$(PACKAGE_TARNAME).c" \
+license: $(SRCROOTDIR)/build-aux/iOSPorts-geninfo
+	$(SRCROOTDIR)/build-aux/iOSPorts-geninfo -f -o "pkgdata_$(PACKAGE_TARNAME).c" \
 	   -N "$(PACKAGE_NAME)" -I "$(PACKAGE_TARNAME)" -R "$(PACKAGE_VERSION)" \
 	   -w "$(PACKAGE_WEBSITE)" -i "$(PACKAGE_LICENSE_FILE)"
 

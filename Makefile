@@ -38,28 +38,29 @@ SOURCES		= \
 		  ports/devel/pcre/pkgdata_pcre.c \
 		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.c \
 		  ports/security/openssl/pkgdata_openssl.c \
-		  src/pkgdata_iosports.c
+		  ports/iOSPorts/pkgdata_iosports.c
 
-PROGS		= build-aux/iOSPortsInfo src/test-pkginfo
+PROGS		= build-aux/iOSPorts-geninfo build-aux/iOSPorts-pkginfo
 
 CFLAGS		= -W -Wall -Werror -Iinclude
 
-all: $(SOURCES)
+all: $(PROGS)
 
 prog: $(PROGS)
 
-$(SOURCES): build-aux/iOSPortsInfo
+$(SOURCES): build-aux/iOSPorts-geninfo
 	$(MAKE) -C "`dirname ${@}`" license
 
-build-aux/iOSPortsInfo: src/iOSPortsInfo.c
-	$(CC) $(CFLAGS) -o ${@} src/iOSPortsInfo.c
+build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c
+	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.c
 
-src/test-pkginfo: src/test-pkginfo.c $(SOURCES)
-		$(CC) $(CFLAGS) -o ${@} src/test-pkginfo.c $(SOURCES)
+build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
+		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
 
 clean:
 	rm -Rf $(PROGS) $(SOURCES)
 	rm -Rf a.out *.o src/*.o
+	rm -Rf build/
 
 distcleanall: clean
 	for PKG in $(SOURCES);do \
