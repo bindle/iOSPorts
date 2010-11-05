@@ -67,7 +67,8 @@ build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
 		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
 
 clean:
-	rm -Rf $(PROGS) $(SOURCES) $(INCLUDES)
+	rm -Rf $(PROGS) $(SOURCES)
+	rm -Rf $(INCLUDES) include/iOSPorts
 	rm -Rf a.out *.o src/*.o
 	rm -Rf build/
 
