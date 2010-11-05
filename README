@@ -1,6 +1,6 @@
 
 iOS Ports
-=================
+=========
 
    iOS Ports is a Collection of F/OSS libraries which have been ported to
    the iOS platform.  The conditions of the license of each package included
@@ -8,6 +8,18 @@ iOS Ports
    device, however a developer should review the license of each package
    before including it within an application and to verify that the
    application meets the requirements of the conditions.
+
+
+Contents
+--------
+
+   1. Disclaimer
+   2. Software Requirements
+   3. Directory Map
+   4. Packages
+   5. Maintainers
+   6. Community
+   7. Source Code
 
 
 Disclaimer
