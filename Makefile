@@ -60,16 +60,27 @@ $(INCLUDES): Makefile
 $(SOURCES): build-aux/iOSPorts-geninfo $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
 
+ports/iOSPorts/other/iOSPorts-data.c: $(SOURCES)
+	rm -f ports/iOSPorts/other/iOSPorts-data.c
+	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.c
+
 build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c $(INCLUDES)
 	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.c
 
-build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
-		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
+ports/iOSPorts/other/iOSPorts-pkginfo.o: ports/iOSPorts/other/iOSPorts-pkginfo.c
+	$(CC) $(CFLAGS) -c -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c
+
+ports/iOSPorts/other/iOSPorts-data.o: ports/iOSPorts/other/iOSPorts-data.c
+	$(CC) $(CFLAGS) -c -o ${@} ports/iOSPorts/other/iOSPorts-data.c
+
+build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.o ports/iOSPorts/other/iOSPorts-data.o
+		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.o ports/iOSPorts/other/iOSPorts-data.o
 
 clean:
 	rm -Rf $(PROGS) $(SOURCES)
 	rm -Rf $(INCLUDES) include/iOSPorts
-	rm -Rf a.out *.o src/*.o
+	rm -Rf ports/iOSPorts/other/iOSPorts-data.c
+	rm -Rf a.out *.o src/*.o ports/iOSPorts/other/*.o
 	rm -Rf build/
 
 distcleanall: clean

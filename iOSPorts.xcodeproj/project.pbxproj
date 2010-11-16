@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09F41B512933FF900A21B9D /* iOSPorts-data.c in Sources */ = {isa = PBXBuildFile; fileRef = A09F41B412933FF900A21B9D /* iOSPorts-data.c */; };
 		A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */; };
 		A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */; };
 		A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0B6212849AD1004AD70C /* iOSPorts.h */; };
@@ -77,6 +78,7 @@
 /* Begin PBXFileReference section */
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A09F41B412933FF900A21B9D /* iOSPorts-data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-data.c"; sourceTree = "<group>"; };
 		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsPackage.h; sourceTree = "<group>"; };
 		A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackage.m; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A09F41B412933FF900A21B9D /* iOSPorts-data.c */,
 				AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */,
 				A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */,
 				A0ED928312836334009FBCDC /* iOSPorts-pkginfo.c */,
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */,
+				A09F41B512933FF900A21B9D /* iOSPorts-data.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +429,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ports/iOSPorts/other/iOSPorts_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-M",
+					"-ObjC",
+				);
 				PRODUCT_NAME = iOSPorts;
 			};
 			name = Debug;
@@ -439,6 +447,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ports/iOSPorts/other/iOSPorts_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-M",
+					"-ObjC",
+				);
 				PRODUCT_NAME = iOSPorts;
 			};
 			name = Release;
