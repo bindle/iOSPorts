@@ -10,9 +10,11 @@
 #include <dlfcn.h>
 #include <iOSPorts/iOSPortsTypes.h>
 
+extern iOSPortsPKGListData iOSPortsPKGList[];
+
 int main(int argc, char * argv[])
 {
-   char symbol_name[512];
+   size_t pos;
    unsigned u;
    const iOSPortsPKGData * datap;
 
@@ -30,11 +32,15 @@ int main(int argc, char * argv[])
                 ((argv[1][u] < '0') || (argv[1][u] > '9')) )
          argv[1][u] = '_';
    };
-   snprintf(symbol_name, 512, "iOSPorts_pkgdata_%s", argv[1]);
 
-   if (!(datap = (const iOSPortsPKGData *) dlsym(RTLD_SELF, symbol_name)))
+   datap = NULL;
+   for(pos = 0; iOSPortsPKGList[pos].name && (!(datap)); pos++)
+      if (!(strcmp(argv[1], iOSPortsPKGList[pos].name)))
+         datap = iOSPortsPKGList[pos].data;
+
+   if (!(datap))
    {
-      fprintf(stderr, "%s: dlsym(%s): %s\n", argv[0], symbol_name, dlerror());
+      fprintf(stderr, "%s: %s: package not found\n", argv[0], argv[1]);
       return(1);
    };
 

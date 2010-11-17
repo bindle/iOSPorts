@@ -48,4 +48,11 @@ struct iosports_pkg_data
    const char   pkg_license[];
 };
 
+typedef struct iosports_pkg_list_data iOSPortsPKGListData;
+struct iosports_pkg_list_data
+{
+   const char * name;
+   const iOSPortsPKGData * data;
+};
+
 #endif /* end of header */

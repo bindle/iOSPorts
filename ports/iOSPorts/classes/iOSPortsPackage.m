@@ -36,7 +36,7 @@
  *  @file ports/iOSPorts/classes/iOSPortsPackage.m interface to PKGDATA
  */
 
-#import "iOSPortsPackage.h"
+#import <iOSPorts.h>
 #import <stdio.h>
 #import <dlfcn.h>
 #import <string.h>
@@ -94,7 +94,7 @@
 
 - (BOOL) lookupIdentifier:(NSString *)anIdentifier
 {
-   char                    symbolName[512];
+   size_t                  pos;
    unsigned                u;
    const char            * str;
    NSAutoreleasePool     * pool;
@@ -126,11 +126,13 @@
          identifierUTF8[u] = '_';
    };
 
-   snprintf(symbolName, 512, "iOSPorts_pkgdata_%s", identifierUTF8);
+   datap = NULL;
+   for(pos = 0; iOSPortsPKGList[pos].name && (!(datap)); pos++)
+      if (!(strcmp(identifierUTF8, iOSPortsPKGList[pos].name)))
+         datap = iOSPortsPKGList[pos].data;
 
-   if (!(datap = (const iOSPortsPKGData *) dlsym(RTLD_SELF, symbolName)))
+   if (!(datap))
    {
-      NSLog(@"%s: dlsym(%s): %s\n", identifierUTF8, symbolName, dlerror());
       [pool release];
       return(YES);
    };

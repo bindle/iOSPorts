@@ -39,5 +39,7 @@
 #import <iOSPorts/iOSPortsTypes.h>
 #import <iOSPorts/iOSPortsPackage.h>
 
+extern iOSPortsPKGListData iOSPortsPKGList[];
+
 
 /* end of header */

@@ -40,7 +40,14 @@ SOURCES		= \
 		  ports/security/openssl/pkgdata_openssl.c \
 		  ports/iOSPorts/pkgdata_iosports.c
 
-PROGS		= build-aux/iOSPorts-geninfo build-aux/iOSPorts-pkginfo
+LIBSOURCES	= \
+				  ports/iOSPorts/other/iOSPorts-data.c \
+				  ports/iOSPorts/other/iOSPorts-list.c
+
+PROGS		= \
+			  build-aux/iOSPorts-geninfo \
+			  build-aux/iOSPorts-genlist \
+			  build-aux/iOSPorts-pkginfo
 
 INCLUDES = \
 			include/iOSPorts.h \
@@ -64,20 +71,20 @@ ports/iOSPorts/other/iOSPorts-data.c: $(SOURCES)
 	rm -f ports/iOSPorts/other/iOSPorts-data.c
 	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.c
 
+ports/iOSPorts/other/iOSPorts-list.c: build-aux/iOSPorts-genlist $(SOURCES)
+	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.c $(SOURCES)
+
 build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c $(INCLUDES)
 	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.c
 
-ports/iOSPorts/other/iOSPorts-pkginfo.o: ports/iOSPorts/other/iOSPorts-pkginfo.c
-	$(CC) $(CFLAGS) -c -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c
+build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.c $(INCLUDES)
+	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-genlist.c
 
-ports/iOSPorts/other/iOSPorts-data.o: ports/iOSPorts/other/iOSPorts-data.c
-	$(CC) $(CFLAGS) -c -o ${@} ports/iOSPorts/other/iOSPorts-data.c
-
-build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.o ports/iOSPorts/other/iOSPorts-data.o
-		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.o ports/iOSPorts/other/iOSPorts-data.o
+build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(LIBSOURCES)
+		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(LIBSOURCES)
 
 clean:
-	rm -Rf $(PROGS) $(SOURCES)
+	rm -Rf $(PROGS) $(SOURCES) $(LIBSOURCES)
 	rm -Rf $(INCLUDES) include/iOSPorts
 	rm -Rf ports/iOSPorts/other/iOSPorts-data.c
 	rm -Rf a.out *.o src/*.o ports/iOSPorts/other/*.o
