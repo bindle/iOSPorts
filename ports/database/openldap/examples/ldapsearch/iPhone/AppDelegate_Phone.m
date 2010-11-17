@@ -20,15 +20,7 @@
 
    [window makeKeyAndVisible];
 
-   test_simple_ldap(
-      LDAP_VERSION3,          // LDAP protocol version
-      "ldap://10.0.1.3",      // LDAP URI
-      "cn=Directory Manager", // LDAP bind DN
-      "drowssap",             // LDAP bind password
-      "o=test",               // LDAP search base DN
-      "(objectclass=*)",      // LDAP search filter
-      LDAP_SCOPE_SUB          // LDAP search scope
-   );
+   test_all_ldap();
 
 	return YES;
 

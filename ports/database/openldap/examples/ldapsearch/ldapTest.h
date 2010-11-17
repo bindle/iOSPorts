@@ -8,5 +8,7 @@
  */
 #include <ldap.h>
 
+void test_all_ldap(void);
+
 void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
    const char * bindPW, const char * baseDN, const char * filter, int scope);

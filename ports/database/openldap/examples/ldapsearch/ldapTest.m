@@ -11,6 +11,21 @@
 #include <stdlib.h>
 #include <string.h>
 
+void test_all_ldap()
+{
+   test_simple_ldap(
+      LDAP_VERSION3,          // LDAP protocol version
+      "ldap://10.0.1.3",      // LDAP URI
+      "cn=Directory Manager", // LDAP bind DN
+      "drowssap",             // LDAP bind password
+      "o=test",               // LDAP search base DN
+      "(objectclass=*)",      // LDAP search filter
+      LDAP_SCOPE_SUB          // LDAP search scope
+   );
+
+   return;
+}
+
 void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
    const char * bindPW, const char * baseDN, const char * filter, int scope)
 {
