@@ -74,7 +74,7 @@
 ///////////////////
 
 #ifndef PROGRAM_NAME
-#define PROGRAM_NAME "iOSPortsInfo"
+#define PROGRAM_NAME "iOSPorts-geninfo"
 #endif
 #ifndef PACKAGE_BUGREPORT
 #define PACKAGE_BUGREPORT "development@bindlebinaries.com"
