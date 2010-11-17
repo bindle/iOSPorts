@@ -58,6 +58,7 @@
 //           //
 ///////////////
 
+#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <getopt.h>
@@ -238,6 +239,7 @@ int main(int argc, char * argv[])
    size_t     count;
    size_t     len;
    size_t     pos;
+   time_t     now;
    unsigned   u;
    iOSPorts   cnf;
 
@@ -374,6 +376,10 @@ int main(int argc, char * argv[])
          return(iosports_free(&cnf, 1));
       };
    };
+
+   now = time(NULL);
+   fprintf(cnf.fs, "// generated with %s\n", PROGRAM_NAME);
+   fprintf(cnf.fs, "// generated on %s\n", ctime(&now));
 
    if (cnf.verbose)
       fprintf(stderr, "writing data...\n");
