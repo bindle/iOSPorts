@@ -30,7 +30,55 @@ void test_all_ldap()
       MY_SASL_AUTHUSER,       // SASL User
       MY_SASL_REALM,          // SASL Realm
       MY_SASL_PASSWD,         // SASL password
-      MY_SASL_MECH,           // SASL mechanism
+      "SRP",                  // SASL mechanism
+      MY_LDAP_BASEDN,         // LDAP Search Base DN
+      MY_LDAP_FILTER,         // LDAP Search Filter
+      MY_LDAP_SCOPE           // LDAP Search Scope
+   );
+
+   test_sasl_ldap(
+      MY_LDAP_VERSION,        // LDAP Protocol Version
+      MY_LDAP_URI,            // LDAP URI
+      MY_SASL_AUTHUSER,       // SASL User
+      MY_SASL_REALM,          // SASL Realm
+      MY_SASL_PASSWD,         // SASL password
+      "OTP",                  // SASL mechanism
+      MY_LDAP_BASEDN,         // LDAP Search Base DN
+      MY_LDAP_FILTER,         // LDAP Search Filter
+      MY_LDAP_SCOPE           // LDAP Search Scope
+   );
+
+   test_sasl_ldap(
+      MY_LDAP_VERSION,        // LDAP Protocol Version
+      MY_LDAP_URI,            // LDAP URI
+      MY_SASL_AUTHUSER,       // SASL User
+      MY_SASL_REALM,          // SASL Realm
+      MY_SASL_PASSWD,         // SASL password
+      "NTLM",                 // SASL mechanism
+      MY_LDAP_BASEDN,         // LDAP Search Base DN
+      MY_LDAP_FILTER,         // LDAP Search Filter
+      MY_LDAP_SCOPE           // LDAP Search Scope
+   );
+
+   test_sasl_ldap(
+      MY_LDAP_VERSION,        // LDAP Protocol Version
+      MY_LDAP_URI,            // LDAP URI
+      MY_SASL_AUTHUSER,       // SASL User
+      MY_SASL_REALM,          // SASL Realm
+      MY_SASL_PASSWD,         // SASL password
+      "DIGEST-MD5",           // SASL mechanism
+      MY_LDAP_BASEDN,         // LDAP Search Base DN
+      MY_LDAP_FILTER,         // LDAP Search Filter
+      MY_LDAP_SCOPE           // LDAP Search Scope
+   );
+
+   test_sasl_ldap(
+      MY_LDAP_VERSION,        // LDAP Protocol Version
+      MY_LDAP_URI,            // LDAP URI
+      MY_SASL_AUTHUSER,       // SASL User
+      MY_SASL_REALM,          // SASL Realm
+      MY_SASL_PASSWD,         // SASL password
+      "CRAM-MD5",             // SASL mechanism
       MY_LDAP_BASEDN,         // LDAP Search Base DN
       MY_LDAP_FILTER,         // LDAP Search Filter
       MY_LDAP_SCOPE           // LDAP Search Scope
@@ -168,7 +216,8 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
    servercredp     = NULL;
    dn              = "cn=Directory Manager";
 
-   NSLog(@"attempting SASL bind:");
+   NSLog(@" ");
+   NSLog(@"attempting SASL bind (%s):", mech ? mech : "N/A");
    NSLog(@"   initialzing LDAP...");
    ldapURI = ldapURI ? ldapURI : "ldap://127.0.0.1";
    err = ldap_initialize(&ld, ldapURI);
@@ -210,9 +259,9 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
    NSLog(@"      Passwd:    %s", auth.passwd   ? auth.passwd   : "(NULL)");
 
    NSLog(@"   binding to LDAP server...");
-   err = ldap_sasl_interactive_bind_s(ld, NULL, NULL,
+   err = ldap_sasl_interactive_bind_s(ld, NULL, auth.mech,
               NULL, NULL,
-              LDAP_SASL_QUIET, my_ldap_sasl_interact_proc,
+              LDAP_SASL_QUIET, ldap_sasl_interact,
               &auth);
 
    if (err != LDAP_SUCCESS)
@@ -281,60 +330,52 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
 int ldap_sasl_interact(LDAP *ld, unsigned flags, void *defaults,
    void * sin)
 {
-	int               noecho;
-	int               challenge;
-   MyLDAPAuth      * defs = defaults;
-   const char      * dflt;
-	sasl_interact_t * interact = sasl_interact;
+   MyLDAPAuth      * ldap_inst = defaults;
+	sasl_interact_t * interact;
+
+   ldap_inst = (MyLDAPAuth *) defaults;
+   interact  = (sasl_interact_t *) sin;
 
    if (!(ld))
       return(LDAP_PARAM_ERROR);
 
-   while(interact->id != SASL_CB_LIST_END)
    NSLog(@"      entering my_ldap_sasl_interact_proc()");
+   for(interact = sin; (interact->id != SASL_CB_LIST_END); interact++)
    {
-      noecho    = 0;
-      challenge = 0;
-      dflt      = interact->defresult;
       interact->result = NULL;
       interact->len    = 0;
       switch( interact->id )
       {
          case SASL_CB_GETREALM:
-            NSLog(@"         processing SASL_CB_GETREALM");
-            interact->result = defs->realm ? defs->realm : "";
+            NSLog(@"         processing SASL_CB_GETREALM (%s)", ldap_inst->realm ? ldap_inst->realm : "");
+            interact->result = ldap_inst->realm ? ldap_inst->realm : "";
             interact->len    = strlen( interact->result );
             break;
          case SASL_CB_AUTHNAME:
-            NSLog(@"         processing SASL_CB_AUTHNAME");
-            interact->result = defs->authuser ? defs->authuser : "";
+            NSLog(@"         processing SASL_CB_AUTHNAME (%s)", ldap_inst->authuser ? ldap_inst->authuser : "");
+            interact->result = ldap_inst->authuser ? ldap_inst->authuser : "";
             interact->len    = strlen( interact->result );
             break;
          case SASL_CB_PASS:
-            NSLog(@"         processing SASL_CB_PASS");
-            interact->result = defs->passwd ? defs->passwd : "";
+            NSLog(@"         processing SASL_CB_PASS (%s)", ldap_inst->passwd ? ldap_inst->passwd : "");
+            interact->result = ldap_inst->passwd ? ldap_inst->passwd : "";
             interact->len    = strlen( interact->result );
-            noecho = 1;
             break;
          case SASL_CB_USER:
-            NSLog(@"         processing SASL_CB_USER");
-            interact->result = defs->user ? defs->user : "";
+            NSLog(@"         processing SASL_CB_USER (%s)", ldap_inst->user ? ldap_inst->user : "");
+            interact->result = ldap_inst->user ? ldap_inst->user : "";
             interact->len    = strlen( interact->result );
             break;
          case SASL_CB_NOECHOPROMPT:
             NSLog(@"         processing SASL_CB_NOECHOPROMPT");
-            noecho = 1;
-            challenge = 1;
             break;
          case SASL_CB_ECHOPROMPT:
             NSLog(@"         processing SASL_CB_ECHOPROMPT");
-            challenge = 1;
             break;
          default:
             NSLog(@"         I don't know how to process this.");
             break;
       };
-      interact++;
    };
    NSLog(@"      exiting my_ldap_sasl_interact_proc()");
 
