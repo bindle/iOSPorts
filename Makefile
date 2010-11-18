@@ -51,6 +51,7 @@ PROGS		= \
 
 INCLUDES = \
 			include/iOSPorts.h \
+			include/iOSPorts/iOSPortsCFuncs.h \
 			include/iOSPorts/iOSPortsPackage.h \
 			include/iOSPorts/iOSPortsTypes.h
 
@@ -81,7 +82,7 @@ build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.c $(INCLUDES)
 	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-genlist.c
 
 build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(LIBSOURCES)
-		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(LIBSOURCES)
+		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c ports/iOSPorts/classes/iOSPortsCFuncs.c $(LIBSOURCES)
 
 clean:
 	rm -Rf $(PROGS) $(SOURCES) $(LIBSOURCES)

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A03984391295E4810078D2A7 /* iOSPortsCFuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */; };
+		A039843A1295E4810078D2A7 /* iOSPortsCFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */; };
 		A09F41B512933FF900A21B9D /* iOSPorts-data.c in Sources */ = {isa = PBXBuildFile; fileRef = A09F41B412933FF900A21B9D /* iOSPorts-data.c */; };
 		A09F42911293604B00A21B9D /* iOSPorts-list.c in Sources */ = {isa = PBXBuildFile; fileRef = A09F42901293604B00A21B9D /* iOSPorts-list.c */; };
 		A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */; };
@@ -77,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsCFuncs.h; sourceTree = "<group>"; };
+		A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iOSPortsCFuncs.c; sourceTree = "<group>"; };
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A09F41B412933FF900A21B9D /* iOSPorts-data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-data.c"; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */,
 				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
 				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
+				A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */,
+				A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */,
 			);
 			name = Classes;
 			path = classes;
@@ -260,6 +266,7 @@
 				A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */,
 				A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */,
 				A0AA0B6512849ADA004AD70C /* iOSPortsTypes.h in Headers */,
+				A03984391295E4810078D2A7 /* iOSPortsCFuncs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +414,7 @@
 				A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */,
 				A09F41B512933FF900A21B9D /* iOSPorts-data.c in Sources */,
 				A09F42911293604B00A21B9D /* iOSPorts-list.c in Sources */,
+				A039843A1295E4810078D2A7 /* iOSPortsCFuncs.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

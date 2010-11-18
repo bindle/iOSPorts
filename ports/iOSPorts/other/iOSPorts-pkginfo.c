@@ -9,13 +9,12 @@
 #include <string.h>
 #include <dlfcn.h>
 #include <iOSPorts/iOSPortsTypes.h>
+#include <iOSPorts/iOSPortsCFuncs.h>
 
 extern iOSPortsPKGListData iOSPortsPKGList[];
 
 int main(int argc, char * argv[])
 {
-   size_t pos;
-   unsigned u;
    const iOSPortsPKGData * datap;
 
    if (argc != 2)
@@ -24,20 +23,7 @@ int main(int argc, char * argv[])
       return(1);
    };
 
-   for(u = 0; u < strlen(argv[1]); u++)
-   {
-      if ( ((argv[1][u] < 'A') || (argv[1][u] > 'Z')) &&
-           ((argv[1][u] < 'a') || (argv[1][u] > 'z')) &&
-           ((argv[1][u] < '0') || (argv[1][u] > '9')) )
-         argv[1][u] = '_';
-   };
-
-   datap = NULL;
-   for(pos = 0; iOSPortsPKGList[pos].name && (!(datap)); pos++)
-      if (!(strcasecmp(argv[1], iOSPortsPKGList[pos].name)))
-         datap = iOSPortsPKGList[pos].data;
-
-   if (!(datap))
+   if (!(datap = iOSPorts_find_pkg_by_id(argv[1])))
    {
       fprintf(stderr, "%s: %s: package not found\n", argv[0], argv[1]);
       return(1);

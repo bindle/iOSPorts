@@ -94,9 +94,6 @@
 
 - (BOOL) lookupIdentifier:(NSString *)anIdentifier
 {
-   size_t                  pos;
-   unsigned                u;
-   const char            * str;
    NSAutoreleasePool     * pool;
    const iOSPortsPKGData * datap;
 
@@ -108,29 +105,7 @@
    self.website    = nil;
    self.license    = nil;
 
-   str = [anIdentifier UTF8String];
-   if (identifierUTF8)
-      free(identifierUTF8);
-   if (!(identifierUTF8 = strdup(str)))
-   {
-      [pool release];
-      return(YES);
-   };
-
-   for(u = 0; u < strlen(identifierUTF8); u++)
-   {
-      if ( ((identifierUTF8[u] < 'A') || (identifierUTF8[u] > 'Z')) &&
-           ((identifierUTF8[u] < 'a') || (identifierUTF8[u] > 'z')) &&
-           ((identifierUTF8[u] < '0') || (identifierUTF8[u] > '9')) )
-         identifierUTF8[u] = '_';
-   };
-
-   datap = NULL;
-   for(pos = 0; iOSPortsPKGList[pos].name && (!(datap)); pos++)
-      if (!(strcasecmp(identifierUTF8, iOSPortsPKGList[pos].name)))
-         datap = iOSPortsPKGList[pos].data;
-
-   if (!(datap))
+   if (!(datap = iOSPorts_find_pkg_by_id([anIdentifier UTF8String])))
    {
       [pool release];
       return(YES);
@@ -143,7 +118,6 @@
    self.license    = datap->pkg_license[0] ? [NSString stringWithUTF8String:datap->pkg_license] : nil;
 
    [pool release];
-
 
    return(NO);
 }

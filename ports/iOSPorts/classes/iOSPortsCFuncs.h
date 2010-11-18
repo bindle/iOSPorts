@@ -33,11 +33,36 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file include/iOSPorts.h defines the library interface
+ *  @file include/iOSPorts/iOSPortsCFuncs.h defines the library C functions
  */
+#ifndef _IOSPORTS_IOSPORTSCFUNCS_H 1
+#define _IOSPORTS_IOSPORTSCFUNCS_H 1
 
-#import <iOSPorts/iOSPortsCFuncs.h>
-#import <iOSPorts/iOSPortsTypes.h>
-#import <iOSPorts/iOSPortsPackage.h>
+///////////////
+//           //
+//  Headers  //
+//           //
+///////////////
 
-/* end of header */
+#include <iOSPorts/iOSPortsTypes.h>
+
+
+////////////////////////
+//                    //
+//  Global Variables  //
+//                    //
+////////////////////////
+
+extern iOSPortsPKGListData iOSPortsPKGList[];
+
+
+//////////////////
+//              //
+//  Prototypes  //
+//              //
+//////////////////
+
+// Looks up a package based up the packages ID
+const iOSPortsPKGData *  iOSPorts_find_pkg_by_id(const char * pkg_id);
+
+#endif /* end of header file */
