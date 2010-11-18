@@ -26,16 +26,15 @@ int main(int argc, char * argv[])
 
    for(u = 0; u < strlen(argv[1]); u++)
    {
-      if ((argv[1][u] >= 'A') && (argv[1][u] <= 'Z'))
-         argv[1][u] = argv[1][u] - 'A' +'a';
-      else if ( ((argv[1][u] < 'a') || (argv[1][u] > 'z')) &&
-                ((argv[1][u] < '0') || (argv[1][u] > '9')) )
+      if ( ((argv[1][u] < 'A') || (argv[1][u] > 'Z')) &&
+           ((argv[1][u] < 'a') || (argv[1][u] > 'z')) &&
+           ((argv[1][u] < '0') || (argv[1][u] > '9')) )
          argv[1][u] = '_';
    };
 
    datap = NULL;
    for(pos = 0; iOSPortsPKGList[pos].name && (!(datap)); pos++)
-      if (!(strcmp(argv[1], iOSPortsPKGList[pos].name)))
+      if (!(strcasecmp(argv[1], iOSPortsPKGList[pos].name)))
          datap = iOSPortsPKGList[pos].data;
 
    if (!(datap))

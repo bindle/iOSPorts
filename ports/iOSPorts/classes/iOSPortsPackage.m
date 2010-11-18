@@ -119,16 +119,15 @@
 
    for(u = 0; u < strlen(identifierUTF8); u++)
    {
-      if ((identifierUTF8[u] >= 'A') && (identifierUTF8[u] <= 'Z'))
-         identifierUTF8[u] = identifierUTF8[u] - 'A' +'a';
-      else if ( ((identifierUTF8[u] < 'a') || (identifierUTF8[u] > 'z')) &&
-                ((identifierUTF8[u] < '0') || (identifierUTF8[u] > '9')) )
+      if ( ((identifierUTF8[u] < 'A') || (identifierUTF8[u] > 'Z')) &&
+           ((identifierUTF8[u] < 'a') || (identifierUTF8[u] > 'z')) &&
+           ((identifierUTF8[u] < '0') || (identifierUTF8[u] > '9')) )
          identifierUTF8[u] = '_';
    };
 
    datap = NULL;
    for(pos = 0; iOSPortsPKGList[pos].name && (!(datap)); pos++)
-      if (!(strcmp(identifierUTF8, iOSPortsPKGList[pos].name)))
+      if (!(strcasecmp(identifierUTF8, iOSPortsPKGList[pos].name)))
          datap = iOSPortsPKGList[pos].data;
 
    if (!(datap))

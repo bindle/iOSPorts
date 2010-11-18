@@ -340,10 +340,9 @@ int main(int argc, char * argv[])
    };
    for(u = 0; u < strlen(cnf.pkg_id); u++)
    {
-      if ((cnf.pkg_id[u] >= 'A') && (cnf.pkg_id[u] <= 'Z'))
-         cnf.pkg_id[u] = cnf.pkg_id[u] - 'A' +'a';
-      else if ( ((cnf.pkg_id[u] < 'a') || (cnf.pkg_id[u] > 'z')) &&
-                ((cnf.pkg_id[u] < '0') || (cnf.pkg_id[u] > '9')) )
+      if ( ((cnf.pkg_id[u] < 'A') || (cnf.pkg_id[u] > 'Z')) &&
+           ((cnf.pkg_id[u] < 'a') || (cnf.pkg_id[u] > 'z')) &&
+           ((cnf.pkg_id[u] < '0') || (cnf.pkg_id[u] > '9')) )
          cnf.pkg_id[u] = '_';
    };
 

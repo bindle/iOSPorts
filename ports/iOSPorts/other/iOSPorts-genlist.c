@@ -349,15 +349,14 @@ int main(int argc, char * argv[])
 
       for(u = 0; u < strlen(list[lsize]); u++)
       {
-         if ((list[lsize][u] >= 'A') && (list[lsize][u] <= 'Z'))
-            list[lsize][u] = list[lsize][u] - 'A' +'a';
-         else if ( ((list[lsize][u] < 'a') || (list[lsize][u] > 'z')) &&
-                   ((list[lsize][u] < '0') || (list[lsize][u] > '9')) )
+         if ( ((list[lsize][u] < 'A') || (list[lsize][u] > 'Z')) &&
+              ((list[lsize][u] < 'a') || (list[lsize][u] > 'z')) &&
+              ((list[lsize][u] < '0') || (list[lsize][u] > '9')) )
             list[lsize][u] = '_';
       };
 
       for(pos = 0; pos < lsize; pos++)
-         if (!(strcmp(list[pos], list[lsize])))
+         if (!(strcasecmp(list[pos], list[lsize])))
             lsize--;
 
       lsize++;
