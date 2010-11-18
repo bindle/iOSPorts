@@ -59,10 +59,6 @@
    self.website = nil;
    self.license = nil;
 
-   if (identifierUTF8)
-      free(identifierUTF8);
-   identifierUTF8 = NULL;
-
    [super dealloc];
 
    return;

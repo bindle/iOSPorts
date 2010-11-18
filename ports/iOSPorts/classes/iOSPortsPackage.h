@@ -46,7 +46,6 @@
    NSString * version;
    NSString * website;
    NSString * license;
-   char     * identifierUTF8;
 }
 
 @property(nonatomic, retain) NSString * identifier;
