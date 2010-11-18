@@ -70,7 +70,7 @@
    if (!(self = [super init]))
       return(self);
 
-   if ([self lookupIdentifier:anIdentifier])
+   if ([self setToIdentifier:anIdentifier])
    {
       [self release];
       self = nil;
@@ -88,7 +88,7 @@
 }
 
 
-- (BOOL) lookupIdentifier:(NSString *)anIdentifier
+- (BOOL) setToIdentifier:(NSString *)anIdentifier
 {
    NSAutoreleasePool     * pool;
    const iOSPortsPKGData * datap;

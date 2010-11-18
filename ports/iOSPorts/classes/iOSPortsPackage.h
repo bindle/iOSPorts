@@ -54,7 +54,7 @@
 @property(nonatomic, retain) NSString * website;
 @property(nonatomic, retain) NSString * license;
 
-- (BOOL) lookupIdentifier:(NSString *)anIdentifier;
+- (BOOL) setToIdentifier:(NSString *)anIdentifier;
 - (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;
 + (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
 
