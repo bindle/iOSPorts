@@ -116,16 +116,14 @@ void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
       return;
    };
 
-   if (version)
+   version = version ? version : LDAP_VERSION3;
+   NSLog(@"   setting protocol version %i...", version);
+   err = ldap_set_option(ld, LDAP_OPT_PROTOCOL_VERSION, &version);
+   if (err != LDAP_SUCCESS)
    {
-      NSLog(@"   setting protocol version %i...", version);
-      err = ldap_set_option(ld, LDAP_OPT_PROTOCOL_VERSION, &version);
-      if (err != LDAP_SUCCESS)
-      {
-         NSLog(@"   ldap_set_option(): %s\n", ldap_err2string(err));
-         ldap_unbind_ext_s(ld, NULL, NULL);
-         return;
-      };
+      NSLog(@"   ldap_set_option(): %s\n", ldap_err2string(err));
+      ldap_unbind_ext_s(ld, NULL, NULL);
+      return;
    };
 
    NSLog(@"   binding to LDAP server...");
