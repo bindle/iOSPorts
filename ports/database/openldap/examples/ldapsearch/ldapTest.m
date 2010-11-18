@@ -202,12 +202,12 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
       ldap_get_option(ld, LDAP_OPT_X_SASL_REALM, &auth.realm);
    ldap_get_option(ld, LDAP_OPT_X_SASL_AUTHZID, &auth.user);
 
-NSLog(@"   Bind Data:");
-NSLog(@"      Mech:      %s", auth.mech     ? auth.mech     : "(NULL)");
-NSLog(@"      User:      %s", auth.user     ? auth.user     : "(NULL)");
-NSLog(@"      Auth User: %s", auth.authuser ? auth.authuser : "(NULL)");
-NSLog(@"      Realm:     %s", auth.realm    ? auth.realm    : "(NULL)");
-NSLog(@"      Passwd:    %s", auth.passwd   ? auth.passwd   : "(NULL)");
+   NSLog(@"   Bind Data:");
+   NSLog(@"      Mech:      %s", auth.mech     ? auth.mech     : "(NULL)");
+   NSLog(@"      User:      %s", auth.user     ? auth.user     : "(NULL)");
+   NSLog(@"      Auth User: %s", auth.authuser ? auth.authuser : "(NULL)");
+   NSLog(@"      Realm:     %s", auth.realm    ? auth.realm    : "(NULL)");
+   NSLog(@"      Passwd:    %s", auth.passwd   ? auth.passwd   : "(NULL)");
 
    NSLog(@"   binding to LDAP server...");
    err = ldap_sasl_interactive_bind_s(ld, NULL, NULL,
@@ -290,8 +290,8 @@ int ldap_sasl_interact(LDAP *ld, unsigned flags, void *defaults,
    if (!(ld))
       return(LDAP_PARAM_ERROR);
 
-NSLog(@"      entering my_ldap_sasl_interact_proc()");
    while(interact->id != SASL_CB_LIST_END)
+   NSLog(@"      entering my_ldap_sasl_interact_proc()");
    {
       noecho    = 0;
       challenge = 0;
