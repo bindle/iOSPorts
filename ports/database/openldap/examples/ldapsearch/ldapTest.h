@@ -8,6 +8,19 @@
  */
 #include <ldap.h>
 
+#define MY_LDAP_VERSION    LDAP_VERSION3
+#define MY_LDAP_URI        "ldap://10.0.1.3"
+#define MY_LDAP_BINDDN     "cn=Directory Manager"
+#define MY_LDAP_BINDPW     "drowssap"
+#define MY_LDAP_BASEDN     "o=test"
+#define MY_LDAP_FILTER     "(objectclass=*)"
+#define MY_LDAP_SCOPE      LDAP_SCOPE_SUB
+
+#define MY_SASL_AUTHUSER   "syzdek"
+#define MY_SASL_REALM      NULL
+#define MY_SASL_PASSWD     MY_LDAP_BINDPW
+#define MY_SASL_MECH       "DIGEST-MD5"
+
 typedef struct my_ldap_auth MyLDAPAuth;
 struct my_ldap_auth
 {

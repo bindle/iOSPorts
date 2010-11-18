@@ -15,25 +15,25 @@
 void test_all_ldap()
 {
    test_simple_ldap(
-      LDAP_VERSION3,          // LDAP protocol version
-      "ldap://10.0.1.3",      // LDAP URI
-      "cn=Directory Manager", // LDAP bind DN
-      "drowssap",             // LDAP bind password
-      "o=test",               // LDAP search base DN
-      "(objectclass=*)",      // LDAP search filter
-      LDAP_SCOPE_SUB          // LDAP search scope
+      MY_LDAP_VERSION,        // LDAP protocol version
+      MY_LDAP_URI,            // LDAP URI
+      MY_LDAP_BINDDN,         // LDAP bind DN
+      MY_LDAP_BINDPW,         // LDAP bind password
+      MY_LDAP_BASEDN,         // LDAP search base DN
+      MY_LDAP_FILTER,         // LDAP search filter
+      MY_LDAP_SCOPE           // LDAP search scope
    );
 
    test_sasl_ldap(
-      LDAP_VERSION3,          // LDAP Protocol Version
-      "ldap://10.0.1.3",      // LDAP URI
-      "syzdek",               // SASL User
-      NULL,                   // SASL Realm
-      "drowssap",             // SASL password
-      "DIGEST-MD5",           // SASL mechanism
-      "o=test",               // LDAP Search Base DN
-      "(objectclass=*)",      // LDAP Search Filter
-      LDAP_SCOPE_SUB          // LDAP Search Scope
+      MY_LDAP_VERSION,        // LDAP Protocol Version
+      MY_LDAP_URI,            // LDAP URI
+      MY_SASL_AUTHUSER,       // SASL User
+      MY_SASL_REALM,          // SASL Realm
+      MY_SASL_PASSWD,         // SASL password
+      MY_SASL_MECH,           // SASL mechanism
+      MY_LDAP_BASEDN,         // LDAP Search Base DN
+      MY_LDAP_FILTER,         // LDAP Search Filter
+      MY_LDAP_SCOPE           // LDAP Search Scope
    );
 
    return;
