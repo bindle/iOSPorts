@@ -278,8 +278,8 @@ NSLog(@"      Passwd:    %s", auth.passwd   ? auth.passwd   : "(NULL)");
 	return;
 }
 
-int my_ldap_sasl_interact_proc(LDAP *ld, unsigned flags, void *defaults,
-   void * sasl_interact)
+int ldap_sasl_interact(LDAP *ld, unsigned flags, void *defaults,
+   void * sin)
 {
 	int               noecho;
 	int               challenge;

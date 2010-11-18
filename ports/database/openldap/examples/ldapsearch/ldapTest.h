@@ -40,5 +40,5 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
    const char * realm, const char * pass, const char * mech,
    const char * baseDN, const char * filter, int scope);
 
-int my_ldap_sasl_interact_proc(LDAP *ld, unsigned flags, void *defaults,
+int ldap_sasl_interact(LDAP *ld, unsigned flags, void *defaults,
    void *sasl_interact);
