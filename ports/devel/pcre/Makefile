@@ -36,7 +36,7 @@
 #
 
 # Package Information
-PACKAGE_NAME				= Perl Compatible Regular Expressions
+PACKAGE_NAME				= PCRE
 PACKAGE_TARNAME				= pcre
 PACKAGE_VERSION				= 8.10
 PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
