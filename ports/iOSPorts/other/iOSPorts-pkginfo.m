@@ -205,9 +205,10 @@ int main(int argc, char * argv[])
       };
    };
 
-   if (argc != 2)
+   if ((optind+1) != argc)
    {
-      fprintf(stderr, "Usage: %s <identifier>\n", argv[0]);
+      fprintf(stderr, "%s: missing required arguments\n", PROGRAM_NAME);
+      fprintf(stderr, "Try `%s --help' for more information.\n", PROGRAM_NAME);
       return(1);
    };
 
