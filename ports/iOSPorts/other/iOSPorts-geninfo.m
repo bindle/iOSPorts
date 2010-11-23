@@ -65,6 +65,8 @@
 #import <fcntl.h>
 #import <string.h>
 #import <unistd.h>
+
+#define _IOSPORTS_CLI_TOOL 1
 #import <iOSPorts.h>
 
 
