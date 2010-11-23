@@ -44,7 +44,7 @@
 /**
  *  @file ports/iOSPorts/classes/iOSPortsCFuncs.c defines the library C functions
  */
-#include "iOSPortsCFuncs.h"
+#import "iOSPortsCFuncs.h"
 
 ///////////////
 //           //
@@ -52,8 +52,8 @@
 //           //
 ///////////////
 
-#include <string.h>
-#include <stdio.h>
+#import <string.h>
+#import <stdio.h>
 
 
 /////////////////

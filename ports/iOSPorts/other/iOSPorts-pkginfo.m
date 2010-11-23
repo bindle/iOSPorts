@@ -58,11 +58,11 @@
 //           //
 ///////////////
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <getopt.h>
-#include <iOSPorts.h>
+#import <stdio.h>
+#import <stdlib.h>
+#import <string.h>
+#import <getopt.h>
+#import <iOSPorts.h>
 
 
 ///////////////////

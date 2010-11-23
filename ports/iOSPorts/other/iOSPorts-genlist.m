@@ -58,14 +58,14 @@
 //           //
 ///////////////
 
-#include <time.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <getopt.h>
-#include <fcntl.h>
-#include <string.h>
-#include <unistd.h>
-#include <iOSPorts.h>
+#import <time.h>
+#import <stdio.h>
+#import <stdlib.h>
+#import <getopt.h>
+#import <fcntl.h>
+#import <string.h>
+#import <unistd.h>
+#import <iOSPorts.h>
 
 
 ///////////////////
@@ -316,8 +316,8 @@ int main(int argc, char * argv[])
    now = time(NULL);
    fprintf(cnf.fs, "// generated with %s\n", PROGRAM_NAME);
    fprintf(cnf.fs, "// generated on %s\n", ctime(&now));
-   fprintf(cnf.fs, "#include <stdio.h>\n");
-   fprintf(cnf.fs, "#include <iOSPorts/iOSPortsTypes.h>\n");
+   fprintf(cnf.fs, "#import <stdio.h>\n");
+   fprintf(cnf.fs, "#import <iOSPorts/iOSPortsTypes.h>\n");
    fprintf(cnf.fs, "\n");
 
    lsize = 0;
