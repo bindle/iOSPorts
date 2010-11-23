@@ -64,7 +64,7 @@
 #import <getopt.h>
 
 #define _IOSPORTS_CLI_TOOL 1
-#import <iOSPorts.h>
+#import <iOSPorts/iOSPorts.h>
 
 
 ///////////////////

@@ -55,7 +55,7 @@ PROGS		= \
 		  build-aux/iOSPorts-pkginfo
 
 INCLUDES	= \
-		  include/iOSPorts.h \
+		  include/iOSPorts/iOSPorts.h \
 		  include/iOSPorts/iOSPortsCFuncs.h \
 		  include/iOSPorts/iOSPortsPackage.h \
 		  include/iOSPorts/iOSPortsTypes.h
