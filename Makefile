@@ -86,7 +86,7 @@ build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
 build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.m $(LIBSOURCES)
 	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
 	   ports/iOSPorts/other/iOSPorts-pkginfo.m \
-	   ports/iOSPorts/classes/iOSPortsCFuncs.c \
+	   ports/iOSPorts/classes/iOSPortsCFuncs.m \
 	   $(LIBSOURCES)
 
 clean:
