@@ -41,19 +41,19 @@ SOURCES		= \
 		  ports/iOSPorts/pkgdata_iosports.c
 
 LIBSOURCES	= \
-				  ports/iOSPorts/other/iOSPorts-data.m \
-				  ports/iOSPorts/other/iOSPorts-list.m
+		  ports/iOSPorts/other/iOSPorts-data.m \
+		  ports/iOSPorts/other/iOSPorts-list.m
 
 PROGS		= \
-			  build-aux/iOSPorts-geninfo \
-			  build-aux/iOSPorts-genlist \
-			  build-aux/iOSPorts-pkginfo
+		  build-aux/iOSPorts-geninfo \
+		  build-aux/iOSPorts-genlist \
+		  build-aux/iOSPorts-pkginfo
 
-INCLUDES = \
-			include/iOSPorts.h \
-			include/iOSPorts/iOSPortsCFuncs.h \
-			include/iOSPorts/iOSPortsPackage.h \
-			include/iOSPorts/iOSPortsTypes.h
+INCLUDES	= \
+		  include/iOSPorts.h \
+		  include/iOSPorts/iOSPortsCFuncs.h \
+		  include/iOSPorts/iOSPortsPackage.h \
+		  include/iOSPorts/iOSPortsTypes.h
 
 CFLAGS		= -W -Wall -Werror -Iinclude
 
