@@ -61,9 +61,33 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <dlfcn.h>
+#include <getopt.h>
 #include <iOSPorts/iOSPortsTypes.h>
 #include <iOSPorts/iOSPortsCFuncs.h>
+
+
+///////////////////
+//               //
+//  Definitions  //
+//               //
+///////////////////
+
+#ifndef PROGRAM_NAME
+#define PROGRAM_NAME "iOSPorts-pkginfo"
+#endif
+#ifndef PACKAGE_BUGREPORT
+#define PACKAGE_BUGREPORT "development@bindlebinaries.com"
+#endif
+#ifndef PACKAGE_COPYRIGHT
+#define PACKAGE_COPYRIGHT "Copyright (c) 2010, Bindle Binaries"
+#endif
+#ifndef PACKAGE_NAME
+#define PACKAGE_NAME "iOS Ports Library"
+#endif
+#ifndef PACKAGE_VERSION
+#define PACKAGE_VERSION "0.1"
+#endif
+
 
 //////////////
 //          //
@@ -94,8 +118,15 @@
 //              //
 //////////////////
 
+// displays usage
+void iosports_usage PARAMS((void));
+
+// displays version information
+void iosports_version PARAMS((void));
+
 // main statement
 int main PARAMS((int argc, char * argv[]));
+
 
 /////////////////
 //             //
@@ -103,12 +134,76 @@ int main PARAMS((int argc, char * argv[]));
 //             //
 /////////////////
 
+/// displays usage
+void iosports_usage(void)
+{
+   printf(("Usage: %s [OPTIONS] <package>\n"
+         "  -h, --help                print this help and exit\n"
+         "  -V, --version             print version number and exit\n"
+         "\n"
+         "Report bugs to <%s>.\n"
+      ), PROGRAM_NAME, PACKAGE_BUGREPORT
+   );
+   return;
+}
+
+
+/// displays version information
+void iosports_version(void)
+{
+   printf(("%s (%s) %s\n"
+         "Written by David M. Syzdek.\n"
+         "\n"
+         "%s\n"
+         "This is free software; see the source for copying conditions.  There is NO\n"
+         "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
+      ), PROGRAM_NAME, PACKAGE_NAME, PACKAGE_VERSION, PACKAGE_COPYRIGHT
+   );
+   return;
+}
+
+
 /// main statement
 /// @param[in]  argc  number of arguments passed to program
 /// @param[in]  argv  array of arguments passed to program
 int main(int argc, char * argv[])
 {
+   int        c;
+   int        opt_index;
    const iOSPortsPKGData * datap;
+
+   static char   short_opt[] = "hV";
+   static struct option long_opt[] =
+   {
+      {"help",          no_argument, 0, 'h'},
+      {"version",       no_argument, 0, 'V'},
+      {NULL,            0,           0, 0  }
+   };
+
+   while((c = getopt_long(argc, argv, short_opt, long_opt, &opt_index)) != -1)
+   {
+      switch(c)
+      {
+         case -1:	// no more arguments
+         case 0:	// long options toggles
+            break;
+         case 'h':
+            iosports_usage();
+            return(0);
+         case 'V':
+            iosports_version();
+            return(0);
+         case '?':
+            fprintf(stderr, ("Try `%s --help' for more information.\n"), PROGRAM_NAME);
+            return(1);
+         default:
+            fprintf(stderr, ("%s: unrecognized option `--%c'\n"
+                  "Try `%s --help' for more information.\n"
+               ), PROGRAM_NAME, c, PROGRAM_NAME
+            );
+            return(1);
+      };
+   };
 
    if (argc != 2)
    {
