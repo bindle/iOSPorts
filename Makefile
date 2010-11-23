@@ -70,7 +70,7 @@ $(INCLUDES): Makefile
 	mkdir -p "`dirname ${@}`"
 	cp "ports/iOSPorts/classes/`basename ${@}`" ${@};
 
-$(SOURCES): build-aux/iOSPorts-geninfo $(INCLUDES)
+$(SOURCES): build-aux/iOSPorts-geninfo build-aux/Makefile-package $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
 
 ports/iOSPorts/other/iOSPorts-data.m: $(SOURCES)
