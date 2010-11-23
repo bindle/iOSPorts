@@ -42,7 +42,7 @@ SOURCES		= \
 
 LIBSOURCES	= \
 				  ports/iOSPorts/other/iOSPorts-data.c \
-				  ports/iOSPorts/other/iOSPorts-list.c
+				  ports/iOSPorts/other/iOSPorts-list.m
 
 PROGS		= \
 			  build-aux/iOSPorts-geninfo \
@@ -72,8 +72,8 @@ ports/iOSPorts/other/iOSPorts-data.c: $(SOURCES)
 	rm -f ports/iOSPorts/other/iOSPorts-data.c
 	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.c
 
-ports/iOSPorts/other/iOSPorts-list.c: build-aux/iOSPorts-genlist $(SOURCES)
-	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.c $(SOURCES)
+ports/iOSPorts/other/iOSPorts-list.m: build-aux/iOSPorts-genlist $(SOURCES)
+	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.m $(SOURCES)
 
 build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.m $(INCLUDES)
 	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
