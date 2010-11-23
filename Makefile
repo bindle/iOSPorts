@@ -60,7 +60,7 @@ INCLUDES	= \
 		  include/iOSPorts/iOSPortsPackage.h \
 		  include/iOSPorts/iOSPortsTypes.h
 
-CFLAGS		= -W -Wall -Werror -Iinclude
+CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation
 
 all: $(PROGS)
 
@@ -81,15 +81,13 @@ ports/iOSPorts/other/iOSPorts-list.m: build-aux/iOSPorts-genlist $(SOURCES)
 	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.m $(SOURCES)
 
 build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.m $(INCLUDES)
-	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
-	   ports/iOSPorts/other/iOSPorts-geninfo.m
+	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.m
 
 build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
-	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
-	   ports/iOSPorts/other/iOSPorts-genlist.m
+	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-genlist.m
 
 build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES)
-	$(CC) $(CFLAGS) -framework Foundation -o ${@} $(PKGINFOSOURCES)
+	$(CC) $(CFLAGS) -o ${@} $(PKGINFOSOURCES)
 
 clean:
 	rm -Rf $(PROGS) $(SOURCES) $(LIBSOURCES)
