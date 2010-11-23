@@ -36,7 +36,7 @@
  *  @file ports/iOSPorts/classes/iOSPortsPackage.m interface to PKGDATA
  */
 
-#import <iOSPorts.h>
+#import <iOSPorts/iOSPorts.h>
 #import <stdio.h>
 #import <dlfcn.h>
 #import <string.h>

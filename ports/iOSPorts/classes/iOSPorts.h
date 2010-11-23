@@ -36,13 +36,12 @@
  *  @file include/iOSPorts.h defines the library interface
  */
 
-#import <Foundation/Foundation.h>
 #import <iOSPorts/iOSPortsCFuncs.h>
 #import <iOSPorts/iOSPortsTypes.h>
 #import <iOSPorts/iOSPortsPackage.h>
 
 #ifndef _IOSPORTS_CLI_TOOL
-#import <UIKit/UIKit.h>
+#import <iOSPorts/iOSPortsViewController.h>
 #endif
 
 /* end of header */

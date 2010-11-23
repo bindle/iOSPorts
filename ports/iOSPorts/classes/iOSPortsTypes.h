@@ -38,6 +38,8 @@
 #ifndef _IOSPORTS_IOSPORTSTYPES_H 1
 #define _IOSPORTS_IOSPORTSTYPES_H 1
 
+#import <sys/types.h>
+
 typedef struct iosports_pkg_data iOSPortsPKGData;
 struct iosports_pkg_data
 {
