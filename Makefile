@@ -86,7 +86,7 @@ build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.m $(INCLUDES)
 build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
 	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-genlist.m
 
-build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES)
+build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES) $(INCLUDES)
 	$(CC) $(CFLAGS) -o ${@} $(PKGINFOSOURCES)
 
 clean:
