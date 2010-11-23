@@ -62,8 +62,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <getopt.h>
-#include <iOSPorts/iOSPortsTypes.h>
-#include <iOSPorts/iOSPortsCFuncs.h>
+#include <iOSPorts.h>
 
 
 ///////////////////
