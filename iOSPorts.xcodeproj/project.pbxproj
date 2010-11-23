@@ -94,7 +94,7 @@
 		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-geninfo.c"; sourceTree = "<group>"; };
 		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
-		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-pkginfo.c"; sourceTree = "<group>"; };
+		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-pkginfo.m"; sourceTree = "<group>"; };
 		A0ED936F12837E91009FBCDC /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = openldap/openldap.xcodeproj; sourceTree = "<group>"; };
 		A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = pcre/pcre.xcodeproj; sourceTree = "<group>"; };
 		A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 				A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */,
 				A09F42841293506600A21B9D /* iOSPorts-genlist.c */,
 				A09F42901293604B00A21B9D /* iOSPorts-list.c */,
-				A0ED928312836334009FBCDC /* iOSPorts-pkginfo.c */,
+				A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */,
 			);
 			name = "Other Sources";
 			path = other;
@@ -174,11 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				A0AA0B6212849AD1004AD70C /* iOSPorts.h */,
-				A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */,
+				A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */,
+				A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */,
 				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
 				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
-				A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */,
-				A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */,
+				A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */,
 			);
 			name = Classes;
 			path = classes;
