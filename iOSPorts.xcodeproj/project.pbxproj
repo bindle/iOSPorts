@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A03984391295E4810078D2A7 /* iOSPortsCFuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */; };
 		A039843A1295E4810078D2A7 /* iOSPortsCFuncs.c in Sources */ = {isa = PBXBuildFile; fileRef = A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */; };
-		A09F41B512933FF900A21B9D /* iOSPorts-data.c in Sources */ = {isa = PBXBuildFile; fileRef = A09F41B412933FF900A21B9D /* iOSPorts-data.c */; };
+		A09F41B512933FF900A21B9D /* iOSPorts-data.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F41B412933FF900A21B9D /* iOSPorts-data.m */; };
 		A09F42911293604B00A21B9D /* iOSPorts-list.m in Sources */ = {isa = PBXBuildFile; fileRef = A09F42901293604B00A21B9D /* iOSPorts-list.m */; };
 		A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */; };
 		A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */; };
@@ -83,7 +83,7 @@
 		A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iOSPortsCFuncs.c; sourceTree = "<group>"; };
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		A09F41B412933FF900A21B9D /* iOSPorts-data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-data.c"; sourceTree = "<group>"; };
+		A09F41B412933FF900A21B9D /* iOSPorts-data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-data.m"; sourceTree = "<group>"; };
 		A09F42841293506600A21B9D /* iOSPorts-genlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-genlist.m"; sourceTree = "<group>"; };
 		A09F42901293604B00A21B9D /* iOSPorts-list.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-list.m"; sourceTree = "<group>"; };
 		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */,
-				A09F41B412933FF900A21B9D /* iOSPorts-data.c */,
+				A09F41B412933FF900A21B9D /* iOSPorts-data.m */,
 				A0ED928012836334009FBCDC /* iOSPorts-geninfo.m */,
 				A09F42841293506600A21B9D /* iOSPorts-genlist.m */,
 				A09F42901293604B00A21B9D /* iOSPorts-list.m */,
@@ -412,7 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */,
-				A09F41B512933FF900A21B9D /* iOSPorts-data.c in Sources */,
+				A09F41B512933FF900A21B9D /* iOSPorts-data.m in Sources */,
 				A09F42911293604B00A21B9D /* iOSPorts-list.m in Sources */,
 				A039843A1295E4810078D2A7 /* iOSPortsCFuncs.c in Sources */,
 			);

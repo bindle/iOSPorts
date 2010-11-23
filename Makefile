@@ -41,7 +41,7 @@ SOURCES		= \
 		  ports/iOSPorts/pkgdata_iosports.c
 
 LIBSOURCES	= \
-				  ports/iOSPorts/other/iOSPorts-data.c \
+				  ports/iOSPorts/other/iOSPorts-data.m \
 				  ports/iOSPorts/other/iOSPorts-list.m
 
 PROGS		= \
@@ -68,9 +68,9 @@ $(INCLUDES): Makefile
 $(SOURCES): build-aux/iOSPorts-geninfo $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
 
-ports/iOSPorts/other/iOSPorts-data.c: $(SOURCES)
-	rm -f ports/iOSPorts/other/iOSPorts-data.c
-	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.c
+ports/iOSPorts/other/iOSPorts-data.m: $(SOURCES)
+	rm -f ports/iOSPorts/other/iOSPorts-data.m
+	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.m
 
 ports/iOSPorts/other/iOSPorts-list.m: build-aux/iOSPorts-genlist $(SOURCES)
 	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.m $(SOURCES)
