@@ -69,14 +69,14 @@ all: $(PROGS)
 prog: $(PROGS)
 
 $(INCLUDES): Makefile
-	mkdir -p "`dirname ${@}`"
+	@mkdir -p "`dirname ${@}`"
 	cp "ports/iOSPorts/classes/`basename ${@}`" ${@};
 
 $(SOURCES): build-aux/iOSPorts-geninfo build-aux/Makefile-package $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
 
 ports/iOSPorts/other/iOSPorts-data.m: $(SOURCES)
-	rm -f ports/iOSPorts/other/iOSPorts-data.m
+	@rm -f ports/iOSPorts/other/iOSPorts-data.m
 	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.m || \
 	   { rm -f ports/iOSPorts/other/iOSPorts-data.m; exit 1; }
 
