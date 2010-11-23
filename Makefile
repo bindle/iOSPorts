@@ -44,6 +44,11 @@ LIBSOURCES	= \
 		  ports/iOSPorts/other/iOSPorts-data.m \
 		  ports/iOSPorts/other/iOSPorts-list.m
 
+PKGINFOSOURCES	= \
+		  $(LIBSOURCES) \
+		  ports/iOSPorts/other/iOSPorts-pkginfo.m \
+		  ports/iOSPorts/classes/iOSPortsCFuncs.m
+
 PROGS		= \
 		  build-aux/iOSPorts-geninfo \
 		  build-aux/iOSPorts-genlist \
@@ -83,11 +88,8 @@ build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
 	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
 	   ports/iOSPorts/other/iOSPorts-genlist.m
 
-build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.m $(LIBSOURCES)
-	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
-	   ports/iOSPorts/other/iOSPorts-pkginfo.m \
-	   ports/iOSPorts/classes/iOSPortsCFuncs.m \
-	   $(LIBSOURCES)
+build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES)
+	$(CC) $(CFLAGS) -framework Foundation -o ${@} $(PKGINFOSOURCES)
 
 clean:
 	rm -Rf $(PROGS) $(SOURCES) $(LIBSOURCES)
