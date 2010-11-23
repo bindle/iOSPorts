@@ -1,13 +1,4 @@
 /*
- *  iOSPortsCFuncs.c
- *  iOSPorts
- *
- *  Created by David Syzdek on 11/18/10.
- *  Copyright 2010 Bindle Binaries. All rights reserved.
- *
- */
-
-/*
  *  iOS Ports Library
  *  Copyright (c) 2010, Bindle Binaries
  *  All rights reserved.
@@ -42,68 +33,29 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file ports/iOSPorts/classes/iOSPortsCFuncs.c defines the library C functions
+ *  @file include/iOSPorts/iOSPortsVersion.h defines library version
  */
-#import "iOSPortsCFuncs.h"
+#ifndef _IOSPORTS_IOSPORTVERSION_H 1
+#define _IOSPORTS_IOSPORTVERSION_H 1
 
-///////////////
-//           //
-//  Headers  //
-//           //
-///////////////
+///////////////////
+//               //
+//  Definitions  //
+//               //
+///////////////////
 
-#import <string.h>
-#import <stdio.h>
+#define kiOSPortsVersionMajor  0x00
+#define kiOSPortsVersionMinor  0x01
+#define kiOSPortsVersionPatch  0x00
 
+//  Version Info:
+//     Current    -- the current version number of this API
+//     Revision   -- the revision of the implementation of the API version
+//     Age        -- How many seqential past API versions is supported by
+//                   this implementation
+//  Format => Current:Revision:Age
+#define kiOSPortsLibraryVersionCurrent   0x00
+#define kiOSPortsLibraryVersionRevision  0x00
+#define kiOSPortsLibraryVersionAge       0x00
 
-/////////////////
-//             //
-//  Functions  //
-//             //
-/////////////////
-
-// Looks up a package based up the packages ID
-const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
-{
-   char     * lookupID;
-   size_t     pos;
-   unsigned   u;
-
-   if (!(lookupID = strdup(pkg_id)))
-      return(NULL);
-
-   for(u = 0; u < strlen(lookupID); u++)
-   {
-      if ( ((lookupID[u] < 'A') || (lookupID[u] > 'Z')) &&
-           ((lookupID[u] < 'a') || (lookupID[u] > 'z')) &&
-           ((lookupID[u] < '0') || (lookupID[u] > '9')) )
-         lookupID[u] = '_';
-   };
-
-   for(pos = 0; iOSPortsPKGList[pos].name; pos++)
-      if (!(strcasecmp(lookupID, iOSPortsPKGList[pos].name)))
-         return(iOSPortsPKGList[pos].data);
-
-   return(NULL);
-}
-
-
-/// returns the library version information of the iOS Ports Library
-int iOSPorts_lib_version_info(void)
-{
-   return( (kiOSPortsVersionMajor << 16) |
-           (kiOSPortsVersionMinor <<  8) |
-           (kiOSPortsVersionPatch <<  0) );
-}
-
-
-// returns current version of iOS Ports Library
-int iOSPorts_version(void)
-{
-   return( (kiOSPortsLibraryVersionCurrent  << 16) |
-           (kiOSPortsLibraryVersionRevision <<  8) |
-           (kiOSPortsLibraryVersionAge      <<  0) );
-}
-
-/* end of source */
-
+#endif /* end of header file */

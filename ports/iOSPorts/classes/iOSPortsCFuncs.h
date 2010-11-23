@@ -44,6 +44,7 @@
 //           //
 ///////////////
 
+#import <iOSPorts/iOSPortsVersion.h>
 #import <iOSPorts/iOSPortsTypes.h>
 
 
@@ -64,5 +65,11 @@ extern iOSPortsPKGListData iOSPortsPKGList[];
 
 // Looks up a package based up the packages ID
 const iOSPortsPKGData *  iOSPorts_find_pkg_by_id(const char * pkg_id);
+
+// returns the library version information of the iOS Ports Library
+int iOSPorts_lib_version_info(void);
+
+// returns current version of iOS Ports Library
+int iOSPorts_version(void);
 
 #endif /* end of header file */

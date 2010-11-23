@@ -39,6 +39,7 @@
 #import <iOSPorts/iOSPortsCFuncs.h>
 #import <iOSPorts/iOSPortsTypes.h>
 #import <iOSPorts/iOSPortsPackage.h>
+#import <iOSPorts/iOSPortsVersion.h>
 
 #ifndef _IOSPORTS_CLI_TOOL
 #import <iOSPorts/iOSPortsViewController.h>
