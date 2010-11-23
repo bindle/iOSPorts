@@ -65,6 +65,28 @@
 #include <iOSPorts/iOSPortsTypes.h>
 #include <iOSPorts/iOSPortsCFuncs.h>
 
+//////////////
+//          //
+//  Macros  //
+//          //
+//////////////
+
+/*
+ * The macro "PARAMS" is taken verbatim from section 7.1 of the
+ * Libtool 1.5.14 manual.
+ */
+/* PARAMS is a macro used to wrap function prototypes, so that
+   compilers that don't understand ANSI C prototypes still work,
+   and ANSI C compilers can issue warnings about type mismatches. */
+#undef PARAMS
+#if defined (__STDC__) || defined (_AIX) \
+        || (defined (__mips) && defined (_SYSTYPE_SVR4)) \
+        || defined(WIN32) || defined (__cplusplus)
+# define PARAMS(protos) protos
+#else
+# define PARAMS(protos) ()
+#endif
+
 
 //////////////////
 //              //
@@ -72,6 +94,8 @@
 //              //
 //////////////////
 
+// main statement
+int main PARAMS((int argc, char * argv[]));
 
 /////////////////
 //             //
