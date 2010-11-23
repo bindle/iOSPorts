@@ -33,24 +33,24 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file src/iOSPorts-genlist.c generates array of package pointers
+ *  @file ports/iOSPorts/other/iOSPorts-genlist.m generates array of package pointers
  */
 /*
  *  Simple Build:
- *     gcc -W -Wall -O2 -c iOSPortsInfo.c
- *     gcc -W -Wall -O2 -o iOSPortsInfo   iOSPortsInfo.o
+ *     gcc -W -Wall -O2 -c iOSPorts-genlist.m
+ *     gcc -W -Wall -O2 -o iOSPorts-genlist   iOSPorts-genlist.o
  *
  *  GNU Libtool Build:
- *     libtool --mode=compile gcc -W -Wall -g -O2 -c iOSPortsInfo.c
- *     libtool --mode=link    gcc -W -Wall -g -O2 -o iOSPortsInfo iOSPortsInfo.lo
+ *     libtool --mode=compile gcc -W -Wall -g -O2 -c iOSPorts-genlist.m
+ *     libtool --mode=link    gcc -W -Wall -g -O2 -o iOSPorts-genlist iOSPorts-genlist.lo
  *
  *  GNU Libtool Install:
- *     libtool --mode=install install -c iOSPortsInfo /usr/local/bin/iOSPortsInfo
+ *     libtool --mode=install install -c iOSPorts-genlist /usr/local/bin/iOSPorts-genlist
  *
  *  GNU Libtool Clean:
- *     libtool --mode=clean rm -f iOSPortsInfo.lo iOSPortsInfo
+ *     libtool --mode=clean rm -f iOSPorts-genlist.lo iOSPorts-genlist
  */
-#define _IOSPORTS_SRC_IOSPORTS_GENLIST_C 1
+#define _IOSPORTS_SRC_IOSPORTS_GENLIST_M 1
 
 ///////////////
 //           //
