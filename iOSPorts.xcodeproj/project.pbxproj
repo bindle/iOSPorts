@@ -91,9 +91,9 @@
 		A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackage.m; sourceTree = "<group>"; };
 		A0AA0B6212849AD1004AD70C /* iOSPorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts.h; sourceTree = "<group>"; };
 		A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsTypes.h; sourceTree = "<group>"; };
-		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-geninfo.c"; sourceTree = "<group>"; };
-		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-pkginfo.m"; sourceTree = "<group>"; };
 		A0ED936F12837E91009FBCDC /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = openldap/openldap.xcodeproj; sourceTree = "<group>"; };
 		A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = pcre/pcre.xcodeproj; sourceTree = "<group>"; };
