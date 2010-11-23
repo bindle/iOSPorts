@@ -84,7 +84,7 @@
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A09F41B412933FF900A21B9D /* iOSPorts-data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-data.c"; sourceTree = "<group>"; };
-		A09F42841293506600A21B9D /* iOSPorts-genlist.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-genlist.c"; sourceTree = "<group>"; };
+		A09F42841293506600A21B9D /* iOSPorts-genlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-genlist.m"; sourceTree = "<group>"; };
 		A09F42901293604B00A21B9D /* iOSPorts-list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "iOSPorts-list.c"; sourceTree = "<group>"; };
 		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsPackage.h; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */,
 				A09F41B412933FF900A21B9D /* iOSPorts-data.c */,
 				A0ED928012836334009FBCDC /* iOSPorts-geninfo.c */,
-				A09F42841293506600A21B9D /* iOSPorts-genlist.c */,
+				A09F42841293506600A21B9D /* iOSPorts-genlist.m */,
 				A09F42901293604B00A21B9D /* iOSPorts-list.c */,
 				A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */,
 			);
