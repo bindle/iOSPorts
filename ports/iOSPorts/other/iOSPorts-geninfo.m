@@ -237,7 +237,9 @@ int main(int argc, char * argv[])
    int        fd;
    int        opts;
    int        opt_index;
+   char     * ptr;
    char       buff[512];
+   char       datebuff[512];
    size_t     count;
    size_t     len;
    size_t     pos;
@@ -379,13 +381,16 @@ int main(int argc, char * argv[])
    };
 
    now = time(NULL);
-   fprintf(cnf.fs, "// generated with %s\n", PROGRAM_NAME);
-   fprintf(cnf.fs, "// generated on %s\n", ctime(&now));
+   snprintf(datebuff, 512, "%s", ctime(&now));
+   if ((ptr = index(datebuff, '\n')))
+      ptr[0] = '\0';
 
    if (cnf.verbose)
       fprintf(stderr, "writing data...\n");
    fprintf(cnf.fs, "/* Package information for %s */\n", cnf.pkg_name);
    fprintf(cnf.fs, "/* license imported from %s */\n", cnf.pkg_license_file ? cnf.pkg_license_file : "dreamland");
+   fprintf(cnf.fs, "/* generated with %s */\n", PROGRAM_NAME);
+   fprintf(cnf.fs, "/* generated on %s */\n", datebuff);
    fprintf(cnf.fs, "#import <iOSPorts/iOSPortsTypes.h>\n");
    fprintf(cnf.fs, "const iOSPortsPKGData iOSPorts_pkgdata_%s =\n", cnf.pkg_id);
    fprintf(cnf.fs, "{\n   ");
@@ -412,7 +417,7 @@ int main(int argc, char * argv[])
       fprintf(cnf.fs, " 0x00\n   }\n");
    }; 
    fprintf(cnf.fs, "};\n");
-   fprintf(cnf.fs, "/* end of source */\n");
+   fprintf(cnf.fs, "/* end of %s */\n\n", cnf.pkg_name);
 
    iosports_free(&cnf, 0);
 

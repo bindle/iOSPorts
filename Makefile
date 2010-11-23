@@ -75,7 +75,8 @@ $(SOURCES): build-aux/iOSPorts-geninfo build-aux/Makefile-package $(INCLUDES)
 
 ports/iOSPorts/other/iOSPorts-data.m: $(SOURCES)
 	rm -f ports/iOSPorts/other/iOSPorts-data.m
-	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.m
+	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.m || \
+	   { rm -f ports/iOSPorts/other/iOSPorts-data.m; exit 1; }
 
 ports/iOSPorts/other/iOSPorts-list.m: build-aux/iOSPorts-genlist $(SOURCES)
 	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.m $(SOURCES)
