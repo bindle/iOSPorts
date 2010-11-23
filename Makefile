@@ -75,8 +75,9 @@ ports/iOSPorts/other/iOSPorts-data.c: $(SOURCES)
 ports/iOSPorts/other/iOSPorts-list.c: build-aux/iOSPorts-genlist $(SOURCES)
 	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.c $(SOURCES)
 
-build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c $(INCLUDES)
-	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.c
+build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.m $(INCLUDES)
+	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
+	   ports/iOSPorts/other/iOSPorts-geninfo.m
 
 build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
 	$(CC) $(CFLAGS) -framework Foundation -o ${@} \
