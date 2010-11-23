@@ -21,14 +21,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = A05D8170127A27BB008D47CD /* pcre.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D /* libpcre.a */;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = pcre;
 		};
 		A05D8179127A27CB008D47CD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05D8170127A27BB008D47CD /* pcre.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* pcre */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = pcre;
 		};
 /* End PBXContainerItemProxy section */
@@ -257,8 +257,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../../../../../include;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -271,9 +272,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../../../../../include;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

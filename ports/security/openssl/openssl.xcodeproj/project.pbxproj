@@ -1602,8 +1602,8 @@
 		A05116F812776F1500DE46C4 /* example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = example.h; sourceTree = "<group>"; };
 		A05116F912776F1500DE46C4 /* info.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info.pem; sourceTree = "<group>"; };
 		A05116FA12776F1500DE46C4 /* infokey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = infokey.pem; sourceTree = "<group>"; };
-		A05116FC12776F1500DE46C4 /* a1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = a1; sourceTree = "<group>"; };
-		A05116FD12776F1500DE46C4 /* a2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = a2; sourceTree = "<group>"; };
+		A05116FC12776F1500DE46C4 /* a1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = a1; sourceTree = "<group>"; };
+		A05116FD12776F1500DE46C4 /* a2 */ = {isa = PBXFileReference; lastKnownFileType = text; path = a2; sourceTree = "<group>"; };
 		A05116FE12776F1500DE46C4 /* cert.p7c */ = {isa = PBXFileReference; lastKnownFileType = file; path = cert.p7c; sourceTree = "<group>"; };
 		A05116FF12776F1500DE46C4 /* smime.p7m */ = {isa = PBXFileReference; lastKnownFileType = file; path = smime.p7m; sourceTree = "<group>"; };
 		A051170012776F1500DE46C4 /* smime.p7s */ = {isa = PBXFileReference; lastKnownFileType = file; path = smime.p7s; sourceTree = "<group>"; };
@@ -2540,7 +2540,7 @@
 		A0511ADA12776F1700DE46C4 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
 		A0511ADB12776F1700DE46C4 /* install.com */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = install.com; sourceTree = "<group>"; };
 		A0511ADC12776F1700DE46C4 /* makevms.com */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makevms.com; sourceTree = "<group>"; };
-		A0511ADE12776F1700DE46C4 /* .rnd */ = {isa = PBXFileReference; lastKnownFileType = file; path = .rnd; sourceTree = "<group>"; };
+		A0511ADE12776F1700DE46C4 /* .rnd */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rnd; sourceTree = "<group>"; };
 		A0511ADF12776F1700DE46C4 /* 32all.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 32all.bat; sourceTree = "<group>"; };
 		A0511AE012776F1700DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A0511AE112776F1700DE46C4 /* applink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = applink.c; sourceTree = "<group>"; };
@@ -7132,7 +7132,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -7161,7 +7161,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -7257,7 +7257,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = test;
-				SDKROOT = iphoneos4.1;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -7282,7 +7281,6 @@
 				);
 				PREBINDING = NO;
 				PRODUCT_NAME = test;
-				SDKROOT = iphoneos4.1;
 				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
