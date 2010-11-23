@@ -79,6 +79,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A03020E4129B9B400022EA2B /* Makefile-package */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; indentWidth = 8; path = "Makefile-package"; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
+		A03020E5129B9B400022EA2B /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
+		A03020E6129B9B400022EA2B /* iOS-buildenv.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "iOS-buildenv.sh"; sourceTree = "<group>"; };
 		A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsCFuncs.h; sourceTree = "<group>"; };
 		A03984381295E4810078D2A7 /* iOSPortsCFuncs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iOSPortsCFuncs.c; sourceTree = "<group>"; };
 		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 				A0ED927F128362E7009FBCDC /* Makefile */,
 				A03FC2211281F00A0083B2EB /* LICENSE */,
 				A03FC2221281F00A0083B2EB /* README */,
+				A03020E3129B9B400022EA2B /* build-aux */,
 				A0ED936B12837E33009FBCDC /* ports */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
@@ -157,6 +161,16 @@
 			);
 			name = "Other Sources";
 			path = other;
+			sourceTree = "<group>";
+		};
+		A03020E3129B9B400022EA2B /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				A03020E4129B9B400022EA2B /* Makefile-package */,
+				A03020E5129B9B400022EA2B /* configure-wrapper.sh */,
+				A03020E6129B9B400022EA2B /* iOS-buildenv.sh */,
+			);
+			path = "build-aux";
 			sourceTree = "<group>";
 		};
 		A0AA0AC812848ADA004AD70C /* iOSPorts */ = {
