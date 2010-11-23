@@ -9,4 +9,4 @@
 /build-aux/iOSPorts-genlist
 /build-aux/iOSPorts-pkginfo
 a.out
-pkgdata_*.c
+pkgdata_*.m

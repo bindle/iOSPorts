@@ -34,11 +34,11 @@
 #
 
 SOURCES		= \
-		  ports/database/openldap/pkgdata_openldap.c \
-		  ports/devel/pcre/pkgdata_pcre.c \
-		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.c \
-		  ports/security/openssl/pkgdata_openssl.c \
-		  ports/iOSPorts/pkgdata_iosports.c
+		  ports/database/openldap/pkgdata_openldap.m \
+		  ports/devel/pcre/pkgdata_pcre.m \
+		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.m \
+		  ports/security/openssl/pkgdata_openssl.m \
+		  ports/iOSPorts/pkgdata_iosports.m
 
 LIBSOURCES	= \
 		  ports/iOSPorts/other/iOSPorts-data.m \
