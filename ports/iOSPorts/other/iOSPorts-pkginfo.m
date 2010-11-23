@@ -72,8 +72,6 @@
 //              //
 //////////////////
 
-extern iOSPortsPKGListData iOSPortsPKGList[];
-
 
 /////////////////
 //             //
