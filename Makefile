@@ -59,7 +59,8 @@ INCLUDES	= \
 		  include/iOSPorts/iOSPortsCFuncs.h \
 		  include/iOSPorts/iOSPortsPackage.h \
 		  include/iOSPorts/iOSPortsTypes.h \
-		  include/iOSPorts/iOSPortsVersion.h
+		  include/iOSPorts/iOSPortsVersion.h \
+		  include/iOSPorts/iOSPortsViewController.h
 
 CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation
 
