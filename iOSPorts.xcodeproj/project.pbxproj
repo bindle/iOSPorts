@@ -179,6 +179,36 @@
 			path = "build-aux";
 			sourceTree = "<group>";
 		};
+		A06D2728129DEFDD00E3F0E6 /* Includes */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA0B6212849AD1004AD70C /* iOSPorts.h */,
+				A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */,
+				A008BACF129C78E10034DA2D /* iOSPortsVersion.h */,
+			);
+			name = Includes;
+			sourceTree = "<group>";
+		};
+		A06D2736129DEFEA00E3F0E6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A008BA52129C40E50034DA2D /* iOSPortsViewController.m */,
+				A008BA51129C40E40034DA2D /* iOSPortsViewController.h */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A06D2737129DEFF600E3F0E6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
+				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
+				A03984381295E4810078D2A7 /* iOSPortsCFuncs.m */,
+				A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		A0AA0AC812848ADA004AD70C /* iOSPorts */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,15 +223,9 @@
 		A0AA0AD012848B78004AD70C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A0AA0B6212849AD1004AD70C /* iOSPorts.h */,
-				A008BACF129C78E10034DA2D /* iOSPortsVersion.h */,
-				A03984381295E4810078D2A7 /* iOSPortsCFuncs.m */,
-				A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */,
-				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
-				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
-				A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */,
-				A008BA52129C40E50034DA2D /* iOSPortsViewController.m */,
-				A008BA51129C40E40034DA2D /* iOSPortsViewController.h */,
+				A06D2728129DEFDD00E3F0E6 /* Includes */,
+				A06D2737129DEFF600E3F0E6 /* Models */,
+				A06D2736129DEFEA00E3F0E6 /* Controllers */,
 			);
 			name = Classes;
 			path = classes;
