@@ -1,0 +1,32 @@
+
+iOS Ports Library
+Copyright (C) 2010 Bindle Binaries
+
+0.1
+        iOS Ports
+        - Standarding Xcode project files to latest iOS SDK root rather than
+          a specific iOS SDK root to ease future tranistions to newer iOS SDK
+          versions. (Syzdek)
+        - Standarding Xcode project files to deployment target of 3.1.
+          iOS SDK 3.1 was chosen due to a lack of a test device for iOS SDK
+          3.0. (syzdek)
+        - Standarding Xcode project files' build settings on LLVM GCC 4.2
+          instead of GCC 4.2. (syzdek)
+        - Adding iOS Ports Library which provides a mechanism for adding
+          acknowledgements to an iOS Application per licensing requirements
+          of a ported package. (syzdek)
+        - Starting ChangeLog for project. (szyzdek)
+        OpenLDAP
+        - Updating OpenLDAP to demonstrate simple bind and SASL bind with
+          multiple mechanisms. (syzdek) 
+        PCRE
+        - Updating PCRE package name in port Makefile. (syzdek)
+
+0.0     2010-11-05
+        - Hello World (syzdek)
+        - Adding port of OpenSSL (syzdek)
+        - Adding port of Cyrus SASL (syzdek)
+        - Adding port of OpenLDAP (syzdek)
+        - Adding port of PCRE (syzdek)
+
+
