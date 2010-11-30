@@ -49,6 +49,7 @@
 #pragma mark Package Management
 
 - (BOOL) initializePackages;
+- (BOOL) addPackage:(iOSPortsPackage *)portpkg;
 - (BOOL) addPackageWithIdentifier:(NSString *)name;
 - (iOSPortsPackage *) findPackageWithIdentifier:(NSString *)name;
 - (void) removePackageWithIdentifier:(NSString *)name;

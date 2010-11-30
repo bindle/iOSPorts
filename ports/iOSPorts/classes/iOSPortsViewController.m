@@ -154,19 +154,26 @@
 }
 
 
+// Adds a custom iOS Ports Package data to the packagesList array
+// returns BOOL YES if an error is encountered
+- (BOOL) addPackage:(iOSPortsPackage *)portpkg
+{
+   if (!(packagesList))
+      if (([self initializePackages]))
+         return(YES);
+
+   [packagesList addObject:portpkg];
+
+   return(NO);
+}
+
+
 // Adds an iOS Ports Package data to the packagesList array
 // returns BOOL YES if an error is encountered
 - (BOOL) addPackageWithIdentifier:(NSString *)name
 {
    iOSPortsPackage   * portpkg;
    NSAutoreleasePool * pool;
-
-   if (!(packagesList))
-      if (([self initializePackages]))
-         return(YES);
-
-   if (([self findPackageWithIdentifier:name]))
-      return(NO);
 
    pool = [[NSAutoreleasePool alloc] init];
 
@@ -176,7 +183,11 @@
       return(YES);
    };
 
-   [packagesList addObject:portpkg];
+   if (([self addPackage:portpkg]))
+   {
+      [pool release];
+      return(YES);
+   };
 
    [pool release];
 
