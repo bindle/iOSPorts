@@ -33,29 +33,43 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file ports/iOSPorts/classes/iOSPortsPackage.h interface to PKGDATA
+ *  @file include/iOSPorts/iOSPortsCFuncs.h defines the library C functions
  */
+#ifndef _IOSPORTS_IOSPORTSCFUNCS_H 1
+#define _IOSPORTS_IOSPORTSCFUNCS_H 1
 
-#import <Foundation/Foundation.h>
+///////////////
+//           //
+//  Headers  //
+//           //
+///////////////
+
+#import <iOSPorts/iOSPortsVersion.h>
 #import <iOSPorts/iOSPortsTypes.h>
 
-@interface iOSPortsPackage : NSObject
-{
-   NSString * identifier;
-   NSString * name;
-   NSString * version;
-   NSString * website;
-   NSString * license;
-}
 
-@property(nonatomic, retain) NSString * identifier;
-@property(nonatomic, retain) NSString * name;
-@property(nonatomic, retain) NSString * version;
-@property(nonatomic, retain) NSString * website;
-@property(nonatomic, retain) NSString * license;
+////////////////////////
+//                    //
+//  Global Variables  //
+//                    //
+////////////////////////
 
-- (BOOL) setToIdentifier:(NSString *)anIdentifier;
-- (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;
-+ (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
+extern iOSPortsPKGListData iOSPortsPKGList[];
 
-@end
+
+//////////////////
+//              //
+//  Prototypes  //
+//              //
+//////////////////
+
+// Looks up a package based up the packages ID
+const iOSPortsPKGData *  iOSPorts_find_pkg_by_id(const char * pkg_id);
+
+// returns the library version information of the iOS Ports Library
+int iOSPorts_lib_version_info(void);
+
+// returns current version of iOS Ports Library
+int iOSPorts_version(void);
+
+#endif /* end of header file */

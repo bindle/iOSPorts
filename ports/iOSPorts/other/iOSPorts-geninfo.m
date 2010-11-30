@@ -33,24 +33,24 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file src/iOSPortsInfo.c Utility for generating iOS Ports information from Makefiles
+ *  @file ports/iOSPorts/other/iOSPorts-geninfo.m Utility for generating iOS Ports information from Makefiles
  */
 /*
  *  Simple Build:
- *     gcc -W -Wall -O2 -c iOSPortsInfo.c
- *     gcc -W -Wall -O2 -o iOSPortsInfo   iOSPortsInfo.o
+ *     gcc -W -Wall -O2 -c iOSPorts-geninfo.m
+ *     gcc -W -Wall -O2 -o iOSPorts-geninfo   iOSPorts-geninfo.o
  *
  *  GNU Libtool Build:
- *     libtool --mode=compile gcc -W -Wall -g -O2 -c iOSPortsInfo.c
- *     libtool --mode=link    gcc -W -Wall -g -O2 -o iOSPortsInfo iOSPortsInfo.lo
+ *     libtool --mode=compile gcc -W -Wall -g -O2 -c iOSPorts-geninfo.m
+ *     libtool --mode=link    gcc -W -Wall -g -O2 -o iOSPorts-geninfo iOSPorts-geninfo.lo
  *
  *  GNU Libtool Install:
- *     libtool --mode=install install -c iOSPortsInfo /usr/local/bin/iOSPortsInfo
+ *     libtool --mode=install install -c iOSPorts-geninfo /usr/local/bin/iOSPorts-geninfo
  *
  *  GNU Libtool Clean:
- *     libtool --mode=clean rm -f iOSPortsInfo.lo iOSPortsInfo
+ *     libtool --mode=clean rm -f iOSPorts-geninfo.lo iOSPorts-geninfo
  */
-#define _IOSPORTS_SRC_IOSPORTSINFO_C 1
+#define _IOSPORTS_SRC_IOSPORTSINFO_M 1
 
 ///////////////
 //           //
@@ -58,13 +58,16 @@
 //           //
 ///////////////
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <getopt.h>
-#include <fcntl.h>
-#include <string.h>
-#include <unistd.h>
-#include <iOSPorts/iOSPortsTypes.h>
+#import <time.h>
+#import <stdio.h>
+#import <stdlib.h>
+#import <getopt.h>
+#import <fcntl.h>
+#import <string.h>
+#import <unistd.h>
+
+#define _IOSPORTS_CLI_TOOL 1
+#import <iOSPorts/iOSPorts.h>
 
 
 ///////////////////
@@ -74,7 +77,7 @@
 ///////////////////
 
 #ifndef PROGRAM_NAME
-#define PROGRAM_NAME "iOSPortsInfo"
+#define PROGRAM_NAME "iOSPorts-geninfo"
 #endif
 #ifndef PACKAGE_BUGREPORT
 #define PACKAGE_BUGREPORT "development@bindlebinaries.com"
@@ -213,13 +216,13 @@ void iosports_usage(void)
 /// displays version information
 void iosports_version(void)
 {
-   printf(("%s (%s) %s\n"
+   printf(("%s (%s) %i.%i\n"
          "Written by David M. Syzdek.\n"
          "\n"
          "%s\n"
          "This is free software; see the source for copying conditions.  There is NO\n"
          "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
-      ), PROGRAM_NAME, PACKAGE_NAME, PACKAGE_VERSION, PACKAGE_COPYRIGHT
+      ), PROGRAM_NAME, PACKAGE_NAME, kiOSPortsVersionMajor, kiOSPortsVersionMinor, PACKAGE_COPYRIGHT
    );
    return;
 }
@@ -234,10 +237,13 @@ int main(int argc, char * argv[])
    int        fd;
    int        opts;
    int        opt_index;
+   char     * ptr;
    char       buff[512];
+   char       datebuff[512];
    size_t     count;
    size_t     len;
    size_t     pos;
+   time_t     now;
    unsigned   u;
    iOSPorts   cnf;
 
@@ -338,10 +344,9 @@ int main(int argc, char * argv[])
    };
    for(u = 0; u < strlen(cnf.pkg_id); u++)
    {
-      if ((cnf.pkg_id[u] >= 'A') && (cnf.pkg_id[u] <= 'Z'))
-         cnf.pkg_id[u] = cnf.pkg_id[u] - 'A' +'a';
-      else if ( ((cnf.pkg_id[u] < 'a') || (cnf.pkg_id[u] > 'z')) &&
-                ((cnf.pkg_id[u] < '0') || (cnf.pkg_id[u] > '9')) )
+      if ( ((cnf.pkg_id[u] < 'A') || (cnf.pkg_id[u] > 'Z')) &&
+           ((cnf.pkg_id[u] < 'a') || (cnf.pkg_id[u] > 'z')) &&
+           ((cnf.pkg_id[u] < '0') || (cnf.pkg_id[u] > '9')) )
          cnf.pkg_id[u] = '_';
    };
 
@@ -375,11 +380,18 @@ int main(int argc, char * argv[])
       };
    };
 
+   now = time(NULL);
+   snprintf(datebuff, 512, "%s", ctime(&now));
+   if ((ptr = index(datebuff, '\n')))
+      ptr[0] = '\0';
+
    if (cnf.verbose)
       fprintf(stderr, "writing data...\n");
    fprintf(cnf.fs, "/* Package information for %s */\n", cnf.pkg_name);
    fprintf(cnf.fs, "/* license imported from %s */\n", cnf.pkg_license_file ? cnf.pkg_license_file : "dreamland");
-   fprintf(cnf.fs, "#include <iOSPorts/iOSPortsTypes.h>\n");
+   fprintf(cnf.fs, "/* generated with %s */\n", PROGRAM_NAME);
+   fprintf(cnf.fs, "/* generated on %s */\n", datebuff);
+   fprintf(cnf.fs, "#import <iOSPorts/iOSPortsTypes.h>\n");
    fprintf(cnf.fs, "const iOSPortsPKGData iOSPorts_pkgdata_%s =\n", cnf.pkg_id);
    fprintf(cnf.fs, "{\n   ");
    fprintf(cnf.fs, (cnf.pkg_id      ? "\"%s\"" : "NULL"), cnf.pkg_id);      fprintf(cnf.fs, ", // pkg_id\n   ");
@@ -405,7 +417,7 @@ int main(int argc, char * argv[])
       fprintf(cnf.fs, " 0x00\n   }\n");
    }; 
    fprintf(cnf.fs, "};\n");
-   fprintf(cnf.fs, "/* end of source */\n");
+   fprintf(cnf.fs, "/* end of %s */\n\n", cnf.pkg_name);
 
    iosports_free(&cnf, 0);
 

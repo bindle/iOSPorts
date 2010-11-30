@@ -34,42 +34,69 @@
 #
 
 SOURCES		= \
-		  ports/database/openldap/pkgdata_openldap.c \
-		  ports/devel/pcre/pkgdata_pcre.c \
-		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.c \
-		  ports/security/openssl/pkgdata_openssl.c \
-		  ports/iOSPorts/pkgdata_iosports.c
+		  ports/database/openldap/pkgdata_openldap.m \
+		  ports/devel/pcre/pkgdata_pcre.m \
+		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.m \
+		  ports/security/openssl/pkgdata_openssl.m \
+		  ports/iOSPorts/pkgdata_iosports.m
 
-PROGS		= build-aux/iOSPorts-geninfo build-aux/iOSPorts-pkginfo
+LIBSOURCES	= \
+		  ports/iOSPorts/other/iOSPorts-data.m \
+		  ports/iOSPorts/other/iOSPorts-list.m
 
-INCLUDES = \
-			include/iOSPorts.h \
-			include/iOSPorts/iOSPortsPackage.h \
-			include/iOSPorts/iOSPortsTypes.h
+PKGINFOSOURCES	= \
+		  $(LIBSOURCES) \
+		  ports/iOSPorts/other/iOSPorts-pkginfo.m \
+		  ports/iOSPorts/classes/iOSPortsCFuncs.m
 
-CFLAGS		= -W -Wall -Werror -Iinclude
+PROGS		= \
+		  build-aux/iOSPorts-geninfo \
+		  build-aux/iOSPorts-genlist \
+		  build-aux/iOSPorts-pkginfo
+
+INCLUDES	= \
+		  include/iOSPorts/iOSPorts.h \
+		  include/iOSPorts/iOSPortsCFuncs.h \
+		  include/iOSPorts/iOSPortsPackage.h \
+		  include/iOSPorts/iOSPortsTypes.h \
+		  include/iOSPorts/iOSPortsVersion.h \
+		  include/iOSPorts/iOSPortsViewController.h
+
+CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation
 
 all: $(PROGS)
 
 prog: $(PROGS)
 
 $(INCLUDES): Makefile
-	mkdir -p "`dirname ${@}`"
+	@mkdir -p "`dirname ${@}`"
 	cp "ports/iOSPorts/classes/`basename ${@}`" ${@};
 
-$(SOURCES): build-aux/iOSPorts-geninfo $(INCLUDES)
+$(SOURCES): build-aux/iOSPorts-geninfo build-aux/Makefile-package $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
 
-build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.c $(INCLUDES)
-	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.c
+ports/iOSPorts/other/iOSPorts-data.m: $(SOURCES)
+	@rm -f ports/iOSPorts/other/iOSPorts-data.m
+	cat $(SOURCES) > ports/iOSPorts/other/iOSPorts-data.m || \
+	   { rm -f ports/iOSPorts/other/iOSPorts-data.m; exit 1; }
 
-build-aux/iOSPorts-pkginfo: ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
-		$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-pkginfo.c $(SOURCES)
+ports/iOSPorts/other/iOSPorts-list.m: build-aux/iOSPorts-genlist $(SOURCES)
+	build-aux/iOSPorts-genlist -f -o ports/iOSPorts/other/iOSPorts-list.m $(SOURCES)
+
+build-aux/iOSPorts-geninfo: ports/iOSPorts/other/iOSPorts-geninfo.m $(INCLUDES)
+	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-geninfo.m
+
+build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
+	$(CC) $(CFLAGS) -o ${@} ports/iOSPorts/other/iOSPorts-genlist.m
+
+build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES) $(INCLUDES)
+	$(CC) $(CFLAGS) -o ${@} $(PKGINFOSOURCES)
 
 clean:
-	rm -Rf $(PROGS) $(SOURCES)
+	rm -Rf $(PROGS) $(SOURCES) $(LIBSOURCES)
 	rm -Rf $(INCLUDES) include/iOSPorts
-	rm -Rf a.out *.o src/*.o
+	rm -Rf ports/iOSPorts/other/iOSPorts-data.c
+	rm -Rf a.out *.o src/*.o ports/iOSPorts/other/*.o
 	rm -Rf build/
 
 distcleanall: clean

@@ -33,29 +33,32 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file ports/iOSPorts/classes/iOSPortsPackage.h interface to PKGDATA
+ *  @file ports/iOSPorts/classes/iOSPortsViewController.h controls navigation of Package info
  */
 
-#import <Foundation/Foundation.h>
-#import <iOSPorts/iOSPortsTypes.h>
+#import <UIKit/UIKit.h>
+#import <iOSPorts/iOSPortsPackage.h>
 
-@interface iOSPortsPackage : NSObject
+
+@interface iOSPortsViewController : UITableViewController
 {
-   NSString * identifier;
-   NSString * name;
-   NSString * version;
-   NSString * website;
-   NSString * license;
+   CGRect           viewFrame;
+   NSMutableArray * packagesList;
 }
 
-@property(nonatomic, retain) NSString * identifier;
-@property(nonatomic, retain) NSString * name;
-@property(nonatomic, retain) NSString * version;
-@property(nonatomic, retain) NSString * website;
-@property(nonatomic, retain) NSString * license;
+#pragma mark -
+#pragma mark Properties
 
-- (BOOL) setToIdentifier:(NSString *)anIdentifier;
-- (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;
-+ (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
+@property(nonatomic, assign) CGRect viewFrame;
+
+
+#pragma mark -
+#pragma mark Package Management
+
+- (BOOL) initializePackages;
+- (BOOL) addPackage:(iOSPortsPackage *)portpkg;
+- (BOOL) addPackageWithIdentifier:(NSString *)name;
+- (iOSPortsPackage *) findPackageWithIdentifier:(NSString *)name;
+- (void) removePackageWithIdentifier:(NSString *)name;
 
 @end

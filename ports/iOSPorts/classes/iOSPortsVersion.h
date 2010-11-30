@@ -33,29 +33,29 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file ports/iOSPorts/classes/iOSPortsPackage.h interface to PKGDATA
+ *  @file include/iOSPorts/iOSPortsVersion.h defines library version
  */
+#ifndef _IOSPORTS_IOSPORTVERSION_H 1
+#define _IOSPORTS_IOSPORTVERSION_H 1
 
-#import <Foundation/Foundation.h>
-#import <iOSPorts/iOSPortsTypes.h>
+///////////////////
+//               //
+//  Definitions  //
+//               //
+///////////////////
 
-@interface iOSPortsPackage : NSObject
-{
-   NSString * identifier;
-   NSString * name;
-   NSString * version;
-   NSString * website;
-   NSString * license;
-}
+#define kiOSPortsVersionMajor  0x00
+#define kiOSPortsVersionMinor  0x01
+#define kiOSPortsVersionPatch  0x00
 
-@property(nonatomic, retain) NSString * identifier;
-@property(nonatomic, retain) NSString * name;
-@property(nonatomic, retain) NSString * version;
-@property(nonatomic, retain) NSString * website;
-@property(nonatomic, retain) NSString * license;
+//  Version Info:
+//     Current    -- the current version number of this API
+//     Revision   -- the revision of the implementation of the API version
+//     Age        -- How many seqential past API versions is supported by
+//                   this implementation
+//  Format => Current:Revision:Age
+#define kiOSPortsLibraryVersionCurrent   0x00
+#define kiOSPortsLibraryVersionRevision  0x00
+#define kiOSPortsLibraryVersionAge       0x00
 
-- (BOOL) setToIdentifier:(NSString *)anIdentifier;
-- (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;
-+ (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
-
-@end
+#endif /* end of header file */

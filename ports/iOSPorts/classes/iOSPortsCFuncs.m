@@ -1,4 +1,13 @@
 /*
+ *  iOSPortsCFuncs.c
+ *  iOSPorts
+ *
+ *  Created by David Syzdek on 11/18/10.
+ *  Copyright 2010 Bindle Binaries. All rights reserved.
+ *
+ */
+
+/*
  *  iOS Ports Library
  *  Copyright (c) 2010, Bindle Binaries
  *  All rights reserved.
@@ -33,29 +42,68 @@
  *  @BINDLE_BINARIES_BSD_LICENSE_END@
  */
 /**
- *  @file ports/iOSPorts/classes/iOSPortsPackage.h interface to PKGDATA
+ *  @file ports/iOSPorts/classes/iOSPortsCFuncs.c defines the library C functions
  */
+#import "iOSPortsCFuncs.h"
 
-#import <Foundation/Foundation.h>
-#import <iOSPorts/iOSPortsTypes.h>
+///////////////
+//           //
+//  Headers  //
+//           //
+///////////////
 
-@interface iOSPortsPackage : NSObject
+#import <string.h>
+#import <stdio.h>
+
+
+/////////////////
+//             //
+//  Functions  //
+//             //
+/////////////////
+
+// Looks up a package based up the packages ID
+const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
 {
-   NSString * identifier;
-   NSString * name;
-   NSString * version;
-   NSString * website;
-   NSString * license;
+   char     * lookupID;
+   size_t     pos;
+   unsigned   u;
+
+   if (!(lookupID = strdup(pkg_id)))
+      return(NULL);
+
+   for(u = 0; u < strlen(lookupID); u++)
+   {
+      if ( ((lookupID[u] < 'A') || (lookupID[u] > 'Z')) &&
+           ((lookupID[u] < 'a') || (lookupID[u] > 'z')) &&
+           ((lookupID[u] < '0') || (lookupID[u] > '9')) )
+         lookupID[u] = '_';
+   };
+
+   for(pos = 0; iOSPortsPKGList[pos].name; pos++)
+      if (!(strcasecmp(lookupID, iOSPortsPKGList[pos].name)))
+         return(iOSPortsPKGList[pos].data);
+
+   return(NULL);
 }
 
-@property(nonatomic, retain) NSString * identifier;
-@property(nonatomic, retain) NSString * name;
-@property(nonatomic, retain) NSString * version;
-@property(nonatomic, retain) NSString * website;
-@property(nonatomic, retain) NSString * license;
 
-- (BOOL) setToIdentifier:(NSString *)anIdentifier;
-- (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;
-+ (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
+/// returns the library version information of the iOS Ports Library
+int iOSPorts_lib_version_info(void)
+{
+   return( (kiOSPortsVersionMajor << 16) |
+           (kiOSPortsVersionMinor <<  8) |
+           (kiOSPortsVersionPatch <<  0) );
+}
 
-@end
+
+// returns current version of iOS Ports Library
+int iOSPorts_version(void)
+{
+   return( (kiOSPortsLibraryVersionCurrent  << 16) |
+           (kiOSPortsLibraryVersionRevision <<  8) |
+           (kiOSPortsLibraryVersionAge      <<  0) );
+}
+
+/* end of source */
+

@@ -35,6 +35,10 @@
 /**
  *  @file include/iOSPorts/iOSPortsTypes.h defines the library data types
  */
+#ifndef _IOSPORTS_IOSPORTSTYPES_H 1
+#define _IOSPORTS_IOSPORTSTYPES_H 1
+
+#import <sys/types.h>
 
 typedef struct iosports_pkg_data iOSPortsPKGData;
 struct iosports_pkg_data
@@ -46,4 +50,11 @@ struct iosports_pkg_data
    const char   pkg_license[];
 };
 
-/* end of header */
+typedef struct iosports_pkg_list_data iOSPortsPKGListData;
+struct iosports_pkg_list_data
+{
+   const char * name;
+   const iOSPortsPKGData * data;
+};
+
+#endif /* end of header */

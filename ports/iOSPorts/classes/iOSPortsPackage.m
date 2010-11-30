@@ -36,7 +36,7 @@
  *  @file ports/iOSPorts/classes/iOSPortsPackage.m interface to PKGDATA
  */
 
-#import "iOSPortsPackage.h"
+#import <iOSPorts/iOSPorts.h>
 #import <stdio.h>
 #import <dlfcn.h>
 #import <string.h>
@@ -59,10 +59,6 @@
    self.website = nil;
    self.license = nil;
 
-   if (identifierUTF8)
-      free(identifierUTF8);
-   identifierUTF8 = NULL;
-
    [super dealloc];
 
    return;
@@ -74,7 +70,7 @@
    if (!(self = [super init]))
       return(self);
 
-   if ([self lookupIdentifier:anIdentifier])
+   if ([self setToIdentifier:anIdentifier])
    {
       [self release];
       self = nil;
@@ -92,11 +88,8 @@
 }
 
 
-- (BOOL) lookupIdentifier:(NSString *)anIdentifier
+- (BOOL) setToIdentifier:(NSString *)anIdentifier
 {
-   char                    symbolName[512];
-   unsigned                u;
-   const char            * str;
    NSAutoreleasePool     * pool;
    const iOSPortsPKGData * datap;
 
@@ -108,29 +101,8 @@
    self.website    = nil;
    self.license    = nil;
 
-   str = [anIdentifier UTF8String];
-   if (identifierUTF8)
-      free(identifierUTF8);
-   if (!(identifierUTF8 = strdup(str)))
+   if (!(datap = iOSPorts_find_pkg_by_id([anIdentifier UTF8String])))
    {
-      [pool release];
-      return(YES);
-   };
-
-   for(u = 0; u < strlen(identifierUTF8); u++)
-   {
-      if ((identifierUTF8[u] >= 'A') && (identifierUTF8[u] <= 'Z'))
-         identifierUTF8[u] = identifierUTF8[u] - 'A' +'a';
-      else if ( ((identifierUTF8[u] < 'a') || (identifierUTF8[u] > 'z')) &&
-                ((identifierUTF8[u] < '0') || (identifierUTF8[u] > '9')) )
-         identifierUTF8[u] = '_';
-   };
-
-   snprintf(symbolName, 512, "iOSPorts_pkgdata_%s", identifierUTF8);
-
-   if (!(datap = (const iOSPortsPKGData *) dlsym(RTLD_SELF, symbolName)))
-   {
-      NSLog(@"%s: dlsym(%s): %s\n", identifierUTF8, symbolName, dlerror());
       [pool release];
       return(YES);
    };
@@ -142,7 +114,6 @@
    self.license    = datap->pkg_license[0] ? [NSString stringWithUTF8String:datap->pkg_license] : nil;
 
    [pool release];
-
 
    return(NO);
 }
