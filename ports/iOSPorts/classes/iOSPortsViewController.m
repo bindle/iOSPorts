@@ -235,9 +235,12 @@
 #pragma mark -
 #pragma mark Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     // Return the number of sections.
-    return 1;
+   if (!(packagesList))
+      [self initializePackages];
+    return ([packagesList count]);
 }
 
 
