@@ -46,6 +46,7 @@
    NSString * version;
    NSString * website;
    NSString * license;
+   id         licenseView;
 }
 
 @property(nonatomic, retain) NSString * identifier;
@@ -53,6 +54,7 @@
 @property(nonatomic, retain) NSString * version;
 @property(nonatomic, retain) NSString * website;
 @property(nonatomic, retain) NSString * license;
+@property(nonatomic, retain) id         licenseView;
 
 - (BOOL) setToIdentifier:(NSString *)anIdentifier;
 - (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;

@@ -49,6 +49,7 @@
 @synthesize version;
 @synthesize website;
 @synthesize license;
+@synthesize licenseView;
 
 
 - (void)dealloc
@@ -58,6 +59,7 @@
    self.version = nil;
    self.website = nil;
    self.license = nil;
+   self.licenseView = nil;
 
    [super dealloc];
 
