@@ -372,15 +372,20 @@
 #pragma mark -
 #pragma mark Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
-    // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	 */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   iOSPortsPackage * portpkg;
+   portpkg = [packagesList objectAtIndex:indexPath.section];
+   [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+   switch([indexPath row])
+   {
+      case 1:
+         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:portpkg.website]];
+         break;
+      default:
+         break;
+   };
+   return;
 }
 
 
