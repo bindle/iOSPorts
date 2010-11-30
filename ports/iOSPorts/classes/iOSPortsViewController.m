@@ -208,34 +208,6 @@
 }
 
 
-// creates UITextView used to display the license
-- (void) createPackageLicenseView:(iOSPortsPackage *)portpkg
-{
-   CGRect       frame;
-   UITextView * text;
-
-   if ((portpkg.licenseView))
-      return;
-
-   frame = CGRectMake(10, 5, self.tableView.frame.size.width  - 30, self.tableView.frame.size.height - 10);
-   text = [[UITextView alloc] initWithFrame:frame];
-   text.textColor        = [UIColor blackColor];
-   text.font             = [UIFont fontWithName:@"Arial" size:12];
-   text.backgroundColor  = [UIColor clearColor];
-   text.text             = portpkg.license;
-   text.scrollEnabled    = NO;
-   text.editable         = NO;
-   text.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-   text.tag              = kTextViewTag;
-   text.frame  = CGRectMake(10, 5, self.tableView.frame.size.width  - 30, text.contentSize.height+10);
-
-   portpkg.licenseView   = text;
-   [text release];
-
-   return;
-}
-
-
 // returns the iOSPortsPackage object of a package added to the packagesList array
 // returns nil if an error is encountered
 - (iOSPortsPackage *) findPackageWithIdentifier:(NSString *)name
@@ -309,13 +281,17 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+   CGSize            size;
    iOSPortsPackage * portpkg;
+
    switch(indexPath.row)
    {
       case 2:
+         size.width  = self.tableView.bounds.size.width - 40;
+         size.height = 99999;
          portpkg     = [packagesList objectAtIndex:indexPath.section];
-         [self createPackageLicenseView:portpkg];
-         return(((UITextView *)portpkg.licenseView).frame.size.height + 10.0);
+         size = [portpkg.license sizeWithFont:[UIFont fontWithName:@"Arial" size:12] constrainedToSize:size];
+         return(size.height);
       default:
          return(38.8);
    };
@@ -326,7 +302,6 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   UIView          * viewToRemove;
    iOSPortsPackage * portpkg;
 	UITableViewCell * cell;
 
@@ -370,10 +345,7 @@
             cell.textLabel.font                 = [UIFont fontWithName:@"Arial" size:12];
             cell.textLabel.numberOfLines        = 0;
          };
-         viewToRemove = [cell.contentView viewWithTag:kTextViewTag];
-         if (viewToRemove)
-				[viewToRemove removeFromSuperview];
-         [cell.contentView addSubview:portpkg.licenseView];
+         cell.textLabel.text = portpkg.license;
          break;
 	};
    return cell;
@@ -452,15 +424,6 @@
 
 - (void)viewDidUnload
 {
-   NSUInteger        index;
-   iOSPortsPackage * portpkg;
-
-   for(index = 0; index < [packagesList count]; index++)
-   {
-      portpkg = [packagesList objectAtIndex:index];
-      portpkg.licenseView = nil;
-   };
-
    return;
 }
 
