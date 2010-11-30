@@ -42,15 +42,26 @@
 
 @implementation iOSPortsViewController
 
+#pragma mark -
+#pragma mark Properties
+
+@synthesize viewFrame;
+
 
 #pragma mark -
 #pragma mark Initialization
 
 - (id)init
 {
+   CGRect aFrame;
    if ((self = [super init]))
    {
-      self.title = @"Acknowledgements";
+      aFrame          = [[UIScreen mainScreen] bounds];
+      self.title      = @"Acknowledgements";
+      self.viewFrame  = CGRectMake(aFrame.origin.x,
+                              10,
+                              aFrame.size.width,
+                              aFrame.size.height - 10);
    };
    return(self);
 }
@@ -75,12 +86,10 @@
 - (void)loadView
 {
    UITableView * myView;
-   CGRect aFrame;
 
    [self initializePackages];
 
-   aFrame = CGRectMake(0, 20, 320, 460);
-   myView = [[UITableView alloc] initWithFrame:aFrame style:UITableViewStyleGrouped];
+   myView = [[UITableView alloc] initWithFrame:viewFrame style:UITableViewStyleGrouped];
    myView.separatorStyle = UITableViewCellSeparatorStyleNone;
    myView.dataSource     = self;
    myView.delegate       = self;

@@ -42,8 +42,15 @@
 
 @interface iOSPortsViewController : UITableViewController
 {
+   CGRect           viewFrame;
    NSMutableArray * packagesList;
 }
+
+#pragma mark -
+#pragma mark Properties
+
+@property(nonatomic, assign) CGRect viewFrame;
+
 
 #pragma mark -
 #pragma mark Package Management
