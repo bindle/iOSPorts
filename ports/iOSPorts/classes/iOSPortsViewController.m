@@ -244,6 +244,14 @@
 }
 
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+   if (!(packagesList))
+      [self initializePackages];
+   return([[packagesList objectAtIndex: section] name]);
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
    // Return the number of rows in the section.
