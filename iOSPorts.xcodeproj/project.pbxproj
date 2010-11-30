@@ -203,8 +203,8 @@
 			children = (
 				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
 				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
-				A03984381295E4810078D2A7 /* iOSPortsCFuncs.m */,
 				A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */,
+				A03984381295E4810078D2A7 /* iOSPortsCFuncs.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
