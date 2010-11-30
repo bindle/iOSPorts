@@ -46,6 +46,16 @@
 #pragma mark -
 #pragma mark Initialization
 
+- (id)init
+{
+   if ((self = [super init]))
+   {
+      self.title = @"Acknowledgements";
+   };
+   return(self);
+}
+
+
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
