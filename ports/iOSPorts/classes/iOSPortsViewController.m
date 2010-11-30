@@ -39,6 +39,8 @@
 #import "iOSPortsViewController.h"
 #import <iOSPorts/iOSPorts.h>
 
+#define kTextViewTag 1
+
 
 @implementation iOSPortsViewController
 
@@ -206,6 +208,34 @@
 }
 
 
+// creates UITextView used to display the license
+- (void) createPackageLicenseView:(iOSPortsPackage *)portpkg
+{
+   CGRect       frame;
+   UITextView * text;
+
+   if ((portpkg.licenseView))
+      return;
+
+   frame = CGRectMake(10, 5, self.tableView.frame.size.width  - 30, self.tableView.frame.size.height - 10);
+   text = [[UITextView alloc] initWithFrame:frame];
+   text.textColor        = [UIColor blackColor];
+   text.font             = [UIFont fontWithName:@"Arial" size:12];
+   text.backgroundColor  = [UIColor clearColor];
+   text.text             = portpkg.license;
+   text.scrollEnabled    = NO;
+   text.editable         = NO;
+   text.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+   text.tag              = kTextViewTag;
+   text.frame  = CGRectMake(10, 5, self.tableView.frame.size.width  - 30, text.contentSize.height+10);
+
+   portpkg.licenseView   = text;
+   [text release];
+
+   return;
+}
+
+
 // returns the iOSPortsPackage object of a package added to the packagesList array
 // returns nil if an error is encountered
 - (iOSPortsPackage *) findPackageWithIdentifier:(NSString *)name
@@ -274,6 +304,22 @@
 {
    // Return the number of rows in the section.
    return 3;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   iOSPortsPackage * portpkg;
+   switch(indexPath.row)
+   {
+      case 2:
+         portpkg     = [packagesList objectAtIndex:indexPath.section];
+         [self createPackageLicenseView:portpkg];
+         return(((UITextView *)portpkg.licenseView).frame.size.height + 10.0);
+      default:
+         return(38.8);
+   };
+	return ([indexPath row] == 0) ? 50.0 : 38.0;
 }
 
 
@@ -399,9 +445,18 @@
     // Relinquish ownership any cached data, images, etc. that aren't in use.
 }
 
-- (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
+- (void)viewDidUnload
+{
+   NSUInteger        index;
+   iOSPortsPackage * portpkg;
+
+   for(index = 0; index < [packagesList count]; index++)
+   {
+      portpkg = [packagesList objectAtIndex:index];
+      portpkg.licenseView = nil;
+   };
+
+   return;
 }
 
 
