@@ -71,6 +71,25 @@
 #pragma mark -
 #pragma mark View lifecycle
 
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView
+{
+   UITableView * myView;
+   CGRect aFrame;
+
+   aFrame = CGRectMake(0, 20, 320, 460);
+   myView = [[UITableView alloc] initWithFrame:aFrame style:UITableViewStyleGrouped];
+   myView.separatorStyle = UITableViewCellSeparatorStyleNone;
+   myView.dataSource     = self;
+   myView.delegate       = self;
+
+   self.view = myView;
+   [myView release];
+
+   return;
+}
+
+
 /*
 - (void)viewDidLoad {
     [super viewDidLoad];
