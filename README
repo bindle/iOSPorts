@@ -137,6 +137,10 @@ Quick Start
    link libsasl2.a from Cyrus SASL, libssl.a from OpenSSL, and libcrypto.a from
    OpenSSL.  The dependencies are listed in the packages list above.
 
+   An example application using iOS Ports is available from:
+
+      https://github.com/bindle/iOSPortsExample
+
 
 Maintainers
 ===========
