@@ -77,6 +77,8 @@
    UITableView * myView;
    CGRect aFrame;
 
+   [self initializePackages];
+
    aFrame = CGRectMake(0, 20, 320, 460);
    myView = [[UITableView alloc] initWithFrame:aFrame style:UITableViewStyleGrouped];
    myView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -249,16 +251,12 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-   if (!(packagesList))
-      [self initializePackages];
     return ([packagesList count]);
 }
 
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-   if (!(packagesList))
-      [self initializePackages];
    return([[packagesList objectAtIndex: section] name]);
 }
 
