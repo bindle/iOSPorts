@@ -260,18 +260,54 @@
 
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
-    
-    // Configure the cell...
-    
-    return cell;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   iOSPortsPackage * portpkg;
+	UITableViewCell * cell;
+
+   static NSString * kVersionCell_ID = @"VersionCellID";
+   static NSString * kWebsiteCell_ID = @"WebsiteCellID";
+   static NSString * kLicenseCell_ID = @"LicenseCellID";
+
+   portpkg = [packagesList objectAtIndex:indexPath.section];
+
+   switch([indexPath row])
+	{
+      case 0: // Version row
+         cell = [self.tableView dequeueReusableCellWithIdentifier:kVersionCell_ID];
+         if (cell == nil)
+         {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kVersionCell_ID] autorelease];
+            cell.selectionStyle                 = UITableViewCellSelectionStyleNone;
+            cell.textLabel.text                 = @"Version:";
+         };
+         cell.detailTextLabel.text = portpkg.version;
+         break;
+      case 1: // Website row
+         cell = [self.tableView dequeueReusableCellWithIdentifier:kWebsiteCell_ID];
+         if (cell == nil)
+         {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kWebsiteCell_ID] autorelease];
+            cell.selectionStyle                 = UITableViewCellSelectionStyleGray;
+            cell.textLabel.text                 = @"Website:";
+            cell.detailTextLabel.adjustsFontSizeToFitWidth = YES;
+            cell.detailTextLabel.minimumFontSize           = 8;
+            cell.detailTextLabel.numberOfLines             = 1;
+         };
+         cell.detailTextLabel.text = portpkg.website;
+         break;
+      default: // License row
+         cell = [self.tableView dequeueReusableCellWithIdentifier:kLicenseCell_ID];
+         if (cell == nil)
+         {
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kLicenseCell_ID] autorelease];
+            cell.selectionStyle                 = UITableViewCellSelectionStyleNone;
+            cell.accessoryType                  = UITableViewCellAccessoryDisclosureIndicator;
+            cell.textLabel.text                 = @"Legal";
+         };
+         break;
+	};
+   return cell;
 }
 
 
