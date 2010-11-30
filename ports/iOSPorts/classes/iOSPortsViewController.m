@@ -287,7 +287,7 @@
    switch(indexPath.row)
    {
       case 2:
-         size.width  = self.tableView.bounds.size.width - 40;
+         size.width  = (self.tableView.bounds.size.width * 0.85);
          size.height = 99999;
          portpkg     = [packagesList objectAtIndex:indexPath.section];
          size = [portpkg.license sizeWithFont:[UIFont fontWithName:@"Arial" size:12] constrainedToSize:size];
