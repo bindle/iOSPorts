@@ -37,6 +37,7 @@
  */
 
 #import "iOSPortsViewController.h"
+#import <iOSPorts/iOSPorts.h>
 
 
 @implementation iOSPortsViewController
@@ -97,6 +98,108 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Override to allow orientations other than the default portrait orientation.
     return YES;
+}
+
+
+#pragma mark -
+#pragma mark Package Management
+
+// initializes packagesList array and adds iOS Ports package to array
+// returns BOOL YES if an error is encountered
+- (BOOL) initializePackages
+{
+   if (packagesList)
+      return(NO);
+
+   if (!(packagesList = [[NSMutableArray alloc] initWithCapacity:2]))
+      return(YES);
+
+   if (([self addPackageWithIdentifier:@"iOSPorts"]))
+   {
+      [packagesList release];
+      packagesList = nil;
+      return(YES);
+   };
+
+   return(NO);
+}
+
+
+// Adds an iOS Ports Package data to the packagesList array
+// returns BOOL YES if an error is encountered
+- (BOOL) addPackageWithIdentifier:(NSString *)name
+{
+   iOSPortsPackage   * portpkg;
+   NSAutoreleasePool * pool;
+
+   if (!(packagesList))
+      if (([self initializePackages]))
+         return(YES);
+
+   if (([self findPackageWithIdentifier:name]))
+      return(NO);
+
+   pool = [[NSAutoreleasePool alloc] init];
+
+   if (!(portpkg = [[[iOSPortsPackage alloc] initWithIdentifier:name] autorelease]))
+   {
+      [pool release];
+      return(YES);
+   };
+
+   [packagesList addObject:portpkg];
+
+   [pool release];
+
+   return(NO);
+}
+
+
+// returns the iOSPortsPackage object of a package added to the packagesList array
+// returns nil if an error is encountered
+- (iOSPortsPackage *) findPackageWithIdentifier:(NSString *)name
+{
+   NSUInteger           index;
+   iOSPortsPackage    * portpkg;
+   NSComparisonResult   result;
+
+   if (!(packagesList))
+      return(nil);
+
+   for(index = 0; index < [packagesList count]; index++)
+   {
+      portpkg = [packagesList objectAtIndex:index];
+      result = [name caseInsensitiveCompare:portpkg.identifier];
+      if (result == NSOrderedSame)
+         return(portpkg);
+   };
+
+   return(nil);
+}
+
+
+// Removes an iOS Ports Package data from the packagesList array
+- (void) removePackageWithIdentifier:(NSString *)name
+{
+   NSUInteger           index;
+   iOSPortsPackage    * portpkg;
+   NSComparisonResult   result;
+
+   if (!(packagesList))
+      return;
+
+   for(index = 0; index < [packagesList count]; index++)
+   {
+      portpkg = [packagesList objectAtIndex:index];
+      result = [name caseInsensitiveCompare:portpkg.identifier];
+      if (result == NSOrderedSame)
+      {
+         [packagesList removeObjectAtIndex:index];
+         return;
+      };
+   };
+
+   return;
 }
 
 
@@ -202,8 +305,14 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
+- (void)dealloc
+{
+   if (packagesList)
+   {
+      [packagesList release];
+      packagesList = nil;
+   };
+   [super dealloc];
 }
 
 

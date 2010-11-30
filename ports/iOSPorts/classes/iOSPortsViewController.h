@@ -42,7 +42,15 @@
 
 @interface iOSPortsViewController : UITableViewController
 {
-
+   NSMutableArray * packagesList;
 }
+
+#pragma mark -
+#pragma mark Package Management
+
+- (BOOL) initializePackages;
+- (BOOL) addPackageWithIdentifier:(NSString *)name;
+- (iOSPortsPackage *) findPackageWithIdentifier:(NSString *)name;
+- (void) removePackageWithIdentifier:(NSString *)name;
 
 @end
