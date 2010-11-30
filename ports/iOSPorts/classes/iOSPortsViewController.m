@@ -326,6 +326,7 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+   UIView          * viewToRemove;
    iOSPortsPackage * portpkg;
 	UITableViewCell * cell;
 
@@ -364,11 +365,15 @@
          cell = [self.tableView dequeueReusableCellWithIdentifier:kLicenseCell_ID];
          if (cell == nil)
          {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kLicenseCell_ID] autorelease];
+            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kLicenseCell_ID] autorelease];
             cell.selectionStyle                 = UITableViewCellSelectionStyleNone;
-            cell.accessoryType                  = UITableViewCellAccessoryDisclosureIndicator;
-            cell.textLabel.text                 = @"Legal";
+            cell.textLabel.font                 = [UIFont fontWithName:@"Arial" size:12];
+            cell.textLabel.numberOfLines        = 0;
          };
+         viewToRemove = [cell.contentView viewWithTag:kTextViewTag];
+         if (viewToRemove)
+				[viewToRemove removeFromSuperview];
+         [cell.contentView addSubview:portpkg.licenseView];
          break;
 	};
    return cell;
