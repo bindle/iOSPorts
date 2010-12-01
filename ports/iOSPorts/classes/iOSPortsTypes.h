@@ -35,7 +35,7 @@
 /**
  *  @file include/iOSPorts/iOSPortsTypes.h defines the library data types
  */
-#ifndef _IOSPORTS_IOSPORTSTYPES_H 1
+#ifndef _IOSPORTS_IOSPORTSTYPES_H
 #define _IOSPORTS_IOSPORTSTYPES_H 1
 
 #import <sys/types.h>

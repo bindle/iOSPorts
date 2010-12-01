@@ -35,7 +35,7 @@
 /**
  *  @file include/iOSPorts/iOSPortsCFuncs.h defines the library C functions
  */
-#ifndef _IOSPORTS_IOSPORTSCFUNCS_H 1
+#ifndef _IOSPORTS_IOSPORTSCFUNCS_H
 #define _IOSPORTS_IOSPORTSCFUNCS_H 1
 
 ///////////////

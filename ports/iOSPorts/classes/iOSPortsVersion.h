@@ -35,7 +35,7 @@
 /**
  *  @file include/iOSPorts/iOSPortsVersion.h defines library version
  */
-#ifndef _IOSPORTS_IOSPORTVERSION_H 1
+#ifndef _IOSPORTS_IOSPORTVERSION_H
 #define _IOSPORTS_IOSPORTVERSION_H 1
 
 ///////////////////
