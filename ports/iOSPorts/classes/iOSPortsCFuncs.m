@@ -54,6 +54,7 @@
 
 #import <string.h>
 #import <stdio.h>
+#include <stdlib.h>
 
 
 /////////////////
@@ -81,8 +82,15 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
    };
 
    for(pos = 0; iOSPortsPKGList[pos].name; pos++)
+   {
       if (!(strcasecmp(lookupID, iOSPortsPKGList[pos].name)))
+      {
+         free(lookupID);
          return(iOSPortsPKGList[pos].data);
+      };
+   };
+
+   free(lookupID);
 
    return(NULL);
 }
