@@ -65,11 +65,12 @@ $(PACKAGE_DIR): $(PACKAGE_MD5)
 $(PACKAGE_MD5): Makefile $(PACKAGE_FILE)
 	/sbin/md5 $(PACKAGE_FILE) > $(PACKAGE_MD5)
 	/usr/bin/diff $(PACKAGE_MD5) build-aux/$(PACKAGE_FILE).md5 > /dev/null \
-		|| { /bin/rm -f $(PACKAGE_MD5); exit 1; };
+		|| { /bin/rm -f $(PACKAGE_MD5) $(PACKAGE_FILE); exit 1; };
 	@/usr/bin/touch $(PACKAGE_MD5)
 
 $(PACKAGE_FILE):
-	/usr/bin/curl -O ${PACKAGE_URL} -o $(PACKAGE_FILE) -s
+	/usr/bin/curl -O ${PACKAGE_URL} -o $(PACKAGE_FILE) -s || \
+		|| { rm -f $(PACKAGE_FILE); exit 1; };
 	@/usr/bin/touch $(PACKAGE_FILE)
 
 
