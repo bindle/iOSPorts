@@ -258,7 +258,7 @@
 		A05D8009127A1235008D47CD /* wintestinput3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wintestinput3; sourceTree = "<group>"; };
 		A05D800A127A1235008D47CD /* wintestoutput3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wintestoutput3; sourceTree = "<group>"; };
 		A05D800B127A1235008D47CD /* ucp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ucp.h; sourceTree = "<group>"; };
-		A05D80E7127A23DC008D47CD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A05D80E7127A23DC008D47CD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A05D80E9127A23E9008D47CD /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A05D80EA127A23E9008D47CD /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
 		A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pcre-8.10.tar.bz2.md5"; sourceTree = "<group>"; };
