@@ -108,6 +108,7 @@
 		A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = pcre/pcre.xcodeproj; sourceTree = "<group>"; };
 		A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = "<group>"; };
 		A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = openssl/openssl.xcodeproj; sourceTree = "<group>"; };
+		A0F7303C12A9C7EF00161B70 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libiOSPorts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSPorts.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +137,7 @@
 		0867D691FE84028FC02AAC07 /* iOSPorts */ = {
 			isa = PBXGroup;
 			children = (
+				A0F7303C12A9C7EF00161B70 /* ChangeLog */,
 				A0ED927F128362E7009FBCDC /* Makefile */,
 				A03FC2211281F00A0083B2EB /* LICENSE */,
 				A03FC2221281F00A0083B2EB /* README */,

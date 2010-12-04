@@ -19,6 +19,7 @@ Copyright (C) 2010 Bindle Binaries
         OpenLDAP
         - Updating OpenLDAP to demonstrate simple bind and SASL bind with
           multiple mechanisms. (syzdek) 
+        - Updating OpenLDAP example to use test LDAP server. (Syzdek)
         PCRE
         - Updating PCRE package name in port Makefile. (syzdek)
 
