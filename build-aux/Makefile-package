@@ -47,9 +47,13 @@ distclean: distclean-local clean
 download: $(PACKAGE_FILE)
 
 license: $(SRCROOTDIR)/build-aux/iOSPorts-geninfo
-	$(SRCROOTDIR)/build-aux/iOSPorts-geninfo -f -o "pkgdata_$(PACKAGE_TARNAME).m" \
-	   -N "$(PACKAGE_NAME)" -I "$(PACKAGE_TARNAME)" -R "$(PACKAGE_VERSION)" \
-	   -w "$(PACKAGE_WEBSITE)" -i "$(PACKAGE_LICENSE_FILE)"
+	$(SRCROOTDIR)/build-aux/iOSPorts-geninfo -f \
+		-o "pkgdata_$(PACKAGE_TARNAME).m" \
+		-N "$(PACKAGE_NAME)" \
+		-I "$(PACKAGE_TARNAME)" \
+		-R "$(PACKAGE_VERSION)" \
+		-w "$(PACKAGE_WEBSITE)" \
+		-i "$(PACKAGE_LICENSE_FILE)"
 
 # download targets
 $(PACKAGE_TARNAME): $(PACKAGE_DIR)
@@ -69,7 +73,7 @@ $(PACKAGE_MD5): Makefile $(PACKAGE_FILE)
 	@/usr/bin/touch $(PACKAGE_MD5)
 
 $(PACKAGE_FILE):
-	/usr/bin/curl -O ${PACKAGE_URL} -o $(PACKAGE_FILE) -s || \
+	/usr/bin/curl -O ${PACKAGE_URL} -o $(PACKAGE_FILE) -s \
 		|| { rm -f $(PACKAGE_FILE); exit 1; };
 	@/usr/bin/touch $(PACKAGE_FILE)
 

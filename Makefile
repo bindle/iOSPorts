@@ -68,9 +68,26 @@ all: $(PROGS)
 
 prog: $(PROGS)
 
-$(INCLUDES): Makefile
-	@mkdir -p "`dirname ${@}`"
-	cp "ports/iOSPorts/classes/`basename ${@}`" ${@};
+include/iOSPorts:
+	@mkdir -p ${@}
+
+include/iOSPorts/iOSPorts.h: include/iOSPorts ports/iOSPorts/classes/iOSPorts.h
+	cp ports/iOSPorts/classes/iOSPorts.h ${@};
+
+include/iOSPorts/iOSPortsCFuncs.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsCFuncs.h
+	cp ports/iOSPorts/classes/iOSPortsCFuncs.h ${@};
+
+include/iOSPorts/iOSPortsPackage.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsPackage.h
+	cp ports/iOSPorts/classes/iOSPortsPackage.h ${@};
+
+include/iOSPorts/iOSPortsTypes.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsTypes.h
+	cp ports/iOSPorts/classes/iOSPortsTypes.h ${@};
+
+include/iOSPorts/iOSPortsVersion.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsVersion.h
+	cp ports/iOSPorts/classes/iOSPortsVersion.h ${@};
+
+include/iOSPorts/iOSPortsViewController.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsViewController.h
+	cp ports/iOSPorts/classes/iOSPortsViewController.h ${@};
 
 $(SOURCES): build-aux/iOSPorts-geninfo build-aux/Makefile-package $(INCLUDES)
 	$(MAKE) -C "`dirname ${@}`" license
@@ -94,7 +111,7 @@ build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES) $(INCLUDES)
 
 clean:
 	rm -Rf $(PROGS) $(SOURCES) $(LIBSOURCES)
-	rm -Rf $(INCLUDES) include/iOSPorts
+	rm -Rf include/iOSPorts
 	rm -Rf ports/iOSPorts/other/iOSPorts-data.c
 	rm -Rf a.out *.o src/*.o ports/iOSPorts/other/*.o
 	rm -Rf build/
