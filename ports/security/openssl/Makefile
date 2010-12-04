@@ -56,7 +56,7 @@ $(PKGHEADERS): $(PACKAGE_TARNAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
 openssl/patched_for_xcode: $(PKGHEADERS)
-	patch -p0 -i build-aux/openssl-1.0.0a.patch
+	patch -N -p0 -i build-aux/openssl-1.0.0a.patch || exit 0
 	touch openssl/patched_for_xcode
 
 ../../../include/openssl/opensslconf.h: $(PKGHEADERS)
