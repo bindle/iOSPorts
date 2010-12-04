@@ -3,10 +3,10 @@ iOS Ports
 =========
 
    iOS Ports is a Collection of F/OSS libraries which have been ported to
-   the iOS platform.  The conditions of the license of each package included
-   in iOS Ports are believed to allow for use of each package on an iOS
-   device, however a developer should review the license of each package
-   before including it within an application and to verify that the
+   the iPhoneOS/iOS platform.  The conditions of the license of each package
+   included in iOS Ports are believed to allow for use of each package on
+   an iOS device, however a developer should review the license of each
+   package before including it within an application and to verify that the
    application meets the requirements of the conditions.
 
 
@@ -70,14 +70,17 @@ Directory Map
 Packages
 ========
 
-   Cyrus SASL (security/cyrus-sasl) - An open source implementations of
-      Simple Authentication and Security Layer methods.
+   Cyrus SASL (security/cyrus-sasl) - A port of Cyrus SASL to the iPhone
+      platform (iOS). An open source implementations of Simple
+      Authentication and Security Layer methods.
       Depends Upon: security/openssl
 
-   OpenLDAP (database/openldap) - LDAP client library.
+   OpenLDAP (database/openldap) - A port of OpenLDAP client library
+      to the iPhone platform (iOS).
       Depends Upon: security/cyrus-sasl
 
-   OpenSSL (security/openssl) - SSL/TLS and Crypto toolkit.
+   OpenSSL (security/openssl) - A port of OpenSSL's SSL/TLS and Crypto
+      toolkit to the iPhone platform (iOS).
       Depends Upon: n/a
 
    PCRE (devel/pcre) - Perl Compatible Regular Expressions
