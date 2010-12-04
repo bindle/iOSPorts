@@ -2,7 +2,7 @@
 iOS Ports Library
 Copyright (C) 2010 Bindle Binaries
 
-0.1
+0.1     2010-12-03
         iOS Ports
         - Standarding Xcode project files to latest iOS SDK root rather than
           a specific iOS SDK root to ease future tranistions to newer iOS SDK
