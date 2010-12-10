@@ -9,11 +9,11 @@
 #include <ldap.h>
 
 #define MY_LDAP_VERSION    LDAP_VERSION3
-#define MY_LDAP_URI        "ldap://ldaptest.bindlebinaries.com"
+#define MY_LDAP_URI        "ldap://ldaptest.bindlebinaries.com/"
 #define MY_LDAP_BINDDN     "uid=test,ou=People,o=bindlebinaries.com,o=test"
 #define MY_LDAP_BINDPW     "drowssap"
 #define MY_LDAP_BASEDN     "o=test"
-#define MY_LDAP_FILTER     "(objectclass=*)"
+#define MY_LDAP_FILTER     "(o=*)"
 #define MY_LDAP_SCOPE      LDAP_SCOPE_SUB
 
 #define MY_SASL_AUTHUSER   "test"
