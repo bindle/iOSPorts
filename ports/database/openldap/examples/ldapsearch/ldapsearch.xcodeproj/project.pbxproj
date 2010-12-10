@@ -19,6 +19,7 @@
 		A021D0CA127B725700A30E69 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0C6127B724A00A30E69 /* libcrypto.a */; };
 		A021D0CB127B725E00A30E69 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0BA127B722900A30E69 /* libsasl2.a */; };
 		A021D0FA127B782600A30E69 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0F9127B782600A30E69 /* libresolv.dylib */; };
+		A074CF8D12B1EBD7003A12A6 /* ca-certs.pem in Resources */ = {isa = PBXBuildFile; fileRef = A074CF8C12B1EBD7003A12A6 /* ca-certs.pem */; };
 		A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABB11D15804007EE6C4 /* libldap.a */; };
 		A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABD11D15804007EE6C4 /* liblber.a */; };
 		A0F8EE5B1280B096004D1EA1 /* ldapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F8EE5A1280B096004D1EA1 /* ldapTest.m */; };
@@ -100,6 +101,7 @@
 		A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "../../../../security/cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = SOURCE_ROOT; };
 		A021D0BB127B724A00A30E69 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../../../../security/openssl/openssl.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A021D0F9127B782600A30E69 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		A074CF8C12B1EBD7003A12A6 /* ca-certs.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ca-certs.pem"; sourceTree = "<group>"; };
 		A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ../../openldap.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A0ECDF1A12948E9900C78D1F /* ldapTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTestMain.m; sourceTree = "<group>"; };
 		A0F8EE591280B096004D1EA1 /* ldapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapTest.h; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A074CF8C12B1EBD7003A12A6 /* ca-certs.pem */,
 				A0ECDF1A12948E9900C78D1F /* ldapTestMain.m */,
 				32CA4F630368D1EE00C91783 /* ldapsearch_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
@@ -340,6 +343,7 @@
 			files = (
 				2860E329111B887F00E27156 /* MainWindow_Phone.xib in Resources */,
 				2860E32F111B888700E27156 /* MainWindow_Pad.xib in Resources */,
+				A074CF8D12B1EBD7003A12A6 /* ca-certs.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
