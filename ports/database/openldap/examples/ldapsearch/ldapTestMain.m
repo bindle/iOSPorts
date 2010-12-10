@@ -8,11 +8,13 @@
 #include <ldap.h>
 #include "ldapTest.h"
 
-int main(void);
+int main(int argc, char * argv[]);
 
-int main(void)
+int main(int argc, char * argv[])
 {
-   test_all_ldap();
-
+   int i;
+   test_all_ldap(NULL);
+   for(i = 1; i < argc; i++)
+      test_all_ldap(argv[i]);
    return(0);
 }

@@ -12,8 +12,18 @@
 #include <string.h>
 #include <sasl/sasl.h>
 
-void test_all_ldap()
+void test_all_ldap(const char * caFile)
 {
+   int err;
+
+   if (caFile)
+   {
+      NSLog(@"setting ca file...");
+      err = ldap_set_option(NULL, LDAP_OPT_X_TLS_CACERTFILE, (void *)caFile);
+      if (err != LDAP_SUCCESS)
+         NSLog(@"ldap_set_option(): %s", ldap_err2string(err));
+   };
+
    test_simple_ldap(
       MY_LDAP_VERSION,        // LDAP protocol version
       MY_LDAP_URI,            // LDAP URI
@@ -21,7 +31,8 @@ void test_all_ldap()
       MY_LDAP_BINDPW,         // LDAP bind password
       MY_LDAP_BASEDN,         // LDAP search base DN
       MY_LDAP_FILTER,         // LDAP search filter
-      MY_LDAP_SCOPE           // LDAP search scope
+      MY_LDAP_SCOPE,          // LDAP search scope
+      caFile
    );
 
    test_sasl_ldap(
@@ -33,7 +44,8 @@ void test_all_ldap()
       "SRP",                  // SASL mechanism
       MY_LDAP_BASEDN,         // LDAP Search Base DN
       MY_LDAP_FILTER,         // LDAP Search Filter
-      MY_LDAP_SCOPE           // LDAP Search Scope
+      MY_LDAP_SCOPE,          // LDAP Search Scope
+      caFile
    );
 
    test_sasl_ldap(
@@ -45,7 +57,8 @@ void test_all_ldap()
       "OTP",                  // SASL mechanism
       MY_LDAP_BASEDN,         // LDAP Search Base DN
       MY_LDAP_FILTER,         // LDAP Search Filter
-      MY_LDAP_SCOPE           // LDAP Search Scope
+      MY_LDAP_SCOPE,          // LDAP Search Scope
+      caFile
    );
 
    test_sasl_ldap(
@@ -57,7 +70,8 @@ void test_all_ldap()
       "NTLM",                 // SASL mechanism
       MY_LDAP_BASEDN,         // LDAP Search Base DN
       MY_LDAP_FILTER,         // LDAP Search Filter
-      MY_LDAP_SCOPE           // LDAP Search Scope
+      MY_LDAP_SCOPE,          // LDAP Search Scope
+      caFile
    );
 
    test_sasl_ldap(
@@ -69,7 +83,8 @@ void test_all_ldap()
       "DIGEST-MD5",           // SASL mechanism
       MY_LDAP_BASEDN,         // LDAP Search Base DN
       MY_LDAP_FILTER,         // LDAP Search Filter
-      MY_LDAP_SCOPE           // LDAP Search Scope
+      MY_LDAP_SCOPE,          // LDAP Search Scope
+      caFile
    );
 
    test_sasl_ldap(
@@ -81,17 +96,20 @@ void test_all_ldap()
       "CRAM-MD5",             // SASL mechanism
       MY_LDAP_BASEDN,         // LDAP Search Base DN
       MY_LDAP_FILTER,         // LDAP Search Filter
-      MY_LDAP_SCOPE           // LDAP Search Scope
+      MY_LDAP_SCOPE,          // LDAP Search Scope
+      caFile
    );
 
    return;
 }
 
 void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
-   const char * bindPW, const char * baseDN, const char * filter, int scope)
+   const char * bindPW, const char * baseDN, const char * filter, int scope,
+   const char * caFile)
 {
    int              i;
    int              err;
+   char           * msg;
    char           * attribute;
    LDAP           * ld;
    BerValue         cred;
@@ -106,9 +124,9 @@ void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
    servercredp     = NULL;
    dn              = "cn=Directory Manager";
 
-   NSLog(@"attempting simple bind:");
-   NSLog(@"   initialzing LDAP...");
+   NSLog(@"attempting %s bind:", (caFile ? "TLS simple" : "simple"));
    ldapURI = ldapURI ? ldapURI : "ldap://127.0.0.1";
+   NSLog(@"   initialzing LDAP (%s)...", ldapURI);
    err = ldap_initialize(&ld, ldapURI);
    if (err != LDAP_SUCCESS)
    {
@@ -125,6 +143,26 @@ void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
       ldap_unbind_ext_s(ld, NULL, NULL);
       return;
    };
+
+   if (caFile)
+   {
+     NSLog(@"   attempting to start TLS...");
+      err = ldap_start_tls_s(ld, NULL, NULL);
+      if (err == LDAP_SUCCESS)
+      {
+         NSLog(@"   TLS established");
+      } else {
+         ldap_get_option( ld, LDAP_OPT_DIAGNOSTIC_MESSAGE, (void*)&msg);
+         NSLog(@"   ldap_start_tls_s(): %s", ldap_err2string(err));
+         NSLog(@"   ssl/tls: %s", msg);
+         ldap_memfree(msg);
+      };
+   };
+
+   NSLog(@"   Bind Data:");
+   NSLog(@"      Mech:    Simple");
+   NSLog(@"      DN:      %s", bindDN ? bindDN : "(NULL)");
+   NSLog(@"      Passwd:  %s", bindPW ? bindPW : "(NULL)");
 
    NSLog(@"   binding to LDAP server...");
    cred.bv_val = bindPW ? strdup(bindPW) : NULL;
@@ -196,10 +234,11 @@ void test_simple_ldap(int version, const char * ldapURI, const char * bindDN,
 
 void test_sasl_ldap(int version, const char * ldapURI, const char * user,
    const char * realm, const char * pass, const char * mech,
-   const char * baseDN, const char * filter, int scope)
+   const char * baseDN, const char * filter, int scope, const char * caFile)
 {
    int              i;
    int              err;
+   char           * msg;
    char           * attribute;
    LDAP           * ld;
    BerValue       * servercredp;
@@ -215,9 +254,9 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
    dn              = "cn=Directory Manager";
 
    NSLog(@" ");
-   NSLog(@"attempting SASL bind (%s):", mech ? mech : "N/A");
-   NSLog(@"   initialzing LDAP...");
+   NSLog(@"attempting %s bind (%s):", (caFile ? "TLS SASL" : "SASL"), (mech ? mech : "N/A"));
    ldapURI = ldapURI ? ldapURI : "ldap://127.0.0.1";
+   NSLog(@"   initialzing LDAP (%s)...", ldapURI);
    err = ldap_initialize(&ld, ldapURI);
    if (err != LDAP_SUCCESS)
    {
@@ -233,6 +272,21 @@ void test_sasl_ldap(int version, const char * ldapURI, const char * user,
       NSLog(@"   ldap_set_option(): %s\n", ldap_err2string(err));
       ldap_unbind_ext_s(ld, NULL, NULL);
       return;
+   };
+
+   if (caFile)
+   {
+     NSLog(@"   attempting to start TLS...");
+      err = ldap_start_tls_s(ld, NULL, NULL);
+      if (err == LDAP_SUCCESS)
+      {
+         NSLog(@"   TLS established");
+      } else {
+         ldap_get_option( ld, LDAP_OPT_DIAGNOSTIC_MESSAGE, (void*)&msg);
+         NSLog(@"   ldap_start_tls_s(): %s", ldap_err2string(err));
+         NSLog(@"   ssl/tls: %s", msg);
+         ldap_memfree(msg);
+      };
    };
 
    memset(&auth, 0, sizeof(MyLDAPAuth));

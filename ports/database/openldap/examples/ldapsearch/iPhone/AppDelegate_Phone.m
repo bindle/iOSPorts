@@ -14,13 +14,25 @@
 @synthesize window;
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
-	
-    // Override point for customization after application launch
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+   NSAutoreleasePool * pool;
+   NSString          * filePath;
+   const char        * caFile;
 
    [window makeKeyAndVisible];
 
-   test_all_ldap();
+   pool = [[NSAutoreleasePool alloc] init];
+
+   test_all_ldap(NULL);
+
+   filePath = [[NSBundle mainBundle] pathForResource:@"ca-certs" ofType:@"pem"];
+   if (filePath)
+      caFile   = [filePath UTF8String];
+   if(caFile)
+      test_all_ldap(caFile);
+
+   [pool release];
 
 	return YES;
 
