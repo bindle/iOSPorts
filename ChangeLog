@@ -2,6 +2,10 @@
 iOS Ports Library
 Copyright (C) 2010 Bindle Binaries
 
+0.2
+        OpenLDAP
+        - Updating OpenLDAP example to use TLS connections. (syzdek)
+
 0.1     2010-12-03
         iOS Ports
         - Standarding Xcode project files to latest iOS SDK root rather than
