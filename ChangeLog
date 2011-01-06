@@ -2,7 +2,7 @@
 iOS Ports Library
 Copyright (C) 2010 Bindle Binaries
 
-0.2
+0.2	2010-01-05
         OpenLDAP
         - Updating OpenLDAP example to use TLS connections. (syzdek)
 
