@@ -43,9 +43,9 @@ Software Requirements
 =====================
 
    Git 1.7.2.3
-   Mac OS X 10.6.3
-   Xcode 3.2.4
-   iOS SDK 4.1
+   Mac OS X 10.6.7
+   Xcode 4.0
+   iOS SDK 4.3
 
 
 Directory Map
