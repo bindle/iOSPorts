@@ -167,13 +167,6 @@
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = sasl2;
 		};
-		A05125511278EB7600DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = ldapsearch;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -1716,7 +1709,6 @@
 		A03ADDBE11D14F1200F5A51F /* libldap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libldap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03ADE2A11D1520A00F5A51F /* liblber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblber.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "../../security/cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ldapsearch.xcodeproj; path = examples/ldapsearch/ldapsearch.xcodeproj; sourceTree = "<group>"; };
 		A09611A7126E6C3500671A97 /* lber_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lber_types.h; sourceTree = "<group>"; };
 		A09611A8126E6C3500671A97 /* ldap_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_config.h; sourceTree = "<group>"; };
 		A09611A9126E6C3500671A97 /* ldap_features.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldap_features.h; sourceTree = "<group>"; };
@@ -1766,7 +1758,6 @@
 		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */,
 				A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */,
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
@@ -4134,14 +4125,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A051254E1278EB7600DE46C4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A05125521278EB7600DE46C4 /* ldapsearch.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -4243,10 +4226,6 @@
 					ProductGroup = A05124A61278E1AF00DE46C4 /* Products */;
 					ProjectRef = A05124A51278E1AF00DE46C4 /* Cyrus SASL.xcodeproj */;
 				},
-				{
-					ProductGroup = A051254E1278EB7600DE46C4 /* Products */;
-					ProjectRef = A051254D1278EB7600DE46C4 /* ldapsearch.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -4264,13 +4243,6 @@
 			fileType = archive.ar;
 			path = libsasl2.a;
 			remoteRef = A05124AA1278E1AF00DE46C4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A05125521278EB7600DE46C4 /* ldapsearch.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ldapsearch.app;
-			remoteRef = A05125511278EB7600DE46C4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
