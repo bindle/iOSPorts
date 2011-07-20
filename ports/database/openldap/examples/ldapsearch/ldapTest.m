@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sasl/sasl.h>
+#include <Foundation/Foundation.h>
 
 void test_all_ldap(const char * caFile)
 {
@@ -387,6 +388,7 @@ int ldap_sasl_interact(LDAP *ld, unsigned flags, void *defaults,
 
    ldap_inst = (MyLDAPAuth *) defaults;
    interact  = (sasl_interact_t *) sin;
+   flags     = 0;
 
    if (!(ld))
       return(LDAP_PARAM_ERROR);
