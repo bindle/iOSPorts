@@ -1991,6 +1991,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0410;
 				ORGANIZATIONNAME = "Bindle Binaries";
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cyrus SASL" */;
@@ -2116,7 +2117,6 @@
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/sasl2.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -2158,7 +2158,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2180,7 +2179,6 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -2200,7 +2198,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = Makefile;
 				ZERO_LINK = NO;
 			};

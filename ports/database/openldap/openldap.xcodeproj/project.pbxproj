@@ -4208,6 +4208,9 @@
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "openldap" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -4399,7 +4402,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -4414,7 +4416,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -4434,7 +4435,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = Makefile;
 				ZERO_LINK = NO;
 			};
@@ -4452,7 +4452,6 @@
 					openldap/include,
 					include,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ldap;
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -4464,13 +4463,11 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					../../../include,
 					openldap/include,
 					include,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = ldap;
 				USER_HEADER_SEARCH_PATHS = "";
 				ZERO_LINK = NO;
@@ -4488,7 +4485,6 @@
 					openldap/include,
 					include,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = lber;
 			};
 			name = Debug;
@@ -4499,12 +4495,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				HEADER_SEARCH_PATHS = (
 					openldap/include,
 					include,
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = lber;
 				ZERO_LINK = NO;
 			};
@@ -4525,7 +4519,6 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = openldap;
 				ZERO_LINK = NO;
 			};
