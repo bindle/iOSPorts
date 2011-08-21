@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -74,13 +74,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F;
 			remoteInfo = ldap;
-		};
-		A0C0848611D16E5000A1AE4E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A03ADE2911D1520A00F5A51F;
-			remoteInfo = lber;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -246,7 +239,6 @@
 			);
 			dependencies = (
 				A0C0848511D16E5000A1AE4E /* PBXTargetDependency */,
-				A0C0848711D16E5000A1AE4E /* PBXTargetDependency */,
 			);
 			name = ldapsearch;
 			productName = ldapsearch;
@@ -258,8 +250,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ldapsearch" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -369,11 +364,6 @@
 			name = ldap;
 			targetProxy = A0C0848411D16E5000A1AE4E /* PBXContainerItemProxy */;
 		};
-		A0C0848711D16E5000A1AE4E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = lber;
-			targetProxy = A0C0848611D16E5000A1AE4E /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -416,7 +406,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,7 +422,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
