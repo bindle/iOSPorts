@@ -6,21 +6,6 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		A0511DCE127788A100DE46C4 /* OpenSSL */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "OpenSSL" */;
-			buildPhases = (
-			);
-			dependencies = (
-				A0511DD2127788A800DE46C4 /* PBXTargetDependency */,
-				A0511DD4127788A800DE46C4 /* PBXTargetDependency */,
-			);
-			name = OpenSSL;
-			productName = OpenSSL;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		A0511C691277717700DE46C4 /* s2_clnt.c in Sources */ = {isa = PBXBuildFile; fileRef = A0511B3412776F1700DE46C4 /* s2_clnt.c */; };
 		A0511C6A1277717700DE46C4 /* s2_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = A0511B3512776F1700DE46C4 /* s2_enc.c */; };
@@ -633,20 +618,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		A0511DD3127788A800DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
 		A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -6307,11 +6278,12 @@
 /* Begin PBXLegacyTarget section */
 		A0511DED127788EC00DE46C4 /* Makefile-openssl */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = all;
 			buildConfigurationList = A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-openssl" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = "Makefile-openssl";
@@ -6339,9 +6311,9 @@
 			productReference = A0511C5A127770FD00DE46C4 /* libcrypto.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A0511DFE1277895300DE46C4 /* test */ = {
+		A0511DFE1277895300DE46C4 /* openssl-test */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0511E041277895400DE46C4 /* Build configuration list for PBXNativeTarget "test" */;
+			buildConfigurationList = A0511E041277895400DE46C4 /* Build configuration list for PBXNativeTarget "openssl-test" */;
 			buildPhases = (
 				A0511DFB1277895300DE46C4 /* Resources */,
 				A0511DFC1277895300DE46C4 /* Sources */,
@@ -6353,7 +6325,7 @@
 				A0511E061277896500DE46C4 /* PBXTargetDependency */,
 				A0511E081277896500DE46C4 /* PBXTargetDependency */,
 			);
-			name = test;
+			name = "openssl-test";
 			productName = test;
 			productReference = A0511DFF1277895300DE46C4 /* test.app */;
 			productType = "com.apple.product-type.application";
@@ -6402,8 +6374,7 @@
 				A0511DED127788EC00DE46C4 /* Makefile-openssl */,
 				D2AAC07D0554694100DB518D /* ssl */,
 				A0511C51127770FD00DE46C4 /* crypto */,
-				A0511DCE127788A100DE46C4 /* OpenSSL */,
-				A0511DFE1277895300DE46C4 /* test */,
+				A0511DFE1277895300DE46C4 /* openssl-test */,
 			);
 		};
 /* End PBXProject section */
@@ -7046,16 +7017,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0511DD2127788A800DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC07D0554694100DB518D /* ssl */;
-			targetProxy = A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */;
-		};
-		A0511DD4127788A800DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0511C51127770FD00DE46C4 /* crypto */;
-			targetProxy = A0511DD3127788A800DE46C4 /* PBXContainerItemProxy */;
-		};
 		A0511DF1127788F600DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0511DED127788EC00DE46C4 /* Makefile-openssl */;
@@ -7194,26 +7155,6 @@
 			};
 			name = Release;
 		};
-		A0511DCF127788A200DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = OpenSSL;
-			};
-			name = Debug;
-		};
-		A0511DD0127788A200DE46C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = OpenSSL;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 		A0511DEE127788ED00DE46C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -7310,15 +7251,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "OpenSSL" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0511DCF127788A200DE46C4 /* Debug */,
-				A0511DD0127788A200DE46C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-openssl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -7328,7 +7260,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0511E041277895400DE46C4 /* Build configuration list for PBXNativeTarget "test" */ = {
+		A0511E041277895400DE46C4 /* Build configuration list for PBXNativeTarget "openssl-test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0511E021277895400DE46C4 /* Debug */,
