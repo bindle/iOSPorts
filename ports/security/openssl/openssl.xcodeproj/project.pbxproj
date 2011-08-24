@@ -7089,7 +7089,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ssl;
 			};
 			name = Debug;
@@ -7101,7 +7100,6 @@
 				DSTROOT = /tmp/openssl.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ssl;
 			};
 			name = Release;
@@ -7123,6 +7121,7 @@
 					openssl/include,
 					openssl/crypto,
 				);
+				INSTALL_PATH = /lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = (
 					"-DOPENSSL_NO_GMP",
@@ -7154,6 +7153,7 @@
 					openssl/include,
 					openssl/crypto,
 				);
+				INSTALL_PATH = /lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = (
 					"-DOPENSSL_NO_GMP",
@@ -7179,7 +7179,6 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = crypto;
 			};
 			name = Debug;
@@ -7191,7 +7190,6 @@
 				DSTROOT = /tmp/openssl.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = crypto;
 			};
 			name = Release;
