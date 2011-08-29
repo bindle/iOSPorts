@@ -7090,6 +7090,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				PRODUCT_NAME = ssl;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -7101,16 +7102,13 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				PRODUCT_NAME = ssl;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
-					armv6,
-				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -7121,7 +7119,6 @@
 					openssl/include,
 					openssl/crypto,
 				);
-				INSTALL_PATH = /lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = (
 					"-DOPENSSL_NO_GMP",
@@ -7140,10 +7137,6 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					"$(ARCHS_STANDARD_32_BIT)",
-					armv6,
-				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -7153,7 +7146,6 @@
 					openssl/include,
 					openssl/crypto,
 				);
-				INSTALL_PATH = /lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = (
 					"-DOPENSSL_NO_GMP",
@@ -7180,6 +7172,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				PRODUCT_NAME = crypto;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -7191,6 +7184,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				PRODUCT_NAME = crypto;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
