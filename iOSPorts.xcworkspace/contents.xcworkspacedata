@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README">
+   </FileRef>
+   <FileRef
+      location = "group:ChangeLog">
+   </FileRef>
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:Makefile"
+      assignedFileDataType = "public.make-source">
+   </FileRef>
+   <Group
+      location = "container:ports"
+      name = "ports">
+      <Group
+         location = "group:iOSPorts"
+         name = "copyrights">
+         <FileRef
+            location = "group:iOSPorts.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:database"
+         name = "database">
+         <FileRef
+            location = "group:openldap/openldap.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:devel"
+         name = "devel">
+         <FileRef
+            location = "group:pcre/pcre.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:security"
+         name = "security">
+         <FileRef
+            location = "group:cyrus-sasl/Cyrus SASL.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:openssl/openssl.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:examples"
+      name = "examples">
+      <Group
+         location = "group:database"
+         name = "database">
+         <Group
+            location = "group:openldap"
+            name = "openldap">
+            <FileRef
+               location = "group:ldapsearch/ldapsearch.xcodeproj">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:devel"
+         name = "devel">
+         <Group
+            location = "group:pcre"
+            name = "pcre">
+            <FileRef
+               location = "group:pcreTest/pcreTest.xcodeproj">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+</Workspace>
