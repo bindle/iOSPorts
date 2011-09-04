@@ -71,28 +71,44 @@ Directory Map
 Packages
 ========
 
-   Cyrus SASL (security/cyrus-sasl) - A port of Cyrus SASL to the iPhone
-      platform (iOS). An open source implementations of Simple
-      Authentication and Security Layer methods.
-      Depends Upon: security/openssl
+   Cyrus SASL
+   Location:      ports/security/cyrus-sasl
+   Depends Upon:  security/openssl
+   Description:   A port of Cyrus SASL to the iPhone platform (iOS). An open
+                  source implementations of Simple Authentication and Security
+                  Layer methods.
 
-   iOSPorts (iOSPorts) - A standalone package for adding iOS Port packages'
-      copyright information to an iOS package.  Using this library to display
-      the copyright information should fulfill a packages distribution
-      requirement according to the Modified BSD license and similar licenses.
-      Including this project in an iOS application will not make other iOS
-      Ports packages available within an application.
 
-   OpenLDAP (database/openldap) - A port of OpenLDAP client library
-      to the iPhone platform (iOS).
-      Depends Upon: security/cyrus-sasl
+   iOSPorts
+   Location:      ports/iOSPorts
+   Depends Upon:  n/a
+   Description:   A standalone package for adding iOS Port packages' copyright
+                  information to an iOS package.  Using this library to
+                  display the copyright information should fulfill a packages
+                  distribution requirement according to the Modified BSD
+                  license and similar licenses. Including this project in an
+                  iOS application will not make other iOS Ports packages
+                  available within an application.
 
-   OpenSSL (security/openssl) - A port of OpenSSL's SSL/TLS and Crypto
-      toolkit to the iPhone platform (iOS).
-      Depends Upon: n/a
 
-   PCRE (devel/pcre) - Perl Compatible Regular Expressions
-      Depends Upon: n/a
+   OpenLDAP
+   Location:     ports/database/openldap
+   Depends Upon: security/cyrus-sasl
+   Desciption:   A port of OpenLDAP client library to the iOS platform.
+
+
+   OpenSSL
+   Location:      ports/security/openssl
+   Depends Upon:  n/a
+   Description:   A port of OpenSSL's SSL/TLS and Crypto toolkit to the iPhone
+                  platform (iOS).
+
+
+   PCRE
+   Location:      ports/devel/pcre
+   Depends Upon:  n/a
+   Description:   A port of PCRE (Perl Compatible Regular Expressions) to the
+                  iOS platform (iPhone).
 
 
 Quick Start
