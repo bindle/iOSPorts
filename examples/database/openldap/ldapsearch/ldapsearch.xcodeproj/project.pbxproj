@@ -15,62 +15,34 @@
 		2860E32E111B888700E27156 /* AppDelegate_Pad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_Pad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_Pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_Pad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		A021D0C9127B725700A30E69 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0C4127B724A00A30E69 /* libssl.a */; };
-		A021D0CA127B725700A30E69 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0C6127B724A00A30E69 /* libcrypto.a */; };
-		A021D0CB127B725E00A30E69 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0BA127B722900A30E69 /* libsasl2.a */; };
 		A021D0FA127B782600A30E69 /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A021D0F9127B782600A30E69 /* libresolv.dylib */; };
 		A074CF8D12B1EBD7003A12A6 /* ca-certs.pem in Resources */ = {isa = PBXBuildFile; fileRef = A074CF8C12B1EBD7003A12A6 /* ca-certs.pem */; };
-		A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABB11D15804007EE6C4 /* libldap.a */; };
-		A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A53ABD11D15804007EE6C4 /* liblber.a */; };
+		A0F8D1A214143A2D00D5DC50 /* liblber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F8D19D1414398500D5DC50 /* liblber.a */; };
+		A0F8D1A314143A2D00D5DC50 /* libldap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F8D19B1414398500D5DC50 /* libldap.a */; };
+		A0F8D1A714143A2D00D5DC50 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F8D1A414143A2D00D5DC50 /* libcrypto.a */; };
+		A0F8D1A814143A2D00D5DC50 /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F8D1A514143A2D00D5DC50 /* libsasl2.a */; };
+		A0F8D1A914143A2D00D5DC50 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F8D1A614143A2D00D5DC50 /* libssl.a */; };
 		A0F8EE5B1280B096004D1EA1 /* ldapTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F8EE5A1280B096004D1EA1 /* ldapTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A021D0B9127B722900A30E69 /* PBXContainerItemProxy */ = {
+		A0F8D19A1414398500D5DC50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = sasl2;
-		};
-		A021D0C3127B724A00A30E69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		A021D0C5127B724A00A30E69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
-		A021D0C7127B724A00A30E69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4;
-			remoteInfo = test;
-		};
-		A0A53ABA11D15804007EE6C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			containerPortal = A0F8D1891414398300D5DC50 /* openldap.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F;
 			remoteInfo = ldap;
 		};
-		A0A53ABC11D15804007EE6C4 /* PBXContainerItemProxy */ = {
+		A0F8D19C1414398500D5DC50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			containerPortal = A0F8D1891414398300D5DC50 /* openldap.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F;
 			remoteInfo = lber;
 		};
-		A0C0848411D16E5000A1AE4E /* PBXContainerItemProxy */ = {
+		A0F8D1A014143A2000D5DC50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
+			containerPortal = A0F8D1891414398300D5DC50 /* openldap.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = A03ADDBD11D14F1200F5A51F;
 			remoteInfo = ldap;
@@ -91,12 +63,13 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* ldapsearch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapsearch_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ldapsearch-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ldapsearch-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "../../../../security/cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		A021D0BB127B724A00A30E69 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../../../../security/openssl/openssl.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A021D0F9127B782600A30E69 /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
 		A074CF8C12B1EBD7003A12A6 /* ca-certs.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ca-certs.pem"; sourceTree = "<group>"; };
-		A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ../../openldap.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A0ECDF1A12948E9900C78D1F /* ldapTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTestMain.m; sourceTree = "<group>"; };
+		A0F8D1891414398300D5DC50 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ../../../../ports/database/openldap/openldap.xcodeproj; sourceTree = "<group>"; };
+		A0F8D1A414143A2D00D5DC50 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libcrypto.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
+		A0F8D1A514143A2D00D5DC50 /* libsasl2.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libsasl2.a; path = "../../../../ports/security/cyrus-sasl/build/Release-iphoneos/libsasl2.a"; sourceTree = "<group>"; };
+		A0F8D1A614143A2D00D5DC50 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libssl.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libssl.a"; sourceTree = "<group>"; };
 		A0F8EE591280B096004D1EA1 /* ldapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapTest.h; sourceTree = "<group>"; };
 		A0F8EE5A1280B096004D1EA1 /* ldapTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,11 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A021D0CB127B725E00A30E69 /* libsasl2.a in Frameworks */,
-				A021D0C9127B725700A30E69 /* libssl.a in Frameworks */,
-				A021D0CA127B725700A30E69 /* libcrypto.a in Frameworks */,
-				A0A53AC011D15822007EE6C4 /* libldap.a in Frameworks */,
-				A0A53AC111D15822007EE6C4 /* liblber.a in Frameworks */,
+				A0F8D1A714143A2D00D5DC50 /* libcrypto.a in Frameworks */,
+				A0F8D1A814143A2D00D5DC50 /* libsasl2.a in Frameworks */,
+				A0F8D1A914143A2D00D5DC50 /* libssl.a in Frameworks */,
+				A0F8D1A214143A2D00D5DC50 /* liblber.a in Frameworks */,
+				A0F8D1A314143A2D00D5DC50 /* libldap.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -162,6 +135,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				A0F8D1A414143A2D00D5DC50 /* libcrypto.a */,
+				A0F8D1A514143A2D00D5DC50 /* libsasl2.a */,
+				A0F8D1A614143A2D00D5DC50 /* libssl.a */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
@@ -186,9 +162,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A021D0BB127B724A00A30E69 /* openssl.xcodeproj */,
-				A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */,
-				A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */,
+				A0F8D1891414398300D5DC50 /* openldap.xcodeproj */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -197,29 +171,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A021D0B5127B722900A30E69 /* Products */ = {
+		A0F8D18A1414398300D5DC50 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A021D0BA127B722900A30E69 /* libsasl2.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A021D0BC127B724A00A30E69 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A021D0C4127B724A00A30E69 /* libssl.a */,
-				A021D0C6127B724A00A30E69 /* libcrypto.a */,
-				A021D0C8127B724A00A30E69 /* test.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A0A53AB411D15804007EE6C4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0A53ABB11D15804007EE6C4 /* libldap.a */,
-				A0A53ABD11D15804007EE6C4 /* liblber.a */,
+				A0F8D19B1414398500D5DC50 /* libldap.a */,
+				A0F8D19D1414398500D5DC50 /* liblber.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,7 +194,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0C0848511D16E5000A1AE4E /* PBXTargetDependency */,
+				A0F8D1A114143A2000D5DC50 /* PBXTargetDependency */,
 			);
 			name = ldapsearch;
 			productName = ldapsearch;
@@ -267,16 +223,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A021D0B5127B722900A30E69 /* Products */;
-					ProjectRef = A021D0B4127B722900A30E69 /* Cyrus SASL.xcodeproj */;
-				},
-				{
-					ProductGroup = A0A53AB411D15804007EE6C4 /* Products */;
-					ProjectRef = A0A53AB311D15804007EE6C4 /* openldap.xcodeproj */;
-				},
-				{
-					ProductGroup = A021D0BC127B724A00A30E69 /* Products */;
-					ProjectRef = A021D0BB127B724A00A30E69 /* openssl.xcodeproj */;
+					ProductGroup = A0F8D18A1414398300D5DC50 /* Products */;
+					ProjectRef = A0F8D1891414398300D5DC50 /* openldap.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -287,46 +235,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A021D0BA127B722900A30E69 /* libsasl2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsasl2.a;
-			remoteRef = A021D0B9127B722900A30E69 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A021D0C4127B724A00A30E69 /* libssl.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libssl.a;
-			remoteRef = A021D0C3127B724A00A30E69 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A021D0C6127B724A00A30E69 /* libcrypto.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto.a;
-			remoteRef = A021D0C5127B724A00A30E69 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A021D0C8127B724A00A30E69 /* test.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = test.app;
-			remoteRef = A021D0C7127B724A00A30E69 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0A53ABB11D15804007EE6C4 /* libldap.a */ = {
+		A0F8D19B1414398500D5DC50 /* libldap.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libldap.a;
-			remoteRef = A0A53ABA11D15804007EE6C4 /* PBXContainerItemProxy */;
+			remoteRef = A0F8D19A1414398500D5DC50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A0A53ABD11D15804007EE6C4 /* liblber.a */ = {
+		A0F8D19D1414398500D5DC50 /* liblber.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = liblber.a;
-			remoteRef = A0A53ABC11D15804007EE6C4 /* PBXContainerItemProxy */;
+			remoteRef = A0F8D19C1414398500D5DC50 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -359,10 +279,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0C0848511D16E5000A1AE4E /* PBXTargetDependency */ = {
+		A0F8D1A114143A2000D5DC50 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ldap;
-			targetProxy = A0C0848411D16E5000A1AE4E /* PBXContainerItemProxy */;
+			targetProxy = A0F8D1A014143A2000D5DC50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -370,13 +290,11 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
-				HEADER_SEARCH_PATHS = ../../../../../include;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 			};
@@ -385,11 +303,9 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
-				HEADER_SEARCH_PATHS = ../../../../../include;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 				VALIDATE_PRODUCT = YES;
@@ -402,9 +318,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../../include;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -417,9 +334,10 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../../include;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
