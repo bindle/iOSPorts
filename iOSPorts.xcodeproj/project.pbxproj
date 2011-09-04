@@ -23,68 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0E0DF6213807E4100FBB758 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0E0DF5713807E4000FBB758 /* ldapsearch.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = ldapsearch;
-		};
 		A0ED928B12836557009FBCDC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A0ED928812836550009FBCDC;
 			remoteInfo = "Makefile-iOSPorts";
-		};
-		A0ED937612837E91009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED936F12837E91009FBCDC /* openldap.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A03ADDBE11D14F1200F5A51F;
-			remoteInfo = ldap;
-		};
-		A0ED937812837E91009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED936F12837E91009FBCDC /* openldap.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A03ADE2A11D1520A00F5A51F;
-			remoteInfo = lber;
-		};
-		A0ED938212837EA1009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = pcre;
-		};
-		A0ED938912837EB1009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = sasl2;
-		};
-		A0ED939312837EBE009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		A0ED939512837EBE009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
-		A0ED939712837EBE009FBCDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4;
-			remoteInfo = test;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -107,15 +51,10 @@
 		A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackage.m; sourceTree = "<group>"; };
 		A0AA0B6212849AD1004AD70C /* iOSPorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts.h; sourceTree = "<group>"; };
 		A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsTypes.h; sourceTree = "<group>"; };
-		A0E0DF5713807E4000FBB758 /* ldapsearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ldapsearch.xcodeproj; path = ldapsearch/ldapsearch.xcodeproj; sourceTree = "<group>"; };
 		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A0ED928012836334009FBCDC /* iOSPorts-geninfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-geninfo.m"; sourceTree = "<group>"; };
 		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-pkginfo.m"; sourceTree = "<group>"; };
-		A0ED936F12837E91009FBCDC /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = openldap/openldap.xcodeproj; sourceTree = "<group>"; };
-		A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = pcre/pcre.xcodeproj; sourceTree = "<group>"; };
-		A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Cyrus SASL.xcodeproj"; path = "cyrus-sasl/Cyrus SASL.xcodeproj"; sourceTree = "<group>"; };
-		A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = openssl/openssl.xcodeproj; sourceTree = "<group>"; };
 		A0F7303C12A9C7EF00161B70 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -150,8 +89,7 @@
 				A03FC2211281F00A0083B2EB /* LICENSE */,
 				A03FC2221281F00A0083B2EB /* README */,
 				A03020E3129B9B400022EA2B /* build-aux */,
-				A0E0DF4713807DFA00FBB758 /* examples */,
-				A0ED936B12837E33009FBCDC /* ports */,
+				A0AA0AC812848ADA004AD70C /* iOSPorts */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -228,7 +166,8 @@
 				A0AA0AD012848B78004AD70C /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 			);
-			path = iOSPorts;
+			name = iOSPorts;
+			path = ports/iOSPorts;
 			sourceTree = "<group>";
 		};
 		A0AA0AD012848B78004AD70C /* Classes */ = {
@@ -240,110 +179,6 @@
 			);
 			name = Classes;
 			path = classes;
-			sourceTree = "<group>";
-		};
-		A0E0DF4713807DFA00FBB758 /* examples */ = {
-			isa = PBXGroup;
-			children = (
-				A0E0DF4813807E0700FBB758 /* database */,
-			);
-			name = examples;
-			sourceTree = "<group>";
-		};
-		A0E0DF4813807E0700FBB758 /* database */ = {
-			isa = PBXGroup;
-			children = (
-				A0E0DF4913807E0E00FBB758 /* openldap */,
-			);
-			name = database;
-			sourceTree = "<group>";
-		};
-		A0E0DF4913807E0E00FBB758 /* openldap */ = {
-			isa = PBXGroup;
-			children = (
-				A0E0DF5713807E4000FBB758 /* ldapsearch.xcodeproj */,
-			);
-			name = openldap;
-			path = ports/database/openldap/examples;
-			sourceTree = "<group>";
-		};
-		A0E0DF5813807E4000FBB758 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0E0DF6313807E4100FBB758 /* ldapsearch.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A0ED936B12837E33009FBCDC /* ports */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED936C12837E3F009FBCDC /* database */,
-				A0ED936D12837E48009FBCDC /* devel */,
-				A0AA0AC812848ADA004AD70C /* iOSPorts */,
-				A0ED936E12837E4E009FBCDC /* security */,
-			);
-			path = ports;
-			sourceTree = "<group>";
-		};
-		A0ED936C12837E3F009FBCDC /* database */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED936F12837E91009FBCDC /* openldap.xcodeproj */,
-			);
-			path = database;
-			sourceTree = "<group>";
-		};
-		A0ED936D12837E48009FBCDC /* devel */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */,
-			);
-			path = devel;
-			sourceTree = "<group>";
-		};
-		A0ED936E12837E4E009FBCDC /* security */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */,
-				A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */,
-			);
-			path = security;
-			sourceTree = "<group>";
-		};
-		A0ED937012837E91009FBCDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED937712837E91009FBCDC /* libldap.a */,
-				A0ED937912837E91009FBCDC /* liblber.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A0ED937B12837EA1009FBCDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED938312837EA1009FBCDC /* libpcre.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A0ED938512837EB1009FBCDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED938A12837EB1009FBCDC /* libsasl2.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A0ED938C12837EBE009FBCDC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A0ED939412837EBE009FBCDC /* libssl.a */,
-				A0ED939612837EBE009FBCDC /* libcrypto.a */,
-				A0ED939812837EBE009FBCDC /* test.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,28 +257,6 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* iOSPorts */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A0ED938512837EB1009FBCDC /* Products */;
-					ProjectRef = A0ED938412837EB1009FBCDC /* Cyrus SASL.xcodeproj */;
-				},
-				{
-					ProductGroup = A0E0DF5813807E4000FBB758 /* Products */;
-					ProjectRef = A0E0DF5713807E4000FBB758 /* ldapsearch.xcodeproj */;
-				},
-				{
-					ProductGroup = A0ED937012837E91009FBCDC /* Products */;
-					ProjectRef = A0ED936F12837E91009FBCDC /* openldap.xcodeproj */;
-				},
-				{
-					ProductGroup = A0ED938C12837EBE009FBCDC /* Products */;
-					ProjectRef = A0ED938B12837EBE009FBCDC /* openssl.xcodeproj */;
-				},
-				{
-					ProductGroup = A0ED937B12837EA1009FBCDC /* Products */;
-					ProjectRef = A0ED937A12837EA1009FBCDC /* pcre.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D2AAC07D0554694100DB518D /* iOSPorts */,
@@ -451,65 +264,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A0E0DF6313807E4100FBB758 /* ldapsearch.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = ldapsearch.app;
-			remoteRef = A0E0DF6213807E4100FBB758 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED937712837E91009FBCDC /* libldap.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libldap.a;
-			remoteRef = A0ED937612837E91009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED937912837E91009FBCDC /* liblber.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = liblber.a;
-			remoteRef = A0ED937812837E91009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED938312837EA1009FBCDC /* libpcre.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libpcre.a;
-			remoteRef = A0ED938212837EA1009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED938A12837EB1009FBCDC /* libsasl2.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsasl2.a;
-			remoteRef = A0ED938912837EB1009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED939412837EBE009FBCDC /* libssl.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libssl.a;
-			remoteRef = A0ED939312837EBE009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED939612837EBE009FBCDC /* libcrypto.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto.a;
-			remoteRef = A0ED939512837EBE009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A0ED939812837EBE009FBCDC /* test.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = test.app;
-			remoteRef = A0ED939712837EBE009FBCDC /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2AAC07B0554694100DB518D /* Sources */ = {
