@@ -151,7 +151,7 @@
 		A021D166127B886400A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/liblutil/version.c"; sourceTree = SOURCE_ROOT; };
 		A021D16B127B897B00A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/liblber/version.c"; sourceTree = SOURCE_ROOT; };
 		A021D16D127B8AED00A30E69 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = "openldap-2.4.22/libraries/libldap/version.c"; sourceTree = SOURCE_ROOT; };
-		A03AD73711D14A4800F5A51F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A03AD73711D14A4800F5A51F /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		A03AD73A11D14CDE00F5A51F /* openldap-2.4.22.tgz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "openldap-2.4.22.tgz.md5"; sourceTree = "<group>"; };
 		A03AD75411D14DEC00F5A51F /* ANNOUNCEMENT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ANNOUNCEMENT; sourceTree = "<group>"; };
 		A03AD75511D14DEC00F5A51F /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
