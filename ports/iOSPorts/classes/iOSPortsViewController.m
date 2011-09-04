@@ -37,7 +37,6 @@
  */
 
 #import "iOSPortsViewController.h"
-#import <iOSPorts/iOSPorts.h>
 
 #define kTextViewTag 1
 

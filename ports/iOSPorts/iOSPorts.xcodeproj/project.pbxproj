@@ -41,21 +41,19 @@
 		A03020E6129B9B400022EA2B /* iOS-buildenv.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "iOS-buildenv.sh"; sourceTree = "<group>"; };
 		A03984371295E4810078D2A7 /* iOSPortsCFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsCFuncs.h; sourceTree = "<group>"; };
 		A03984381295E4810078D2A7 /* iOSPortsCFuncs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsCFuncs.m; sourceTree = "<group>"; };
-		A03FC2211281F00A0083B2EB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A03FC2221281F00A0083B2EB /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A09F41B412933FF900A21B9D /* iOSPorts-data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-data.m"; sourceTree = "<group>"; };
 		A09F42841293506600A21B9D /* iOSPorts-genlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-genlist.m"; sourceTree = "<group>"; };
 		A09F42901293604B00A21B9D /* iOSPorts-list.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-list.m"; sourceTree = "<group>"; };
-		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		A0AA0AC912848B18004AD70C /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = SOURCE_ROOT; };
 		A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsPackage.h; sourceTree = "<group>"; };
 		A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSPortsPackage.m; sourceTree = "<group>"; };
 		A0AA0B6212849AD1004AD70C /* iOSPorts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts.h; sourceTree = "<group>"; };
 		A0AA0B6312849AD1004AD70C /* iOSPortsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPortsTypes.h; sourceTree = "<group>"; };
 		A0ED927F128362E7009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A0ED928012836334009FBCDC /* iOSPorts-geninfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-geninfo.m"; sourceTree = "<group>"; };
-		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
+		A0ED928212836334009FBCDC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = SOURCE_ROOT; tabWidth = 8; };
 		A0ED928312836334009FBCDC /* iOSPorts-pkginfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "iOSPorts-pkginfo.m"; sourceTree = "<group>"; };
-		A0F7303C12A9C7EF00161B70 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		A0F7303C12A9C7EF00161B70 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog; path = ../../ChangeLog; sourceTree = SOURCE_ROOT; };
 		AA747D9E0F9514B9006C5449 /* iOSPorts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSPorts_Prefix.pch; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libiOSPorts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSPorts.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,8 +84,6 @@
 			children = (
 				A0F7303C12A9C7EF00161B70 /* ChangeLog */,
 				A0ED927F128362E7009FBCDC /* Makefile */,
-				A03FC2211281F00A0083B2EB /* LICENSE */,
-				A03FC2221281F00A0083B2EB /* README */,
 				A03020E3129B9B400022EA2B /* build-aux */,
 				A0AA0AC812848ADA004AD70C /* iOSPorts */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -116,7 +112,7 @@
 			);
 			name = "Other Sources";
 			path = other;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A03020E3129B9B400022EA2B /* build-aux */ = {
 			isa = PBXGroup;
@@ -126,7 +122,7 @@
 				A03020E6129B9B400022EA2B /* iOS-buildenv.sh */,
 			);
 			path = "build-aux";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A06D2728129DEFDD00E3F0E6 /* Includes */ = {
 			isa = PBXGroup;
@@ -179,7 +175,7 @@
 			);
 			name = Classes;
 			path = classes;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -208,6 +204,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ../../;
 			dependencies = (
 			);
 			name = "Makefile-iOSPorts";
@@ -300,7 +297,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ports/iOSPorts/other/iOSPorts_Prefix.pch;
+				GCC_PREFIX_HEADER = other/iOSPorts_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"-M",
@@ -318,7 +315,7 @@
 				DSTROOT = /tmp/iOSPorts.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = ports/iOSPorts/other/iOSPorts_Prefix.pch;
+				GCC_PREFIX_HEADER = other/iOSPorts_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_LDFLAGS = (
 					"-M",
@@ -337,7 +334,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = include/;
+				HEADER_SEARCH_PATHS = ../../include;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
@@ -352,7 +349,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = include/;
+				HEADER_SEARCH_PATHS = ../../include;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
