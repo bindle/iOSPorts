@@ -122,15 +122,6 @@
 		A0511DBC1277877400DE46C4 /* rc2_skey.c in Sources */ = {isa = PBXBuildFile; fileRef = A051173912776F1600DE46C4 /* rc2_skey.c */; };
 		A0511DBD1277877400DE46C4 /* rc2cfb64.c in Sources */ = {isa = PBXBuildFile; fileRef = A051173A12776F1600DE46C4 /* rc2cfb64.c */; };
 		A0511DBE1277877400DE46C4 /* rc2ofb64.c in Sources */ = {isa = PBXBuildFile; fileRef = A051173B12776F1600DE46C4 /* rc2ofb64.c */; };
-		A0511E091277896C00DE46C4 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0511C5A127770FD00DE46C4 /* libcrypto.a */; };
-		A0511E0A1277896C00DE46C4 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC07E0554694100DB518D /* libssl.a */; };
-		A0511E0B1277897500DE46C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
-		A0511E2C127789E000DE46C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0511E2B127789E000DE46C4 /* UIKit.framework */; };
-		A0511E2E127789E900DE46C4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0511E2D127789E900DE46C4 /* CoreGraphics.framework */; };
-		A0511EEA12778CE900DE46C4 /* testAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0511EE712778CE900DE46C4 /* testAppDelegate.m */; };
-		A0511EEB12778CE900DE46C4 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0511EE912778CE900DE46C4 /* testViewController.m */; };
-		A0511F1812778EA700DE46C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0511F1712778EA700DE46C4 /* main.m */; };
-		A0511F671277910F00DE46C4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0511F661277910F00DE46C4 /* MainWindow.xib */; };
 		A0511FDC1277958300DE46C4 /* digest.c in Sources */ = {isa = PBXBuildFile; fileRef = A051160A12776F1500DE46C4 /* digest.c */; };
 		A0511FDD1277958300DE46C4 /* e_des.c in Sources */ = {isa = PBXBuildFile; fileRef = A051160F12776F1500DE46C4 /* e_des.c */; };
 		A0511FDE1277958300DE46C4 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = A051161A12776F1500DE46C4 /* encode.c */; };
@@ -238,7 +229,6 @@
 		A051206312779E5800DE46C4 /* bn_sqr.c in Sources */ = {isa = PBXBuildFile; fileRef = A05114CF12776F1500DE46C4 /* bn_sqr.c */; };
 		A051206412779E5800DE46C4 /* bn_sqrt.c in Sources */ = {isa = PBXBuildFile; fileRef = A05114D012776F1500DE46C4 /* bn_sqrt.c */; };
 		A051206512779E5800DE46C4 /* bn_word.c in Sources */ = {isa = PBXBuildFile; fileRef = A05114D112776F1500DE46C4 /* bn_word.c */; };
-		A05120931277A05500DE46C4 /* test_md5.m in Sources */ = {isa = PBXBuildFile; fileRef = A0511FBB1277937800DE46C4 /* test_md5.m */; };
 		A05120981277A0D600DE46C4 /* eng_all.c in Sources */ = {isa = PBXBuildFile; fileRef = A05115DF12776F1500DE46C4 /* eng_all.c */; };
 		A05120991277A0D600DE46C4 /* eng_cnf.c in Sources */ = {isa = PBXBuildFile; fileRef = A05115E012776F1500DE46C4 /* eng_cnf.c */; };
 		A051209A1277A0D600DE46C4 /* eng_cryptodev.c in Sources */ = {isa = PBXBuildFile; fileRef = A05115E112776F1500DE46C4 /* eng_cryptodev.c */; };
@@ -614,7 +604,6 @@
 		A05122F412789C5500DE46C4 /* ts_rsp_verify.c in Sources */ = {isa = PBXBuildFile; fileRef = A05117DD12776F1600DE46C4 /* ts_rsp_verify.c */; };
 		A05122F512789C5500DE46C4 /* ts_verify_ctx.c in Sources */ = {isa = PBXBuildFile; fileRef = A05117DE12776F1600DE46C4 /* ts_verify_ctx.c */; };
 		A05122F912789C6E00DE46C4 /* txt_db.c in Sources */ = {isa = PBXBuildFile; fileRef = A05117E112776F1600DE46C4 /* txt_db.c */; };
-		A051232612789D9300DE46C4 /* test_des.m in Sources */ = {isa = PBXBuildFile; fileRef = A051232512789D9300DE46C4 /* test_des.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -631,20 +620,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A0511DED127788EC00DE46C4;
 			remoteInfo = Makefile;
-		};
-		A0511E051277896500DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		A0511E071277896500DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2863,19 +2838,8 @@
 		A0511C4812776F1800DE46C4 /* x86asm.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = x86asm.sh; sourceTree = "<group>"; };
 		A0511C5A127770FD00DE46C4 /* libcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0511D561277836600DE46C4 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
-		A0511DFF1277895300DE46C4 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0511E011277895400DE46C4 /* test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
 		A0511E2B127789E000DE46C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0511E2D127789E900DE46C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A0511EA912778AF400DE46C4 /* test_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_Prefix.pch; sourceTree = "<group>"; };
-		A0511EE612778CE900DE46C4 /* testAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testAppDelegate.h; sourceTree = "<group>"; };
-		A0511EE712778CE900DE46C4 /* testAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testAppDelegate.m; sourceTree = "<group>"; };
-		A0511EE812778CE900DE46C4 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
-		A0511EE912778CE900DE46C4 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
-		A0511F1712778EA700DE46C4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A0511F661277910F00DE46C4 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		A0511FBB1277937800DE46C4 /* test_md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_md5.m; sourceTree = "<group>"; };
-		A051232512789D9300DE46C4 /* test_des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_des.m; sourceTree = "<group>"; };
 		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2886,18 +2850,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0511DFD1277895300DE46C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0511E091277896C00DE46C4 /* libcrypto.a in Frameworks */,
-				A0511E0A1277896C00DE46C4 /* libssl.a in Frameworks */,
-				A0511E0B1277897500DE46C4 /* Foundation.framework in Frameworks */,
-				A0511E2C127789E000DE46C4 /* UIKit.framework in Frameworks */,
-				A0511E2E127789E900DE46C4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2916,7 +2868,6 @@
 			children = (
 				D2AAC07E0554694100DB518D /* libssl.a */,
 				A0511C5A127770FD00DE46C4 /* libcrypto.a */,
-				A0511DFF1277895300DE46C4 /* test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2928,7 +2879,6 @@
 				A0511321127769BB00DE46C4 /* Makefile */,
 				A051131E127769BB00DE46C4 /* build-aux */,
 				A051132512776F1400DE46C4 /* openssl */,
-				A0511F551277906C00DE46C4 /* Examples */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -2943,18 +2893,6 @@
 				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		32C88DFF0371C24200C91783 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				A0511F1712778EA700DE46C4 /* main.m */,
-				A0511EA912778AF400DE46C4 /* test_Prefix.pch */,
-				A0511FBB1277937800DE46C4 /* test_md5.m */,
-				A051232512789D9300DE46C4 /* test_des.m */,
-			);
-			name = "Other Sources";
-			path = other;
 			sourceTree = "<group>";
 		};
 		A051131E127769BB00DE46C4 /* build-aux */ = {
@@ -6223,39 +6161,6 @@
 			path = pl;
 			sourceTree = "<group>";
 		};
-		A0511EA212778A6600DE46C4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A0511F661277910F00DE46C4 /* MainWindow.xib */,
-				A0511E011277895400DE46C4 /* test-Info.plist */,
-			);
-			name = Resources;
-			path = resources;
-			sourceTree = "<group>";
-		};
-		A0511EE512778CE900DE46C4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				A0511EE612778CE900DE46C4 /* testAppDelegate.h */,
-				A0511EE712778CE900DE46C4 /* testAppDelegate.m */,
-				A0511EE812778CE900DE46C4 /* testViewController.h */,
-				A0511EE912778CE900DE46C4 /* testViewController.m */,
-			);
-			name = Classes;
-			path = classes;
-			sourceTree = "<group>";
-		};
-		A0511F551277906C00DE46C4 /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-				A0511EE512778CE900DE46C4 /* Classes */,
-				A0511EA212778A6600DE46C4 /* Resources */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
-			);
-			name = Examples;
-			path = examples;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -6311,25 +6216,6 @@
 			productReference = A0511C5A127770FD00DE46C4 /* libcrypto.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A0511DFE1277895300DE46C4 /* openssl-test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A0511E041277895400DE46C4 /* Build configuration list for PBXNativeTarget "openssl-test" */;
-			buildPhases = (
-				A0511DFB1277895300DE46C4 /* Resources */,
-				A0511DFC1277895300DE46C4 /* Sources */,
-				A0511DFD1277895300DE46C4 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A0511E061277896500DE46C4 /* PBXTargetDependency */,
-				A0511E081277896500DE46C4 /* PBXTargetDependency */,
-			);
-			name = "openssl-test";
-			productName = test;
-			productReference = A0511DFF1277895300DE46C4 /* test.app */;
-			productType = "com.apple.product-type.application";
-		};
 		D2AAC07D0554694100DB518D /* ssl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "ssl" */;
@@ -6374,21 +6260,9 @@
 				A0511DED127788EC00DE46C4 /* Makefile-openssl */,
 				D2AAC07D0554694100DB518D /* ssl */,
 				A0511C51127770FD00DE46C4 /* crypto */,
-				A0511DFE1277895300DE46C4 /* openssl-test */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		A0511DFB1277895300DE46C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0511F671277910F00DE46C4 /* MainWindow.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0511C54127770FD00DE46C4 /* Sources */ = {
@@ -6951,18 +6825,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0511DFC1277895300DE46C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A0511EEA12778CE900DE46C4 /* testAppDelegate.m in Sources */,
-				A0511EEB12778CE900DE46C4 /* testViewController.m in Sources */,
-				A0511F1812778EA700DE46C4 /* main.m in Sources */,
-				A05120931277A05500DE46C4 /* test_md5.m in Sources */,
-				A051232612789D9300DE46C4 /* test_des.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2AAC07B0554694100DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -7026,16 +6888,6 @@
 			isa = PBXTargetDependency;
 			target = A0511DED127788EC00DE46C4 /* Makefile-openssl */;
 			targetProxy = A0511DF2127788FD00DE46C4 /* PBXContainerItemProxy */;
-		};
-		A0511E061277896500DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC07D0554694100DB518D /* ssl */;
-			targetProxy = A0511E051277896500DE46C4 /* PBXContainerItemProxy */;
-		};
-		A0511E081277896500DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0511C51127770FD00DE46C4 /* crypto */;
-			targetProxy = A0511E071277896500DE46C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -7175,52 +7027,6 @@
 			};
 			name = Release;
 		};
-		A0511E021277895400DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = "examples/resources/test-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PRODUCT_NAME = test;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A0511E031277895400DE46C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = "examples/resources/test-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PRODUCT_NAME = test;
-				SKIP_INSTALL = YES;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -7256,15 +7062,6 @@
 			buildConfigurations = (
 				A0511DEE127788ED00DE46C4 /* Debug */,
 				A0511DEF127788ED00DE46C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A0511E041277895400DE46C4 /* Build configuration list for PBXNativeTarget "openssl-test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0511E021277895400DE46C4 /* Debug */,
-				A0511E031277895400DE46C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
