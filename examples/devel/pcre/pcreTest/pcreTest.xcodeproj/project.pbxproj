@@ -13,18 +13,18 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		A05D817B127A27D8008D47CD /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A05D8176127A27BB008D47CD /* libpcre.a */; };
+		A0E9E07714143DF20023A8CA /* libpcre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E9E07414143DBD0023A8CA /* libpcre.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A05D8175127A27BB008D47CD /* PBXContainerItemProxy */ = {
+		A0E9E07314143DBD0023A8CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05D8170127A27BB008D47CD /* pcre.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = pcre;
 		};
-		A05D8179127A27CB008D47CD /* PBXContainerItemProxy */ = {
+		A0E9E07514143DE30023A8CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05D8170127A27BB008D47CD /* pcre.xcodeproj */;
 			proxyType = 1;
@@ -44,7 +44,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* pcreTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcreTest_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* pcreTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pcreTest-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A05D8170127A27BB008D47CD /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = ../../pcre.xcodeproj; sourceTree = SOURCE_ROOT; };
+		A05D8170127A27BB008D47CD /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = ../../../../ports/devel/pcre/pcre.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A05D817B127A27D8008D47CD /* libpcre.a in Frameworks */,
+				A0E9E07714143DF20023A8CA /* libpcre.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -120,10 +120,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A05D8171127A27BB008D47CD /* Products */ = {
+		A0E9E06F14143DBD0023A8CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A05D8176127A27BB008D47CD /* libpcre.a */,
+				A0E9E07414143DBD0023A8CA /* libpcre.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A05D817A127A27CB008D47CD /* PBXTargetDependency */,
+				A0E9E07614143DE30023A8CA /* PBXTargetDependency */,
 			);
 			name = pcreTest;
 			productName = pcreTest;
@@ -171,7 +171,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A05D8171127A27BB008D47CD /* Products */;
+					ProductGroup = A0E9E06F14143DBD0023A8CA /* Products */;
 					ProjectRef = A05D8170127A27BB008D47CD /* pcre.xcodeproj */;
 				},
 			);
@@ -183,11 +183,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A05D8176127A27BB008D47CD /* libpcre.a */ = {
+		A0E9E07414143DBD0023A8CA /* libpcre.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libpcre.a;
-			remoteRef = A05D8175127A27BB008D47CD /* PBXContainerItemProxy */;
+			remoteRef = A0E9E07314143DBD0023A8CA /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -216,10 +216,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A05D817A127A27CB008D47CD /* PBXTargetDependency */ = {
+		A0E9E07614143DE30023A8CA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = pcre;
-			targetProxy = A05D8179127A27CB008D47CD /* PBXContainerItemProxy */;
+			targetProxy = A0E9E07514143DE30023A8CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -261,7 +261,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../../../../../include;
+				HEADER_SEARCH_PATHS = ../../../../include;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				SDKROOT = iphoneos;
 			};
@@ -275,7 +275,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../../../../../include;
+				HEADER_SEARCH_PATHS = ../../../../include;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
