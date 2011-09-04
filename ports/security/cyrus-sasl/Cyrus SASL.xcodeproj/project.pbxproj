@@ -74,13 +74,6 @@
 			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
 			remoteInfo = crypto;
 		};
-		A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4;
-			remoteInfo = test;
-		};
 		A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -782,7 +775,6 @@
 			children = (
 				A05123CE1278D7F500DE46C4 /* libssl.a */,
 				A05123D01278D7F500DE46C4 /* libcrypto.a */,
-				A05123D21278D7F500DE46C4 /* test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2035,13 +2027,6 @@
 			fileType = archive.ar;
 			path = libcrypto.a;
 			remoteRef = A05123CF1278D7F500DE46C4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A05123D21278D7F500DE46C4 /* test.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = test.app;
-			remoteRef = A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
