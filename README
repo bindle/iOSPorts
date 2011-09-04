@@ -76,6 +76,13 @@ Packages
       Authentication and Security Layer methods.
       Depends Upon: security/openssl
 
+   iOSPorts (iOSPorts) - A standalone package for adding iOS Port packages'
+      copyright information to an iOS package.  Using this library to display
+      the copyright information should fulfill a packages distribution
+      requirement according to the Modified BSD license and similar licenses.
+      Including this project in an iOS application will not make other iOS
+      Ports packages available within an application.
+
    OpenLDAP (database/openldap) - A port of OpenLDAP client library
       to the iPhone platform (iOS).
       Depends Upon: security/cyrus-sasl
