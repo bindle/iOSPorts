@@ -16,6 +16,22 @@
 void test_all_ldap(const char * caFile)
 {
    int err;
+   unsigned u;
+   const char * sasl_mechs[] = {"SMB-NTLMv2",
+                                "SMB-NT",
+                                "MS-CHAPv2",
+                                "PPS",
+                                "PLAIN",
+                                "OTP",
+                                "NTLM",
+                                "LOGIN",
+                                "GSSAPI",
+                                "DIGEST-MD5",
+                                "CRAM-MD5",
+                                "WEBDAV-DIGEST",
+                                "DHX",
+                                "APOP",
+                                NULL};
 
    if (caFile)
    {
@@ -36,19 +52,22 @@ void test_all_ldap(const char * caFile)
       caFile
    );
 
-   test_sasl_ldap(
-      MY_LDAP_VERSION,        // LDAP Protocol Version
-      MY_LDAP_URI,            // LDAP URI
-      MY_SASL_AUTHUSER,       // SASL User
-      MY_SASL_REALM,          // SASL Realm
-      MY_SASL_PASSWD,         // SASL password
-      "SRP",                  // SASL mechanism
-      MY_LDAP_BASEDN,         // LDAP Search Base DN
-      MY_LDAP_FILTER,         // LDAP Search Filter
-      MY_LDAP_SCOPE,          // LDAP Search Scope
-      caFile
-   );
-
+   for(u = 0; sasl_mechs[u]; u++)
+   {
+      test_sasl_ldap(
+         MY_LDAP_VERSION,        // LDAP Protocol Version
+         MY_LDAP_URI,            // LDAP URI
+         MY_SASL_AUTHUSER,       // SASL User
+         MY_SASL_REALM,          // SASL Realm
+         MY_SASL_PASSWD,         // SASL password
+         sasl_mechs[u],          // SASL mechanism
+         MY_LDAP_BASEDN,         // LDAP Search Base DN
+         MY_LDAP_FILTER,         // LDAP Search Filter
+         MY_LDAP_SCOPE,          // LDAP Search Scope
+         caFile
+      );
+   };
+/*
    test_sasl_ldap(
       MY_LDAP_VERSION,        // LDAP Protocol Version
       MY_LDAP_URI,            // LDAP URI
@@ -100,7 +119,7 @@ void test_all_ldap(const char * caFile)
       MY_LDAP_SCOPE,          // LDAP Search Scope
       caFile
    );
-
+*/
    return;
 }
 
