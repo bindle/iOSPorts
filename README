@@ -17,10 +17,11 @@ Contents
    2. Software Requirements
    3. Directory Map
    4. Packages
-   5. Quick Start
-   6. Maintainers
-   7. Community
-   8. Source Code
+   5. Quick Start for Xcode 4.1
+   6. Quick Start for Xcode 3.2
+   7. Maintainers
+   8. Community
+   9. Source Code
 
 
 Disclaimer
@@ -111,8 +112,14 @@ Packages
                   iOS platform (iPhone).
 
 
-Quick Start
-===========
+Quick Start for Xcode 4.1
+=========================
+
+Needs to be written.
+
+
+Quick Start for Xcode 3.2
+=========================
 
    Disclaimer:
       I wrote this in five minutes. More documentation will be following over
