@@ -1,6 +1,6 @@
 #
 #  iOS Ports Library
-#  Copyright (C) 2010 Bindle Binaries
+#  Copyright (C) 2011 Bindle Binaries
 #  All rights reserved.
 #
 #  @BINDLE_BINARIES_BSD_LICENSE_START@
