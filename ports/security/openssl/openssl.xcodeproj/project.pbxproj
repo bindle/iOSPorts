@@ -7089,8 +7089,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ssl;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -7101,8 +7101,8 @@
 				DSTROOT = /tmp/openssl.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ssl;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -7175,8 +7175,8 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = crypto;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -7187,8 +7187,8 @@
 				DSTROOT = /tmp/openssl.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = crypto;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
