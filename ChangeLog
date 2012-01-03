@@ -2,6 +2,10 @@
 iOS Ports Library
 Copyright (C) 2011 Bindle Binaries
 
+0.5
+      iOS Ports
+      - Reverting supported architectures back to armv6, armv7. (syzdek)
+
 0.4   2011-09-04
       iOS Ports
       - Moving library's Xcode project from root of iOS Ports to avoid
