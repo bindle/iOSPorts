@@ -6904,6 +6904,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ssl;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -6916,6 +6917,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = ssl;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -6994,6 +6996,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = crypto;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -7006,6 +7009,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = crypto;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

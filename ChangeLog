@@ -5,6 +5,9 @@ Copyright (C) 2011 Bindle Binaries
 0.5
       iOS Ports
       - Reverting supported architectures back to armv6, armv7. (syzdek)
+      - Toggling "Skip Install" in the Xcode project files to "YES" in order
+        to allow projects linking to iOS Ports to be distributed with a
+        Ad-Hoc provisioning profile. (syzdek)
 
 0.4   2011-09-04
       iOS Ports

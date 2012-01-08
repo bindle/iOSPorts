@@ -2108,6 +2108,7 @@
 				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = sasl2;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -2121,6 +2122,7 @@
 				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = sasl2;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
