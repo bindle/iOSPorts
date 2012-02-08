@@ -132,8 +132,8 @@
 				A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */,
 				A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */,
 				A0FCC96E14E27155001A0644 /* iOSPortsPackageData.m */,
-				A008BA52129C40E50034DA2D /* iOSPortsViewController.m */,
 				A008BA51129C40E40034DA2D /* iOSPortsViewController.h */,
+				A008BA52129C40E50034DA2D /* iOSPortsViewController.m */,
 			);
 			path = iOSPorts;
 			sourceTree = SOURCE_ROOT;
