@@ -209,7 +209,7 @@
 			dependencies = (
 			);
 			name = "Makefile-iOSPorts";
-			passBuildSettingsInEnvironment = 1;
+			passBuildSettingsInEnvironment = 0;
 			productName = "Makefile-iOSPorts";
 		};
 /* End PBXLegacyTarget section */
