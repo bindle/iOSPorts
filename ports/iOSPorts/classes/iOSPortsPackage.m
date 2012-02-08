@@ -38,7 +38,6 @@
 #import "iOSPortsPackage.h"
 
 
-#import <iOSPorts/iOSPorts.h>
 #import <stdio.h>
 #import <dlfcn.h>
 #import <string.h>

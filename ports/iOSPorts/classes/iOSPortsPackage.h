@@ -36,16 +36,62 @@
  *  @file ports/iOSPorts/classes/iOSPortsPackage.h interface to PKGDATA
  */
 
+///////////////
+//           //
+//  Headers  //
+//           //
+///////////////
+#pragma mark - Headers
+
 #import <Foundation/Foundation.h>
-#import <iOSPorts/iOSPorts.h>
+#import <sys/types.h>
 
 
+/////////////////
+//             //
+//  Datatypes  //
+//             //
+/////////////////
+#pragma mark - Datatypes
+
+typedef struct iosports_pkg_data iOSPortsPKGData;
+struct iosports_pkg_data
+{
+   const char * pkg_id;
+   const char * pkg_name;
+   const char * pkg_version;
+   const char * pkg_website;
+   const char   pkg_license[];
+};
+
+
+typedef struct iosports_pkg_list_data iOSPortsPKGListData;
+struct iosports_pkg_list_data
+{
+   const char * name;
+   const iOSPortsPKGData * data;
+};
+
+
+//////////////////
+//              //
+//  Prototypes  //
+//              //
+//////////////////
 #pragma mark - Prototypes
 
 // Looks up a package based up the packages ID
 const iOSPortsPKGData *  iOSPorts_find_pkg_by_id(const char * pkg_id);
 
+// array of package information
+extern iOSPortsPKGListData iOSPortsPKGList[];
 
+
+///////////////////////
+//                   //
+//  iOSPortsPackage  //
+//                   //
+///////////////////////
 #pragma mark -
 @interface iOSPortsPackage : NSObject
 {
