@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A008BA53129C40E50034DA2D /* iOSPortsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A008BA51129C40E40034DA2D /* iOSPortsViewController.h */; };
-		A008BAA2129C4DDD0034DA2D /* iOSPortsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008BA52129C40E50034DA2D /* iOSPortsViewController.m */; };
 		A0AA0AD512848C5A004AD70C /* iOSPortsPackage.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0AD312848C5A004AD70C /* iOSPortsPackage.h */; };
 		A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AA0AD412848C5A004AD70C /* iOSPortsPackage.m */; };
 		A0AA0B6412849ADA004AD70C /* iOSPorts.h in Headers */ = {isa = PBXBuildFile; fileRef = A0AA0B6212849AD1004AD70C /* iOSPorts.h */; };
@@ -226,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AA0AD612848C5A004AD70C /* iOSPortsPackage.m in Sources */,
-				A008BAA2129C4DDD0034DA2D /* iOSPortsViewController.m in Sources */,
 				A0FCC96F14E27155001A0644 /* iOSPortsPackageData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
