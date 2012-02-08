@@ -17,11 +17,10 @@ Contents
    2. Software Requirements
    3. Directory Map
    4. Packages
-   5. Quick Start for Xcode 4.1
-   6. Quick Start for Xcode 3.2
-   7. Maintainers
-   8. Community
-   9. Source Code
+   5. Quick Start for Xcode 4.2
+   6. Maintainers
+   7. Community
+   8. Source Code
 
 
 Disclaimer
@@ -45,8 +44,8 @@ Software Requirements
 
    Git 1.7.2.3
    Mac OS X 10.7.1
-   Xcode 4.1
-   iOS SDK 4.3
+   Xcode 4.2
+   iOS SDK 5.0
 
 
 Directory Map
@@ -73,16 +72,18 @@ Packages
 ========
 
    Cyrus SASL
-   Location:      ports/security/cyrus-sasl
-   Depends Upon:  security/openssl
+   Location:      ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
+   Includes:      ports/security/openssl/openssl.xcodeproj
+   Link With:     libsasl2.a libssl.a libcrypto.a
    Description:   A port of Cyrus SASL to the iPhone platform (iOS). An open
                   source implementations of Simple Authentication and Security
                   Layer methods.
 
 
    iOSPorts
-   Location:      ports/iOSPorts
+   Location:      ports/iOSPorts/iOSPorts.xcodeproj
    Depends Upon:  n/a
+   Links With:    n/a
    Description:   A standalone package for adding iOS Port packages' copyright
                   information to an iOS package.  Using this library to
                   display the copyright information should fulfill a packages
@@ -93,8 +94,9 @@ Packages
 
 
    OpenLDAP
-   Location:     ports/database/openldap
+   Location:     ports/database/openldap/openldap.xcodeproj
    Depends Upon: security/cyrus-sasl
+   Links With:   libssl.a libcrypto.a libsasl2.a
    Desciption:   A port of OpenLDAP client library to the iOS platform.
 
 
@@ -108,72 +110,15 @@ Packages
    PCRE
    Location:      ports/devel/pcre
    Depends Upon:  n/a
+   Links With:    n/a
    Description:   A port of PCRE (Perl Compatible Regular Expressions) to the
                   iOS platform (iPhone).
 
 
-Quick Start for Xcode 4.1
+Quick Start for Xcode 4.2
 =========================
 
 Needs to be written.
-
-
-Quick Start for Xcode 3.2
-=========================
-
-   Disclaimer:
-      I wrote this in five minutes. More documentation will be following over
-      the next month or two.  If you would like to assist with documentation
-      and tutorials, please contact David M. Syzdek <syzdek@bindlebinaries.com>.
-
-   Assumptions:
-      - You understand basic use and navigation of the Xcode interface.
-      - You understand basic concepts behind static libraries and header files.
-      - You are using the software listed in the "Required Software" section.
-      - iOSPorts has been downloaded to /Users/syzdek/development/com.bindlebinaries/iOSPorts
-           (Change the above path to the location you downloaded iOSPorts)
-
-   1) Open your project in Xcode.
-
-   2) Open the project settings. From the menubar:
-
-         Project -> Edit Project Settings
-
-   3) Open the "Build" tab. Search for "Header Search Paths", Add the following:
-
-         /Users/syzdek/development/com.bindlebinaries/iOSPorts/include
-
-      This step instructs Xcode where to look for include headers when using
-      libraries from iOSPorts.
-
-   4) Add the required iOSPorts Xcode project files to your project by using
-      the wizard found on the menubar:
-
-         Project -> Add To Project...
-
-   5) Open the target settings for your application (double click on the
-      target).
-
-   6) Open the "General" tab. Add iOSPorts dependencies by clicking the '+'
-      button below the "Direct Dependencies" panel and then selecting the
-      libraries from the drop down window.
-
-   7) Link the libraries to your target. From the "Groups & Files" panel in
-      Xcode's main window, drag the libraries from the iOSPorts Xcode projects
-      to the "Link Binary with Libraries" group within your target.
-
-   Your application should now be linked against the iOSPorts libraries you
-   setup.
-
-   Please note that since the iOS SDK does not allow creating shared libraries
-   for the iOS platform, you must also link all required dependent libraries.
-   For instance, to use libldap.a and liblber.a from OpenLDAP, you must also
-   link libsasl2.a from Cyrus SASL, libssl.a from OpenSSL, and libcrypto.a from
-   OpenSSL.  The dependencies are listed in the packages list above.
-
-   An example application using iOS Ports is available from:
-
-      https://github.com/bindle/iOSPortsExample
 
 
 Maintainers
