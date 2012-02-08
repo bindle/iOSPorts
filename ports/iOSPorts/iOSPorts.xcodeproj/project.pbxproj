@@ -121,7 +121,8 @@
 				A03020E5129B9B400022EA2B /* configure-wrapper.sh */,
 				A03020E6129B9B400022EA2B /* iOS-buildenv.sh */,
 			);
-			path = "build-aux";
+			name = "build-aux";
+			path = "../../build-aux";
 			sourceTree = SOURCE_ROOT;
 		};
 		A06D2728129DEFDD00E3F0E6 /* Includes */ = {
