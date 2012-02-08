@@ -38,7 +38,7 @@
 # Package Information
 PACKAGE_NAME				= iOS Ports Library
 PACKAGE_TARNAME				= iosports
-PACKAGE_VERSION				= 0.1
+PACKAGE_VERSION				= $(shell git describe --long --abbrev=7 HEAD 2> /dev/null |sed -e 's/^v//g' -e 's/-/./g')
 PACKAGE_WEBSITE				= https://github.com/bindle/iOSPorts
 PACKAGE_LICENSE_FILE			= COPYING
 
