@@ -107,11 +107,7 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
    if (!(self = [super init]))
       return(self);
 
-   if ([self setToIdentifier:anIdentifier])
-   {
-      [self release];
-      self = nil;
-   };
+   [self setToIdentifier:anIdentifier];
 
    return(self);
 }
@@ -132,7 +128,7 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
 
    pool = [[NSAutoreleasePool alloc] init];
 
-   self.identifier = nil;
+   self.identifier = anIdentifier;
    self.name       = nil;
    self.version    = nil;
    self.website    = nil;
