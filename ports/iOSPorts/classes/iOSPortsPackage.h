@@ -39,6 +39,14 @@
 #import <Foundation/Foundation.h>
 #import <iOSPorts/iOSPorts.h>
 
+
+#pragma mark - Prototypes
+
+// Looks up a package based up the packages ID
+const iOSPortsPKGData *  iOSPorts_find_pkg_by_id(const char * pkg_id);
+
+
+#pragma mark -
 @interface iOSPortsPackage : NSObject
 {
    NSString * identifier;

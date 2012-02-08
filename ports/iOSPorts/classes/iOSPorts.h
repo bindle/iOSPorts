@@ -68,4 +68,13 @@ struct iosports_pkg_list_data
    const iOSPortsPKGData * data;
 };
 
+
+////////////////////////
+//                    //
+//  Global Variables  //
+//                    //
+////////////////////////
+
+extern iOSPortsPKGListData iOSPortsPKGList[];
+
 /* end of header */

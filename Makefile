@@ -49,7 +49,7 @@ LIBSOURCES	= \
 PKGINFOSOURCES	= \
 		  $(LIBSOURCES) \
 		  ports/iOSPorts/other/iOSPorts-pkginfo.m \
-		  ports/iOSPorts/classes/iOSPortsCFuncs.m
+		  ports/iOSPorts/classes/iOSPortsPackage.m
 
 PROGS		= \
 		  build-aux/iOSPorts-geninfo \
@@ -58,7 +58,6 @@ PROGS		= \
 
 INCLUDES	= \
 		  include/iOSPorts/iOSPorts.h \
-		  include/iOSPorts/iOSPortsCFuncs.h \
 		  include/iOSPorts/iOSPortsPackage.h \
 		  include/iOSPorts/iOSPortsViewController.h
 
@@ -73,9 +72,6 @@ include/iOSPorts:
 
 include/iOSPorts/iOSPorts.h: include/iOSPorts ports/iOSPorts/classes/iOSPorts.h
 	cp ports/iOSPorts/classes/iOSPorts.h ${@};
-
-include/iOSPorts/iOSPortsCFuncs.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsCFuncs.h
-	cp ports/iOSPorts/classes/iOSPortsCFuncs.h ${@};
 
 include/iOSPorts/iOSPortsPackage.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsPackage.h
 	cp ports/iOSPorts/classes/iOSPortsPackage.h ${@};

@@ -39,12 +39,47 @@
 
 
 #import <iOSPorts/iOSPorts.h>
-#import <iOSPorts/iOSPortsCFuncs.h>
 #import <stdio.h>
 #import <dlfcn.h>
 #import <string.h>
 
 
+#pragma mark - C Functions
+
+// Looks up a package based up the packages ID
+const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
+{
+   char     * lookupID;
+   size_t     pos;
+   unsigned   u;
+
+   if (!(lookupID = strdup(pkg_id)))
+      return(NULL);
+
+   for(u = 0; u < strlen(lookupID); u++)
+   {
+      if ( ((lookupID[u] < 'A') || (lookupID[u] > 'Z')) &&
+           ((lookupID[u] < 'a') || (lookupID[u] > 'z')) &&
+           ((lookupID[u] < '0') || (lookupID[u] > '9')) )
+         lookupID[u] = '_';
+   };
+
+   for(pos = 0; iOSPortsPKGList[pos].name; pos++)
+   {
+      if (!(strcasecmp(lookupID, iOSPortsPKGList[pos].name)))
+      {
+         free(lookupID);
+         return(iOSPortsPKGList[pos].data);
+      };
+   };
+
+   free(lookupID);
+
+   return(NULL);
+}
+
+
+#pragma mark -
 @implementation iOSPortsPackage
 
 @synthesize identifier;
