@@ -60,7 +60,6 @@ INCLUDES	= \
 		  include/iOSPorts/iOSPorts.h \
 		  include/iOSPorts/iOSPortsCFuncs.h \
 		  include/iOSPorts/iOSPortsPackage.h \
-		  include/iOSPorts/iOSPortsVersion.h \
 		  include/iOSPorts/iOSPortsViewController.h
 
 CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation -DPACKAGE_VERSION=\"$(PACKAGE_VERSION)\"
@@ -80,9 +79,6 @@ include/iOSPorts/iOSPortsCFuncs.h: include/iOSPorts ports/iOSPorts/classes/iOSPo
 
 include/iOSPorts/iOSPortsPackage.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsPackage.h
 	cp ports/iOSPorts/classes/iOSPortsPackage.h ${@};
-
-include/iOSPorts/iOSPortsVersion.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsVersion.h
-	cp ports/iOSPorts/classes/iOSPortsVersion.h ${@};
 
 include/iOSPorts/iOSPortsViewController.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsViewController.h
 	cp ports/iOSPorts/classes/iOSPortsViewController.h ${@};

@@ -96,22 +96,5 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
 }
 
 
-/// returns the library version information of the iOS Ports Library
-int iOSPorts_lib_version_info(void)
-{
-   return( (kiOSPortsVersionMajor << 16) |
-           (kiOSPortsVersionMinor <<  8) |
-           (kiOSPortsVersionPatch <<  0) );
-}
-
-
-// returns current version of iOS Ports Library
-int iOSPorts_version(void)
-{
-   return( (kiOSPortsLibraryVersionCurrent  << 16) |
-           (kiOSPortsLibraryVersionRevision <<  8) |
-           (kiOSPortsLibraryVersionAge      <<  0) );
-}
-
 /* end of source */
 

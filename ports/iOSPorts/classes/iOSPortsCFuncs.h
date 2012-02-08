@@ -45,7 +45,6 @@
 ///////////////
 
 #import <iOSPorts/iOSPorts.h>
-#import <iOSPorts/iOSPortsVersion.h>
 
 
 ////////////////////////
