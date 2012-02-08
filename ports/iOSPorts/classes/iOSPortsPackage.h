@@ -37,7 +37,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <iOSPorts/iOSPortsTypes.h>
+#import <iOSPorts/iOSPorts.h>
 
 @interface iOSPortsPackage : NSObject
 {

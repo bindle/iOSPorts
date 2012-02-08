@@ -65,6 +65,7 @@
 
 #define _IOSPORTS_CLI_TOOL 1
 #import <iOSPorts/iOSPorts.h>
+#import <iOSPorts/iOSPortsCFuncs.h>
 
 
 ///////////////////
@@ -152,13 +153,13 @@ void iosports_usage(void)
 /// displays version information
 void iosports_version(void)
 {
-   printf(("%s (%s) %i.%i\n"
+   printf(("%s (%s) %s\n"
          "Written by David M. Syzdek.\n"
          "\n"
          "%s\n"
          "This is free software; see the source for copying conditions.  There is NO\n"
          "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n"
-      ), PROGRAM_NAME, PACKAGE_NAME, kiOSPortsVersionMajor, kiOSPortsVersionMinor, PACKAGE_COPYRIGHT
+      ), PROGRAM_NAME, PACKAGE_NAME, PACKAGE_VERSION, PACKAGE_COPYRIGHT
    );
    return;
 }

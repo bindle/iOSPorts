@@ -33,6 +33,8 @@
 #  @BINDLE_BINARIES_BSD_LICENSE_END@
 #
 
+PACKAGE_VERSION = $(shell git describe --long --abbrev=7 HEAD |sed -e 's/^v//g' -e 's/-/./g')
+
 SOURCES		= \
 		  ports/database/openldap/pkgdata_openldap.m \
 		  ports/devel/pcre/pkgdata_pcre.m \
@@ -58,11 +60,10 @@ INCLUDES	= \
 		  include/iOSPorts/iOSPorts.h \
 		  include/iOSPorts/iOSPortsCFuncs.h \
 		  include/iOSPorts/iOSPortsPackage.h \
-		  include/iOSPorts/iOSPortsTypes.h \
 		  include/iOSPorts/iOSPortsVersion.h \
 		  include/iOSPorts/iOSPortsViewController.h
 
-CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation
+CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation -DPACKAGE_VERSION=\"$(PACKAGE_VERSION)\"
 
 all: $(PROGS)
 
@@ -79,9 +80,6 @@ include/iOSPorts/iOSPortsCFuncs.h: include/iOSPorts ports/iOSPorts/classes/iOSPo
 
 include/iOSPorts/iOSPortsPackage.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsPackage.h
 	cp ports/iOSPorts/classes/iOSPortsPackage.h ${@};
-
-include/iOSPorts/iOSPortsTypes.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsTypes.h
-	cp ports/iOSPorts/classes/iOSPortsTypes.h ${@};
 
 include/iOSPorts/iOSPortsVersion.h: include/iOSPorts ports/iOSPorts/classes/iOSPortsVersion.h
 	cp ports/iOSPorts/classes/iOSPortsVersion.h ${@};
