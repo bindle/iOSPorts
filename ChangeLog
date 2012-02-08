@@ -1,6 +1,6 @@
 
 iOS Ports Library
-Copyright (C) 2011 Bindle Binaries
+Copyright (C) 2011, 2012 Bindle Binaries
 
 0.5
       iOS Ports
@@ -8,6 +8,10 @@ Copyright (C) 2011 Bindle Binaries
       - Toggling "Skip Install" in the Xcode project files to "YES" in order
         to allow projects linking to iOS Ports to be distributed with a
         Ad-Hoc provisioning profile. (syzdek)
+      - Refactoring iOSPorts library to simplify the code base and to reduce
+        the library to a just providing package information without providing
+        a framework for presenting the package information.  The framework
+        is being migrated to BindleKit. (syzdek)
 
 0.4   2011-09-04
       iOS Ports
