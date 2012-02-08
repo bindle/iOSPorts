@@ -87,6 +87,7 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
 @synthesize website;
 @synthesize license;
 
+#pragma mark - Object Management Methods
 
 - (void)dealloc
 {
@@ -121,12 +122,12 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
 }
 
 
+#pragma mark - package querying methods
+
 - (BOOL) setToIdentifier:(NSString *)anIdentifier
 {
    NSAutoreleasePool     * pool;
    const iOSPortsPKGData * datap;
-
-   pool = [[NSAutoreleasePool alloc] init];
 
    self.identifier = anIdentifier;
    self.name       = nil;
@@ -134,11 +135,10 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
    self.website    = nil;
    self.license    = nil;
 
-   if (!(datap = iOSPorts_find_pkg_by_id([anIdentifier UTF8String])))
-   {
-      [pool release];
+   if (!(datap = [self registeredPackage:anIdentifier]))
       return(YES);
-   };
+
+   pool = [[NSAutoreleasePool alloc] init];
 
    self.identifier = datap->pkg_id         ? [NSString stringWithUTF8String:datap->pkg_id]      : nil;
    self.name       = datap->pkg_name       ? [NSString stringWithUTF8String:datap->pkg_name]    : nil;
@@ -149,6 +149,25 @@ const iOSPortsPKGData * iOSPorts_find_pkg_by_id(const char * pkg_id)
    [pool release];
 
    return(NO);
+}
+
+
++ (const iOSPortsPKGData *) registeredPackage:(NSString *)anIdentifier
+{
+   NSAutoreleasePool     * pool;
+   const iOSPortsPKGData * datap;
+
+   pool = [[NSAutoreleasePool alloc] init];
+   datap = iOSPorts_find_pkg_by_id([anIdentifier UTF8String]);
+   [pool release];
+
+   return(datap);
+}
+
+
+- (const iOSPortsPKGData *) registeredPackage:(NSString *)anIdentifier
+{
+   return([iOSPortsPackage registeredPackage:anIdentifier]);
 }
 
 

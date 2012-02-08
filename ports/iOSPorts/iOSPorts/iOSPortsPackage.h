@@ -108,8 +108,12 @@ extern iOSPortsPKGListData iOSPortsPKGList[];
 @property(nonatomic, retain) NSString * website;
 @property(nonatomic, retain) NSString * license;
 
+// Object Management Methods
 - (BOOL) setToIdentifier:(NSString *)anIdentifier;
 - (iOSPortsPackage *) initWithIdentifier:(NSString *)anIdentifier;
-+ (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
 
+// package querying methods
++ (iOSPortsPackage *) iOSPortsPackageWithIdentifier:(NSString *)anIdentifier;
++ (const iOSPortsPKGData *) registeredPackage:(NSString *)anIdentifier;
+- (const iOSPortsPKGData *) registeredPackage:(NSString *)anIdentifier;
 @end
