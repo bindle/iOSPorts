@@ -72,6 +72,8 @@
 		0867D691FE84028FC02AAC07 /* iOSPorts */ = {
 			isa = PBXGroup;
 			children = (
+				A0AA0AC912848B18004AD70C /* COPYING */,
+				A0ED928212836334009FBCDC /* Makefile */,
 				A0F7303C12A9C7EF00161B70 /* ChangeLog */,
 				A0ED927F128362E7009FBCDC /* Makefile */,
 				A03020E3129B9B400022EA2B /* build-aux */,
@@ -116,8 +118,6 @@
 		A0AA0AC812848ADA004AD70C /* iOSPorts */ = {
 			isa = PBXGroup;
 			children = (
-				A0AA0AC912848B18004AD70C /* COPYING */,
-				A0ED928212836334009FBCDC /* Makefile */,
 				A0AA0AD012848B78004AD70C /* iOSPorts */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 			);
