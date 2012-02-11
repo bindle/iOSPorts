@@ -12,6 +12,8 @@ Copyright (C) 2011, 2012 Bindle Binaries
         the library to a just providing package information without providing
         a framework for presenting the package information.  The framework
         is being migrated to BindleKit. (syzdek)
+      - Adding flag to iOSPorts project to "Skip Install" when building
+        libiOSPorts.a. (syzdek)
 
 0.4   2011-09-04
       iOS Ports

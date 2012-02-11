@@ -257,6 +257,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = iOSPorts;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -274,6 +275,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = iOSPorts;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
