@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A0511DCE127788A100DE46C4 /* scrypt */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "scrypt" */;
+			buildPhases = (
+			);
+			dependencies = (
+				DA67FE5F14E4836300DB7CC9 /* PBXTargetDependency */,
+				A0511DD2127788A800DE46C4 /* PBXTargetDependency */,
+				A0511DD4127788A800DE46C4 /* PBXTargetDependency */,
+			);
+			name = scrypt;
+			productName = OpenSSL;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
+		DA1A142514E4914800BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
+		DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
+		DA67FE8E14E484A900DB7CC9 /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */; };
+		DA67FE8F14E484B100DB7CC9 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */; };
+		DA67FE9014E484B100DB7CC9 /* crypto_scrypt-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7614E4845900DB7CC9 /* crypto_scrypt-ref.c */; };
+		DA67FE9214E484B100DB7CC9 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7914E4845900DB7CC9 /* sha256.c */; };
+		DA67FE9314E484BB00DB7CC9 /* scryptenc.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7D14E4845900DB7CC9 /* scryptenc.c */; };
+		DA67FE9414E484BB00DB7CC9 /* scryptenc_cpuperf.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7F14E4845900DB7CC9 /* scryptenc_cpuperf.c */; };
+		DA67FE9514E484C200DB7CC9 /* memlimit.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE8214E4845900DB7CC9 /* memlimit.c */; };
+		DA67FE9614E484C200DB7CC9 /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE8414E4845900DB7CC9 /* readpass.c */; };
+		DA67FE9714E484C200DB7CC9 /* warn.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE8714E4845900DB7CC9 /* warn.c */; };
+		DA8251C514E5CDF7008EBC5A /* libscryptcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0511C5A127770FD00DE46C4 /* libscryptcrypto.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ssl;
+		};
+		A0511DD3127788A800DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4;
+			remoteInfo = crypto;
+		};
+		A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511DED127788EC00DE46C4;
+			remoteInfo = Makefile;
+		};
+		A0511DF2127788FD00DE46C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511DED127788EC00DE46C4;
+			remoteInfo = Makefile;
+		};
+		DA1A13EF14E487D900BCFFBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = ssl;
+		};
+		DA1A13F114E487D900BCFFBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
+			remoteInfo = crypto;
+		};
+		DA1A13F314E487D900BCFFBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0511DFF1277895300DE46C4;
+			remoteInfo = test;
+		};
+		DA67FE2A14E4834300DB7CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511DED127788EC00DE46C4;
+			remoteInfo = Makefile;
+		};
+		DA67FE5E14E4836300DB7CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
+			remoteInfo = util;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0511321127769BB00DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
+		A0511C5A127770FD00DE46C4 /* libscryptcrypto.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libscryptcrypto.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0511E2B127789E000DE46C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0511E2D127789E900DE46C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libscryptenc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libscryptenc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = "<group>"; };
+		DA1A140714E48E1600BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DA1A141614E48E9F00BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DA67FE5D14E4834300DB7CC9 /* libutil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "configure-wrapper.log"; sourceTree = "<group>"; };
+		DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
+		DA67FE6214E483BD00DB7CC9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.patch"; sourceTree = "<group>"; };
+		DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.tgz.md5"; sourceTree = "<group>"; };
+		DA67FE6B14E4845900DB7CC9 /* depcomp */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		DA67FE6C14E4845900DB7CC9 /* install-sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		DA67FE6D14E4845900DB7CC9 /* missing */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		DA67FE6E14E4845900DB7CC9 /* config.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
+		DA67FE6F14E4845900DB7CC9 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		DA67FE7014E4845900DB7CC9 /* FORMAT */ = {isa = PBXFileReference; lastKnownFileType = text; path = FORMAT; sourceTree = "<group>"; };
+		DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = crypto_aesctr.c; sourceTree = "<group>"; };
+		DA67FE7414E4845900DB7CC9 /* crypto_aesctr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_aesctr.h; sourceTree = "<group>"; };
+		DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
+		DA67FE7614E4845900DB7CC9 /* crypto_scrypt-ref.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-ref.c"; sourceTree = "<group>"; };
+		DA67FE7814E4845900DB7CC9 /* crypto_scrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
+		DA67FE7914E4845900DB7CC9 /* sha256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
+		DA67FE7A14E4845900DB7CC9 /* sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		DA67FE7B14E4845900DB7CC9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DA67FE7D14E4845900DB7CC9 /* scryptenc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scryptenc.c; sourceTree = "<group>"; };
+		DA67FE7E14E4845900DB7CC9 /* scryptenc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scryptenc.h; sourceTree = "<group>"; };
+		DA67FE7F14E4845900DB7CC9 /* scryptenc_cpuperf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scryptenc_cpuperf.c; sourceTree = "<group>"; };
+		DA67FE8014E4845900DB7CC9 /* scryptenc_cpuperf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scryptenc_cpuperf.h; sourceTree = "<group>"; };
+		DA67FE8214E4845900DB7CC9 /* memlimit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memlimit.c; sourceTree = "<group>"; };
+		DA67FE8314E4845900DB7CC9 /* memlimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memlimit.h; sourceTree = "<group>"; };
+		DA67FE8414E4845900DB7CC9 /* readpass.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = readpass.c; sourceTree = "<group>"; };
+		DA67FE8514E4845900DB7CC9 /* readpass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readpass.h; sourceTree = "<group>"; };
+		DA67FE8614E4845900DB7CC9 /* sysendian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		DA67FE8714E4845900DB7CC9 /* warn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = warn.c; sourceTree = "<group>"; };
+		DA67FE8814E4845900DB7CC9 /* warn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warn.h; sourceTree = "<group>"; };
+		DA67FE8914E4845900DB7CC9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DA67FE8A14E4845900DB7CC9 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		DA67FE8B14E4845900DB7CC9 /* patched_for_xcode */ = {isa = PBXFileReference; lastKnownFileType = text; path = patched_for_xcode; sourceTree = "<group>"; };
+		DA67FE8C14E4845900DB7CC9 /* scrypt.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = scrypt.1; sourceTree = "<group>"; };
+		DA67FE8D14E4845900DB7CC9 /* scrypt_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scrypt_platform.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0511C55127770FD00DE46C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */,
+				DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA8251C514E5CDF7008EBC5A /* libscryptcrypto.a in Frameworks */,
+				DA1A142514E4914800BCFFBE /* libutil.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA67FE5914E4834300DB7CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libscryptenc.a */,
+				A0511C5A127770FD00DE46C4 /* libscryptcrypto.a */,
+				DA67FE5D14E4834300DB7CC9 /* libutil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */,
+				A05123771278ACDE00DE46C4 /* README */,
+				A0511321127769BB00DE46C4 /* Makefile */,
+				A051131E127769BB00DE46C4 /* build-aux */,
+				DA67FE6914E4845900DB7CC9 /* scrypt */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0511E2B127789E000DE46C4 /* UIKit.framework */,
+				A0511E2D127789E900DE46C4 /* CoreGraphics.framework */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A051131E127769BB00DE46C4 /* build-aux */ = {
+			isa = PBXGroup;
+			children = (
+				DA1A141614E48E9F00BCFFBE /* config.h */,
+				DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */,
+				DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */,
+				DA67FE6214E483BD00DB7CC9 /* LICENSE */,
+				DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */,
+				DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */,
+			);
+			path = "build-aux";
+			sourceTree = "<group>";
+		};
+		DA1A13E414E487D800BCFFBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA1A13F014E487D900BCFFBE /* libssl.a */,
+				DA1A13F214E487D900BCFFBE /* libcrypto.a */,
+				DA1A13F414E487D900BCFFBE /* test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA67FE6914E4845900DB7CC9 /* scrypt */ = {
+			isa = PBXGroup;
+			children = (
+				DA1A140714E48E1600BCFFBE /* config.h */,
+				DA67FE6A14E4845900DB7CC9 /* config.aux */,
+				DA67FE6E14E4845900DB7CC9 /* config.h.in */,
+				DA67FE6F14E4845900DB7CC9 /* configure */,
+				DA67FE7014E4845900DB7CC9 /* FORMAT */,
+				DA67FE7114E4845900DB7CC9 /* lib */,
+				DA67FE8914E4845900DB7CC9 /* main.c */,
+				DA67FE8A14E4845900DB7CC9 /* Makefile.in */,
+				DA67FE8B14E4845900DB7CC9 /* patched_for_xcode */,
+				DA67FE8C14E4845900DB7CC9 /* scrypt.1 */,
+				DA67FE8D14E4845900DB7CC9 /* scrypt_platform.h */,
+			);
+			path = scrypt;
+			sourceTree = "<group>";
+		};
+		DA67FE6A14E4845900DB7CC9 /* config.aux */ = {
+			isa = PBXGroup;
+			children = (
+				DA67FE6B14E4845900DB7CC9 /* depcomp */,
+				DA67FE6C14E4845900DB7CC9 /* install-sh */,
+				DA67FE6D14E4845900DB7CC9 /* missing */,
+			);
+			path = config.aux;
+			sourceTree = "<group>";
+		};
+		DA67FE7114E4845900DB7CC9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				DA67FE7214E4845900DB7CC9 /* crypto */,
+				DA67FE7B14E4845900DB7CC9 /* README */,
+				DA67FE7C14E4845900DB7CC9 /* scryptenc */,
+				DA67FE8114E4845900DB7CC9 /* util */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		DA67FE7214E4845900DB7CC9 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */,
+				DA67FE7414E4845900DB7CC9 /* crypto_aesctr.h */,
+				DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */,
+				DA67FE7614E4845900DB7CC9 /* crypto_scrypt-ref.c */,
+				DA67FE7814E4845900DB7CC9 /* crypto_scrypt.h */,
+				DA67FE7914E4845900DB7CC9 /* sha256.c */,
+				DA67FE7A14E4845900DB7CC9 /* sha256.h */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		DA67FE7C14E4845900DB7CC9 /* scryptenc */ = {
+			isa = PBXGroup;
+			children = (
+				DA67FE7D14E4845900DB7CC9 /* scryptenc.c */,
+				DA67FE7E14E4845900DB7CC9 /* scryptenc.h */,
+				DA67FE7F14E4845900DB7CC9 /* scryptenc_cpuperf.c */,
+				DA67FE8014E4845900DB7CC9 /* scryptenc_cpuperf.h */,
+			);
+			path = scryptenc;
+			sourceTree = "<group>";
+		};
+		DA67FE8114E4845900DB7CC9 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DA67FE8214E4845900DB7CC9 /* memlimit.c */,
+				DA67FE8314E4845900DB7CC9 /* memlimit.h */,
+				DA67FE8414E4845900DB7CC9 /* readpass.c */,
+				DA67FE8514E4845900DB7CC9 /* readpass.h */,
+				DA67FE8614E4845900DB7CC9 /* sysendian.h */,
+				DA67FE8714E4845900DB7CC9 /* warn.c */,
+				DA67FE8814E4845900DB7CC9 /* warn.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A0511C52127770FD00DE46C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA67FE2B14E4834300DB7CC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		A0511DED127788EC00DE46C4 /* Makefile-scrypt */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-scrypt" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			dependencies = (
+			);
+			name = "Makefile-scrypt";
+			passBuildSettingsInEnvironment = 1;
+			productName = Makefile;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		A0511C51127770FD00DE46C4 /* scryptcrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0511C57127770FD00DE46C4 /* Build configuration list for PBXNativeTarget "scryptcrypto" */;
+			buildPhases = (
+				A0511C52127770FD00DE46C4 /* Headers */,
+				A0511C54127770FD00DE46C4 /* Sources */,
+				A0511C55127770FD00DE46C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0511DF3127788FD00DE46C4 /* PBXTargetDependency */,
+			);
+			name = scryptcrypto;
+			productName = openssl;
+			productReference = A0511C5A127770FD00DE46C4 /* libscryptcrypto.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D2AAC07D0554694100DB518D /* scryptenc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "scryptenc" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0511DF1127788F600DE46C4 /* PBXTargetDependency */,
+			);
+			name = scryptenc;
+			productName = openssl;
+			productReference = D2AAC07E0554694100DB518D /* libscryptenc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DA67FE2814E4834300DB7CC9 /* util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA67FE5A14E4834300DB7CC9 /* Build configuration list for PBXNativeTarget "util" */;
+			buildPhases = (
+				DA67FE2B14E4834300DB7CC9 /* Headers */,
+				DA67FE2C14E4834300DB7CC9 /* Sources */,
+				DA67FE5914E4834300DB7CC9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA67FE2914E4834300DB7CC9 /* PBXTargetDependency */,
+			);
+			name = util;
+			productName = openssl;
+			productReference = DA67FE5D14E4834300DB7CC9 /* libutil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "scrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* openssl */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DA1A13E414E487D800BCFFBE /* Products */;
+					ProjectRef = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A0511DED127788EC00DE46C4 /* Makefile-scrypt */,
+				D2AAC07D0554694100DB518D /* scryptenc */,
+				A0511C51127770FD00DE46C4 /* scryptcrypto */,
+				DA67FE2814E4834300DB7CC9 /* util */,
+				A0511DCE127788A100DE46C4 /* scrypt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DA1A13F014E487D900BCFFBE /* libssl.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libssl.a;
+			remoteRef = DA1A13EF14E487D900BCFFBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA1A13F214E487D900BCFFBE /* libcrypto.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcrypto.a;
+			remoteRef = DA1A13F114E487D900BCFFBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DA1A13F414E487D900BCFFBE /* test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = test.app;
+			remoteRef = DA1A13F314E487D900BCFFBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0511C54127770FD00DE46C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA67FE8E14E484A900DB7CC9 /* crypto_aesctr.c in Sources */,
+				DA67FE8F14E484B100DB7CC9 /* crypto_scrypt-nosse.c in Sources */,
+				DA67FE9014E484B100DB7CC9 /* crypto_scrypt-ref.c in Sources */,
+				DA67FE9214E484B100DB7CC9 /* sha256.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA67FE9314E484BB00DB7CC9 /* scryptenc.c in Sources */,
+				DA67FE9414E484BB00DB7CC9 /* scryptenc_cpuperf.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA67FE2C14E4834300DB7CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA67FE9514E484C200DB7CC9 /* memlimit.c in Sources */,
+				DA67FE9614E484C200DB7CC9 /* readpass.c in Sources */,
+				DA67FE9714E484C200DB7CC9 /* warn.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0511DD2127788A800DE46C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* scryptenc */;
+			targetProxy = A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */;
+		};
+		A0511DD4127788A800DE46C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511C51127770FD00DE46C4 /* scryptcrypto */;
+			targetProxy = A0511DD3127788A800DE46C4 /* PBXContainerItemProxy */;
+		};
+		A0511DF1127788F600DE46C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
+			targetProxy = A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */;
+		};
+		A0511DF3127788FD00DE46C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
+			targetProxy = A0511DF2127788FD00DE46C4 /* PBXContainerItemProxy */;
+		};
+		DA67FE2914E4834300DB7CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
+			targetProxy = DA67FE2A14E4834300DB7CC9 /* PBXContainerItemProxy */;
+		};
+		DA67FE5F14E4836300DB7CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA67FE2814E4834300DB7CC9 /* util */;
+			targetProxy = DA67FE5E14E4836300DB7CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "i386 armv6 armv7";
+			};
+			name = Release;
+		};
+		A0511C58127770FD00DE46C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A0511C59127770FD00DE46C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A0511DCF127788A200DE46C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = scrypt;
+			};
+			name = Debug;
+		};
+		A0511DD0127788A200DE46C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = scrypt;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A0511DEE127788ED00DE46C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Makefile;
+			};
+			name = Debug;
+		};
+		A0511DEF127788ED00DE46C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = Makefile;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		DA67FE5B14E4834300DB7CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DA67FE5C14E4834300DB7CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "scryptenc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "scrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0511C57127770FD00DE46C4 /* Build configuration list for PBXNativeTarget "scryptcrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0511C58127770FD00DE46C4 /* Debug */,
+				A0511C59127770FD00DE46C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "scrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0511DCF127788A200DE46C4 /* Debug */,
+				A0511DD0127788A200DE46C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-scrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0511DEE127788ED00DE46C4 /* Debug */,
+				A0511DEF127788ED00DE46C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA67FE5A14E4834300DB7CC9 /* Build configuration list for PBXNativeTarget "util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA67FE5B14E4834300DB7CC9 /* Debug */,
+				DA67FE5C14E4834300DB7CC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
