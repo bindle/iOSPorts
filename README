@@ -115,6 +115,16 @@ Packages
                   iOS platform (iPhone).
 
 
+   scrypt
+   Location:      ports/security/scrypt/scrypt.xcodeproj
+   Includes:      ports/security/openssl/openssl.xcodeproj
+   Link With:     libcrypto.a
+   Description:   The scrypt key derivation function was originally developed
+                  for use in the Tarsnap online backup system and is designed
+                  to be far more secure against hardware brute-force attacks
+                  than alternative functions such as PBKDF2 or bcrypt.
+
+
 Quick Start for Xcode 4.2
 =========================
 
