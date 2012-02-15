@@ -40,6 +40,7 @@ SOURCES		= \
 		  ports/devel/pcre/pkgdata_pcre.m \
 		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.m \
 		  ports/security/openssl/pkgdata_openssl.m \
+		  ports/security/scrypt/pkgdata_scrypt.m \
 		  ports/iOSPorts/pkgdata_iosports.m
 
 DEPS		= \
