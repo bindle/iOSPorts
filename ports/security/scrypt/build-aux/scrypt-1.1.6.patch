@@ -1,0 +1,28 @@
+--- scrypt/lib/scryptenc/scryptenc.h~	2010-01-16 21:48:20.000000000 +0100
++++ scrypt/lib/scryptenc/scryptenc.h	2012-02-10 17:23:18.000000000 +0100
+@@ -72,6 +72,9 @@
+  * 13	error reading input file
+  */
+ 
++int pickparams(size_t, double, double,
++    int *, uint32_t *, uint32_t *);
++
+ /**
+  * scryptenc_buf(inbuf, inbuflen, outbuf, passwd, passwdlen,
+  *     maxmem, maxmemfrac, maxtime):
+--- scrypt/lib/scryptenc/scryptenc.c~	2010-01-16 21:48:20.000000000 +0100
++++ scrypt/lib/scryptenc/scryptenc.c	2012-02-10 17:23:18.000000000 +0100
+@@ -48,12 +48,10 @@
+ 
+ #define ENCBLOCK 65536
+ 
+-static int pickparams(size_t, double, double,
+-    int *, uint32_t *, uint32_t *);
+ static int checkparams(size_t, double, double, int, uint32_t, uint32_t);
+ static int getsalt(uint8_t[32]);
+ 
+-static int
++int
+ pickparams(size_t maxmem, double maxmemfrac, double maxtime,
+     int * logN, uint32_t * r, uint32_t * p)
+ {
