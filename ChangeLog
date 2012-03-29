@@ -2,6 +2,12 @@
 iOS Ports Library
 Copyright (C) 2011, 2012 Bindle Binaries
 
+0.6
+      - Updating project files for Xcode 4.3. (syzdek)
+      PCRE
+      - Adding flag to PCRE project to "Skip Install" when building
+        libpcre.a. (syzdek)
+
 0.5   2012-02-14
       iOS Ports
       - Reverting supported architectures back to armv6, armv7. (syzdek)
