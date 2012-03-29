@@ -67,9 +67,9 @@
 		A074CF8C12B1EBD7003A12A6 /* ca-certs.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ca-certs.pem"; sourceTree = "<group>"; };
 		A0ECDF1A12948E9900C78D1F /* ldapTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTestMain.m; sourceTree = "<group>"; };
 		A0F8D1891414398300D5DC50 /* openldap.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openldap.xcodeproj; path = ../../../../ports/database/openldap/openldap.xcodeproj; sourceTree = "<group>"; };
-		A0F8D1A414143A2D00D5DC50 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libcrypto.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
-		A0F8D1A514143A2D00D5DC50 /* libsasl2.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libsasl2.a; path = "../../../../ports/security/cyrus-sasl/build/Release-iphoneos/libsasl2.a"; sourceTree = "<group>"; };
-		A0F8D1A614143A2D00D5DC50 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libssl.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libssl.a"; sourceTree = "<group>"; };
+		A0F8D1A414143A2D00D5DC50 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
+		A0F8D1A514143A2D00D5DC50 /* libsasl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsasl2.a; path = "../../../../ports/security/cyrus-sasl/build/Release-iphoneos/libsasl2.a"; sourceTree = "<group>"; };
+		A0F8D1A614143A2D00D5DC50 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libssl.a"; sourceTree = "<group>"; };
 		A0F8EE591280B096004D1EA1 /* ldapTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ldapTest.h; sourceTree = "<group>"; };
 		A0F8EE5A1280B096004D1EA1 /* ldapTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ldapTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,7 +207,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ldapsearch" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -295,6 +295,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 			};
@@ -306,6 +307,7 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ldapsearch_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "ldapsearch-Info.plist";
 				PRODUCT_NAME = ldapsearch;
 				VALIDATE_PRODUCT = YES;
@@ -321,6 +323,7 @@
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -340,6 +343,7 @@
 				);
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
