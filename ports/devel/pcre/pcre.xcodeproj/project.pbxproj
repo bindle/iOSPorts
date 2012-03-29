@@ -708,6 +708,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H=1";
 				PRODUCT_NAME = pcre;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -721,6 +722,7 @@
 				INSTALL_PATH = /usr/local/lib;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H=1";
 				PRODUCT_NAME = pcre;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
