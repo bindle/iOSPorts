@@ -6240,7 +6240,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "openssl" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -6902,6 +6902,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = ssl;
 				SKIP_INSTALL = YES;
 			};
@@ -6914,6 +6915,7 @@
 				DSTROOT = /tmp/openssl.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = ssl;
 				SKIP_INSTALL = YES;
 			};
@@ -6929,6 +6931,7 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -6962,6 +6965,7 @@
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -6996,6 +7000,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = crypto;
 				SKIP_INSTALL = YES;
 			};
@@ -7008,28 +7013,9 @@
 				DSTROOT = /tmp/openssl.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = crypto;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A0511DCF127788A200DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				PRODUCT_NAME = OpenSSL;
-			};
-			name = Debug;
-		};
-		A0511DD0127788A200DE46C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				PRODUCT_NAME = OpenSSL;
-				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -7039,6 +7025,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = Makefile;
 			};
 			name = Debug;
@@ -7048,53 +7035,8 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = Makefile;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		A0511E021277895400DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = "examples/resources/test-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PRODUCT_NAME = test;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A0511E031277895400DE46C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
-				INFOPLIST_FILE = "examples/resources/test-Info.plist";
-				INSTALL_PATH = "$(HOME)/Applications";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					UIKit,
-				);
-				PRODUCT_NAME = test;
-				SKIP_INSTALL = YES;
 				ZERO_LINK = NO;
 			};
 			name = Release;
