@@ -39,6 +39,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A01B2A371576DDB300D365BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = ssl;
+		};
+		A01B2A391576DDB300D365BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4;
+			remoteInfo = crypto;
+		};
 		A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -344,6 +358,8 @@
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
+				A01B2A381576DDB300D365BA /* PBXTargetDependency */,
+				A01B2A3A1576DDB300D365BA /* PBXTargetDependency */,
 			);
 			name = "Makefile-scrypt";
 			passBuildSettingsInEnvironment = 1;
@@ -495,6 +511,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A01B2A381576DDB300D365BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ssl;
+			targetProxy = A01B2A371576DDB300D365BA /* PBXContainerItemProxy */;
+		};
+		A01B2A3A1576DDB300D365BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = A01B2A391576DDB300D365BA /* PBXContainerItemProxy */;
+		};
 		A0511DD2127788A800DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC07D0554694100DB518D /* scryptenc */;
