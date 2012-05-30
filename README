@@ -75,12 +75,13 @@ Packages
    Cyrus SASL
    ----------
    Location:      ports/security/cyrus-sasl/
-   Dependencies:  libsasl2.a
+   Includes:      OpenSSL
+   Dependencies:  sasl2 (Cyrus SASL)
    Add:           ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
                   ports/security/openssl/openssl.xcodeproj
-   Link With:     libsasl2.a
-                  libssl.a
-                  libcrypto.a
+   Link With:     libsasl2.a (Cyrus SASL)
+                  libssl.a (openssl)
+                  libcrypto.a (openssl)
    Description:   A port of Cyrus SASL to the iPhone platform (iOS). An open
                   source implementations of Simple Authentication and Security
                   Layer methods.
@@ -89,9 +90,10 @@ Packages
    iOSPorts
    --------
    Location:      ports/iOSPorts/
-   Dependencies:  libiOSPorts.a
+   Includes:      N/A
+   Dependencies:  iOSPorts (iOSPorts)
    Add:           ports/iOSPorts/iOSPorts.xcodeproj
-   Link With:     libiOSPorts.a
+   Link With:     libiOSPorts.a (iOSPorts)
    Description:   A standalone package for adding iOS Port packages' copyright
                   information to an iOS package.  Using this library to
                   display the copyright information should fulfill a packages
@@ -104,26 +106,29 @@ Packages
    OpenLDAP
    --------
    Location:      ports/database/openldap/
-   Dependencies:  libldap.a
+   Includes:      Cyrus SASL
+                  OpenSSL
+   Dependencies:  ldap (openldap)
    Add:           ports/database/openldap/openldap.xcodeproj
                   ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
                   ports/security/openssl/openssl.xcodeproj
-   Link With:     liblber.a
-                  libldap.a
-                  libsasl2.a
-                  libssl.a
-                  libcrypto.a
+   Link With:     libldap.a (openldap)
+                  liblber.a (openldap)
+                  libsasl2.a (Cyrus SASL)
+                  libssl.a (openssl)
+                  libcrypto.a (openssl)
    Desciption:    A port of OpenLDAP client library to the iOS platform.
 
 
    OpenSSL
    -------
    Location:      ports/security/openssl/
-   Dependencies:  libssl.a
-                  libcrypto.a
+   Includes:      N/A
+   Dependencies:  ssl (openssl)
+                  crypto (openssl)
    Add:           ports/security/openssl/openssl.xcodeproj
-   Link With:     libssl.a
-                  libcrypto.a
+   Link With:     libssl.a (openssl)
+                  libcrypto.a (openssl)
    Description:   A port of OpenSSL's SSL/TLS and Crypto toolkit to the iPhone
                   platform (iOS).
 
@@ -131,9 +136,10 @@ Packages
    PCRE
    ----
    Location:      ports/devel/pcre/
-   Dependencies:  libpcre.a
+   Includes:      N/A
+   Dependencies:  pcre (pcre)
    Add:           ports/devel/pcre/pcre.xcodeproj
-   Link With:     libpcre.a
+   Link With:     libpcre.a (pcre)
    Description:   A port of PCRE (Perl Compatible Regular Expressions) to the
                   iOS platform (iPhone).
 
@@ -141,10 +147,15 @@ Packages
    scrypt
    ------
    Location:      ports/security/scrypt/
-   Dependencies:
+   Includes:      OpenSSL
+   Dependencies:  scrypt (scrypt)
    Add:           ports/security/scrypt/scrypt.xcodeproj
                   ports/security/openssl/openssl.xcodeproj
-   Link With:
+   Link With:     libssl.a (openssl)
+                  libcrypto.a (openssl)
+                  libscryptenc.a (scrypt)
+                  libscrypto.a (scrypt)
+                  libutil.a (scrypt)
    Description:   The scrypt key derivation function was originally developed
                   for use in the Tarsnap online backup system and is designed
                   to be far more secure against hardware brute-force attacks
