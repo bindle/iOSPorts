@@ -162,10 +162,112 @@ Packages
                   than alternative functions such as PBKDF2 or bcrypt.
 
 
-Quick Start for Xcode 4.2
-=========================
+Quick Start for Xcode 4
+=======================
 
-Needs to be written.
+   This tutorial assumes that you are familiar with the following guides
+   available on Apple's Dev Center:
+
+      * Xcode 4 User Guide
+        - Introduction
+        - Orientation to Xcode
+
+   For the sake of clarity, this tutorial uses the following information. Be
+   sure to substitute information appropiate for your project and setup:
+
+      Project Name:           Zebra
+      App Name:               Zebra.app
+      Project File:           Zebra.xcodeproj
+      Project Location:       /Users/zookeeper/Documents/Zebra/
+      iOS Ports Location:     /Users/zookeeper/Documents/iOSPorts/
+      iOS Ports Includes:     /Users/zookeeper/Documents/iOSPorts/include
+      Relative Include Path:  ../iOSPorts/include
+
+   In order to use packages from iOS Ports the following items need
+   to be completed:
+
+      * Download iOS Projects (see "Source Code" section of this README).
+      * Note the package information for the packages to be used (see "Packages"
+        section of this README).
+      * Add iOS Ports Xcode project files to Zebra.xcodeproj.
+      * Update the "Build Phases" in Zebra.xcodeproj
+      * Update the "Build Settings" in Zebra.xcodeproj.
+
+   Add iOS Ports Xcode project files
+   =================================
+
+      1) Open Zebra.xcodeproj in Xcode.
+      2) On the menubar, select "File" -> "Add Files to 'Zebra'..."
+         A new dialog should appear.
+      4) In the dialog, locate the first Xcode project from the "Add" field
+         of the desired iOS Ports package. For example, if adding OpenLDAP to
+         your project, you would locate "openldap.xcodeproj".
+      5) Click the "Add" button. The xcode project "openldap.xcodeproj" should
+         appear in the "Project Navigator".
+      6) Repeat for the remaining Xcode projects listed in the "Add" field
+         of the desired iOS Ports package.
+
+   Update Build Phases
+   ===================
+
+      Open the Project Editor
+      1) Display the "Project Navigator" in the "Navigator Area" of Xcode's
+         main window (see "Xcode 4 User Guide").
+      2) Click on the project icon in the project navigator (the project name
+         is visible next to the project icon).  The project's build settings
+         should appear in the "Edit Area" of Xcode's window.
+      3) In "TARGETS" section, select the target which will use the iOS Ports
+         packages.
+
+      Update "Target Dependencies"
+      1) Select the "Build Phases" tab from the project editor.
+      2) Expand the "Target Dependencies" section.
+      3) Click the "+" button under "Target Dependencies". A list of targets
+         should appear.
+      4) Locate the first target from the "Dependencies" field of the desired
+         iOS Ports package. The target should have an icon of a stone building.
+         Using OpenLDAP as an example, you would select "ldap".
+      5) Click the "Add" button.
+      6) Repeat for the remaining targets listed in the "Dependencies" field
+         of the desired iOS Ports package.
+
+      Update "Link Binary With Libraries"
+      1) Select the "Build Phases" tab from the project editor.
+      2) Expand the "Link Binary With Libraries" section.
+      3) Click the "+" button under "Link Binary With Libraries". A list of
+         libraries should appear.
+      4) Locate the first library from the "Link With" field of the desired
+         iOS Ports package. The target should have an icon of a stone building.
+         Using OpenLDAP as an example, you would select "libldap.a".
+      5) Click the "Add" button.
+      6) Repeat for the remaining libraries listed in the "Link With" field of
+         the desired iOS Ports package.
+
+      Update Build Settings
+      =====================
+
+         Update Search Paths
+         1) Select the "Build Settings" tab from the project editor.
+         2) Search for the setting titled "Always Search User Paths". Change the
+            value to "Yes". If the editor is displaying setting names instead of
+            setting titles, search for "ALWAYS_SEARCH_USER_PATHS". If the editor
+            if displaying setting definitions instead of setting values, change
+            the definition to "YES".
+         2) Search for the setting titled "User Header Search Paths". Add the
+            relative include path to the iOS Ports include directory. In this
+            example, the relative include path is "../iOSPorts/include" since
+            both Zebra and iOS Ports are in the same parent directory. If the
+            editor is displaying setting names instead of setting titles, search
+            for "USER_HEADER_SEARCH_PATHS".
+
+      The project Zebra should not be ready to compile the required static
+      libraries and link to them.  The source for the iOS Ports packages will
+      be downloaded the first time the packages are compiled.
+
+      When using two or more iOS Ports packages, it is not necessary to follow
+      these instructions for packages which are already included by other
+      packages.  For example, including OpenLDAP automatically includes OpenSSL
+      and Cyrus SASL.
 
 
 Maintainers
