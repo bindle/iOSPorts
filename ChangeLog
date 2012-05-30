@@ -2,11 +2,13 @@
 iOS Ports Library
 Copyright (C) 2011, 2012 Bindle Binaries
 
-0.6
+0.6   2012-05-30
       - Updating project files for Xcode 4.3. (syzdek)
       PCRE
       - Adding flag to PCRE project to "Skip Install" when building
         libpcre.a. (syzdek)
+      - Adding quick start instructions for Xcode 4. (syzdek)
+      - Adding OpenSSL as a target dependency for scrypt port. (syzdek)
 
 0.5   2012-02-14
       iOS Ports
