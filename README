@@ -42,10 +42,11 @@ Disclaimer
 Software Requirements
 =====================
 
-   Git 1.7.2.3
-   Mac OS X 10.7.1
-   Xcode 4.2
-   iOS SDK 5.0
+   Git 1.7
+   Mac OS X 10.7
+   Xcode 4.3
+   Xcode Command Line Tools
+   iOS SDK 5.1
 
 
 Directory Map
