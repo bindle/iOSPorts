@@ -394,10 +394,30 @@ int main(int argc, char * argv[])
    fprintf(cnf.fs, "#import <iOSPorts/iOSPorts.h>\n");
    fprintf(cnf.fs, "const iOSPortsPKGData iOSPorts_pkgdata_%s =\n", cnf.pkg_id);
    fprintf(cnf.fs, "{\n   ");
-   fprintf(cnf.fs, (cnf.pkg_id      ? "\"%s\"" : "NULL"), cnf.pkg_id);      fprintf(cnf.fs, ", // pkg_id\n   ");
-   fprintf(cnf.fs, (cnf.pkg_name    ? "\"%s\"" : "NULL"), cnf.pkg_name);    fprintf(cnf.fs, ", // pkg_name\n   ");
-   fprintf(cnf.fs, (cnf.pkg_version ? "\"%s\"" : "NULL"), cnf.pkg_version); fprintf(cnf.fs, ", // pkg_version\n   ");
-   fprintf(cnf.fs, (cnf.pkg_website ? "\"%s\"" : "NULL"), cnf.pkg_website); fprintf(cnf.fs, ", // pkg_website\n   ");
+   if ((cnf.pkg_id))
+   {
+      fprintf(cnf.fs, "\"%s\", // pkg_id\n   ", cnf.pkg_id);
+   } else {
+      fprintf(cnf.fs, "NULL, // pkg_id\n   ");
+   };
+   if ((cnf.pkg_name))
+   {
+      fprintf(cnf.fs, "\"%s\", // pkg_name\n   ", cnf.pkg_name);
+   } else {
+      fprintf(cnf.fs, "NULL, // pkg_name\n   ");
+   };
+   if ((cnf.pkg_version))
+   {
+      fprintf(cnf.fs, "\"%s\", // pkg_version\n   ", cnf.pkg_version);
+   } else {
+      fprintf(cnf.fs, "NULL, // pkg_version\n   ");
+   };
+   if ((cnf.pkg_website))
+   {
+      fprintf(cnf.fs, "\"%s\", // pkg_website\n   ", cnf.pkg_website);
+   } else {
+      fprintf(cnf.fs, "NULL, // pkg_website\n   ");
+   };
    fprintf(cnf.fs, ((fd == -1) ? "{ 0x00 };" : "{")); fprintf(cnf.fs, "  // pkg_license\n     ");
    if (fd != -1)
    {
