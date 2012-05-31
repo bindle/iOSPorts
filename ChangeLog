@@ -2,6 +2,11 @@
 iOS Ports Library
 Copyright (C) 2011, 2012 Bindle Binaries
 
+0.7
+      - Changing arguments for external build tool argument from "all" to
+        $(ACTION). (syzdek)
+      - Fixing typos in README. (syzdek)
+
 0.6   2012-05-30
       - Updating project files for Xcode 4.3. (syzdek)
       PCRE
