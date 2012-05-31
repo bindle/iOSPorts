@@ -73,8 +73,8 @@ $(PACKAGE_MD5): Makefile $(PACKAGE_FILE)
 	@/usr/bin/touch $(PACKAGE_MD5)
 
 $(PACKAGE_FILE):
-	/usr/bin/curl -O ${PACKAGE_URL} -o $(PACKAGE_FILE) -s \
-		|| { rm -f $(PACKAGE_FILE); exit 1; };
+	/usr/bin/curl -O $(PACKAGE_URL) -o $(PACKAGE_FILE) -s \
+		|| { rm -f $(PACKAGE_FILE); echo "unable to download $(PACKAGE_FILE) from $(PACKAGE_URL)\nPlease verify that your system is connected to the Internet."; exit 1; };
 	@/usr/bin/touch $(PACKAGE_FILE)
 
 
