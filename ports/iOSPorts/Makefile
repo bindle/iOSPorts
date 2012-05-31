@@ -40,7 +40,7 @@ PACKAGE_NAME				= iOS Ports
 PACKAGE_TARNAME				= iosports
 PACKAGE_VERSION				= $(shell git describe --long --abbrev=7 HEAD 2> /dev/null |sed -e 's/^v//g' -e 's/-/./g')
 PACKAGE_WEBSITE				= https://github.com/bindle/iOSPorts
-PACKAGE_LICENSE_FILE			= COPYING
+PACKAGE_LICENSE_FILE			= ../../LICENSE
 
 SRCROOTDIR = ../..
 include $(SRCROOTDIR)/build-aux/Makefile-package
