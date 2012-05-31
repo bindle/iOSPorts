@@ -261,7 +261,7 @@ Quick Start for Xcode 4
             editor is displaying setting names instead of setting titles, search
             for "USER_HEADER_SEARCH_PATHS".
 
-      The project Zebra should not be ready to compile the required static
+      The project Zebra should now be ready to compile the required static
       libraries and link to them.  The source for the iOS Ports packages will
       be downloaded the first time the packages are compiled.
 
