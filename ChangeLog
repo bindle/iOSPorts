@@ -6,6 +6,8 @@ Copyright (C) 2011, 2012 Bindle Binaries
       - Changing arguments for external build tool argument from "all" to
         $(ACTION). (syzdek)
       - Fixing typos in README. (syzdek)
+      - Fixing compile problems with iOSPorts when compiling for iOS
+        simulator. (syzdek)
 
 0.6   2012-05-30
       - Updating project files for Xcode 4.3. (syzdek)
