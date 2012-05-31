@@ -63,6 +63,7 @@ INCLUDES	= \
 		  include/iOSPorts/iOSPortsViewController.h
 
 CFLAGS		= -W -Wall -Werror -Iinclude -framework Foundation -DPACKAGE_VERSION=\"$(PACKAGE_VERSION)\"
+CC		= /usr/bin/cc
 
 all: $(PROGS)
 
