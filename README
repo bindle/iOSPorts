@@ -47,6 +47,7 @@ Software Requirements
    Xcode 4.3
    Xcode Command Line Tools
    iOS SDK 5.1
+   Internet Access (for downloading packages)
 
 
 Directory Map
