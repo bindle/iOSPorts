@@ -4123,7 +4123,7 @@
 /* Begin PBXLegacyTarget section */
 		A03AD74211D14D0900F5A51F /* Makefile-openldap */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = all;
+			buildArgumentsString = "$(ACTION)";
 			buildConfigurationList = A03AD74911D14D1300F5A51F /* Build configuration list for PBXLegacyTarget "Makefile-openldap" */;
 			buildPhases = (
 			);

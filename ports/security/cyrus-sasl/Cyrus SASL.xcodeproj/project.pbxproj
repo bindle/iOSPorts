@@ -1943,7 +1943,7 @@
 /* Begin PBXLegacyTarget section */
 		A0FB53DA126E52C60057FEE9 /* Makefile-cyrus-sasl */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = all;
+			buildArgumentsString = "$(ACTION)";
 			buildConfigurationList = A0FB53E3126E52EE0057FEE9 /* Build configuration list for PBXLegacyTarget "Makefile-cyrus-sasl" */;
 			buildPhases = (
 			);

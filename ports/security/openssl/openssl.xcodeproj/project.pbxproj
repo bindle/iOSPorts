@@ -6183,7 +6183,7 @@
 /* Begin PBXLegacyTarget section */
 		A0511DED127788EC00DE46C4 /* Makefile-openssl */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = all;
+			buildArgumentsString = "$(ACTION)";
 			buildConfigurationList = A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-openssl" */;
 			buildPhases = (
 			);
