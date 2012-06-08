@@ -76,14 +76,14 @@ Packages
 
    Cyrus SASL
    ----------
-   Location:      ports/security/cyrus-sasl/  
-   Includes:      OpenSSL  
-   Dependencies:  sasl2 (Cyrus SASL)  
-   Add:           ports/security/cyrus-sasl/Cyrus SASL.xcodeproj  
-                  ports/security/openssl/openssl.xcodeproj  
-   Link With:     libsasl2.a (Cyrus SASL)  
-                  libssl.a (openssl)  
-                  libcrypto.a (openssl)  
+   Location:      ports/security/cyrus-sasl/
+   Includes:      OpenSSL
+   Dependencies:  sasl2 (Cyrus SASL)
+   Add:           ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
+                  ports/security/openssl/openssl.xcodeproj
+   Link With:     libsasl2.a (Cyrus SASL)
+                  libssl.a (openssl)
+                  libcrypto.a (openssl)
    Description:   A port of Cyrus SASL to the iPhone platform (iOS). An open
                   source implementations of Simple Authentication and Security
                   Layer methods.
