@@ -25,7 +25,7 @@ Contents
 
 
 Disclaimer
-----------
+==========
 
    This software is provided by the copyright holders and contributors "as
    is" and any express or implied warranties, including, but not limited to,
@@ -41,38 +41,38 @@ Disclaimer
 
 
 Software Requirements
----------------------
+=====================
 
-   * Git 1.7
-   * Mac OS X 10.7
-   * Xcode 4.3
-   * Xcode Command Line Tools
-   * iOS SDK 5.1
-   * Internet Access (for downloading packages)
+   Git 1.7
+   Mac OS X 10.7
+   Xcode 4.3
+   Xcode Command Line Tools
+   iOS SDK 5.1
+   Internet Access (for downloading packages)
 
 
 Directory Map
--------------
+=============
 
-   .gitignore           - Global list of files to ignore  
-   LICENSE              - Software license of source code created for the  
-                          iOSPorts package.  
-   Makefile             - used to perform various global tasks  
-   README               - This file.  
-   build-aux/           - directory containing support scripts and utilities  
-   iOSPorts.xcworkspace - Xcode workspace  
-   include/             - Ports will install required header files to this  
-                          directory  
-   ports/               - contains all ports  
-   ports/database/      - Database Clients and Tools  
-   ports/devel/         - Development Tools and Libraries  
-   ports/iOSports/      - internal source code for iOSPorts support tools  
-   ports/security/      - Security Related Tools and Libraries  
-   examples/            - contains example code for iOS ports packages  
+   .gitignore           - Global list of files to ignore
+   LICENSE              - Software license of source code created for the
+                          iOSPorts package.
+   Makefile             - used to perform various global tasks
+   README               - This file.
+   build-aux/           - directory containing support scripts and utilities
+   iOSPorts.xcworkspace - Xcode workspace
+   include/             - Ports will install required header files to this
+                          directory
+   ports/               - contains all ports
+   ports/database/      - Database Clients and Tools
+   ports/devel/         - Development Tools and Libraries
+   ports/iOSports/      - internal source code for iOSPorts support tools
+   ports/security/      - Security Related Tools and Libraries
+   examples/            - contains example code for iOS ports packages
 
 
 Packages
---------
+========
 
    Cyrus SASL
    ----------
@@ -165,7 +165,7 @@ Packages
 
 
 Quick Start for Xcode 4
------------------------
+=======================
 
    This tutorial assumes that you are familiar with the following guides
    available on Apple's Dev Center:
@@ -198,64 +198,64 @@ Quick Start for Xcode 4
    Add iOS Ports Xcode project files
    =================================
 
-      1. Open Zebra.xcodeproj in Xcode.
-      2. On the menubar, select "File" -> "Add Files to 'Zebra'..."
+      1) Open Zebra.xcodeproj in Xcode.
+      2) On the menubar, select "File" -> "Add Files to 'Zebra'..."
          A new dialog should appear.
-      4. In the dialog, locate the first Xcode project from the "Add" field
+      4) In the dialog, locate the first Xcode project from the "Add" field
          of the desired iOS Ports package. For example, if adding OpenLDAP to
          your project, you would locate "openldap.xcodeproj".
-      5. Click the "Add" button. The xcode project "openldap.xcodeproj" should
+      5) Click the "Add" button. The xcode project "openldap.xcodeproj" should
          appear in the "Project Navigator".
-      6. Repeat for the remaining Xcode projects listed in the "Add" field
+      6) Repeat for the remaining Xcode projects listed in the "Add" field
          of the desired iOS Ports package.
 
    Update Build Phases
    ===================
 
       Open the Project Editor
-      1. Display the "Project Navigator" in the "Navigator Area" of Xcode's
+      1) Display the "Project Navigator" in the "Navigator Area" of Xcode's
          main window (see "Xcode 4 User Guide").
-      2. Click on the project icon in the project navigator (the project name
+      2) Click on the project icon in the project navigator (the project name
          is visible next to the project icon).  The project's build settings
          should appear in the "Edit Area" of Xcode's window.
-      3. In "TARGETS" section, select the target which will use the iOS Ports
+      3) In "TARGETS" section, select the target which will use the iOS Ports
          packages.
 
       Update "Target Dependencies"
-      1. Select the "Build Phases" tab from the project editor.
-      2. Expand the "Target Dependencies" section.
-      3. Click the "+" button under "Target Dependencies". A list of targets
+      1) Select the "Build Phases" tab from the project editor.
+      2) Expand the "Target Dependencies" section.
+      3) Click the "+" button under "Target Dependencies". A list of targets
          should appear.
-      4. Locate the first target from the "Dependencies" field of the desired
+      4) Locate the first target from the "Dependencies" field of the desired
          iOS Ports package. The target should have an icon of a stone building.
          Using OpenLDAP as an example, you would select "ldap".
-      5. Click the "Add" button.
-      6. Repeat for the remaining targets listed in the "Dependencies" field
+      5) Click the "Add" button.
+      6) Repeat for the remaining targets listed in the "Dependencies" field
          of the desired iOS Ports package.
 
       Update "Link Binary With Libraries"
-      1. Select the "Build Phases" tab from the project editor.
-      2. Expand the "Link Binary With Libraries" section.
-      3. Click the "+" button under "Link Binary With Libraries". A list of
+      1) Select the "Build Phases" tab from the project editor.
+      2) Expand the "Link Binary With Libraries" section.
+      3) Click the "+" button under "Link Binary With Libraries". A list of
          libraries should appear.
-      4. Locate the first library from the "Link With" field of the desired
+      4) Locate the first library from the "Link With" field of the desired
          iOS Ports package. The target should have an icon of a stone building.
          Using OpenLDAP as an example, you would select "libldap.a".
-      5. Click the "Add" button.
-      6. Repeat for the remaining libraries listed in the "Link With" field of
+      5) Click the "Add" button.
+      6) Repeat for the remaining libraries listed in the "Link With" field of
          the desired iOS Ports package.
 
       Update Build Settings
       =====================
 
          Update Search Paths
-         1. Select the "Build Settings" tab from the project editor.
-         2. Search for the setting titled "Always Search User Paths". Change the
+         1) Select the "Build Settings" tab from the project editor.
+         2) Search for the setting titled "Always Search User Paths". Change the
             value to "Yes". If the editor is displaying setting names instead of
             setting titles, search for "ALWAYS_SEARCH_USER_PATHS". If the editor
             if displaying setting definitions instead of setting values, change
             the definition to "YES".
-         2. Search for the setting titled "User Header Search Paths". Add the
+         2) Search for the setting titled "User Header Search Paths". Add the
             relative include path to the iOS Ports include directory. In this
             example, the relative include path is "../iOSPorts/include" since
             both Zebra and iOS Ports are in the same parent directory. If the
