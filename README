@@ -20,7 +20,8 @@ Contents
    5. Quick Start for Xcode 4.2
    6. Maintainers
    7. Community
-   8. Source Code
+   8. iOS Ports Users
+   9. Source Code
 
 
 Disclaimer
@@ -291,6 +292,20 @@ Community
 
    Issue Tracking:
       https://github.com/bindle/iOSPorts/issues
+
+
+iOS Ports Users
+===============
+
+   The following projects and organizations are known to use iOS Ports. To
+   have your project or organzation added to the list, please contact
+   David M. Syzdek <syzdek@bindlebinaries.com>.
+
+      Branches
+      http://itunes.apple.com/us/app/branches/id499800513
+
+      Twig
+      http://itunes.apple.com/us/app/twig/id511936352
 
 
 Source Code
