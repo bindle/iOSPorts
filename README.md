@@ -54,21 +54,21 @@ Software Requirements
 Directory Map
 -------------
 
-   * .gitignore           - Global list of files to ignore
-   * LICENSE              - Software license of source code created for the
-                            iOSPorts package.
-   * Makefile             - used to perform various global tasks
-   * README               - This file.
-   * build-aux/           - directory containing support scripts and utilities
-   * iOSPorts.xcworkspace - Xcode workspace
-   * include/             - Ports will install required header files to this
-                            directory
-   * ports/               - contains all ports
-   * ports/database/      - Database Clients and Tools
-   * ports/devel/         - Development Tools and Libraries
-   * ports/iOSports/      - internal source code for iOSPorts support tools
-   * ports/security/      - Security Related Tools and Libraries
-   * examples/            - contains example code for iOS ports packages
+   .gitignore           - Global list of files to ignore  
+   LICENSE              - Software license of source code created for the  
+                          iOSPorts package.  
+   Makefile             - used to perform various global tasks  
+   README               - This file.  
+   build-aux/           - directory containing support scripts and utilities  
+   iOSPorts.xcworkspace - Xcode workspace  
+   include/             - Ports will install required header files to this  
+                          directory  
+   ports/               - contains all ports  
+   ports/database/      - Database Clients and Tools  
+   ports/devel/         - Development Tools and Libraries  
+   ports/iOSports/      - internal source code for iOSPorts support tools  
+   ports/security/      - Security Related Tools and Libraries  
+   examples/            - contains example code for iOS ports packages  
 
 
 Packages
