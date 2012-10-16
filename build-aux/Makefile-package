@@ -36,11 +36,12 @@
 all: $(PACKAGE_TARNAME) extra-prep
 
 clean: clean-local
+	/bin/rm -Rf include
+
+distclean: distclean-local clean
 	/bin/rm -f  $(PACKAGE_MD5)
 	/bin/rm -fR $(PACKAGE_DIR)
 	/bin/rm -fR $(PACKAGE_TARNAME)
-
-distclean: distclean-local clean
 	/bin/rm -f $(PACKAGE_FILE)
 	/bin/rm -f build/
 
@@ -74,7 +75,7 @@ $(PACKAGE_MD5): Makefile $(PACKAGE_FILE)
 
 $(PACKAGE_FILE):
 	/usr/bin/curl -O $(PACKAGE_URL) -o $(PACKAGE_FILE) -s \
-		|| { rm -f $(PACKAGE_FILE); echo "unable to download $(PACKAGE_FILE) from $(PACKAGE_URL)\nPlease verify that your system is connected to the Internet."; exit 1; };
+		|| { rm -f $(PACKAGE_FILE); echo -e "unable to download $(PACKAGE_FILE) from $(PACKAGE_URL)\nPlease verify that your system is connected to the Internet."; exit 1; };
 	@/usr/bin/touch $(PACKAGE_FILE)
 
 
