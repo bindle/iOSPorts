@@ -2841,6 +2841,7 @@
 		A0511E2B127789E000DE46C4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A0511E2D127789E900DE46C4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		A0527A2E162DD07B00D85322 /* openssl-1.0.0a.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "openssl-1.0.0a.patch"; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libssl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libssl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -2898,6 +2899,7 @@
 		A051131E127769BB00DE46C4 /* build-aux */ = {
 			isa = PBXGroup;
 			children = (
+				A0527A2E162DD07B00D85322 /* openssl-1.0.0a.patch */,
 				A0511D561277836600DE46C4 /* opensslconf.h */,
 				A051131F127769BB00DE46C4 /* configure-wrapper.sh */,
 				A0511320127769BB00DE46C4 /* openssl-1.0.0a.tar.gz.md5 */,

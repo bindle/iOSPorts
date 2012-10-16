@@ -79,7 +79,6 @@ $(INCLUDES): $(CUSTFILES)
 extra-prep: $(INCLUDES)
 
 clean-local:
-	/bin/rm -Rf include
 	/bin/rm -Rf $(INCLUDES)
 
 distclean-local:

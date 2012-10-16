@@ -68,7 +68,6 @@ cyrus-sasl/config.h: $(PACKAGE_TARNAME)
 extra-prep: cyrus-sasl/config.h $(INSTALLHEADERS)
 
 clean-local:
-	/bin/rm -Rf include
 	/bin/rm -Rf ../../../include/sasl
 
 distclean-local:

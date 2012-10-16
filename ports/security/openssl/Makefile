@@ -66,7 +66,6 @@ openssl/patched_for_xcode: $(PKGHEADERS)
 extra-prep: $(PKGHEADERS) ../../../include/openssl/opensslconf.h openssl/patched_for_xcode
 
 clean-local:
-	/bin/rm -Rf include
 	/bin/rm -Rf ../../../include/openssl
 
 distclean-local:
