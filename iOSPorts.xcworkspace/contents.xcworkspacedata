@@ -78,4 +78,17 @@
          </Group>
       </Group>
    </Group>
+   <Group
+      location = "container:build-aux"
+      name = "build-aux">
+      <FileRef
+         location = "group:configure-wrapper.sh">
+      </FileRef>
+      <FileRef
+         location = "group:iOS-buildenv.sh">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile-package">
+      </FileRef>
+   </Group>
 </Workspace>
