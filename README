@@ -80,7 +80,6 @@ Packages
    Includes:      OpenSSL
    Dependencies:  sasl2 (Cyrus SASL)
    Add:           ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
-                  ports/security/openssl/openssl.xcodeproj
    Link With:     libsasl2.a (Cyrus SASL)
                   libssl.a (openssl)
                   libcrypto.a (openssl)
@@ -112,8 +111,6 @@ Packages
                   OpenSSL
    Dependencies:  ldap (openldap)
    Add:           ports/database/openldap/openldap.xcodeproj
-                  ports/security/cyrus-sasl/Cyrus SASL.xcodeproj
-                  ports/security/openssl/openssl.xcodeproj
    Link With:     libldap.a (openldap)
                   liblber.a (openldap)
                   libsasl2.a (Cyrus SASL)
@@ -127,7 +124,6 @@ Packages
    Location:      ports/security/openssl/
    Includes:      N/A
    Dependencies:  ssl (openssl)
-                  crypto (openssl)
    Add:           ports/security/openssl/openssl.xcodeproj
    Link With:     libssl.a (openssl)
                   libcrypto.a (openssl)
@@ -152,7 +148,6 @@ Packages
    Includes:      OpenSSL
    Dependencies:  scrypt (scrypt)
    Add:           ports/security/scrypt/scrypt.xcodeproj
-                  ports/security/openssl/openssl.xcodeproj
    Link With:     libssl.a (openssl)
                   libcrypto.a (openssl)
                   libscryptenc.a (scrypt)

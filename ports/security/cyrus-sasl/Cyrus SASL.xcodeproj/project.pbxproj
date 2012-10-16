@@ -46,13 +46,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A021D11D127B790700A30E69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
 		A021D11F127B790C00A30E69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
@@ -1970,7 +1963,6 @@
 			);
 			dependencies = (
 				A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */,
-				A021D11E127B790700A30E69 /* PBXTargetDependency */,
 				A021D120127B790C00A30E69 /* PBXTargetDependency */,
 			);
 			name = sasl2;
@@ -2077,11 +2069,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A021D11E127B790700A30E69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = A021D11D127B790700A30E69 /* PBXContainerItemProxy */;
-		};
 		A021D120127B790C00A30E69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ssl;

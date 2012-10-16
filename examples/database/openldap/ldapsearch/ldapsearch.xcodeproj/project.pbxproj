@@ -135,9 +135,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				A0F8D1A414143A2D00D5DC50 /* libcrypto.a */,
-				A0F8D1A514143A2D00D5DC50 /* libsasl2.a */,
-				A0F8D1A614143A2D00D5DC50 /* libssl.a */,
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
@@ -167,6 +164,9 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				A021D0F9127B782600A30E69 /* libresolv.dylib */,
+				A0F8D1A414143A2D00D5DC50 /* libcrypto.a */,
+				A0F8D1A514143A2D00D5DC50 /* libsasl2.a */,
+				A0F8D1A614143A2D00D5DC50 /* libssl.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

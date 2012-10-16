@@ -607,19 +607,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511DED127788EC00DE46C4;
-			remoteInfo = Makefile;
-		};
 		A0511DF2127788FD00DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A0511DED127788EC00DE46C4;
 			remoteInfo = Makefile;
+		};
+		A0527A27162DC5A400D85322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4;
+			remoteInfo = crypto;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -6227,7 +6227,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A0511DF1127788F600DE46C4 /* PBXTargetDependency */,
+				A0527A28162DC5A400D85322 /* PBXTargetDependency */,
 			);
 			name = ssl;
 			productName = openssl;
@@ -6879,15 +6879,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0511DF1127788F600DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0511DED127788EC00DE46C4 /* Makefile-openssl */;
-			targetProxy = A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */;
-		};
 		A0511DF3127788FD00DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0511DED127788EC00DE46C4 /* Makefile-openssl */;
 			targetProxy = A0511DF2127788FD00DE46C4 /* PBXContainerItemProxy */;
+		};
+		A0527A28162DC5A400D85322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511C51127770FD00DE46C4 /* crypto */;
+			targetProxy = A0527A27162DC5A400D85322 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
