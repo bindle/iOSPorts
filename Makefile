@@ -100,14 +100,7 @@ build-aux/iOSPorts-genlist: ports/iOSPorts/other/iOSPorts-genlist.m $(INCLUDES)
 build-aux/iOSPorts-pkginfo: $(PKGINFOSOURCES) $(INCLUDES) $(DEPS)
 	$(CC) $(CFLAGS) -o ${@} $(PKGINFOSOURCES)
 
-clean:
-	rm -Rf $(PROGS) $(SOURCES) $(DEPS)
-	rm -Rf include/iOSPorts
-	rm -Rf ports/iOSPorts/other/iOSPorts-data.c
-	rm -Rf a.out *.o src/*.o ports/iOSPorts/other/*.o
-	rm -Rf build/
-
-distcleanall: clean
+distclean: clean
 	for PKG in $(SOURCES);do \
            PKGDIR="`dirname $${PKG}`"; \
 	   echo "cleaning $${PKGDIR}..."; \
@@ -115,14 +108,10 @@ distcleanall: clean
 	   rm -Rf $${PKGDIR}/build; \
 	done
 
-distclean: clean
-	for PKG in $(SOURCES);do \
-           PKGDIR="`dirname $${PKG}`"; \
-	   echo "cleaning $${PKGDIR}..."; \
-	   $(MAKE) -C $${PKGDIR} clean; \
-	   rm -Rf $${PKGDIR}/build; \
-	done
-	@echo ' '
-	@echo 'To distclean all ports, run "make distcleanall"'
-	@echo ' '
+clean:
+	rm -Rf $(PROGS) $(SOURCES) $(DEPS)
+	rm -Rf include/iOSPorts
+	rm -Rf ports/iOSPorts/other/iOSPorts-data.c
+	rm -Rf build/
+	rm -Rf a.out *.o src/*.o ports/iOSPorts/other/*.o
 
