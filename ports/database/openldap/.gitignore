@@ -4,6 +4,6 @@
 /build/
 /include/
 /openldap
-/openldap-2.4.22
-/openldap-2.4.22.tgz
-/openldap-2.4.22.tgz.md5
+/openldap-*/
+/openldap-*.tgz
+/openldap-*.tgz.md5
