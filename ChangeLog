@@ -11,6 +11,7 @@ Copyright (C) 2011, 2012 Bindle Binaries
       - Updating OpenSSL to version 1.0.1c. (syzdek)
       - Updating Cyrus-SASL to version 2.1.25. (syzdek)
       - Updating OpenLDAP to version 2.4.33. (syzdek)
+      - Updating PCRE to version 8.31. (syzdek)
       - Updating global disclean target to distclean all packages. (syzdek)
 
 0.6   2012-05-30

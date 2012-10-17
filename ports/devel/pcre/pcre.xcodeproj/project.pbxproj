@@ -14,7 +14,6 @@
 		A05D8020127A1817008D47CD /* pcre_fullinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC2127A1235008D47CD /* pcre_fullinfo.c */; };
 		A05D8021127A1817008D47CD /* pcre_get.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC3127A1235008D47CD /* pcre_get.c */; };
 		A05D8022127A1817008D47CD /* pcre_globals.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC4127A1235008D47CD /* pcre_globals.c */; };
-		A05D8023127A1817008D47CD /* pcre_info.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC5127A1235008D47CD /* pcre_info.c */; };
 		A05D8024127A1817008D47CD /* pcre_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A05D7FC6127A1235008D47CD /* pcre_internal.h */; };
 		A05D8025127A1817008D47CD /* pcre_maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC7127A1235008D47CD /* pcre_maketables.c */; };
 		A05D8026127A1817008D47CD /* pcre_newline.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FC8127A1235008D47CD /* pcre_newline.c */; };
@@ -22,7 +21,6 @@
 		A05D8028127A1817008D47CD /* pcre_refcount.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FCB127A1235008D47CD /* pcre_refcount.c */; };
 		A05D8029127A1817008D47CD /* pcre_study.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD3127A1235008D47CD /* pcre_study.c */; };
 		A05D802A127A1817008D47CD /* pcre_tables.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD4127A1235008D47CD /* pcre_tables.c */; };
-		A05D802B127A1817008D47CD /* pcre_try_flipped.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD5127A1235008D47CD /* pcre_try_flipped.c */; };
 		A05D802C127A1817008D47CD /* pcre_ucd.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD6127A1235008D47CD /* pcre_ucd.c */; };
 		A05D802D127A1817008D47CD /* pcre_valid_utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD7127A1235008D47CD /* pcre_valid_utf8.c */; };
 		A05D802E127A1817008D47CD /* pcre_version.c in Sources */ = {isa = PBXBuildFile; fileRef = A05D7FD8127A1235008D47CD /* pcre_version.c */; };
@@ -42,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0446DFA162E5E5C000E95D9 /* pcre-8.31.tar.bz2.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pcre-8.31.tar.bz2.md5"; sourceTree = "<group>"; };
 		A05D7F30127A1235008D47CD /* 132html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = 132html; sourceTree = "<group>"; };
 		A05D7F31127A1235008D47CD /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
 		A05D7F32127A1235008D47CD /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
@@ -52,7 +51,6 @@
 		A05D7F37127A1235008D47CD /* HACKING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HACKING; sourceTree = "<group>"; };
 		A05D7F38127A1235008D47CD /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
 		A05D7F39127A1235008D47CD /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
-		A05D7F3A127A1235008D47CD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		A05D7F3B127A1235008D47CD /* Makefile.am */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; path = Makefile.am; sourceTree = "<group>"; };
 		A05D7F3C127A1235008D47CD /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
 		A05D7F3D127A1235008D47CD /* NEWS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEWS; sourceTree = "<group>"; };
@@ -71,8 +69,6 @@
 		A05D7F4B127A1235008D47CD /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A05D7F4C127A1235008D47CD /* config.h.generic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.generic; sourceTree = "<group>"; };
 		A05D7F4D127A1235008D47CD /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
-		A05D7F4E127A1235008D47CD /* config.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.log; sourceTree = "<group>"; };
-		A05D7F4F127A1235008D47CD /* config.status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.status; sourceTree = "<group>"; };
 		A05D7F50127A1235008D47CD /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
 		A05D7F51127A1235008D47CD /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
 		A05D7F52127A1235008D47CD /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
@@ -163,19 +159,14 @@
 		A05D7FA9127A1235008D47CD /* pcretest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pcretest.txt; sourceTree = "<group>"; };
 		A05D7FAA127A1235008D47CD /* perltest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = perltest.txt; sourceTree = "<group>"; };
 		A05D7FAB127A1235008D47CD /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
-		A05D7FAC127A1235008D47CD /* libpcre.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcre.pc; sourceTree = "<group>"; };
 		A05D7FAD127A1235008D47CD /* libpcre.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcre.pc.in; sourceTree = "<group>"; };
-		A05D7FAE127A1235008D47CD /* libpcrecpp.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcrecpp.pc; sourceTree = "<group>"; };
 		A05D7FAF127A1235008D47CD /* libpcrecpp.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcrecpp.pc.in; sourceTree = "<group>"; };
-		A05D7FB0127A1235008D47CD /* libpcreposix.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcreposix.pc; sourceTree = "<group>"; };
 		A05D7FB1127A1235008D47CD /* libpcreposix.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libpcreposix.pc.in; sourceTree = "<group>"; };
-		A05D7FB2127A1235008D47CD /* libtool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = libtool; sourceTree = "<group>"; };
 		A05D7FB3127A1235008D47CD /* ltmain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
 		A05D7FB4127A1235008D47CD /* makevp.bat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makevp.bat; sourceTree = "<group>"; };
 		A05D7FB5127A1235008D47CD /* makevp_c.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makevp_c.txt; sourceTree = "<group>"; };
 		A05D7FB6127A1235008D47CD /* makevp_l.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makevp_l.txt; sourceTree = "<group>"; };
 		A05D7FB7127A1235008D47CD /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
-		A05D7FB8127A1235008D47CD /* pcre-config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pcre-config"; sourceTree = "<group>"; };
 		A05D7FB9127A1235008D47CD /* pcre-config.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "pcre-config.in"; sourceTree = "<group>"; };
 		A05D7FBA127A1235008D47CD /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre.h; sourceTree = "<group>"; };
 		A05D7FBB127A1235008D47CD /* pcre.h.generic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pcre.h.generic; sourceTree = "<group>"; };
@@ -188,23 +179,19 @@
 		A05D7FC2127A1235008D47CD /* pcre_fullinfo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_fullinfo.c; sourceTree = "<group>"; };
 		A05D7FC3127A1235008D47CD /* pcre_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_get.c; sourceTree = "<group>"; };
 		A05D7FC4127A1235008D47CD /* pcre_globals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_globals.c; sourceTree = "<group>"; };
-		A05D7FC5127A1235008D47CD /* pcre_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_info.c; sourceTree = "<group>"; };
 		A05D7FC6127A1235008D47CD /* pcre_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_internal.h; sourceTree = "<group>"; };
 		A05D7FC7127A1235008D47CD /* pcre_maketables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_maketables.c; sourceTree = "<group>"; };
 		A05D7FC8127A1235008D47CD /* pcre_newline.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_newline.c; sourceTree = "<group>"; };
 		A05D7FC9127A1235008D47CD /* pcre_ord2utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_ord2utf8.c; sourceTree = "<group>"; };
-		A05D7FCA127A1235008D47CD /* pcre_printint.src */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pcre_printint.src; sourceTree = "<group>"; };
 		A05D7FCB127A1235008D47CD /* pcre_refcount.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_refcount.c; sourceTree = "<group>"; };
 		A05D7FCC127A1235008D47CD /* pcre_scanner.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pcre_scanner.cc; sourceTree = "<group>"; };
 		A05D7FCD127A1235008D47CD /* pcre_scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_scanner.h; sourceTree = "<group>"; };
 		A05D7FCE127A1235008D47CD /* pcre_scanner_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pcre_scanner_unittest.cc; sourceTree = "<group>"; };
 		A05D7FCF127A1235008D47CD /* pcre_stringpiece.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pcre_stringpiece.cc; sourceTree = "<group>"; };
-		A05D7FD0127A1235008D47CD /* pcre_stringpiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcre_stringpiece.h; sourceTree = "<group>"; };
 		A05D7FD1127A1235008D47CD /* pcre_stringpiece.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pcre_stringpiece.h.in; sourceTree = "<group>"; };
 		A05D7FD2127A1235008D47CD /* pcre_stringpiece_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pcre_stringpiece_unittest.cc; sourceTree = "<group>"; };
 		A05D7FD3127A1235008D47CD /* pcre_study.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_study.c; sourceTree = "<group>"; };
 		A05D7FD4127A1235008D47CD /* pcre_tables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_tables.c; sourceTree = "<group>"; };
-		A05D7FD5127A1235008D47CD /* pcre_try_flipped.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_try_flipped.c; sourceTree = "<group>"; };
 		A05D7FD6127A1235008D47CD /* pcre_ucd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_ucd.c; sourceTree = "<group>"; };
 		A05D7FD7127A1235008D47CD /* pcre_valid_utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_valid_utf8.c; sourceTree = "<group>"; };
 		A05D7FD8127A1235008D47CD /* pcre_version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_version.c; sourceTree = "<group>"; };
@@ -213,7 +200,6 @@
 		A05D7FDB127A1235008D47CD /* pcrecpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrecpp.h; sourceTree = "<group>"; };
 		A05D7FDC127A1235008D47CD /* pcrecpp_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrecpp_internal.h; sourceTree = "<group>"; };
 		A05D7FDD127A1235008D47CD /* pcrecpp_unittest.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pcrecpp_unittest.cc; sourceTree = "<group>"; };
-		A05D7FDE127A1235008D47CD /* pcrecpparg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcrecpparg.h; sourceTree = "<group>"; };
 		A05D7FDF127A1235008D47CD /* pcrecpparg.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pcrecpparg.h.in; sourceTree = "<group>"; };
 		A05D7FE0127A1235008D47CD /* pcredemo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcredemo.c; sourceTree = "<group>"; };
 		A05D7FE1127A1235008D47CD /* pcregexp.pas */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = pcregexp.pas; sourceTree = "<group>"; };
@@ -222,7 +208,6 @@
 		A05D7FE4127A1235008D47CD /* pcreposix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcreposix.h; sourceTree = "<group>"; };
 		A05D7FE5127A1235008D47CD /* pcretest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcretest.c; sourceTree = "<group>"; };
 		A05D7FE6127A1235008D47CD /* perltest.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = perltest.pl; sourceTree = "<group>"; };
-		A05D7FE7127A1235008D47CD /* stamp-h1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stamp-h1"; sourceTree = "<group>"; };
 		A05D7FE9127A1235008D47CD /* grepinput */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grepinput; sourceTree = "<group>"; };
 		A05D7FEA127A1235008D47CD /* grepinput8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grepinput8; sourceTree = "<group>"; };
 		A05D7FEB127A1235008D47CD /* grepinputv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = grepinputv; sourceTree = "<group>"; };
@@ -261,7 +246,6 @@
 		A05D80E7127A23DC008D47CD /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
 		A05D80E9127A23E9008D47CD /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		A05D80EA127A23E9008D47CD /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
-		A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "pcre-8.10.tar.bz2.md5"; sourceTree = "<group>"; };
 		A05D8227127A2D84008D47CD /* pcre_chartables.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pcre_chartables.c; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libpcre.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpcre.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -318,7 +302,6 @@
 				A05D7F37127A1235008D47CD /* HACKING */,
 				A05D7F38127A1235008D47CD /* INSTALL */,
 				A05D7F39127A1235008D47CD /* LICENCE */,
-				A05D7F3A127A1235008D47CD /* Makefile */,
 				A05D7F3B127A1235008D47CD /* Makefile.am */,
 				A05D7F3C127A1235008D47CD /* Makefile.in */,
 				A05D7F3D127A1235008D47CD /* NEWS */,
@@ -335,8 +318,6 @@
 				A05D7F4B127A1235008D47CD /* config.h */,
 				A05D7F4C127A1235008D47CD /* config.h.generic */,
 				A05D7F4D127A1235008D47CD /* config.h.in */,
-				A05D7F4E127A1235008D47CD /* config.log */,
-				A05D7F4F127A1235008D47CD /* config.status */,
 				A05D7F50127A1235008D47CD /* config.sub */,
 				A05D7F51127A1235008D47CD /* configure */,
 				A05D7F52127A1235008D47CD /* configure.ac */,
@@ -344,19 +325,14 @@
 				A05D7F54127A1235008D47CD /* dftables.c */,
 				A05D7F55127A1235008D47CD /* doc */,
 				A05D7FAB127A1235008D47CD /* install-sh */,
-				A05D7FAC127A1235008D47CD /* libpcre.pc */,
 				A05D7FAD127A1235008D47CD /* libpcre.pc.in */,
-				A05D7FAE127A1235008D47CD /* libpcrecpp.pc */,
 				A05D7FAF127A1235008D47CD /* libpcrecpp.pc.in */,
-				A05D7FB0127A1235008D47CD /* libpcreposix.pc */,
 				A05D7FB1127A1235008D47CD /* libpcreposix.pc.in */,
-				A05D7FB2127A1235008D47CD /* libtool */,
 				A05D7FB3127A1235008D47CD /* ltmain.sh */,
 				A05D7FB4127A1235008D47CD /* makevp.bat */,
 				A05D7FB5127A1235008D47CD /* makevp_c.txt */,
 				A05D7FB6127A1235008D47CD /* makevp_l.txt */,
 				A05D7FB7127A1235008D47CD /* missing */,
-				A05D7FB8127A1235008D47CD /* pcre-config */,
 				A05D7FB9127A1235008D47CD /* pcre-config.in */,
 				A05D7FBA127A1235008D47CD /* pcre.h */,
 				A05D7FBB127A1235008D47CD /* pcre.h.generic */,
@@ -370,23 +346,19 @@
 				A05D7FC2127A1235008D47CD /* pcre_fullinfo.c */,
 				A05D7FC3127A1235008D47CD /* pcre_get.c */,
 				A05D7FC4127A1235008D47CD /* pcre_globals.c */,
-				A05D7FC5127A1235008D47CD /* pcre_info.c */,
 				A05D7FC6127A1235008D47CD /* pcre_internal.h */,
 				A05D7FC7127A1235008D47CD /* pcre_maketables.c */,
 				A05D7FC8127A1235008D47CD /* pcre_newline.c */,
 				A05D7FC9127A1235008D47CD /* pcre_ord2utf8.c */,
-				A05D7FCA127A1235008D47CD /* pcre_printint.src */,
 				A05D7FCB127A1235008D47CD /* pcre_refcount.c */,
 				A05D7FCC127A1235008D47CD /* pcre_scanner.cc */,
 				A05D7FCD127A1235008D47CD /* pcre_scanner.h */,
 				A05D7FCE127A1235008D47CD /* pcre_scanner_unittest.cc */,
 				A05D7FCF127A1235008D47CD /* pcre_stringpiece.cc */,
-				A05D7FD0127A1235008D47CD /* pcre_stringpiece.h */,
 				A05D7FD1127A1235008D47CD /* pcre_stringpiece.h.in */,
 				A05D7FD2127A1235008D47CD /* pcre_stringpiece_unittest.cc */,
 				A05D7FD3127A1235008D47CD /* pcre_study.c */,
 				A05D7FD4127A1235008D47CD /* pcre_tables.c */,
-				A05D7FD5127A1235008D47CD /* pcre_try_flipped.c */,
 				A05D7FD6127A1235008D47CD /* pcre_ucd.c */,
 				A05D7FD7127A1235008D47CD /* pcre_valid_utf8.c */,
 				A05D7FD8127A1235008D47CD /* pcre_version.c */,
@@ -395,7 +367,6 @@
 				A05D7FDB127A1235008D47CD /* pcrecpp.h */,
 				A05D7FDC127A1235008D47CD /* pcrecpp_internal.h */,
 				A05D7FDD127A1235008D47CD /* pcrecpp_unittest.cc */,
-				A05D7FDE127A1235008D47CD /* pcrecpparg.h */,
 				A05D7FDF127A1235008D47CD /* pcrecpparg.h.in */,
 				A05D7FE0127A1235008D47CD /* pcredemo.c */,
 				A05D7FE1127A1235008D47CD /* pcregexp.pas */,
@@ -404,7 +375,6 @@
 				A05D7FE4127A1235008D47CD /* pcreposix.h */,
 				A05D7FE5127A1235008D47CD /* pcretest.c */,
 				A05D7FE6127A1235008D47CD /* perltest.pl */,
-				A05D7FE7127A1235008D47CD /* stamp-h1 */,
 				A05D7FE8127A1235008D47CD /* testdata */,
 				A05D800B127A1235008D47CD /* ucp.h */,
 			);
@@ -566,7 +536,7 @@
 			children = (
 				A05D80E9127A23E9008D47CD /* config.h */,
 				A05D80EA127A23E9008D47CD /* configure-wrapper.sh */,
-				A05D80EB127A23E9008D47CD /* pcre-8.10.tar.bz2.md5 */,
+				A0446DFA162E5E5C000E95D9 /* pcre-8.31.tar.bz2.md5 */,
 			);
 			path = "build-aux";
 			sourceTree = "<group>";
@@ -668,14 +638,12 @@
 				A05D8020127A1817008D47CD /* pcre_fullinfo.c in Sources */,
 				A05D8021127A1817008D47CD /* pcre_get.c in Sources */,
 				A05D8022127A1817008D47CD /* pcre_globals.c in Sources */,
-				A05D8023127A1817008D47CD /* pcre_info.c in Sources */,
 				A05D8025127A1817008D47CD /* pcre_maketables.c in Sources */,
 				A05D8026127A1817008D47CD /* pcre_newline.c in Sources */,
 				A05D8027127A1817008D47CD /* pcre_ord2utf8.c in Sources */,
 				A05D8028127A1817008D47CD /* pcre_refcount.c in Sources */,
 				A05D8029127A1817008D47CD /* pcre_study.c in Sources */,
 				A05D802A127A1817008D47CD /* pcre_tables.c in Sources */,
-				A05D802B127A1817008D47CD /* pcre_try_flipped.c in Sources */,
 				A05D802C127A1817008D47CD /* pcre_ucd.c in Sources */,
 				A05D802D127A1817008D47CD /* pcre_valid_utf8.c in Sources */,
 				A05D802E127A1817008D47CD /* pcre_version.c in Sources */,
