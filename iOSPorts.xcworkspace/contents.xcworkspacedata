@@ -45,6 +45,9 @@
          location = "group:security"
          name = "security">
          <FileRef
+            location = "group:heimdal/heimdal.xcodeproj">
+         </FileRef>
+         <FileRef
             location = "group:cyrus-sasl/Cyrus SASL.xcodeproj">
          </FileRef>
          <FileRef
