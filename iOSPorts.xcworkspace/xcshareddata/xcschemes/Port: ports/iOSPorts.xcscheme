@@ -17,7 +17,7 @@
                BlueprintIdentifier = "D2AAC07D0554694100DB518D"
                BuildableName = "libiOSPorts.a"
                BlueprintName = "iOSPorts"
-               ReferencedContainer = "container:iOSPorts.xcodeproj">
+               ReferencedContainer = "container:ports/iOSPorts/iOSPorts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
