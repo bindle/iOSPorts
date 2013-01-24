@@ -50,17 +50,40 @@ PACKAGE_LICENSE_FILE			= build-aux/COPYING
 SRCROOTDIR = ../../..
 include $(SRCROOTDIR)/build-aux/Makefile-package
 
-INSTALLHEADERS	= ../../../include/sasl/hmac-md5.h \
-		  ../../../include/sasl/md5.h \
-		  ../../../include/sasl/md5global.h \
-		  ../../../include/sasl/sasl.h \
-		  ../../../include/sasl/saslplug.h \
-		  ../../../include/sasl/saslutil.h \
-		  ../../../include/sasl/prop.h
+HEADERPREFIX    = ../../../include/sasl
+HEADERTIMESTAMP = $(HEADERPREFIX)/.timestamp
+INSTALLHEADERS	= $(HEADERPREFIX)/hmac-md5.h \
+		  $(HEADERPREFIX)/md5.h \
+		  $(HEADERPREFIX)/md5global.h \
+		  $(HEADERPREFIX)/sasl.h \
+		  $(HEADERPREFIX)/saslplug.h \
+		  $(HEADERPREFIX)/saslutil.h \
+		  $(HEADERPREFIX)/prop.h
 
-$(INSTALLHEADERS): $(PACKAGE_TARNAME)
-	mkdir -p ../../../include/sasl
-	FILE="cyrus-sasl/include/`basename ${@}`"; cp $${FILE} ${@};
+$(HEADERTIMESTAMP): $(PACKAGE_TARNAME)
+	mkdir -p `dirname ${@}`
+	touch ${@}
+
+$(HEADERPREFIX)/hmac-md5.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/hmac-md5.h ${@};
+
+$(HEADERPREFIX)/md5.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/md5.h ${@};
+
+$(HEADERPREFIX)/md5global.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/md5global.h ${@};
+
+$(HEADERPREFIX)/sasl.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/sasl.h ${@};
+
+$(HEADERPREFIX)/saslplug.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/saslplug.h ${@};
+
+$(HEADERPREFIX)/saslutil.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/saslutil.h ${@};
+
+$(HEADERPREFIX)/prop.h: $(HEADERTIMESTAMP)
+	cp cyrus-sasl/include/prop.h ${@};
 
 cyrus-sasl/config.h: $(PACKAGE_TARNAME)
 	cp build-aux/config.h cyrus-sasl/

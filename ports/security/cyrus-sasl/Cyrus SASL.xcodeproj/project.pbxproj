@@ -81,7 +81,7 @@
 		A05123C51278D7F500DE46C4 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A05124301278D8E500DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "../cyrus-sasl-2.1.23/Makefile"; sourceTree = "<group>"; };
 		A051243A1278D9C400DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "cyrus-sasl-2.1.23/plugins/Makefile"; sourceTree = SOURCE_ROOT; };
-		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
+		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; indentWidth = 8; path = Makefile; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		A0FB53E6126E53C30057FEE9 /* cyrus-sasl-2.1.23.tar.gz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cyrus-sasl-2.1.23.tar.gz.md5"; sourceTree = "<group>"; };
 		A0FB57E5126E55630057FEE9 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
 		A0FB57E6126E55630057FEE9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
