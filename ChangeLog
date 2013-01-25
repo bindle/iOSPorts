@@ -2,7 +2,7 @@
 iOS Ports Library
 Copyright (C) 2011, 2012 Bindle Binaries
 
-0.7
+0.7   2013-01-24
       - Changing arguments for external build tool argument from "all" to
         $(ACTION). (syzdek)
       - Fixing typos in README. (syzdek)
