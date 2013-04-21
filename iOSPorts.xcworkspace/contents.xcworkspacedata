@@ -33,6 +33,9 @@
          <FileRef
             location = "group:openldap/openldap.xcodeproj">
          </FileRef>
+         <FileRef
+            location = "group:postgresql/PostgreSQL.xcodeproj">
+         </FileRef>
       </Group>
       <Group
          location = "group:devel"
@@ -58,6 +61,13 @@
       <Group
          location = "group:database"
          name = "database">
+         <Group
+            location = "container:examples/database/postgresql"
+            name = "postgresql">
+            <FileRef
+               location = "group:tables/tables.xcodeproj">
+            </FileRef>
+         </Group>
          <Group
             location = "group:openldap"
             name = "openldap">

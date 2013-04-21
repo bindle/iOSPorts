@@ -37,6 +37,7 @@ PACKAGE_VERSION = $(shell git describe --long --abbrev=7 HEAD |sed -e 's/^v//g' 
 
 SOURCES		= \
 		  ports/database/openldap/pkgdata_openldap.m \
+		  ports/database/postgresql/pkgdata_postgresql.m \
 		  ports/devel/pcre/pkgdata_pcre.m \
 		  ports/security/cyrus-sasl/pkgdata_cyrus-sasl.m \
 		  ports/security/openssl/pkgdata_openssl.m \

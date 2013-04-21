@@ -1,0 +1,9 @@
+*.mode1v3
+*.pbxuser
+.DS_Store
+/build/
+/include/
+/postgresql
+/postgresql-*/
+/postgresql-*.tar.bz2
+/postgresql-*.tar.bz2.md5

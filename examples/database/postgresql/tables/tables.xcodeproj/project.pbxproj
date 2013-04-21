@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0B66BE71722A24000A3D95E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B66BE61722A24000A3D95E /* UIKit.framework */; };
+		A0B66BE91722A24000A3D95E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B66BE81722A24000A3D95E /* Foundation.framework */; };
+		A0B66BEB1722A24000A3D95E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B66BEA1722A24000A3D95E /* CoreGraphics.framework */; };
+		A0B66BF11722A24000A3D95E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0B66BEF1722A24000A3D95E /* InfoPlist.strings */; };
+		A0B66BF31722A24000A3D95E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B66BF21722A24000A3D95E /* main.m */; };
+		A0B66BF71722A24000A3D95E /* PGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B66BF61722A24000A3D95E /* PGAppDelegate.m */; };
+		A0B66BF91722A24000A3D95E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B66BF81722A24000A3D95E /* Default.png */; };
+		A0B66BFB1722A24000A3D95E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B66BFA1722A24000A3D95E /* Default@2x.png */; };
+		A0B66BFD1722A24000A3D95E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0B66BFC1722A24000A3D95E /* Default-568h@2x.png */; };
+		A0D3C0501723624100326385 /* libpg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D3C04F1723623A00326385 /* libpg.a */; };
+		A0D3C09017236C2A00326385 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D3C08E17236C2900326385 /* libcrypto.a */; };
+		A0D3C09117236C2A00326385 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D3C08F17236C2A00326385 /* libssl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0D3C04A1723623A00326385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B66C0A1722A28B00A3D95E /* PostgreSQL.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0D3C03C172361FD00326385;
+			remoteInfo = pg;
+		};
+		A0D3C04E1723623A00326385 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B66C0A1722A28B00A3D95E /* PostgreSQL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A0D3C03D172361FD00326385;
+			remoteInfo = pg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A0B66BE31722A24000A3D95E /* tables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B66BE61722A24000A3D95E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0B66BE81722A24000A3D95E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0B66BEA1722A24000A3D95E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0B66BEE1722A24000A3D95E /* tables-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tables-Info.plist"; sourceTree = "<group>"; };
+		A0B66BF01722A24000A3D95E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A0B66BF21722A24000A3D95E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0B66BF41722A24000A3D95E /* tables-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tables-Prefix.pch"; sourceTree = "<group>"; };
+		A0B66BF51722A24000A3D95E /* PGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGAppDelegate.h; sourceTree = "<group>"; };
+		A0B66BF61722A24000A3D95E /* PGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGAppDelegate.m; sourceTree = "<group>"; };
+		A0B66BF81722A24000A3D95E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A0B66BFA1722A24000A3D95E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A0B66BFC1722A24000A3D95E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A0B66C0A1722A28B00A3D95E /* PostgreSQL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PostgreSQL.xcodeproj; path = ../../../../ports/database/postgresql/PostgreSQL.xcodeproj; sourceTree = "<group>"; };
+		A0D3C08E17236C2900326385 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libcrypto.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libcrypto.a"; sourceTree = "<group>"; };
+		A0D3C08F17236C2A00326385 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libssl.a; path = "../../../../ports/security/openssl/build/Release-iphoneos/libssl.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0B66BE01722A24000A3D95E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D3C09017236C2A00326385 /* libcrypto.a in Frameworks */,
+				A0D3C09117236C2A00326385 /* libssl.a in Frameworks */,
+				A0D3C0501723624100326385 /* libpg.a in Frameworks */,
+				A0B66BE71722A24000A3D95E /* UIKit.framework in Frameworks */,
+				A0B66BE91722A24000A3D95E /* Foundation.framework in Frameworks */,
+				A0B66BEB1722A24000A3D95E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0B66BDA1722A24000A3D95E = {
+			isa = PBXGroup;
+			children = (
+				A0D3C08E17236C2900326385 /* libcrypto.a */,
+				A0D3C08F17236C2A00326385 /* libssl.a */,
+				A0B66BEC1722A24000A3D95E /* tables */,
+				A0B66BE51722A24000A3D95E /* Frameworks */,
+				A0B66BE41722A24000A3D95E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0B66BE41722A24000A3D95E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0B66BE31722A24000A3D95E /* tables.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0B66BE51722A24000A3D95E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0B66C0A1722A28B00A3D95E /* PostgreSQL.xcodeproj */,
+				A0B66BE61722A24000A3D95E /* UIKit.framework */,
+				A0B66BE81722A24000A3D95E /* Foundation.framework */,
+				A0B66BEA1722A24000A3D95E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0B66BEC1722A24000A3D95E /* tables */ = {
+			isa = PBXGroup;
+			children = (
+				A0B66BF51722A24000A3D95E /* PGAppDelegate.h */,
+				A0B66BF61722A24000A3D95E /* PGAppDelegate.m */,
+				A0B66BED1722A24000A3D95E /* Supporting Files */,
+			);
+			path = tables;
+			sourceTree = "<group>";
+		};
+		A0B66BED1722A24000A3D95E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0B66BEE1722A24000A3D95E /* tables-Info.plist */,
+				A0B66BEF1722A24000A3D95E /* InfoPlist.strings */,
+				A0B66BF21722A24000A3D95E /* main.m */,
+				A0B66BF41722A24000A3D95E /* tables-Prefix.pch */,
+				A0B66BF81722A24000A3D95E /* Default.png */,
+				A0B66BFA1722A24000A3D95E /* Default@2x.png */,
+				A0B66BFC1722A24000A3D95E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0B66C0B1722A28B00A3D95E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3C04F1723623A00326385 /* libpg.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0B66BE21722A24000A3D95E /* tables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B66C001722A24000A3D95E /* Build configuration list for PBXNativeTarget "tables" */;
+			buildPhases = (
+				A0B66BDF1722A24000A3D95E /* Sources */,
+				A0B66BE01722A24000A3D95E /* Frameworks */,
+				A0B66BE11722A24000A3D95E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0D3C04B1723623A00326385 /* PBXTargetDependency */,
+			);
+			name = tables;
+			productName = tables;
+			productReference = A0B66BE31722A24000A3D95E /* tables.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0B66BDB1722A24000A3D95E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PG;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "PostgreSQL tables";
+			};
+			buildConfigurationList = A0B66BDE1722A24000A3D95E /* Build configuration list for PBXProject "tables" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A0B66BDA1722A24000A3D95E;
+			productRefGroup = A0B66BE41722A24000A3D95E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A0B66C0B1722A28B00A3D95E /* Products */;
+					ProjectRef = A0B66C0A1722A28B00A3D95E /* PostgreSQL.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A0B66BE21722A24000A3D95E /* tables */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A0D3C04F1723623A00326385 /* libpg.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libpg.a;
+			remoteRef = A0D3C04E1723623A00326385 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0B66BE11722A24000A3D95E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B66BF11722A24000A3D95E /* InfoPlist.strings in Resources */,
+				A0B66BF91722A24000A3D95E /* Default.png in Resources */,
+				A0B66BFB1722A24000A3D95E /* Default@2x.png in Resources */,
+				A0B66BFD1722A24000A3D95E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0B66BDF1722A24000A3D95E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B66BF31722A24000A3D95E /* main.m in Sources */,
+				A0B66BF71722A24000A3D95E /* PGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0D3C04B1723623A00326385 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = pg;
+			targetProxy = A0D3C04A1723623A00326385 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0B66BEF1722A24000A3D95E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0B66BF01722A24000A3D95E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0B66BFE1722A24000A3D95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0B66BFF1722A24000A3D95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0B66C011722A24000A3D95E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tables/tables-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../../../include;
+				INFOPLIST_FILE = "tables/tables-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A0B66C021722A24000A3D95E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tables/tables-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../../../include;
+				INFOPLIST_FILE = "tables/tables-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0B66BDE1722A24000A3D95E /* Build configuration list for PBXProject "tables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B66BFE1722A24000A3D95E /* Debug */,
+				A0B66BFF1722A24000A3D95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B66C001722A24000A3D95E /* Build configuration list for PBXNativeTarget "tables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B66C011722A24000A3D95E /* Debug */,
+				A0B66C021722A24000A3D95E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0B66BDB1722A24000A3D95E /* Project object */;
+}
