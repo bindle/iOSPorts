@@ -35,6 +35,7 @@
 #ifndef OPENSSL_NO_STORE
 # define OPENSSL_NO_STORE
 #endif
+#define OPENSSL_NO_HW_PADLOCK
 
 #endif /* OPENSSL_DOING_MAKEDEPEND */
 

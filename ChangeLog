@@ -1,6 +1,9 @@
 
 iOS Ports Library
-Copyright (C) 2011, 2012 Bindle Binaries
+Copyright (C) 2011, 2012, 2013 Bindle Binaries
+
+0.8
+      - Updating OpenSSL to version 1.0.1e. (syzdek)
 
 0.7   2013-01-24
       - Changing arguments for external build tool argument from "all" to
