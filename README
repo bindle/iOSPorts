@@ -45,9 +45,9 @@ Software Requirements
 
    * Git 1.7
    * Mac OS X 10.8
-   * Xcode 4.5
+   * Xcode 4.6
    * Xcode Command Line Tools
-   * iOS SDK 6.0
+   * iOS SDK 6.X
    * Internet Access (for downloading packages)
 
 
