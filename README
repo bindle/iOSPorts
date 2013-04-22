@@ -142,6 +142,19 @@ Packages
                   iOS platform (iPhone).
 
 
+   PostgreSQL
+   ----
+   Location:      ports/database/postgresql/
+   Includes:      OpenSSL
+   Dependencies:  pg (postgresql)
+   Add:           ports/database/postgresql/PostgreSQL.xcodeproj
+   Link With:     libpg.a (openldap)
+                  libssl.a (openssl)
+                  libcrypto.a (openssl)
+   Description:   A port of the PostgreSQL client library to the iOS platform
+                  (iPhone).
+
+
    scrypt
    ------
    Location:      ports/security/scrypt/
