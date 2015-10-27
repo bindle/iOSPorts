@@ -3,7 +3,7 @@ iOS Ports Library
 Copyright (C) 2011, 2012, 2013 Bindle Binaries
 
 0.8
-      - Updating OpenSSL to version 1.0.1e. (syzdek)
+      - Updating OpenSSL to version 1.0.1p. (syzdek)
       - Adding initial port of PostgreSQL 9.2.4. (syzdek)
       - Updating OpenLDAP to version 2.4.42. (syzdek)
 

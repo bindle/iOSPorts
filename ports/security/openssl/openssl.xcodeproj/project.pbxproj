@@ -2895,8 +2895,8 @@
 		A0527A2E162DD07B00D85322 /* openssl-1.0.0a.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "openssl-1.0.0a.patch"; sourceTree = "<group>"; };
 		A0D3C09B17236D7900326385 /* eng_rdrand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = eng_rdrand.c; sourceTree = "<group>"; };
 		A0D3C09C17236D7900326385 /* eng_rsax.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = eng_rsax.c; sourceTree = "<group>"; };
-		A0D3C0B11723718000326385 /* evp_cnf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = evp_cnf.c; path = "openssl-1.0.1e/crypto/evp/evp_cnf.c"; sourceTree = SOURCE_ROOT; };
-		A0D3C0B3172371C100326385 /* s3_cbc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = s3_cbc.c; path = "openssl-1.0.1e/ssl/s3_cbc.c"; sourceTree = SOURCE_ROOT; };
+		A0D3C0B11723718000326385 /* evp_cnf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = evp_cnf.c; sourceTree = "<group>"; };
+		A0D3C0B3172371C100326385 /* s3_cbc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = s3_cbc.c; sourceTree = "<group>"; };
 		A0F82AFF162DD79E007773E0 /* modes_lcl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes_lcl.h; sourceTree = "<group>"; };
 		A0F82B01162DDA37007773E0 /* buf_str.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buf_str.c; sourceTree = "<group>"; };
 		A0F82B03162DDA8B007773E0 /* ccm128.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ccm128.c; sourceTree = "<group>"; };
